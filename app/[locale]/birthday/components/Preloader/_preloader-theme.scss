@@ -33,6 +33,9 @@
     color: var(--preloader-project-text);
     border-radius: 28px;
 
+    padding-block: s.$space-s;
+    padding-inline: s.$space-m;
+
     @include mx.mq(break-768) {
       padding-block: s.$space-m;
       padding-inline: s.$space-l;

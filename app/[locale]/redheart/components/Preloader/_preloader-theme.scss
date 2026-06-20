@@ -28,9 +28,6 @@
       @include preloader-kotarsis;
     }
 
-    &-icon {
-      // color: var(--preloader-main-color);
-    }
   }
 
   &__divider {
@@ -46,6 +43,9 @@
     background-color: var(--preloader-project-bg);
 
     border-radius: 28px;
+
+    padding-block: s.$space-s;
+    padding-inline: s.$space-m;
 
     @include mx.mq(break-768) {
       padding-block: s.$space-m;
