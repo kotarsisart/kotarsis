@@ -1,0 +1,35 @@
+{
+  "id": "/concentrator",
+
+  "name": "Concentrator™",
+  "short_name": "Concentrator",
+
+  "description": "Focus effortlessly with Concentrator™ — an interactive next-gen tool that trains your concentration.",
+
+  "start_url": "/en/concentrator",
+  "scope": "/",
+
+  "display": "standalone",
+
+  "theme_color": "#C9D5FF",
+  "background_color": "#C9D5FF",
+
+  "icons": [
+    {
+      "src": "/projects/concentrator/favicon/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/projects/concentrator/favicon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/projects/concentrator/favicon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

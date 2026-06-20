@@ -1,0 +1,57 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/index' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --facts-card-title-350: 28px;
+  --facts-card-title-768: 56px;
+
+  --facts-card-number-350: 60px;
+  --facts-card-number-768: 128px;
+
+  --facts-card-outro-350: 24px;
+  --facts-card-outro-768: 48px;
+
+  --facts-outro-350: 20px;
+  --facts-outro-768: 40px;
+}
+
+@mixin facts-card-title {
+  --facts-card-title: #6B84C9;
+  font-size: var(--facts-card-title-350);
+  color: var(--facts-card-title);
+
+  @include mx.mq(break-768) {
+    font-size: var(--facts-card-title-768);
+  }
+}
+
+@mixin facts-card-number {
+  font-size: var(--facts-card-number-350);
+  font-weight: var(--font-weight-bold);
+  line-height: 90%;
+
+  @include mx.mq(break-768) {
+    font-size: var(--facts-card-number-768);
+  }
+}
+
+@mixin facts-card-outro {
+  --facts-card-outro: #6AAEFF;
+  font-size: var(--facts-card-outro-350);
+  color: var(--facts-card-outro);
+
+  @include mx.mq(break-768) {
+    font-size: var(--facts-card-outro-768);
+  }
+}
+
+@mixin facts-outro {
+  --facts-outro: #513BC6;
+  font-size: var(--facts-outro-350);
+  color: var(--facts-outro);
+
+  @include mx.mq(break-768) {
+    font-size: var(--facts-outro-768);
+  }
+}

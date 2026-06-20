@@ -1,0 +1,42 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --comparison-table-title-320: 18px;
+  --comparison-table-title-768: 26px;
+  --comparison-table-title-1440: 28px;
+
+  --comparison-table-value-320: 18px;
+  --comparison-table-value-768: 22px;
+  --comparison-table-value-1440: 24px;
+}
+
+@mixin comparison-table-title {
+  --text-comparison-table-title: #490E69;
+  font-size: var(--comparison-table-title-320);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-comparison-table-title);
+  white-space: nowrap;
+  text-align: center;
+
+  @include mx.mq(break-768) {
+    font-size: var(--comparison-table-title-768);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--comparison-table-title-1440);
+  }
+}
+
+@mixin comparison-table-value {
+  font-size: var(--comparison-table-value-320);
+  font-weight: var(--font-weight-bold);
+  white-space: nowrap;
+
+  @include mx.mq(break-768) {
+    font-size: var(--comparison-table-value-768);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--comparison-table-value-1440);
+  }
+}

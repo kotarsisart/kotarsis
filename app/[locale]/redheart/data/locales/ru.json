@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Redheart - 1000 причин любить рыжеволосых",
+    "description": "1000 причин. От ведьм и огня до пледов и милых моментов. Линейный манифест про рыжих и то, почему их невозможно игнорировать.",
+    "keywords": "рыжеволосая, рыжие волосы, 1000 причин, манифест, любовь, рыжеволосые, редкость, характер, тепло, осень, котарсис, kotarsis",
+    "siteName": "Redheart",
+    "imgAlt": "Превью-изображение Redheart"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "логотип kotarsis",
+    "projectAlt": "логотип проекта redheart"
+  },
+
+  "header": {
+    "logo": {
+      "redheart": "Redheart",
+      "redheartAlt": "Логотип проекта Redheart",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Логотип kotarsis",
+      "langSelect": "Выберите язык"
+    }
+  },
+
+  "hero": {
+    "title": "1000\nПричин любить рыжих"
+  },
+
+  "reasons": {
+    "hint": "Ты меня уже убедил."
+  },
+
+  "footer": {
+    "title": "Любите друг друга.",
+    "author": "Автор: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Поддержи любовь",
+    "custom": "Заказать индивидуальный сайт",
+    "copyright": "© 2026 Redheart. Сделано с любовью к рыжим.",
+    "coffeeAlt": "Чашка кофе Redheart"
+  }
+}

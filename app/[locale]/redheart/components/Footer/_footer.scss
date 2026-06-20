@@ -1,0 +1,78 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-footer' as *;
+
+.footer {
+  --footer-bg: #EE5700;
+  --footer-text: #FFBE85;
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-m;
+  padding-inline: s.$space-m;
+  padding-block: s.$space-xxl;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+
+  &__title {
+    @include footer-title;
+  }
+
+  &__links {
+    @include mx.centered;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: s.$space-m;
+
+    @include mx.mq(break-768) {
+      gap: s.$space-l;
+    }
+    @include mx.mq(break-1280) {
+      gap: s.$space-xl;
+    }
+  }
+
+  &__link {
+    @include footer-link;
+    transition: transform ease 0.3s;
+
+    &:hover {
+      transform: scale(1.03)
+    }
+  }
+
+  &__bmac {
+    @include mx.centered;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: s.$space-s;
+    text-decoration: none;
+
+    &:hover {
+      .footer__bmac-icon {
+        animation: steam-love 2s ease-in infinite;
+        transform-origin: center bottom;
+      }
+    }
+
+    &-icon {
+      height: 30px;
+
+      @include mx.mq(break-768) {
+        height: 40px;
+      }
+    }
+  }
+
+  &__copyright {
+    @include footer-copyright;
+  }
+}
+
+// animation for bmac cup
+@keyframes steam-love {  
+  0%    { opacity: 0; transform: translateY(0) scale(0.8); }
+  30%   { opacity: 0.6 translateY(-4px);}
+  60%   { opacity: 1; transform: translateY(-12px) scale(1.1); }
+  80%   { opacity: 0.8; }
+  100%  { opacity: 0; transform: translateY(-14px) scale(1.3); }
+}

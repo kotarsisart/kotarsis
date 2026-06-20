@@ -1,0 +1,17 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use '../../styles/typography/tp-headings' as h;
+
+.negation {
+  @include mx.centered;
+  flex-direction: column;
+  padding-inline: s.$space-s;
+  padding-block: 120px;
+
+  background-color: var(--black);
+  color: var(--white);
+
+  &__title {
+    @include h.h2;
+  }
+}

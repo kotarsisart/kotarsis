@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "title": "kotarsis — where thoughts become transparent",
+    "description": "A place where thoughts become clear as glass. Step inside and let the light pass through you — this is where your catharsis begins.",
+    "keywords": "kotarsis, catharsis, project hub, digital worlds, philosophy, transparency, glass, enlightenment, creative path, atmosphere, personal universe",
+    "siteName": "kotarsis",
+    "imgAlt": "kotarsis preview image"
+  },
+
+  "header": {
+    "logo": "kotarsis",
+    "lang": "English",
+    "alt": {
+      "logo": "header logo",
+      "themeDark": "dark theme",
+      "themeLight": "light theme",
+      "globe": "language globe"
+    }
+  },
+
+  "hero": {
+    "brand": "kotarsis",
+    "ideology": {
+      "line1": "Independent creation as a path to catharsis",
+      "line2": "Creating worlds worth living in — together"
+    },
+    "button": "Help it grow!"
+  },
+
+  "projects": {
+    "go": "→ go to the page",
+    "comingSoon": "Coming Soon",
+    "oraculux": {
+      "description": "How about some magic? Do you want to know your fate? Ask Oraculux!"
+    },
+
+    "concentrator": {
+      "description": "Are you lacking concentration? I know the solution to your problem:"
+    },
+
+    "minimalism": {
+      "description": "Black, White \nand\n Space Between"
+    },
+
+    "redacted": {
+      "description": "Error accepted. \nControl denied. \nYou cannot fix this error."
+    },
+
+    "redheart": {
+      "description": "1000 reasons to love redheads, because one is never enough."
+    },
+
+    "birthday": {
+      "description": "A personal birthday surprise, waiting for the right moment."
+    },
+    
+    "censored": {
+      "description": "A personal birthday surprise, waiting for the right moment."
+    }
+  },
+
+  "about": {
+    "title": "Who I am — and why I create",
+    "subline": "Independent creator • Developer • Designer",
+    "description": "I’m an independent creator exploring the intersection of technology, design, and emotion. My work is about building products that think — and feel.\nCatharsis is the core of it — the moment when creation transforms emotion into clarity. Through art, code, and curiosity, I seek to build worlds worth living in — together.\nEvery project I make is a piece of that journey — a reflection of meaning, balance, and the pursuit of something real."
+  },
+
+  "indie": {
+    "title": "Independent creation, end to end",
+    "subline": "One seamless system — from idea to deployment",
+    "outro": "All of this — one continuum. That’s what “independent creation” means to me.",
+
+    "alt": {
+      "chain": "connection chain between layers",
+      "continuum": "symbol of creative continuum",
+
+      "brain": "brain icon",
+      "light": "light bulb icon",
+
+      "palette": "color palette icon",
+      "pencil": "pencil icon",
+
+      "laptop": "laptop icon",
+      "gear": "gear icon",
+      "instruments": "development tools icon",
+
+      "loop": "infinity loop icon",
+      "world": "world icon",
+
+      "dna": "dna icon",
+      "hexa": "hexagon icon",
+      "needle": "needle icon"
+    },
+
+    "layers": {
+      "management": {
+        "title": "Management Layer",
+        "description": "Together they define what and why we build.",
+        "elements": [
+          "Product Vision — defining purpose and trajectory",
+          "Branding — translating vision into recognizable feeling"
+        ]
+      },
+      "design": {
+        "title": "Design Layer",
+        "description": "Together they create emotional clarity and flow.",
+        "elements": [
+          "Graphic Design — shaping the world’s face",
+          "UI/UX — shaping how it feels"
+        ]
+      },
+      "development": {
+        "title": "Development Layer",
+        "description": "Together they make thought tangible.",
+        "elements": [
+          "Frontend — experience through code",
+          "Backend — logic and structure",
+          "Fullstack — the bridge between the two"
+        ]
+      },
+      "infrastructure": {
+        "title": "Infrastructure Layer",
+        "description": "Together they sustain and expand the creation.",
+        "elements": [
+          "DevOps — systems that breathe",
+          "i18n — giving language to universality"
+        ]
+      },
+      "meta": {
+        "title": "Meta Layer",
+        "description": "Together they embody the spirit of the independent creator.",
+        "elements": [
+          "Full Cycle — from idea to release",
+          "Design Systems — ensuring harmony between parts",
+          "Product Management — weaving meaning through structure"
+        ]
+      }
+    }
+  },
+
+  "footer": {
+    "title": "kotarsis — Independent creation system",
+    "philosophy1": "“Not a company — a pattern of creation.”",
+    "philosophy2": "∞ Created independently · Shared universally",
+    "warm": "Thank you for being part of this continuum — for exploring, supporting, or simply caring.",
+    "support": {
+      "text": "Support the creation on Buy Me A Coffee",
+      "alt": "coffee"
+    },
+
+    "copyright": "© 2025 kotarsis. All rights preserved."
+  },
+
+  "notFound": {
+    "title": "The page dissolved into glass",
+    "description": "You have left the known paths of kotarsis. But some fragments can still be gathered.",
+    "home": "Return Home",
+    "worlds": "Known Worlds",
+    "origin": "Not all paths are lost.",
+    "quotes": [
+      "Some pages disappear before we have a chance to open them.",
+      "Glass remembers the path better than people do.",
+      "Not every loss means the end of the journey.",
+      "Sometimes an error is simply another entrance.",
+      "You have found the void between worlds.",
+      "Not every route was meant to be walked.",
+      "Even a lost page leaves a reflection behind."
+    ]
+  }
+}

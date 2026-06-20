@@ -1,0 +1,48 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/index' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --subline-320: 18px;
+  --subline-360: 24px;
+  --subline-768: 34px;
+  --subline-1280: 38px;
+
+  --description-320: 20px;
+  --description-360: 24px;
+  --description-768: 30px;
+  --description-1280: 34px;
+}
+
+@mixin about-subline {
+  font-size: var(--subline-320);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  @include mx.mq(break-360) {
+    font-size: var(--subline-360);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--subline-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--subline-1280);
+  }
+}
+
+@mixin about-description {
+  font-size: var(--description-320);
+  font-weight: var(--font-weight-medium);
+  text-align: left;
+
+  @include mx.mq(break-360) {
+    font-size: var(--description-360);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--description-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--description-1280);
+  }
+}

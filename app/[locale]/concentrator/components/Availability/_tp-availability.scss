@@ -1,0 +1,51 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --availability-running-line-320: 14px;
+  --availability-running-line-1280: 16px;
+  --availability-running-line-1440: 18px;
+
+  --availability-timer-320: 20px;
+  --availability-timer-1440: 24px;
+
+  --availability-message-320: 16px;
+  --availability-message-834: 18px;
+  --availability-message-1440: 20px;
+}
+
+@mixin availability-running-line {
+  font-size: var(--availability-timer-320);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-secondary);
+
+  @include mx.mq(break-1280) {
+    font-size: var(--availability-running-line-1280);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--availability-running-line-1440);
+  }
+}
+
+@mixin availability-timer {
+  font-size: var(--availability-timer-320);
+  font-weight: var(--font-weight-regular);
+
+  @include mx.mq(break-1440) {
+    font-size: var(--availability-timer-1440);
+  }
+}
+
+@mixin availability-message {
+  font-size: var(--availability-message-320);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-secondary);
+
+  @include mx.mq(break-834) {
+    font-size: var(--availability-message-834);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--availability-message-1440);
+  }
+}

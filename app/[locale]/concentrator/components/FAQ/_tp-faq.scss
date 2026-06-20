@@ -1,0 +1,56 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --faq-question-arrow-size: 24px;
+
+  --faq-question-320: 20px;
+  --faq-question-768: 22px;
+  --faq-question-1440: 26px;
+  --faq-question-size: var(--faq-question-430);
+
+  --faq-answer-320: 18px;
+  --faq-answer-768: 20px;
+  --faq-answer-1440: 22px;
+  --faq-answer-size: var(--faq-answer-430);
+}
+
+@mixin faq-question-arrow {
+  --faq-arrow: #94A3B8;
+  font-family: var(--font-primary);
+  font-size: var(--faq-question-arrow-size);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--faq-arrow);
+}
+
+@mixin faq-question {
+  --text-faq-question: #130072;
+  font-family: var(--font-primary);
+  font-size: var(--faq-question-320);
+  font-weight: var(--font-weight-semibold);
+  text-align: left;
+  color: var(--text-faq-question);
+  
+  @include mx.mq(break-768) {
+    font-size: var(--faq-question-768);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--faq-question-1440);
+  }
+}
+
+@mixin faq-answer {
+  --text-faq-answer: #536175;
+  font-size: var(--faq-answer-320);
+  font-weight: var(--font-weight-regular);
+  text-align: left;
+  color: var(--text-faq-answer);
+
+  @include mx.mq(break-768) {
+    font-size: var(--faq-answer-768);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--faq-answer-1440);
+  }
+}

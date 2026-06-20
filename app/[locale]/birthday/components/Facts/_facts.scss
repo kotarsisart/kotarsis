@@ -1,0 +1,88 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-facts' as *;
+@use '../../styles/typography/tp-headings' as h;
+
+.facts {
+  --facts-bg-start: #EAF4FE;
+  --facts-bg-end: #D6B2FF;
+
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-xxl;
+  padding-inline: s.$space-s;
+  padding-block: s.$space-xxl;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    var(--facts-bg-start),
+    var(--facts-bg-end)
+  );
+
+  @include mx.mq(break-768) {
+    gap: s.$space-xxxl;
+  }
+
+  &__title {
+    --facts-title: #316FC6;
+    @include h.h2;
+    color: var(--facts-title);
+  }
+
+  &__cards {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-xxxl;
+    width: 100%;
+  }
+
+  &__card {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-s;
+
+    @include mx.mq(break-768) {
+      gap: s.$space-m;
+    }
+
+    &-title {
+      @include facts-card-title;
+    }
+
+    &-number {
+      --facts-card-number-start: #6631FF;
+      --facts-card-number-end: #9B6DFF;
+
+      @mixin text-gradient($direction, $colors...) {
+        background: linear-gradient($direction, $colors...);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      @include text-gradient(
+        to bottom,
+        var(--facts-card-number-start),
+        var(--facts-card-number-end));
+
+
+      @include facts-card-number;
+      // @include facts-number-gradient;
+      word-break: break-all;
+      word-break: break-word;
+    }
+
+    &-outro {
+      @include facts-card-outro;
+    }
+  }
+
+  &__outro {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-xs;
+
+    &-text {
+      @include facts-outro;
+    }
+  }
+}

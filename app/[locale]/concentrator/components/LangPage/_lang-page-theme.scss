@@ -1,0 +1,47 @@
+@use './tp-languages' as *;
+@use '../../styles/system/mixins' as mx;
+
+.lang-select {
+  --site-lang-page-bg: #222839;
+  background-color: var(--site-lang-page-bg);
+
+  color: #fff;
+  padding: 8px;
+
+  @include mx.mq(break-360) {
+    padding: 20px;
+  }
+
+  &__inner {
+    --shadow-universal: 0 8px 12px rgba(0, 0, 0, 0.4);
+
+    @include mx.main-bg;
+    width: 100%;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-universal);
+  }
+
+  &__close {
+    @include lang-page-close;
+  }
+
+  &__group-title {
+    @include lang-page-geography;
+  }
+
+  &__subgroup-title {
+    @include lang-page-internal;
+  }
+
+  &__name {
+    @include lang-page-lang;
+
+    border-bottom: 2px solid transparent;
+
+    transition: .3s;
+
+    &:hover {
+      border-bottom-color: white;
+    }
+  }
+}

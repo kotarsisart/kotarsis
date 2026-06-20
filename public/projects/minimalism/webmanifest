@@ -1,0 +1,35 @@
+{
+  "id": "/minimalism",
+
+  "name": "Minimalism",
+  "short_name": "Minimalism",
+
+  "description": "A minimalistic project about structure, contrast, and meaning.",
+
+  "start_url": "/en/minimalism",
+  "scope": "/",
+
+  "display": "standalone",
+
+  "theme_color": "#000000",
+  "background_color": "#000000",
+
+  "icons": [
+    {
+      "src": "/projects/minimalism/favicon/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/projects/minimalism/favicon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/projects/minimalism/favicon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

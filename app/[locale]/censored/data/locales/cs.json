@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "title": "Minimalism — struktura nad přebytkem",
+    "description": "Minimalistický projekt o struktuře, kontrastu a významu.",
+    "keywords": "minimalismus, struktura, design, kotarsis",
+    "siteName": "Minimalism"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logo kotarsis",
+    "projectAlt": "logo projektu Censored"
+  },
+
+  "header": {
+    "logo": {
+      "minimalism": "Minimalism",
+      "minimalismAlt": "Logo projektu Minimalism",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo kotarsis",
+      "langSelect": "Vyberte jazyk"
+    }
+  },
+
+  "hero": {
+    "title": "Co zůstane, když odstraníš přebytek",
+    "subtitle": "— dokonce i odstíny?"
+  },
+
+  "manifesto": {
+    "title": "Odstranit — ne ztratit, ale najít podstatné.",
+    "blocks": [
+      [
+        "Bez barvy.",
+        "Bez efektů.",
+        "Bez dekorace."
+      ],
+      [
+        "Pouze kontrast.",
+        "Pouze struktura.",
+        "Pouze význam."
+      ]
+    ]
+  },
+
+  "structure": {
+    "title": "Když barva umlkne, struktura promluví.",
+    "items": [
+      {
+        "key": "square",
+        "label": "Rovnováha",
+        "alt": "Čtverec — rovnováha"
+      },
+      {
+        "key": "circle",
+        "label": "Hierarchie",
+        "alt": "Kruh — hierarchie"
+      },
+      {
+        "key": "triangle",
+        "label": "Rytmus",
+        "alt": "Trojúhelník — rytmus"
+      }
+    ],
+    "outro": [
+      "Design obnažený až na kost —",
+      "aby se ukázalo, zda ještě dýchá."
+    ]
+  },
+
+  "interpretation": {
+    "title": "Odstraň vše. To, co zůstane, je pravda.",
+    "lines": [
+      "Není zde žádné skryté sdělení.",
+      "",
+      "Struktura není vysvětlení.",
+      "Struktura je podmínka.",
+      "",
+      "Rovnováha není čtverec.",
+      "Hierarchie není kruh.",
+      "Rytmus není trojúhelník.",
+      "",
+      "Význam není ve tvaru.",
+      "",
+      "Struktura mlčí.",
+      "Mluvíš ty."
+    ]
+  },
+
+  "negation": {
+    "title": "Tohle není styl"
+  },
+
+  "conclusion": {
+    "title": "Je to schopnost.",
+    "figures": [
+      {
+        "key": "triangle",
+        "alt": "Trojúhelník"
+      },
+      {
+        "key": "square",
+        "alt": "Čtverec"
+      },
+      {
+        "key": "circle",
+        "alt": "Kruh"
+      }
+    ],
+    "boasting": [
+      "Pokud dokážeš vytvořit význam z ničeho,",
+      "dokážeš ho vytvořit z čehokoli."
+    ],
+    "octahedronAlt": "Osmistěn"
+  },
+
+  "footer": {
+    "enough": "To stačí.",
+    "author": "Autor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Podpořit jednoduchost",
+    "custom": "Objednat vlastní web",
+    "copyright": "© 2026 Minimalism. Vytvořeno s respektem k minimalismu.",
+    "coffeeAlt": "Šálek kávy Minimalism"
+  }
+}

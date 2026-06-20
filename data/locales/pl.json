@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "title": "kotarsis — gdzie myśli stają się przejrzyste",
+    "description": "Miejsce, w którym myśli stają się czyste jak szkło. Wejdź i pozwól światłu przeniknąć przez ciebie — tu zaczyna się twój katharsis.",
+    "keywords": "kotarsis, katharsis, centrum projektów, cyfrowe światy, filozofia, przejrzystość, szkło, oświecenie, kreatywna droga, atmosfera, osobisty wszechświat",
+    "siteName": "kotarsis",
+    "imgAlt": "Podgląd kotarsis"
+  },
+
+  "header": {
+    "logo": "kotarsis",
+    "lang": "Polski",
+    "alt": {
+      "logo": "logo nagłówka",
+      "themeDark": "ciemnego motywu",
+      "themeLight": "jasnego motywu",
+      "globe": "ikona wyboru języka"
+    }
+  },
+
+  "hero": {
+    "brand": "kotarsis",
+    "ideology": {
+      "line1": "Niezależna kreacja jako droga do katharsis",
+      "line2": "Tworzenie światów, w których warto żyć — razem"
+    },
+    "button": "Pomóż temu rosnąć!"
+  },
+
+  "projects": {
+    "go": "→ przejdź do strony",
+    "comingSoon": "Już wkrótce",
+    "oraculux": {
+      "description": "Masz ochotę na odrobinę magii? Chcesz poznać swoje przeznaczenie? Zapytaj Oraculux!"
+    },
+
+    "concentrator": {
+      "description": "Brakuje Ci koncentracji? Znam rozwiązanie Twojego problemu:"
+    },
+
+    "minimalism": {
+      "description": "Black, White \nand\n Space Between"
+    },
+
+    "redacted": {
+      "description": "Błąd zaakceptowany. \nKontrola odrzucona. \nNie możesz naprawić tego błędu."
+    },
+
+    "redheart": {
+      "description": "1000 powodów, by kochać rudych, bo jeden zawsze to za mało."
+    },
+
+    "birthday": {
+      "description": "Osobista niespodzianka urodzinowa, zachowana do właściwego momentu."
+    },
+
+    "censored": {
+      "description": "A personal birthday surprise, waiting for the right moment."
+    }
+  },
+
+  "about": {
+    "title": "Kim jestem — i dlaczego tworzę",
+    "subline": "Niezależny twórca • Programista • Projektant",
+    "description": "Jestem niezależnym twórcą eksplorującym przecięcie technologii, designu i emocji. Moja praca to budowanie produktów, które myślą — i czują.\nKatharsis jest jej rdzeniem — moment, w którym kreacja zamienia emocję w klarowność. Poprzez sztukę, kod i ciekawość dążę do tworzenia światów, w których warto żyć — razem.\nKażdy projekt jest częścią tej podróży — odbiciem sensu, równowagi i poszukiwania czegoś prawdziwego."
+  },
+
+  "indie": {
+    "title": "Niezależna kreacja od początku do końca",
+    "subline": "Jeden spójny system — od idei po wdrożenie",
+    "outro": "To wszystko — jedno kontinuum. Na tym polega „niezależna kreacja” w moim rozumieniu.",
+
+    "alt": {
+      "chain": "łańcuch połączeń między warstwami",
+      "continuum": "symbol twórczej ciągłości",
+
+      "brain": "ikona mózgu",
+      "light": "ikona żarówki",
+
+      "palette": "ikona palety",
+      "pencil": "ikona ołówka",
+
+      "laptop": "ikona laptopa",
+      "gear": "ikona koła zębatego",
+      "instruments": "ikona narzędzi programistycznych",
+
+      "loop": "ikona nieskończonej pętli",
+      "world": "ikona świata",
+
+      "dna": "ikona DNA",
+      "hexa": "ikona sześciokąta",
+      "needle": "ikona igły"
+    },
+
+    "layers": {
+      "management": {
+        "title": "Warstwa Zarządzania",
+        "description": "Razem określają, co i dlaczego tworzymy.",
+        "elements": [
+          "Wizja Produktu — definiowanie celu i kierunku",
+          "Branding — przekładanie wizji na rozpoznawalne odczucie"
+        ]
+      },
+
+      "design": {
+        "title": "Warstwa Projektowania",
+        "description": "Razem tworzą emocjonalną klarowność i flow.",
+        "elements": [
+          "Projekt Graficzny — kształtowanie wizualnej tożsamości",
+          "UI/UX — kształtowanie tego, jak coś się odczuwa"
+        ]
+      },
+
+      "development": {
+        "title": "Warstwa Developmentu",
+        "description": "Razem nadają myśli namacalną formę.",
+        "elements": [
+          "Frontend — doświadczenie zakodowane",
+          "Backend — logika i struktura",
+          "Fullstack — pomost między światem UI i logiki"
+        ]
+      },
+
+      "infrastructure": {
+        "title": "Warstwa Infrastruktury",
+        "description": "Razem podtrzymują i rozwijają kreację.",
+        "elements": [
+          "DevOps — systemy, które oddychają",
+          "i18n — nadawanie języka uniwersalności"
+        ]
+      },
+
+      "meta": {
+        "title": "Warstwa Meta",
+        "description": "Razem ucieleśniają ducha niezależnego twórcy.",
+        "elements": [
+          "Pełny Cykl — od idei po wydanie",
+          "Systemy Projektowe — harmonia pomiędzy elementami",
+          "Zarządzanie Produktem — tkanie sensu poprzez strukturę"
+        ]
+      }
+    }
+  },
+
+  "footer": {
+    "title": "kotarsis — system niezależnej kreacji",
+    "philosophy1": "„Nie firma — wzorzec tworzenia.”",
+    "philosophy2": "∞ Tworzone niezależnie · Dzielenie się uniwersalnie",
+    "warm": "Dziękuję, że jesteś częścią tego kontinuum — za wsparcie, ciekawość lub po prostu obecność.",
+    "support": {
+      "text": "Wesprzyj kreację na Buy Me A Coffee",
+      "alt": "kawa"
+    },
+    "copyright": "© 2025 kotarsis. Wszystkie prawa zastrzeżone."
+  },
+
+  "notFound": {
+    "title": "Strona rozpłynęła się w szkle",
+    "description": "Opuściłeś znane ścieżki kotarsis. Ale niektóre odłamki wciąż można odnaleźć.",
+    "home": "Powrót do domu",
+    "worlds": "Znane światy",
+    "origin": "Nie wszystkie ścieżki zostały utracone.",
+    "quotes": [
+      "Niektóre strony znikają, zanim zdążymy je otworzyć.",
+      "Szkło pamięta drogę lepiej niż ludzie.",
+      "Nie każda strata oznacza koniec podróży.",
+      "Czasami błąd jest po prostu innym wejściem.",
+      "Odnalazłeś pustkę między światami.",
+      "Nie wszystkie trasy zostały stworzone po to, by nimi podążać.",
+      "Nawet utracona strona pozostawia odbicie."
+    ]
+  }
+}

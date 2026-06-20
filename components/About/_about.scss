@@ -1,0 +1,35 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-about' as *;
+@use '../../styles/typography/tp-headings' as h;
+@use '@/utils/animations/animations.scss' as *;
+
+.about {
+  @include mx.glass-section();
+  @include mx.centered;
+  @include animate-section(0.5);
+  flex-direction: column;
+  gap: s.$space-l;
+  padding-inline: s.$space-l;
+  padding-block: s.$space-xl;
+  @include mx.mq(break-430) {
+    padding-block: s.$space-xxl;
+  }
+  @include mx.mq(break-768) {
+    @include animate-section(1);
+    gap: s.$space-xl;
+    padding: s.$space-xxl;
+  }
+
+  &__title {
+    @include h.h2;
+  }
+
+  &__subline {
+    @include about-subline;
+  }
+
+  &__description {
+    @include about-description;
+  }
+}

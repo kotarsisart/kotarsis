@@ -1,0 +1,36 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --story-text-320: 20px;
+  --story-text-430: 22px;
+  --story-text-1440: 24px;
+
+  --story-quote-320: 18px;
+  --story-quote-430: 20px;
+}
+
+@mixin story-text {
+  font-size: var(--story-text-320);
+  font-weight: (--font-weight-regular);
+  text-align: left;
+
+  @include mx.mq(break-430) {
+    font-size: var(--story-text-430);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--story-text-1440);
+  }
+}
+
+@mixin story-quote {
+  font-size: var(--story-quote-320);
+  font-weight: (--font-weight-regular);
+  text-align: left;
+  font-style: italic;
+
+  @include mx.mq(break-430) {
+    font-size: var(--story-quote-430);
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Redheart – 1000 powodów, by kochać rudowłose",
+    "description": "1000 powodów. Od czarownic i ognia po koce i czułe chwile. Linearny manifest o rudowłosych i o tym, dlaczego nie sposób ich ignorować.",
+    "keywords": "rudowłosa, rude włosy, 1000 powodów, manifest, miłość, wyjątkowość, charakter, ciepło, jesień, kotarsis",
+    "siteName": "Redheart",
+    "imgAlt": "Podgląd Redheart"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logo kotarsis",
+    "projectAlt": "logo projektu redheart"
+  },
+
+  "header": {
+    "logo": {
+      "redheart": "Redheart",
+      "redheartAlt": "Logo projektu Redheart",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo kotarsis",
+      "langSelect": "Wybierz język"
+    }
+  },
+
+  "hero": {
+    "title": "1000\nPowodów, by kochać rudowłose"
+  },
+
+  "reasons": {
+    "hint": "Już mnie przekonałeś."
+  },
+
+  "footer": {
+    "title": "Kochajcie się nawzajem.",
+    "author": "Autor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Wesprzyj miłość",
+    "custom": "Zamów indywidualną stronę",
+    "copyright": "© 2026 Redheart. Stworzone z miłości do rudowłosych.",
+    "coffeeAlt": "Filiżanka kawy Redheart"
+  }
+}

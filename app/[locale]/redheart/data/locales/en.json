@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Redheart – 1000 Reasons to Love Redheads",
+    "description": "1000 reasons. From witches and fire to blankets and tender moments. A linear manifesto about redheads and why they are impossible to ignore.",
+    "keywords": "redhead, red hair, 1000 reasons, manifesto, love, rarity, character, warmth, autumn, kotarsis",
+    "siteName": "Redheart",
+    "imgAlt": "Redheart preview image"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "kotarsis logo",
+    "projectAlt": "redheart project logo"
+  },
+
+  "header": {
+    "logo": {
+      "redheart": "Redheart",
+      "redheartAlt": "Redheart project logo",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "kotarsis logo",
+      "langSelect": "Select language"
+    }
+  },
+
+  "reasons": {
+    "hint": "You’ve already convinced me."
+  },
+
+  "hero": {
+    "title": "1000\nReasons to Love Redheads"
+  },
+
+  "footer": {
+    "title": "Love one another.",
+    "author": "Author: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Support the love",
+    "custom": "Order a custom website",
+    "copyright": "© 2026 Redheart. Made with love for redheads.",
+    "coffeeAlt": "Redheart coffee cup"
+  }
+}

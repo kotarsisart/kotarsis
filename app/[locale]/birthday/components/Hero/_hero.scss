@@ -1,0 +1,164 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-hero' as *;
+@use '../../styles/typography/tp-headings' as h;
+
+.hero {
+  --hero-text: #1BCDFE;
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-s;
+  padding-inline: s.$space-m;
+  padding-block: s.$space-xxl;
+  padding-block: 100px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+
+  background-image:
+    url("/projects/birthday/images/hero/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  color: var(--hero-text);
+
+
+  @include mx.mq(break-768) {
+    padding-inline: s.$space-xl;
+  }
+
+  &__title {
+    --hero-title: #007CCA;
+
+    @include h.h1;
+    color: var(--hero-title);
+
+    &-container {
+      @include mx.centered;
+      flex-direction: column;
+    }
+  }
+
+  &__icon {
+    --hero-icon-dimensions-350: 80px;
+    width: var(--hero-icon-dimensions-350);
+
+    @include mx.mq(break-768) {
+      --hero-icon-dimensions-768: 120px;
+      width: var(--hero-icon-dimensions-768);
+    }
+  }
+
+  &__subline {
+    @include hero-subline;
+  }
+  
+  &__sender {
+    @include hero-sender;
+  }
+
+  &__message {
+    --hero-message-max-width-350: 500px;
+    --hero-message-max-width-834: 800px;
+    --hero-message-shadow: #A0C5FF;
+    --hero-message-shadow-default: 1px 4px 4px var(--hero-message-shadow);
+    --hero-message-shadow-hover: 4px 8px 2px var(--hero-message-shadow);
+    --hero-message-bg-default: #FFFFFF;
+    --hero-message-bg-hover: #F8F3FF;
+    --hero-message-radius: 40px;
+
+    position: relative;
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-l;
+    padding: s.$space-l;
+
+    margin-top: s.$space-l;
+    max-width: var(--hero-message-max-width-350);
+    
+    border-radius: var(--hero-message-radius);
+    box-shadow: var(--hero-message-shadow-default);
+    background-color: var(--hero-message-bg-default);
+    
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+    
+    @include mx.mq(break-768) {
+      gap: s.$space-l;
+      padding: s.$space-l;
+    }
+    @include mx.mq(break-834) {
+      max-width: var(--hero-message-max-width-834);
+    }
+
+    &:hover {      
+      box-shadow: var(--hero-message-shadow-hover);
+      background-color: var(--hero-message-bg-hover);
+    }
+
+    &::before {
+      --hero-message-border-start: #7570FF7a;
+      --hero-message-border-middle: #FFF3527a;
+      --hero-message-border-end: #ff4b4b7a;
+
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      padding: 2px;
+      border-radius: inherit;
+
+      background: linear-gradient(
+        90deg,
+        var(--hero-message-border-start),
+        var(--hero-message-border-middle),
+        var(--hero-message-border-end),
+      );
+
+      background-size: 200% 100%;
+      background-position: left;
+
+      -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+
+      transition: background-position 0.5s ease;
+
+      pointer-events: none;
+    }
+
+    &:hover::before {
+      background-position: right;
+    }
+
+    &-title {
+      @include hero-message-title;
+    }
+
+    &-text {
+      @include hero-message-text;
+    }
+  }
+}
+
+.confetti-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+  z-index: 0;
+ filter: blur(0.5px);
+}
+
+.hero__title-container,
+.hero__subline,
+.hero__sender,
+.hero__message-title,
+.hero__message-text {
+  position: relative;
+  z-index: 2;
+}

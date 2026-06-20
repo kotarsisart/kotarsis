@@ -1,0 +1,29 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/index' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --hero-continuation-350: 26px;
+  --hero-continuation-768: 30px;
+  --hero-continuation-834: 34px;
+  --hero-continuation-1024: 38px;
+  --hero-continuation-1280: 44px;
+}
+
+@mixin hero-continuation {
+  font-size: var(--hero-continuation-350);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--hero-continuation-768);
+  }
+  @include mx.mq(break-834) {
+    font-size: var(--hero-continuation-834);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--hero-continuation-1024);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--hero-continuation-1280);
+  }
+}

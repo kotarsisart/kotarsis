@@ -1,0 +1,179 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+
+.lang-select {
+  position: fixed;
+  inset: 0;
+
+  z-index: 99999;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  overflow-y: auto;
+  overscroll-behavior: contain;
+
+  &__inner {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+    justify-content: start;
+
+    gap: s.$space-xl;
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding-inline: s.$space-s;
+    padding-block: s.$space-m;
+
+    animation: fadeLangEnter 0.35s ease forwards;
+
+    @include mx.mq(break-360) {
+      padding-inline: s.$space-m;
+      padding-block: s.$space-l;
+    }
+
+    @include mx.mq(break-390) {
+      padding-inline: s.$space-l;
+    }
+
+    @include mx.mq(break-430) {
+      padding-inline: 32px;
+    }
+
+    @include mx.mq(break-834) {
+      padding: s.$space-xl;
+    }
+
+    @include mx.mq(break-1024) {
+      padding-inline: s.$space-xxl;
+    }
+
+    @include mx.mq(break-1280) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      padding: s.$space-xl;
+    }
+
+    @include mx.mq(break-1440) {
+      padding: s.$space-xxl;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: s.$space-s;
+  }
+
+  &__subgroups {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: s.$space-m;
+
+    @include mx.mq(break-768) {
+      gap: s.$space-xl;
+    }
+  }
+
+  &__subgroup {
+    display: flex;
+    flex-direction: column;
+
+    gap: s.$space-m;
+
+    padding: s.$space-xs;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    @include mx.centered;
+
+    flex-direction: row;
+
+    gap: s.$space-s;
+
+    padding: s.$space-xs;
+
+    cursor: pointer;
+
+    &.is-disabled {
+      opacity: .5;
+      filter: grayscale(50%);
+      pointer-events: none;
+    }
+  }
+
+  &__flag {
+    width: 50px;
+    height: 33px;
+  }
+
+  &__close {
+    position: absolute;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    right: 16px;
+    top: 24px;
+    
+    @include mx.mq(break-360) {
+      top: 32px
+    }
+    @include mx.mq(break-390) {
+      right: 32px
+    }
+    
+    &:hover {
+      --shadow-lang-close: 0 4px 4px #0000003e;
+      transform: scale(1.1);
+      text-shadow: var(--shadow-lang-close);
+    }
+  }
+}
+
+@keyframes fadeLangEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lang-select.is-leaving .lang-select__inner {
+  animation: fadeLangLeave .35s ease forwards;
+}
+
+@keyframes fadeLangLeave {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}

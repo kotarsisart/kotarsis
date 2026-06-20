@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "title": "kotarsis — gde misli postaju providne",
+    "description": "Mesto gde misli postaju providne poput stakla. Uđi i dozvoli svetlosti da prođe kroz tebe — tu počinje tvoj katarzis.",
+    "keywords": "kotarsis, katarzis, projektni hab, digitalni svetovi, filozofija, providnost, staklo, prosvetljenje, kreativni put, atmosfera, lični univerzum",
+    "siteName": "kotarsis",
+    "imgAlt": "Pregledna slika kotarsisa"
+  },
+
+  "header": {
+    "logo": "kotarsis",
+    "lang": "Српски",
+    "alt": {
+      "logo": "logo zaglavlja",
+      "themeDark": "ikonica tamne teme",
+      "themeLight": "ikonica svetle teme",
+      "globe": "ikonica za izbor jezika"
+    }
+  },
+
+  "hero": {
+    "brand": "kotarsis",
+    "ideology": {
+      "line1": "Nezavisno stvaranje kao put ka katarzi",
+      "line2": "Stvaranje svetova u kojima vredi živeti — zajedno"
+    },
+    "button": "Pomozi mu da raste!"
+  },
+
+  "projects": {
+    "go": "→ idi na stranicu",
+    "comingSoon": "Uskoro",
+    "oraculux": {
+      "description": "Želiš malo magije? Želiš da saznaš svoju sudbinu? Pitanj Oraculux!"
+    },
+
+    "concentrator": {
+      "description": "Nedostaje ti koncentracije? Znam rešenje tvog problema:"
+    },
+
+    "minimalism": {
+      "description": "Black, White \nand\n Space Between"
+    },
+
+    "redacted": {
+      "description": "Greška prihvaćena. \nKontrola odbijena. \nNe možete popraviti ovu grešku."
+    },
+
+    "redheart": {
+      "description": "1000 razloga voleti riđokose, jer jedan nikada nije dovoljan."
+    },
+
+    "birthday": {
+      "description": "Lično rođendansko iznenađenje, sačuvano do pravog trenutka."
+    },
+
+    "censored": {
+      "description": "A personal birthday surprise, waiting for the right moment."
+    }
+  },
+
+  "about": {
+    "title": "Ko sam — i zašto stvaram",
+    "subline": "Nezavisni stvaralac • Programer • Dizajner",
+    "description": "Ja sam nezavisni stvaralac koji istražuje dodir između tehnologije, dizajna i emocija. Moja misija je da stvaram proizvode koji misle — i koji osećaju.\nKatarza je njihovo jezgro: trenutak kada stvaranje pretvara emociju u jasnoću. Kroz umetnost, kod i radoznalost, težim da gradim svetove u kojima vredi živeti — zajedno.\nSvaki moj projekat je deo tog puta — odraz smisla, ravnoteže i potrage za nečim istinskim."
+  },
+
+  "indie": {
+    "title": "Nezavisno stvaranje od početka do kraja",
+    "subline": "Jedinstveni celokupni sistem — od ideje do objave",
+    "outro": "Sve ovo je jedan kontinuum. Tako ja razumem „nezavisno stvaranje“.",
+
+    "alt": {
+      "chain": "lanac povezivanja između slojeva",
+      "continuum": "simbol kreativnog kontinuiteta",
+
+      "brain": "ikona mozga",
+      "light": "ikona sijalice",
+
+      "palette": "ikona palete",
+      "pencil": "ikona olovke",
+
+      "laptop": "ikona laptopa",
+      "gear": "ikona zupčanika",
+      "instruments": "ikona razvojnih alata",
+
+      "loop": "ikona beskonačne petlje",
+      "world": "ikona sveta",
+
+      "dna": "ikona DNK",
+      "hexa": "ikona šestougla",
+      "needle": "ikona igle"
+    },
+
+    "layers": {
+      "management": {
+        "title": "Upravljački Sloj",
+        "description": "Zajedno određuju šta i zašto stvaramo.",
+        "elements": [
+          "Vizija proizvoda — određivanje cilja i pravca",
+          "Brending — pretvaranje vizije u prepoznatljiv osećaj"
+        ]
+      },
+
+      "design": {
+        "title": "Dizajnerski Sloj",
+        "description": "Zajedno stvaraju emocionalnu jasnoću i tok.",
+        "elements": [
+          "Grafički dizajn — oblikovanje vizuelnog identiteta",
+          "UI/UX — oblikovanje osećaja i interakcije"
+        ]
+      },
+
+      "development": {
+        "title": "Razvojni Sloj",
+        "description": "Zajedno čine misao opipljivom.",
+        "elements": [
+          "Frontend — iskustvo pretočeno u kod",
+          "Backend — logika i struktura",
+          "Fullstack — most između vizuelnog i logičkog"
+        ]
+      },
+
+      "infrastructure": {
+        "title": "Infrastrukturni Sloj",
+        "description": "Zajedno održavaju i razvijaju stvoreno.",
+        "elements": [
+          "DevOps — sistemi koji dišu",
+          "i18n — jezik univerzalnosti"
+        ]
+      },
+
+      "meta": {
+        "title": "Meta Sloj",
+        "description": "Zajedno oličavaju duh nezavisnog stvaraoca.",
+        "elements": [
+          "Pun ciklus — od ideje do objave",
+          "Dizajn sistemi — harmonija između delova",
+          "Menadžment proizvoda — isplitanje smisla kroz strukturu"
+        ]
+      }
+    }
+  },
+
+  "footer": {
+    "title": "kotarsis — sistem nezavisnog stvaranja",
+    "philosophy1": "„Ne kompanija — već obrazac stvaranja.“",
+    "philosophy2": "∞ Stvoreno nezavisno · Deljeno univerzalno",
+    "warm": "Hvala ti što si deo ovog kontinuma — zbog podrške, radoznalosti ili samog prisustva.",
+    "support": {
+      "text": "Podrži stvaranje na Buy Me A Coffee",
+      "alt": "kafa"
+    },
+    "copyright": "© 2025 kotarsis. Sva prava zadržana."
+  },
+
+  "notFound": {
+    "title": "Stranica se rastvorila u staklu",
+    "description": "Napustili ste poznate puteve kotarsisa. Ali neki fragmenti se još uvek mogu pronaći.",
+    "home": "Povratak kući",
+    "worlds": "Poznati svetovi",
+    "origin": "Nisu svi putevi izgubljeni.",
+    "quotes": [
+      "Neke stranice nestanu pre nego što uspemo da ih otvorimo.",
+      "Staklo pamti put bolje od ljudi.",
+      "Ne znači svaki gubitak kraj putovanja.",
+      "Ponekad je greška samo drugi ulaz.",
+      "Pronašli ste prazninu između svetova.",
+      "Nisu svi putevi stvoreni da budu pređeni.",
+      "Čak i izgubljena stranica ostavlja odraz."
+    ]
+  }
+}

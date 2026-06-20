@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  height: auto;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* DISABLE SCROLLBAR */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* for firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* for Edge */
+body {
+  -ms-overflow-style: none;
+}
+
+/* === DEBUG MODE === */
+/* * {
+  outline: 1px solid red !important;
+  outline-offset: -1px;
+} */
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}

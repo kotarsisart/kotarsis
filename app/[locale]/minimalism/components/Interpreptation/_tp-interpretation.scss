@@ -1,0 +1,27 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/index' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --interpetation-sense-350: 18px;
+  --interpetation-sense-768: 24px;
+  --interpetation-sense-834: 28px;
+  --interpetation-sense-1280: 32px;
+}
+
+@mixin interpretation-sense {
+  font-size: var(--interpetation-sense-350);
+  font-weight: var(--font-weight-semibold);
+  text-align: left;
+  letter-spacing: 5%;
+
+  @include mx.mq(break-768) {
+    font-size: var(--interpetation-sense-768);
+  }
+  @include mx.mq(break-834) {
+    font-size: var(--interpetation-sense-834);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--interpetation-sense-1280);
+  }
+}

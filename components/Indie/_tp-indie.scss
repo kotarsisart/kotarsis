@@ -1,0 +1,88 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/index' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --indie-subline-320: 20px;
+  --indie-subline-360: 24px;
+  --indie-subline-768: 36px;
+  
+  --indie-outro-320: 20px;
+  --indie-outro-360: 24px;
+  --indie-outro-768: 32px;
+
+  // INDIE GLASS LAYER 
+  --indie-layer-title-320: 22px;
+  --indie-layer-title-360: 24px;
+  --indie-layer-title-768: 32px;
+
+  --indie-layer-element-320: 18px;
+  --indie-layer-element-360: 20px;
+  --indie-layer-element-768: 24px;
+
+  --indie-layer-together-description-320: 16px;
+  --indie-layer-together-description-360: 18px;
+  --indie-layer-together-description-768: 22px;
+}
+
+
+@mixin indie-subline {
+  font-size: var(--indie-subline-320);
+  font-weight: var(--font-weight-medium);
+
+  @include mx.mq(break-360) {
+    font-size: var(--indie-subline-360);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--indie-subline-768);
+  }
+}
+
+@mixin indie-outro {
+  font-size: var(--indie-outro-320);
+  font-weight: var(--font-weight-semibold);
+
+  @include mx.mq(break-360) {
+    font-size: var(--indie-outro-360);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--indie-outro-768);
+  }
+}
+ 
+// INDIE GLASS LAYER 
+@mixin indie-layer-title {
+  font-size: var(--indie-layer-title-320);
+  font-weight: var(--font-weight-semibold);
+
+  @include mx.mq(break-360) {
+    font-size: var(--indie-layer-title-360);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--indie-layer-title-768);
+  }
+}
+
+@mixin indie-layer-element {
+  font-size: var(--indie-layer-element-320);
+  font-weight: var(--font-weight-medium);
+
+  @include mx.mq(break-360) {
+    font-size: var(--indie-layer-element-360);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--indie-layer-element-768);
+  }
+}
+
+@mixin indie-layer-together-description {
+  font-size: var(--indie-layer-together-description-320);
+  font-weight: var(--font-weight-medium);
+
+  @include mx.mq(break-360) {
+    font-size: var(--indie-layer-together-description-360);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--indie-layer-together-description-768);
+  }
+}

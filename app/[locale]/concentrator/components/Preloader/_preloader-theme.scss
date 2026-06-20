@@ -1,0 +1,59 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-preloader' as *;
+
+
+.preloader {
+  @include mx.main-bg;
+
+  &__content {
+    flex-direction: column;
+    gap: 24px;
+    padding-inline: s.$space-xs;
+    width: 100%;
+    color: var(--preloader-main-color);
+
+    @include mx.mq(break-390) {
+      padding-inline: s.$space-l;
+    }
+  }
+
+  &__kotarsis {
+
+    &-title {
+      @include preloader-kotarsis;
+    }
+
+    &-icon {
+      // color: var(--preloader-main-color);
+    }
+  }
+
+  &__divider {
+    --shadow-preloader-first: 0 0 14px rgba(180, 80, 255, 1);
+    --shadow-preloader-second: 0 1px 3px rgba(180, 80, 255, 0.7);
+    --preloader-divider-bg: #A600FFB3;
+
+    background-color: var(--preloader-divider-bg);
+    box-shadow:
+      var(--shadow-preloader-first),
+      var(--shadow-preloader-second);
+  }
+
+  &__presents {
+    @include preloader-presents;
+  }
+
+  &__project {
+
+    @include mx.mq(break-768) {
+      padding-block: s.$space-m;
+      padding-inline: s.$space-l;
+    }
+
+
+    &-title {
+      @include preloader-project;
+    }
+  }
+}

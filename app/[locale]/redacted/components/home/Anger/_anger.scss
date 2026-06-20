@@ -1,0 +1,91 @@
+@use '../../../styles/system/mixins' as mx;
+@use '../../../styles/tokens/spacing' as s;
+@use './tp-anger' as *;
+@use '../../home/tp-headings-home' as h;
+
+.anger {
+  --anger-bg-start: #010420;
+  --anger-bg-middle: #720000;
+  --anger-bg-end: #060B3B;
+
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-xxl;
+  padding-inline: s.$space-m;
+  padding-block: s.$space-xxxl;
+
+  background: linear-gradient(
+    to bottom,
+    var(--anger-bg-start) 30%,
+    var(--anger-bg-middle) 50%,
+    var(--anger-bg-end) 70%,
+  );
+
+  &__title {
+    @include h.h2;
+  }
+
+  &__subline {
+    @include anger-subline;
+  }
+
+  &__button {
+    --anger-button-shadow-default: #000000bf;
+    --shadow-anger-button-default: 4px 4px 8px var(--anger-button-shadow-default);
+
+    --anger-button-bg-start: #8E0101;
+    --anger-button-bg-end: #F40202;
+
+    @include mx.basic-button;
+    @include anger-button;
+    background: linear-gradient(
+      to bottom,
+      var(--anger-button-bg-start),
+      var(--anger-button-bg-end),
+    );
+    padding: s.$space-l;
+    padding-left: s.$space-xl;
+    border-radius: var(--main-radius);
+    box-shadow: var(--shadow-anger-button-default);
+
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      --anger-button-shadow-hover: #000000
+      --shadow-anger-button-hover: 6px 8px 4px var(--anger-button-shadow-hover);
+      box-shadow: var(--shadow-anger-button-hover);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+    &.is-disabled {
+      opacity: 0.6;
+      filter: brightness(1.4);
+      cursor: default;
+    }
+  }
+
+  &__state {
+    min-height: 130px;
+    margin-top: 20px;
+    @include anger-state;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    white-space: pre-line;
+    
+    &.visible {
+      opacity: 1;
+    }
+  }
+}
+
+.anger.is-broken {
+  transform: translateX(-10px) rotate(-2deg);
+  transition: transform 0.6s ease;
+
+  .anger__state {
+    --anger-state-outro: #868893;
+    color: var(--anger-state-outro);
+  }
+}

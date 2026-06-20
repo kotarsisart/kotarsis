@@ -1,0 +1,97 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-preloader' as *;
+
+.preloader {
+  --preloader-bg-start: #CDCDFF;
+  --preloader-bg-middle: #091328;
+  --preloader-bg-end: #BADFFF;
+
+  @include mx.centered;
+
+  &__content {
+    @include mx.centered;
+
+    background:
+      radial-gradient(
+        circle at 50% 30%,
+        rgba(255,255,255,0.3),
+        transparent 60%
+      ),
+      linear-gradient(
+        28deg,
+        var(--preloader-bg-start),
+        var(--preloader-bg-middle),
+        var(--preloader-bg-end)
+      );
+
+    flex-direction: column;
+    gap: s.$space-xxl;
+    padding-inline: s.$space-xs;
+    width: 100%;
+    height: 100vh;
+
+    @include mx.mq(break-390) {
+      padding-inline: s.$space-l;
+    }
+  }
+
+  &__kotarsis {
+    @include mx.centered;
+    flex-direction: column;
+    width: 100%;
+
+    &-title {
+      @include preloader-kotarsis;
+      opacity: 0;
+    }
+  }
+
+  &__divider {
+    --preloader-divider: #f1eeffd5;
+    width: 0%;
+    max-width: 550px;
+    height: 3px;
+    background-color: var(--preloader-divider);
+    opacity: 0;
+
+    animation: divider-grow 2s ease forwards;
+    animation-delay: 0.7s;
+  }
+
+  &__init {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: s.$space-xl;
+    width: 300px;
+    height: 200px;
+
+    @include mx.mq(break-768) {
+      width: 500px;
+      height: 230px;
+    }
+
+    &-text {
+      @include preloader-init;
+      min-height: 10px;
+    }
+  }
+}
+
+@keyframes fadeUpPreloader {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up-1 { animation: fadeUpPreloader 0.8s ease forwards; }
+.fade-up-2 { animation: fadeUpPreloader 0.8s ease forwards; }
+
+.fade-up-1 { animation-delay: 0.5s; }
+.fade-up-2 { animation-delay: 0.8s; }

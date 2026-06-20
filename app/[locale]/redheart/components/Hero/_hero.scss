@@ -1,0 +1,22 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use '../../styles/typography/tp-headings' as h;
+
+.hero {
+  --hero-bg-start: #EB622C;
+  --hero-bg-end: #F68034;
+
+  @include mx.centered;
+  flex-direction: column;
+  height: 90vh;
+  padding-inline: s.$space-l;
+  background: linear-gradient(
+    to bottom,
+    var(--hero-bg-start) 90%,
+    var(--hero-bg-end)
+  );
+
+  &__title {
+    @include h.h1;
+  }
+}

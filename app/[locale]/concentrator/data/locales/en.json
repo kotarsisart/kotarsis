@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "title": "Concentrator™ — A device for effortless focus",
+    "description": "Focus effortlessly with Concentrator™ — an interactive next-gen tool that trains your concentration.",
+    "keywords": "concentrator, focus, productivity, brain, kotarsis, device",
+    "siteName": "Concentrator™",
+    "imgAlt": "Concentrator™ preview image"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "kotarsis logo",
+    "projectAlt": "Concentrator™ project logo"
+  },
+
+  "header": {
+    "logo": {
+      "project": "Concentrator™",
+      "projectAlt": "Concentrator™ project logo",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "kotarsis logo"
+    },
+    "slogan": "Stabilize your cognitive energy levels.",
+    "focus": {
+      "label": "Focus:"
+    },
+    "langButton": {
+      "default": "Select language"
+    }
+  },
+
+  "hero": {
+    "slogan": "Concentrate without effort",
+    "title": "Concentrator™",
+    "outro": "Next-generation focus technology",
+    "button": {
+      "default": "Activate Focus",
+      "active": "Focus Activated!"
+    },
+    "counter": {
+      "label": "Already concentrated"
+    },
+    "cognitive": "Cognitive sync complete",
+    "image": {
+      "alt": "Concentrator device"
+    }
+  },
+
+  "hiw": {
+    "title": "How does the Concentrator™ work?",
+    "steps": {
+      "laptop": {
+        "alt": "Laptop",
+        "text": "You place it nearby"
+      },
+      "off": {
+        "alt": "Does nothing",
+        "text": "It does nothing"
+      },
+      "flame": {
+        "alt": "You work like a beast",
+        "text": "You work like a beast"
+      }
+    }
+  },
+
+  "story": {
+    "title": "The Origin of Concentrator™",
+    "paragraphs": [
+      "In a forgotten lab beneath the Carpathian Mountains, a group of eccentric scientists discovered an oscillating field of pure concentration.",
+      "After 7 years of failed experiments, arguments, and spilled coffee, they finally channeled it into a single device — the Concentrator™.",
+      "What began as a caffeine-fueled side project soon triggered what they now call the Focus Event. One lab plant doubled in size, and a cat solved a sudoku.",
+      "Realizing the power they had unlocked, the team — composed of theoretical neurochemists, one failed magician, and an intern who thought this was a cooking course — raced to stabilize the phenomenon.",
+      "Use with care. Side effects may include unprecedented productivity and a strange sense of purpose."
+    ],
+    "quote": {
+      "text": "We didn’t know how it worked. But it worked.",
+      "author": "Prof. Kostyuk"
+    },
+    "image": {
+      "alt": "Story of Concentrator"
+    }
+  },
+
+  "benefits": {
+    "title": "Why choose Concentrator™?",
+    "cards": [
+      {
+        "icon": "/src/assets/images/section-icons/benefits/no-charge.svg",
+        "alt": "no charge",
+        "title": "Works without charging",
+        "description": "Powered by pure intent. Recharged by coworkers' glances."
+      },
+      {
+        "icon": "/src/assets/images/section-icons/benefits/book-question-icon.svg",
+        "alt": "no instruction",
+        "title": "Needs no instructions",
+        "description": "Just place it nearby. It already knows everything. Maybe even you."
+      },
+      {
+        "icon": "/src/assets/images/section-icons/benefits/coffee-cat.png",
+        "alt": "coffee/cat friendly",
+        "title": "Coffee & cats friendly",
+        "description": "Doesn’t interrupt your morning ritual and goes well with purring."
+      }
+    ]
+  },
+
+  "comparison": {
+    "title": "Concentrator™ vs Regular Timer",
+    "headers": ["Parameter", "Concentrator™", "Regular Timer"],
+    "rows": [
+      {
+        "parameter": "Focus boost",
+        "concentrator": "+300%",
+        "regular": "0%"
+      },
+      {
+        "parameter": "Power source",
+        "concentrator": "Not required",
+        "regular": "Required"
+      },
+      {
+        "parameter": "Scientific value",
+        "concentrator": "Pseudo",
+        "regular": "None"
+      },
+      {
+        "parameter": "Watertightness",
+        "concentrator": "IP68",
+        "regular": "Low"
+      }
+    ]
+  },
+
+  "availability": {
+    "promotions": {
+      "up": "Become an early tester of CPhone — the new concentration-based smartphone powered by focus field technology. Order Concentrator™ now to unlock access and reserve your prototype.",
+      "down": "The Concentrator™ was phase one. Now we’re building a multi-layer cognitive ecosystem — and CPhone is your portal to that future. Beta testing starts soon — are you ready?"
+    },
+    "title": {
+      "part1": "Only",
+      "part2": "devices left out of"
+    },
+    "timer": {
+      "label": "The offer ends in"
+    },
+    "image": {
+      "alt": "Concentrator equipment"
+    },
+    "messages": {
+      "normal": "Get ahead of your peers and buy Concentrator™ now!",
+      "unavailable": "Focus is unavailable. Please perform a self-control session."
+    },
+    "buttons": {
+      "try": "Try to buy",
+      "soldout": "Sorry, too late!"
+    }
+  },
+
+  "gallery": {
+    "title": "Device Gallery",
+    "alts": {
+      "front": "front view",
+      "side": "side view",
+      "top": "top angle",
+      "press": "pressing the button",
+      "interior": "view in interior",
+      "meditation": "meditation",
+      "equipment": "equipment",
+      "hands": "in hands",
+      "full": "view in full interior"
+    }
+  },
+
+  "reviews": {
+    "title": "User Reviews",
+    "items": [
+      { "text": "“Finished my thesis in one night. No idea how.”", "author": "Jakub", "date": "21.05.2025" },
+      { "text": "“Deleted TikTok. It worked.”", "author": "James", "date": "15.04.2025" },
+      { "text": "“The Concentrator™ was just sitting there. I wasn't.”", "author": "Olena", "date": "12.03.2025" },
+      { "text": "“Used to open YouTube. Now I open my eyes.”", "author": "Emily", "date": "06.04.2025" },
+      { "text": "“Sat for 10 minutes — left 6 hours later.”", "author": "Ivan", "date": "25.04.2025" },
+      { "text": "“Managed to submit a report and do laundry. Simultaneously.”", "author": "Carlos", "date": "29.03.2025" },
+      { "text": "“Forgot about breaks. And food.”", "author": "Dmytro", "date": "03.05.2025" },
+      { "text": "“Focus didn't fade. Even with my cat.”", "author": "Katya", "date": "14.04.2025" },
+      { "text": "“Just turned it on. The rest is history.”", "author": "Marta", "date": "18.03.2025" }
+    ]
+  },
+
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "How does the Concentrator™ work?",
+        "a": "It boosts focus by 300% using pseudoscientific impulses and imagination."
+      },
+      {
+        "q": "Why does the Concentrator™ do nothing?",
+        "a": "Because it has already done everything that was needed."
+      },
+      {
+        "q": "Can I use it on public transport?",
+        "a": "Yes, especially if you want to focus on reading the fine print on your fine."
+      },
+      {
+        "q": "Are there any side effects?",
+        "a": "Only side successes: increased productivity, charm, and humor."
+      },
+      {
+        "q": "Is it legal in my country?",
+        "a": "Technically, yes."
+      },
+      {
+        "q": "Can I use two Concentrators™ at once?",
+        "a": "Only if you have two brains."
+      }
+    ]
+  },
+
+  "order": {
+    "form": {
+      "title": "Order Focus",
+      "placeholders": {
+        "name": "Your name",
+        "comment": "Comment or question"
+      },
+      "labels": {
+        "submit": "Order focus",
+        "sending": "Sending..."
+      },
+      "messages": {
+        "nameRequired": "Please enter your name 🥺",
+        "validEmail": "Please enter a valid email",
+        "noNumbers": "Please don't use numbers in your name 😊",
+        "success": "Form sent successfully!"
+      }
+    },
+    "delivery": {
+      "title": "Delivery is transparent",
+      "steps": [
+        {
+          "title": "You placed an order",
+          "description": "You have placed an order on the site"
+        },
+        {
+          "title": "We prepare & ship",
+          "description": "Sent by trained carrier pigeon"
+        },
+        {
+          "title": "You receive it",
+          "description": "Along with boosted productivity"
+        }
+      ]
+    }
+  },
+
+  "footer": {
+    "nav": {
+      "links": {
+        "hiw": "How It Works",
+        "reviews": "Reviews",
+        "order": "Order",
+        "faq": "FAQ"
+      },
+      "team": "Send coffee & resume"
+    },
+    "me": {
+      "author": "Author: kotarsis_art",
+      "coffee": "Buy me a coffee",
+      "telegram": "Telegram",
+      "custom": "Get a custom website"
+    },
+    "copyright": "© 2025 Concentrator™ Made with love and pseudoscience. All rights are reserved."
+  } 
+}

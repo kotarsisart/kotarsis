@@ -1,0 +1,19 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --header-logo-768: 32px;
+
+  --header-lang-select-768: 20px;
+}
+
+@mixin header-logo {
+  font-size: var(--header-logo-768);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.02em;
+}
+
+@mixin header-lang-select {
+  font-size: var(--header-lang-select-768);
+  font-weight: var(--font-weight-bold);
+}

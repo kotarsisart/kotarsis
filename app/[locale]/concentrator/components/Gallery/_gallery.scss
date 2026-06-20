@@ -1,0 +1,18 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use '../../styles/tokens/radii' as r;
+@use '../../styles/typography/tp-headings' as h;
+
+.gallery {
+  --gallery-bg: #C7D4FC;
+  @include mx.centered;
+  flex-direction: column;
+  padding-block: s.$space-xl;
+  padding-inline: s.$space-xs;
+  gap: s.$space-m;
+  background-color: var(--gallery-bg);
+
+  &__title {
+    @include h.h2;
+  }
+}

@@ -1,0 +1,12 @@
+@use '../../styles/tokens/radii' as r;
+
+.block-wrapper {
+  --shadow-universal: 0 8px 12px rgba(0, 0, 0, 0.4);
+
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  background: var(--block-bg, rgba(255, 255, 255, 0.05));
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-universal);
+}

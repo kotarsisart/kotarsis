@@ -1,0 +1,150 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use '../../styles/typography/tp-headings' as h;
+@use './tp-hiw' as *;
+
+.hiw {
+  --hiw-bg-start: #220C35;
+  --hiw-bg-middle: #1B0430;
+  --hiw-bg-end: #04010E;
+
+  background: linear-gradient(
+    to bottom,
+    var(--hiw-bg-start) 0%,
+    var(--hiw-bg-middle) 10%,
+    var(--hiw-bg-end) 100%
+  );
+
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-l;
+  padding-inline: s.$space-m;
+  padding-block: s.$space-xl;
+
+  @include mx.mq(break-1024) {
+    gap: s.$space-xl;
+  }
+  @include mx.mq(break-1280) {
+    padding-block: s.$space-xxl;
+  }
+
+  &__title {
+    @include h.h2;
+    @include mx.text-pink-gradient;
+  }
+
+  &__quote {
+    @include hiw-quote;
+  }
+
+  &__steps {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-m;
+    padding-block: s.$space-m;
+
+    @include mx.mq(break-768) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: s.$space-m; // horizontal
+      row-gap: s.$space-l; // vertical
+    }
+  }
+
+  &__step {
+    --step-radius: 32px;
+    --hiw-card-height-320: 150px;
+    --hiw-card-bg-default: #4B23A1;
+
+    display: flex;
+    --hiw-card-width-320: 280px;
+
+    flex-direction: column;
+    justify-content: end;
+    gap: 0;
+    padding-inline: s.$space-m;
+    
+    width: var(--hiw-card-width-320);
+    height: var(--hiw-card-height-320);
+
+    border-radius: var(--step-radius);
+    background-color: var(--hiw-card-bg-default);
+
+    transition: all 0.5s ease;
+
+    cursor: pointer;
+
+    @include mx.mq(break-360) {
+      --hiw-card-width-360: 300px;
+      width: var(--hiw-card-width-360);
+      padding-block: s.$space-s;
+      gap: s.$space-s;
+    }
+    @include mx.mq(break-1440) {
+      --hiw-card-width-1440: 360px;
+      --hiw-card-height-1440: 180px;
+      width: var(--hiw-card-width-1440);
+      height: var(--hiw-card-height-1440);
+      gap: s.$space-l;
+    }
+
+    &:hover {
+      --hiw-card-bg-hover: #661FD4;
+      background-color: var(--hiw-card-bg-hover);
+      gap: s.$space-s;
+      padding-block: s.$space-m;
+
+      @include mx.mq(break-1440) {
+        gap: s.$space-m;
+        padding-block: s.$space-xl;
+
+      }
+    }
+
+    &-title-container {
+      @include mx.centered;
+      flex-direction: column-reverse;
+      gap: s.$space-s;
+
+      @include mx.mq(break-360) {
+        flex-direction: row;
+      }
+    }
+
+    &-title {
+      @include hiw-card-title;
+      white-space: nowrap;
+    }
+
+    &-text-container {
+      @include mx.centered;
+      height: 40px;
+      overflow: visible;
+    }
+
+    &-description {
+      @include hiw-card-description;
+      @include mx.centered;
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.6s ease, max-height 0.6s ease;
+    }
+
+    &:hover .hiw__step-description {
+      opacity: 1;
+      max-height: 40px;
+    }
+
+    &-icon {
+      --hiw-card-icon-width: 40px;
+      width: var(--hiw-card-icon-width);
+    }
+  }
+
+  &__arrow {
+    @include mx.mq(break-768) {
+      rotate: 90deg;
+    }
+  }
+}

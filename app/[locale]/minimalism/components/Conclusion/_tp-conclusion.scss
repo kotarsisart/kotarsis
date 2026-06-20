@@ -1,0 +1,22 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/index' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --conclusion-boasting-350: 18px;
+  --conclusion-boasting-768: 24px;
+  --conclusion-boasting-1280: 28px;
+}
+
+@mixin conclusion-boasting {
+  font-size: var(--conclusion-boasting-350);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 5%;
+
+  @include mx.mq(break-768) {
+    font-size: var(--conclusion-boasting-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--conclusion-boasting-1280);
+  }
+}

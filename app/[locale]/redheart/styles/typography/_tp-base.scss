@@ -1,0 +1,28 @@
+:root {
+  /* === FONT FAMILY === */
+  --font-primary: "Comfortaa Variable", sans-serif;
+  --font-h1: "Great Vibes", sans-serif;
+
+  /* === FONT WEIGHTS === */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  
+  /* === LINE HEIGHTS === */
+  --line-height-default: 1.4;
+  --line-height-light: 1;
+}
+
+p, a, span, button, input, textarea,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: var(--line-height-default);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+}

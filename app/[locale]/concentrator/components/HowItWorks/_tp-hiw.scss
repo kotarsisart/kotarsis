@@ -1,0 +1,46 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --hiw-arrow-1024: 40px;
+  --hiw-arrow-1280: 56px;
+
+  --hiw-description-320: 22px;
+  --hiw-description-360: 24px;
+  --hiw-description-430: 26px;
+  --hiw-description-1280: 28px;
+  --hiw-description-1440: 30px;
+}
+
+@mixin hiw-arrow {
+  display: none;
+
+  @include mx.mq(break-1024) {
+    display: flex;
+    font-size: var(--hiw-arrow-1024);
+    font-weight: var(--font-weight-bold);
+  }
+
+  @include mx.mq(break-1280) {
+    font-size: var(--hiw-arrow-1280);
+  }
+}
+
+@mixin hiw-description {
+  font-size: var(--hiw-description-320);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-360) {
+    font-size: var(--hiw-description-360);
+  }
+  @include mx.mq(break-430) {
+    font-size: var(--hiw-description-430);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--hiw-description-1280);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--hiw-description-1440);
+  }
+}

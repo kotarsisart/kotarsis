@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Redheart – 1000 dôvodov milovať ryšavých",
+    "description": "1000 dôvodov. Od čarodejníc a ohňa po deky a nežné chvíle. Lineárny manifest o ryšavých a o tom, prečo ich nemožno ignorovať.",
+    "keywords": "ryšavá, ryšavé vlasy, 1000 dôvodov, manifest, láska, výnimočnosť, charakter, teplo, jeseň, kotarsis",
+    "siteName": "Redheart",
+    "imgAlt": "Ukážka Redheart"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logo kotarsis",
+    "projectAlt": "logo projektu redheart"
+  },
+
+  "header": {
+    "logo": {
+      "redheart": "Redheart",
+      "redheartAlt": "Logo projektu Redheart",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo kotarsis",
+      "langSelect": "Vyberte jazyk"
+    }
+  },
+
+  "hero": {
+    "title": "1000\nDôvodov milovať ryšavých"
+  },
+
+  "reasons": {
+    "hint": "Už si ma presvedčil."
+  },
+
+  "footer": {
+    "title": "Milujte sa navzájom.",
+    "author": "Autor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Podpor lásku",
+    "custom": "Objednať individuálny web",
+    "copyright": "© 2026 Redheart. Vytvorené s láskou k ryšavým.",
+    "coffeeAlt": "Šálka kávy Redheart"
+  }
+}

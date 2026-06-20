@@ -1,0 +1,43 @@
+// @use './language-page-base';
+@use './tp-languages' as *;
+// @use '../../styles/tokens/colors' as *;
+
+.lang-select {
+  --lang-page-bg: #BCB0FF;
+  --lang-page-text: #c6f3ff;
+
+  background: var(--lang-page-bg);
+  color: var(--lang-page-text);
+
+  &__inner {
+    background: linear-gradient(
+      to bottom,
+      var(--lang-page-bg-start),
+      var(--lang-page-bg-end)
+    );
+  }
+
+  &__close {
+    @include lang-page-close;
+  }
+
+  &__group-title {
+    @include lang-page-geography;
+  }
+
+  &__subgroup-title {
+    @include lang-page-internal;
+  }
+
+  &__name {
+    @include lang-page-lang;
+
+    border-bottom: 2px solid transparent;
+
+    transition: .3s;
+
+    &:hover {
+      border-bottom-color: white;
+    }
+  }
+}

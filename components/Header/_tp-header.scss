@@ -1,0 +1,31 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/index' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --header-lang-320: 18px;
+  --header-lang-768: 20px;
+
+  --header-logo-768: 32px;
+}
+
+@mixin header-logo {
+  display: none;
+
+  @include mx.mq(break-768) {
+    display: flex;
+    font-size: var(--header-logo-768);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: 1px;
+  }
+}
+
+@mixin header-lang {
+  font-size: var(--header-lang-320);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 1px;
+
+  @include mx.mq(break-768) {
+    font-size: var(--header-lang-768);
+  }
+}

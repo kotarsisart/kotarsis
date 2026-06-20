@@ -1,0 +1,23 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --order-input-320: 18px;
+  --order-input-360: 20px;
+  --order-input-1440: 22px;
+}
+
+@mixin order-input {
+  --text-order-input: #4735E7E6;
+  font-size: var(--order-input-320);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-order-input);
+
+  @include mx.mq(break-360) {
+    font-size: var(--order-input-360);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--order-input-1440);
+  }
+}

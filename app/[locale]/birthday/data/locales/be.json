@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Birthday Capsule — ствары святочную паштоўку!",
+    "description": "Месца, дзе ты можаш стварыць паштоўку для блізкага чалавека і павіншаваць яго з днём нараджэння!",
+    "keywords": "дзень нараджэння, віншаванне, паштоўка, свята, падарунак, kotarsis",
+    "siteName": "Birthday Capsule",
+    "imgAlt": "Папярэдні прагляд Birthday Capsule"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "лагатып kotarsis",
+    "projectAlt": "лагатып праекта Birthday Capsule"
+  },
+
+  "header": {
+    "logo": {
+      "birthday": "Birthday",
+      "birthdayAlt": "Лагатып праекта Birthday Capsule",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Лагатып kotarsis",
+      "langSelect": "Выберыце мову"
+    }
+  },
+
+  "input": {
+    "title": "Каго ты хочаш павіншаваць?",
+    "name": "Імя (або нікнэйм)",
+    "from": "Ад каго",
+    "birthday": "Дата нараджэння",
+    "age": "Узрост",
+    "message": "Паведамленне",
+    "submit": "Стварыць віншаванне",
+
+    "resultTitle": "Твая спасылка гатовая!",
+    "copy": "Скапіяваць",
+    "preview": "Папярэдні прагляд",
+
+    "error": {
+      "failAlt": "папярэджанне",
+      "invalidAge": "Калі ласка, увядзіце карэктны ўзрост",
+      "required": "Укажы ўзрост або дату"
+    }
+  },
+
+  "hero": {
+    "title": "З днём нараджэння",
+    "subtitle": "Гэта віншаванне спецыяльна для цябе 🎂",
+
+    "from": "Ад {{name}}",
+    "messageTitle": "{{name}} хоча сказаць табе:",
+
+    "defaultFrom": "Хтосьці асаблівы",
+    "defaultMessage": "Жадаю табе ўсяго найлепшага!",
+    "altCelebratingIcon": "святочная іконка"
+  },
+
+  "facts": {
+    "title": "Дарэчы, калі табе цікава:",
+    "liveAlready": "Ты жывеш ужо",
+    "days": "дзён",
+    "hoursApprox": "Гэта прыкладна",
+    "hours": "гадзін",
+    "heartbeats": "Тваё сэрца зрабіла",
+    "beats": "удараў",
+    "populationBorn": "Пасля твайго нараджэння з’явілася",
+    "people": "чалавек",
+    "stage": "Ты зараз у перыядзе",
+
+    "stages": {
+      "childhood": "Дзяцінства",
+      "teen": "Падлеткавы ўзрост",
+      "youth": "Маладосць",
+      "maturity": "Сталасць",
+      "experience": "Досвед"
+    },
+
+    "outro": {
+      "line1": "І гэта толькі пачатак,",
+      "line2": "наперадзе яшчэ шмат гадоў"
+    },
+    "altBirthdayStar": "зорка дня нараджэння"
+  },
+
+  "footer": {
+    "title": "З днём нараджэння!",
+    "author": "Аўтар: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Падтрымаць такія моманты",
+    "custom": "Замовіць індывідуальны сайт",
+    "copyright": "© 2026 Birthday Capsule. Ты — больш, чым проста дата.",
+    "coffeeAlt": "Кубак кавы Birthday Capsule"
+  }
+}

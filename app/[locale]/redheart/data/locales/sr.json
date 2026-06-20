@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Redheart – 1000 razloga voleti crvenokose",
+    "description": "1000 razloga. Od veštica i vatre do ćebadi i nežnih trenutaka. Linearni manifest o crvenokosima i zašto ih je nemoguće ignorisati.",
+    "keywords": "crvenokosa, crvena kosa, 1000 razloga, manifest, ljubav, retkost, karakter, toplina, jesen, kotarsis",
+    "siteName": "Redheart",
+    "imgAlt": "Pregledna slika Redhearta"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logo kotarsis",
+    "projectAlt": "logo projekta redheart"
+  },
+
+  "header": {
+    "logo": {
+      "redheart": "Redheart",
+      "redheartAlt": "Logo projekta Redheart",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo kotarsis",
+      "langSelect": "Izaberite jezik"
+    }
+  },
+
+  "hero": {
+    "title": "1000\nRazloga voleti crvenokose"
+  },
+
+  "reasons": {
+    "hint": "Već si me ubedio."
+  },
+
+  "footer": {
+    "title": "Volite jedni druge.",
+    "author": "Autor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Podrži ljubav",
+    "custom": "Naruči individualni sajt",
+    "copyright": "© 2026 Redheart. Napravljeno s ljubavlju prema crvenokosima.",
+    "coffeeAlt": "Šolja kafe Redheart"
+  }
+}

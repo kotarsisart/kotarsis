@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Birthday Capsule — създай уникална картичка за рожден ден!",
+    "description": "Място, където можеш да създадеш картичка за близък човек и да го поздравиш за рождения му ден!",
+    "keywords": "рожден ден, поздравление, картичка, празник, подарък, kotarsis",
+    "siteName": "Birthday Capsule",
+    "imgAlt": "Предварителен преглед на Birthday Capsule"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "лого на kotarsis",
+    "projectAlt": "лого на проекта Birthday Capsule"
+  },
+
+  "header": {
+    "logo": {
+      "birthday": "Birthday",
+      "birthdayAlt": "Лого на проекта Birthday Capsule",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Лого на kotarsis",
+      "langSelect": "Изберете език"
+    }
+  },
+
+  "input": {
+    "title": "Кого искаш да зарадваш?",
+    "name": "Име (или псевдоним)",
+    "from": "От кого",
+    "birthday": "Дата на раждане",
+    "age": "Възраст",
+    "message": "Съобщение",
+    "submit": "Създай поздрав",
+
+    "resultTitle": "Твоят линк е готов!",
+    "copy": "Копирай",
+    "preview": "Преглед",
+
+    "error": {
+      "failAlt": "предупреждение",
+      "invalidAge": "Моля, въведете валидна възраст",
+      "required": "Посочи възраст или дата"
+    }
+  },
+
+  "hero": {
+    "title": "Честит рожден ден",
+    "subtitle": "Това поздравление е специално за теб 🎂",
+
+    "from": "Поздравява {{name}}",
+    "messageTitle": "{{name}} иска да ти каже:",
+
+    "defaultFrom": "Някой специален",
+    "defaultMessage": "Пожелавам ти всичко най-хубаво!",
+    "altCelebratingIcon": "празнична икона"
+  },
+
+  "facts": {
+    "title": "Между другото, ако ти е интересно:",
+    "liveAlready": "Живееш вече",
+    "days": "дни",
+    "hoursApprox": "Това са приблизително",
+    "hours": "часа",
+    "heartbeats": "Сърцето ти е направило",
+    "beats": "удара",
+    "populationBorn": "След твоето раждане са се появили",
+    "people": "хора",
+    "stage": "В момента си в етап",
+
+    "stages": {
+      "childhood": "Детство",
+      "teen": "Тийнейджърска възраст",
+      "youth": "Младост",
+      "maturity": "Зрялост",
+      "experience": "Опит"
+    },
+
+    "outro": {
+      "line1": "И това е само началото,",
+      "line2": "пред теб има още много години"
+    },
+    "altBirthdayStar": "звезда на рождения ден"
+  },
+
+  "footer": {
+    "title": "Честит рожден ден!",
+    "author": "Автор: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Подкрепи такива моменти",
+    "custom": "Поръчай индивидуален сайт",
+    "copyright": "© 2026 Birthday Capsule. Ти си повече от просто дата.",
+    "coffeeAlt": "Чаша кафе Birthday Capsule"
+  }
+}

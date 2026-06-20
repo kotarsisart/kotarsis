@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Birthday Capsule — stwórz wyjątkową kartkę urodzinową!",
+    "description": "Miejsce, w którym możesz stworzyć kartkę dla bliskiej osoby i złożyć jej życzenia urodzinowe!",
+    "keywords": "urodziny, życzenia, kartka, święto, prezent, kotarsis",
+    "siteName": "Birthday Capsule",
+    "imgAlt": "Podgląd Birthday Capsule"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logo kotarsis",
+    "projectAlt": "logo projektu Birthday Capsule"
+  },
+
+  "header": {
+    "logo": {
+      "birthday": "Birthday",
+      "birthdayAlt": "Logo projektu Birthday Capsule",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo kotarsis",
+      "langSelect": "Wybierz język"
+    }
+  },
+
+  "input": {
+    "title": "Kogo chcesz dziś uczcić?",
+    "name": "Imię (lub pseudonim)",
+    "from": "Od kogo",
+    "birthday": "Data urodzenia",
+    "age": "Wiek",
+    "message": "Wiadomość",
+    "submit": "Stwórz życzenia",
+
+    "resultTitle": "Twój link jest gotowy!",
+    "copy": "Kopiuj",
+    "preview": "Podgląd",
+
+    "error": {
+      "failAlt": "ostrzeżenie",
+      "invalidAge": "Proszę podać poprawny wiek",
+      "required": "Podaj wiek lub datę"
+    }
+  },
+
+  "hero": {
+    "title": "Wszystkiego najlepszego",
+    "subtitle": "To życzenie jest specjalnie dla Ciebie 🎂",
+
+    "from": "Życzenia od {{name}}",
+    "messageTitle": "{{name}} chce Ci powiedzieć:",
+
+    "defaultFrom": "Ktoś wyjątkowy",
+    "defaultMessage": "Życzę Ci wszystkiego, co najlepsze!",
+    "altCelebratingIcon": "ikona świętowania"
+  },
+
+  "facts": {
+    "title": "A tak przy okazji:",
+    "liveAlready": "Żyjesz już",
+    "days": "dni",
+    "hoursApprox": "To około",
+    "hours": "godzin",
+    "heartbeats": "Twoje serce wykonało",
+    "beats": "uderzeń",
+    "populationBorn": "Po Twoim urodzeniu pojawiło się",
+    "people": "osób",
+    "stage": "Jesteś teraz na etapie",
+
+    "stages": {
+      "childhood": "Dzieciństwo",
+      "teen": "Wiek nastoletni",
+      "youth": "Młodość",
+      "maturity": "Dorosłość",
+      "experience": "Doświadczenie"
+    },
+
+    "outro": {
+      "line1": "A to dopiero początek,",
+      "line2": "przed Tobą jeszcze wiele lat"
+    },
+    "altBirthdayStar": "gwiazda urodzinowa"
+  },
+
+  "footer": {
+    "title": "Wszystkiego najlepszego!",
+    "author": "Autor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Wesprzyj takie chwile",
+    "custom": "Zamów indywidualną stronę",
+    "copyright": "© 2026 Birthday Capsule. Jesteś czymś więcej niż tylko datą.",
+    "coffeeAlt": "Filiżanka kawy Birthday Capsule"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Birthday Capsule — створи святкову листівку!",
+    "description": "Місце, де ти можеш створити листівку для близької людини та привітати її з днем народження!",
+    "keywords": "день народження, привітання, листівка, свято, подарунок, kotarsis",
+    "siteName": "Birthday Capsule",
+    "imgAlt": "Зображення попереднього перегляду Birthday Capsule"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "логотип kotarsis",
+    "projectAlt": "логотип проєкту Birthday Capsule"
+  },
+
+  "header": {
+    "logo": {
+      "birthday": "Birthday",
+      "birthdayAlt": "Логотип проєкту Birthday Capsule",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Логотип kotarsis",
+      "langSelect": "Оберіть мову"
+    }
+  },
+
+  "input": {
+    "title": "Кого ти хочеш привітати?",
+    "name": "Ім’я (або нікнейм)",
+    "from": "Від кого",
+    "birthday": "Дата народження",
+    "age": "Вік",
+    "message": "Повідомлення",
+    "submit": "Створити привітання",
+
+    "resultTitle": "Твоє посилання готове!",
+    "copy": "Скопіювати",
+    "preview": "Переглянути",
+
+    "error": {
+      "failAlt": "попередження",
+      "invalidAge": "Будь ласка, введіть коректний вік",
+      "required": "Вкажи вік або дату"
+    }
+  },
+
+  "hero": {
+    "title": "З днем народження",
+    "subtitle": "Це привітання спеціально для тебе 🎂",
+
+    "from": "Від {{name}}",
+    "messageTitle": "{{name}} хоче сказати тобі:",
+
+    "defaultFrom": "Хтось особливий",
+    "defaultMessage": "Бажаю тобі всього найкращого!",
+    "altCelebratingIcon": "іконка святкування"
+  },
+
+  "facts": {
+    "title": "До речі, якщо тобі цікаво:",
+    "liveAlready": "Ти живеш уже",
+    "days": "днів",
+    "hoursApprox": "Це приблизно",
+    "hours": "годин",
+    "heartbeats": "Твоє серце зробило",
+    "beats": "ударів",
+    "populationBorn": "Після твого народження з’явилося",
+    "people": "людей",
+    "stage": "Ти зараз у періоді",
+
+    "stages": {
+      "childhood": "Дитинство",
+      "teen": "Підлітковий вік",
+      "youth": "Юність",
+      "maturity": "Зрілість",
+      "experience": "Досвід"
+    },
+
+    "outro": {
+      "line1": "І це лише початок,",
+      "line2": "попереду ще багато років"
+    },
+    "altBirthdayStar": "зірка дня народження"
+  },
+
+  "footer": {
+    "title": "З днем народження!",
+    "author": "Автор: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Підтримати такі моменти",
+    "custom": "Замовити індивідуальний сайт",
+    "copyright": "© 2026 Birthday Capsule. Ти — більше, ніж просто дата.",
+    "coffeeAlt": "Чашка кави Birthday Capsule"
+  }
+}

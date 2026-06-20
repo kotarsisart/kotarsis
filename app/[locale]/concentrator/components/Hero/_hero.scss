@@ -1,0 +1,208 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-hero' as tp;
+@use '../../styles/typography/tp-headings' as h;
+@use '../../styles/typography/tp-button' as btn;
+
+@mixin hero-height {
+  --hero-height-768: 450px;
+  --hero-height-834: 470px;
+  --hero-height-1024: 600px;
+  --hero-height-1280: 700px;
+  --hero-height-1440: 750px;
+
+  height: auto;
+
+  @include mx.mq(break-768) {
+    height: var(--hero-height-768);
+  }
+  @include mx.mq(break-834) {
+    height: var(--hero-height-834);
+  }
+  @include mx.mq(break-1024) {
+    height: var(--hero-height-1024);
+  }
+  @include mx.mq(break-1280) {
+    height: var(--hero-height-1280);
+  }
+  @include mx.mq(break-1440) {
+    height: var(--hero-height-1440);
+  }
+}
+
+.hero {
+  --hero-bg-start-320: #0073ff99;
+  --hero-bg-end-320: #a600ff99;
+
+  --hero-bg-start-768: #0073ffcc;
+  --hero-bg-end-768: #a600ffcc;
+
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  @include hero-height;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    var(--hero-bg-start-320),
+    var(--hero-bg-end-320)
+  );
+
+  @include mx.mq(break-768) {
+  background: linear-gradient(
+    to right,
+    var(--hero-bg-start-768),
+    var(--hero-bg-end-768)
+  ); 
+  }
+
+  &-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    z-index: 9999;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out;
+
+  &.is-visible {
+    opacity: 1;
+    animation: heroOverlayFade 2s forwards;
+    pointer-events: auto;
+  }
+  }
+
+  &-left {
+    @include mx.centered;
+    flex-direction: column;
+    flex: 1;
+    padding-inline: s.$space-m;
+    padding-block: s.$space-xl;
+    gap: 12px;
+
+    @include mx.mq(break-390) {
+      padding-block: s.$space-xxl;
+    }
+
+    @include mx.mq(break-430) {
+      gap: s.$space-m;
+    }
+
+    @include mx.mq(break-768) {
+      padding-inline: s.$space-l;
+      padding-block: s.$space-m;
+      text-align: left;
+      align-items: flex-start;
+    }
+
+    @include mx.mq(break-1024) {
+      padding-inline: s.$space-xl;
+      padding-block: 60px;
+    }
+
+    @include mx.mq(break-1280) {
+      gap: s.$space-l;
+      padding-inline: s.$space-xxl;
+    }
+  }
+
+  &-slogan {
+    @include tp.hero-slogan;
+  }
+
+  &__title {
+    @include h.h1;
+  }
+
+  &-outro {
+    @include tp.hero-outro;
+  }
+
+  &-button {
+    --hero-button: #6208FA;
+    @include mx.button;
+    @include btn.button;
+    background-color: var(--hero-button);
+    color: #FFFFFF;
+    border: none;
+    box-sizing: border-box;
+    transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+    
+    &:hover:not(:disabled):not(.is-activated) {
+      --hero-button-hover: #E2D2FF;
+      background: var(--hero-button-hover);
+      box-shadow: inset 0 0 0 4px var(--hero-button);
+      color: var(--hero-button);
+      transform: translateY(-1px);
+    }
+    
+    &.is-activated,
+    &:disabled {
+      --hero-button-activated: #22C55E;
+      background: var(--hero-button-activated);
+      color: #fff;
+      cursor: default;
+      box-shadow: none;
+      transform: none;
+    }
+  }
+
+  &-counter {
+    @include tp.hero-counter;
+  }
+
+  &-cognitive {
+    @include tp.hero-cognitive;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    &.is-visible {
+      opacity: 1;
+    }
+  }
+
+  &-right {
+    display: none;
+
+    @include mx.mq(break-768) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-shrink: 0;
+      width: 260px;
+      height: 340px;
+    }
+
+    @include mx.mq(break-1024) {
+      width: 350px;
+      height: 450px;
+    }
+
+    @include mx.mq(break-1280) {
+      width: 460px;
+      height: 600px;
+    }
+
+    @include mx.mq(break-1440) {
+      max-width: 500px;
+      height: 650px;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+      overflow: hidden;
+    }
+  }
+}
+
+@keyframes heroOverlayFade {
+  0% { opacity: 0; }
+  20%, 80% { opacity: 1; }
+  100% { opacity: 0; }
+}

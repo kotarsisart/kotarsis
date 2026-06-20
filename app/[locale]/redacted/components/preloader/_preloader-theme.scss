@@ -1,0 +1,68 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-preloader' as *;
+
+.preloader {
+  --preloader-bg: #0A1158;
+  --preloader-main-color: #CA0303;
+
+  background-color: var(--preloader-bg);
+  color: var(--preloader-main-color);
+
+  &__kotarsis {
+    @include mx.centered;
+    flex-direction: column;
+
+    &-icon {
+      color: var(--preloader-main-color);
+    }
+
+    &-title {
+      @include preloader-kotarsis;
+      opacity: 0;
+    }
+  }
+
+  &__divider {
+    --preloader-divider-glow-color: #3146ffd0;
+    --preloader-divider-glow: 0 2px 32px var(--preloader-divider-glow-color);
+
+    background-color: var(--preloader-main-color);
+    box-shadow: var(--preloader-divider-glow);
+  }
+
+  &__presents {
+    @include preloader-presents;
+    opacity: 0;
+  }
+
+  &__project {
+    --preloader-project-bg: #CA0000;
+
+    padding-block: 12px;
+    padding-inline: s.$space-m;
+
+    background-color: var(--preloader-project-bg);
+    border-radius: var(--project-radius);
+
+    @include mx.mq(break-768) {
+      padding-block: s.$space-m;
+      padding-inline: s.$space-l;
+    }
+
+    &-icon {
+      --preloader-project-width-350: 250px;
+      height: auto;
+      width: var(--preloader-project-width-350);
+
+      @include mx.mq(break-768) {
+        --preloader-project-width-768: 350px;
+        width: var(--preloader-project-width-768);
+      }
+    }
+
+    &-title {
+      @include preloader-project;
+    }
+  }
+}

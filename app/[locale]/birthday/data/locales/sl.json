@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Birthday Capsule — ustvari edinstveno rojstnodnevno voščilnico!",
+    "description": "Kraj, kjer lahko ustvariš voščilnico za bližnjo osebo in ji čestitaš za rojstni dan!",
+    "keywords": "rojstni dan, voščilnica, čestitka, praznovanje, darilo, kotarsis",
+    "siteName": "Birthday Capsule",
+    "imgAlt": "Predogled Birthday Capsule"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logotip kotarsis",
+    "projectAlt": "logotip projekta Birthday Capsule"
+  },
+
+  "header": {
+    "logo": {
+      "birthday": "Birthday",
+      "birthdayAlt": "Logotip projekta Birthday Capsule",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logotip kotarsis",
+      "langSelect": "Izberite jezik"
+    }
+  },
+
+  "input": {
+    "title": "Koga želiš razveseliti?",
+    "name": "Ime (ali vzdevek)",
+    "from": "Od koga",
+    "birthday": "Datum rojstva",
+    "age": "Starost",
+    "message": "Sporočilo",
+    "submit": "Ustvari voščilo",
+
+    "resultTitle": "Tvoja povezava je pripravljena!",
+    "copy": "Kopiraj",
+    "preview": "Predogled",
+
+    "error": {
+      "failAlt": "opozorilo",
+      "invalidAge": "Prosimo, vnesite veljavno starost",
+      "required": "Vnesi starost ali datum"
+    }
+  },
+
+  "hero": {
+    "title": "Vse najboljše",
+    "subtitle": "To voščilo je posebej zate 🎂",
+
+    "from": "Čestita {{name}}",
+    "messageTitle": "{{name}} ti želi povedati:",
+
+    "defaultFrom": "Nekdo poseben",
+    "defaultMessage": "Želim ti vse najboljše!",
+    "altCelebratingIcon": "ikona praznovanja"
+  },
+
+  "facts": {
+    "title": "Mimogrede, če te zanima:",
+    "liveAlready": "Živiš že",
+    "days": "dni",
+    "hoursApprox": "To je približno",
+    "hours": "ur",
+    "heartbeats": "Tvoje srce je naredilo",
+    "beats": "utripov",
+    "populationBorn": "Po tvojem rojstvu se je rodilo",
+    "people": "ljudi",
+    "stage": "Trenutno si v fazi",
+
+    "stages": {
+      "childhood": "Otroštvo",
+      "teen": "Najstniško obdobje",
+      "youth": "Mladost",
+      "maturity": "Zrelost",
+      "experience": "Izkušnje"
+    },
+
+    "outro": {
+      "line1": "In to je šele začetek,",
+      "line2": "pred tabo je še veliko let"
+    },
+    "altBirthdayStar": "rojstnodnevna zvezda"
+  },
+
+  "footer": {
+    "title": "Vse najboljše!",
+    "author": "Avtor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Podpri takšne trenutke",
+    "custom": "Naroči individualno spletno stran",
+    "copyright": "© 2026 Birthday Capsule. Si več kot le datum.",
+    "coffeeAlt": "Skodelica kave Birthday Capsule"
+  }
+}

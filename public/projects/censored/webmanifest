@@ -1,0 +1,35 @@
+{
+  "id": "/censored",
+
+  "name": "Censored",
+  "short_name": "Censored",
+
+  "description": "Transform workplace efficiency through behavioral analytics, emotional scalability, and intelligent automation.",
+
+  "start_url": "/en/censored",
+  "scope": "/",
+
+  "display": "standalone",
+
+  "theme_color": "#8c8c8c",
+  "background_color": "#8c8c8c",
+
+  "icons": [
+    {
+      "src": "/projects/censored/favicon/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/projects/censored/favicon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/projects/censored/favicon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Redheart – 1000 причин любити рудоволосих",
+    "description": "1000 причин. Від відьом і вогню до пледів і ніжних моментів. Лінійний маніфест про рудоволосих і про те, чому їх неможливо ігнорувати.",
+    "keywords": "рудоволоса, руде волосся, 1000 причин, маніфест, любов, рідкість, характер, тепло, осінь, kotarsis",
+    "siteName": "Redheart",
+    "imgAlt": "Зображення попереднього перегляду Redheart"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "логотип kotarsis",
+    "projectAlt": "логотип проєкту redheart"
+  },
+
+  "header": {
+    "logo": {
+      "redheart": "Redheart",
+      "redheartAlt": "Логотип проєкту Redheart",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Логотип kotarsis",
+      "langSelect": "Оберіть мову"
+    }
+  },
+
+  "hero": {
+    "title": "1000\nПричин любити рудих"
+  },
+
+  "reasons": {
+    "hint": "Ти мене вже переконав."
+  },
+
+  "footer": {
+    "title": "Любіть одне одного.",
+    "author": "Автор: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Підтримай любов",
+    "custom": "Замовити індивідуальний сайт",
+    "copyright": "© 2026 Redheart. Створено з любов’ю до рудих.",
+    "coffeeAlt": "Чашка кави Redheart"
+  }
+}

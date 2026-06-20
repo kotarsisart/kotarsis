@@ -1,0 +1,99 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --hero-slogan-320: 18px;
+  --hero-slogan-430: 20px;
+  --hero-slogan-834: 24px;
+  --hero-slogan-1024: 32px;
+  --hero-slogan-1440: 36px;
+
+  --hero-outro-320: 24px;
+  --hero-outro-360: 28px;
+  --hero-outro-1024: 32px;
+  --hero-outro-1440: 40px;
+
+  --hero-counter-320: 20px;
+  --hero-counter-768: 24px;
+  --hero-counter-1024: 28px;
+  --hero-counter-1440: 32px;
+
+  --hero-cognitive-320: 24px;
+  --hero-cognitive-360: 28px;
+  --hero-cognitive-1024: 32px;
+  --hero-cognitive-1440: 40px;
+
+  --text-hero: #2B0186;
+}
+
+@mixin hero-slogan {
+  --text-accent: #6208FA;
+  font-size: var(--hero-slogan-320);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  color: var(--text-accent);
+
+  @include mx.mq(break-430) {
+    font-size: var(--hero-slogan-430);
+  }
+  @include mx.mq(break-834) {
+    font-size: var(--hero-slogan-834);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--hero-slogan-1024);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--hero-slogan-1440);
+  }
+}
+
+@mixin hero-outro {
+  font-size: var(--hero-outro-320);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-hero);
+
+  @include mx.mq(break-360) {
+    font-size: var(--hero-outro-360);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--hero-outro-1024);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--hero-outro-1440);
+  }
+}
+
+@mixin hero-counter {
+  font-size: var(--hero-counter-320);
+  font-weight: var(--font-weight-regular);
+
+  @include mx.mq(break-768) {
+    font-size: var(--hero-counter-768);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--hero-counter-1024);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--hero-counter-1440);
+  }
+}
+
+@mixin hero-cognitive {
+  --shadow-cognitive: 0 8px 12px rgba(2, 74, 161, 0.7);
+
+  font-size: var(--hero-cognitive-320);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-hero);
+  text-shadow: var(--shadow-cognitive);
+
+  @include mx.mq(break-360) {
+    font-size: var(--hero-cognitive-360);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--hero-cognitive-1024);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--hero-cognitive-1440);
+  }
+}

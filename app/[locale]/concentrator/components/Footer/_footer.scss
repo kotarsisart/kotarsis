@@ -1,0 +1,127 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-footer' as *;
+
+.footer {
+  --footer-bg: #780FFA;
+  @include mx.centered;
+  flex-direction: column;
+  color: var(--text-secondary);
+  background-color: var(--footer-bg);
+  gap: s.$space-l;
+  padding-inline: s.$space-m;
+  padding-block: s.$space-l;
+
+  @include mx.mq(break-1024) {
+    gap: 32px;
+    padding-block: s.$space-xl;
+    padding-inline: s.$space-l;
+  }
+  @include mx.mq(break-1280) {
+    padding: s.$space-xl;
+  }
+  @include mx.mq(break-1440) {
+    padding-block: s.$space-xl;
+    padding-inline: s.$space-xxl;
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: s.$space-m;
+    width: 100%;
+
+    @include mx.mq(break-834) {
+      padding-inline: s.$space-l;
+    }
+    @include mx.mq(break-1280) {
+
+      justify-content: space-between;
+    }
+
+    &-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: s.$space-m;
+
+      @include mx.mq(break-834) {
+        gap: s.$space-l;
+      }
+      @include mx.mq(break-1440) {
+        gap: s.$space-xl;
+      }
+    }
+
+    &-text {
+      @include footer-nav;
+    }
+  }
+
+  &__me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: s.$space-m;
+
+    @include mx.mq(break-768) {
+      gap: s.$space-l;
+    }
+
+    @include mx.mq(break-1280) {
+      gap: s.$space-xl;
+    }
+
+    &-bmac {
+      @include mx.centered;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: s.$space-s;
+      text-decoration: none;
+
+      &:hover {
+        .footer__me-links-icon {
+          animation: cup-tilt 0.75s ease-out;
+          transform-origin: center bottom;
+        }
+      }
+    }
+
+    &-icon {
+      height: 28px;
+      width: 28px;
+    }
+
+    &-text {
+      @include footer-me;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    
+    @include mx.mq(break-1024) {
+      width: 100%;
+      align-items: start;
+      justify-content: start;
+      padding-inline: 100px;
+    }
+
+    &-text {
+      @include footer-copy;
+    }
+  }
+}
+
+@keyframes cup-tilt {
+  0%   { transform: rotate(0deg); }
+  10%   { transform: scale(1.05); }
+  25%  { transform: rotate(-3deg); }
+  50%  { transform: rotate(3deg); }
+  75%  { transform: rotate(-1.5deg); }
+  90%   { transform: scale(1); }
+  100% { transform: rotate(0deg); }
+}

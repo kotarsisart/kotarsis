@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Birthday Capsule — izradi jedinstvenu rođendansku čestitku!",
+    "description": "Mjesto gdje možeš izraditi čestitku za blisku osobu i čestitati joj rođendan!",
+    "keywords": "rođendan, čestitka, čestitanje, slavlje, poklon, kotarsis",
+    "siteName": "Birthday Capsule",
+    "imgAlt": "Pregledna slika Birthday Capsule"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logo kotarsis",
+    "projectAlt": "logo projekta Birthday Capsule"
+  },
+
+  "header": {
+    "logo": {
+      "birthday": "Birthday",
+      "birthdayAlt": "Logo projekta Birthday Capsule",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo kotarsis",
+      "langSelect": "Odaberite jezik"
+    }
+  },
+
+  "input": {
+    "title": "Koga želiš razveseliti?",
+    "name": "Ime (ili nadimak)",
+    "from": "Od koga",
+    "birthday": "Datum rođenja",
+    "age": "Dob",
+    "message": "Poruka",
+    "submit": "Izradi čestitku",
+
+    "resultTitle": "Tvoj link je spreman!",
+    "copy": "Kopiraj",
+    "preview": "Pregled",
+
+    "error": {
+      "failAlt": "upozorenje",
+      "invalidAge": "Molimo unesite valjanu dob",
+      "required": "Unesi dob ili datum"
+    }
+  },
+
+  "hero": {
+    "title": "Sretan rođendan",
+    "subtitle": "Ova čestitka je posebno za tebe 🎂",
+
+    "from": "Čestita {{name}}",
+    "messageTitle": "{{name}} ti želi reći:",
+
+    "defaultFrom": "Netko poseban",
+    "defaultMessage": "Želim ti sve najbolje!",
+    "altCelebratingIcon": "ikona pro slavlje"
+  },
+
+  "facts": {
+    "title": "Usput, ako te zanima:",
+    "liveAlready": "Živiš već",
+    "days": "dana",
+    "hoursApprox": "To je otprilike",
+    "hours": "sati",
+    "heartbeats": "Tvoje srce je napravilo",
+    "beats": "otkucaja",
+    "populationBorn": "Nakon tvog rođenja rođeno je",
+    "people": "ljudi",
+    "stage": "Trenutno si u fazi",
+
+    "stages": {
+      "childhood": "Djetinjstvo",
+      "teen": "Tinejdžersko razdoblje",
+      "youth": "Mladost",
+      "maturity": "Zrelost",
+      "experience": "Iskustvo"
+    },
+
+    "outro": {
+      "line1": "I to je tek početak,",
+      "line2": "pred tobom je još mnogo godina"
+    },
+    "altBirthdayStar": "rođendanska zvijezda"
+  },
+
+  "footer": {
+    "title": "Sretan rođendan!",
+    "author": "Autor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Podrži ovakve trenutke",
+    "custom": "Naruči individualnu web stranicu",
+    "copyright": "© 2026 Birthday Capsule. Ti si više od samog datuma.",
+    "coffeeAlt": "Šalica kave Birthday Capsule"
+  }
+}

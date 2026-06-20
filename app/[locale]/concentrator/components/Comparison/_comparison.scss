@@ -1,0 +1,123 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use '../../styles/tokens/radii' as r;
+@use './tp-comparison' as *;
+@use '../../styles/typography/tp-headings' as h;
+
+.comparison {
+  --comparison-bg-start: #EAE4FF;
+  --comparison-bg-end: #F8EAFF;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-inline: s.$space-s;
+  padding-block: s.$space-xl;
+  gap: s.$space-m;
+  background: linear-gradient(
+    to right,
+    var(--comparison-bg-start),
+    var(--comparison-bg-end)
+  );
+
+  @include mx.mq(break-768) {
+    padding-inline: s.$space-m;
+    align-items: center;
+    text-align: center;
+  }
+
+  @include mx.mq(break-1024) {
+    padding-inline: s.$space-xl;
+  }
+
+  &__title {
+    @include h.h2;
+  }
+
+  /* === TABLE WRAPPER === */
+  &__table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-xl);
+    padding-block: s.$space-m;
+    scroll-snap-type: x mandatory;
+    justify-content: flex-start;
+
+    @include mx.mq(break-768) {
+      overflow-x: visible;
+      justify-content: center;
+    }
+
+    /* optional scrollbar styling */
+    &::-webkit-scrollbar {
+      height: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 3px;
+    }
+  }
+
+  /* === TABLE === */
+  &__table {
+    border-collapse: collapse;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+
+    width: max-content;
+    min-width: 600px;
+
+    @include mx.mq(break-768) {
+      --shadow-comparison-table: 0 12px 32px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      box-shadow: var(--shadow-comparison-table);
+    }
+
+    &-titles {
+      --comparison-titles-bg-start: #D9A9FF80;
+      --comparison-titles-bg-end: #E4C1FF80;
+
+      @include comparison-table-title;
+      background: linear-gradient(
+        to right,
+        var(--comparison-titles-bg-start),
+        var(--comparison-titles-bg-end)
+      );
+      padding-block: s.$space-s;
+      padding-inline: s.$space-m;
+
+      @include mx.mq(break-1024) {
+        padding-block: s.$space-m;
+        padding-inline: s.$space-l;
+      }
+    }
+
+    &-line {
+      --comparison-row: #FFFFFF;
+      background-color: var(--comparison-row);
+      border-block-start: 1px solid #F4DEFF;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        --comparison-row-hover: #F6F1FF;
+        background-color: var(--comparison-row-hover);
+      }
+    }
+
+    &-values {
+      @include comparison-table-value;
+      padding-block: s.$space-s;
+      padding-inline: s.$space-m;
+
+      @include mx.mq(break-1024) {
+        padding-block: s.$space-m;
+        padding-inline: s.$space-l;
+      }
+    }
+  }
+
+  &--left {
+    text-align: left;
+  }
+}

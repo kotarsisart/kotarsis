@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Redheart – 1000 důvodů milovat zrzavé",
+    "description": "1000 důvodů. Od čarodějnic a ohně po deky a něžné chvíle. Lineární manifest o zrzavých a o tom, proč je nelze ignorovat.",
+    "keywords": "zrzavá, zrzavé vlasy, 1000 důvodů, manifest, láska, výjimečnost, charakter, teplo, podzim, kotarsis",
+    "siteName": "Redheart",
+    "imgAlt": "Náhled Redheart"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logo kotarsis",
+    "projectAlt": "logo projektu redheart"
+  },
+
+  "header": {
+    "logo": {
+      "redheart": "Redheart",
+      "redheartAlt": "Logo projektu Redheart",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo kotarsis",
+      "langSelect": "Vyberte jazyk"
+    }
+  },
+
+  "hero": {
+    "title": "1000\nDůvodů milovat zrzavé"
+  },
+
+  "reasons": {
+    "hint": "Už jsi mě přesvědčil."
+  },
+
+  "footer": {
+    "title": "Milujte jeden druhého.",
+    "author": "Autor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Podpoř lásku",
+    "custom": "Objednat individuální web",
+    "copyright": "© 2026 Redheart. Vytvořeno s láskou ke zrzavým.",
+    "coffeeAlt": "Šálek kávy Redheart"
+  }
+}

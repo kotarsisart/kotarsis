@@ -1,0 +1,67 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-reasons' as *;
+
+.reasons {
+  --reasons-bg: #F68034;
+  @include mx.centered;
+  padding-block: s.$space-xxl;
+  padding-inline: s.$space-l;
+  background-color: var(--reasons-bg);
+
+  &__container {
+    --reasons-container-max-width: 1000px;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: s.$space-l;
+    max-width: var(--reasons-container-max-width);
+  }
+  @include mx.mq(break-768) {
+    padding-block: s.$space-xxxl;
+    padding-inline: 100px;
+  }
+  @include mx.mq(break-1024) {
+    padding-inline: 160px;
+  }
+
+  &__reason {
+    @include reasons-reason;
+  }
+
+  &__whisper-skip {
+  @include reasons-skip;
+    position: fixed;
+    right: 4px;
+    top: 50%;
+    writing-mode: vertical-rl;
+    transform: translateY(-50%) rotate(180deg);
+    opacity: 0;
+    pointer-events: none;
+    
+    transition: 0.3s ease;
+    
+    z-index: var(--z-index-whisper-skip);
+  
+    &.visible {
+      opacity: 0.5;
+      pointer-events: auto;
+    }
+  
+    @include mx.mq(break-768) {
+      right: 24px;
+    }
+    @include mx.mq(break-1024) {
+      right: 40px;
+    }
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .reasons__whisper-skip:hover {
+    opacity: 1;
+    letter-spacing: 0.05em;
+  }
+}

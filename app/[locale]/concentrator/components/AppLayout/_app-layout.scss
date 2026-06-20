@@ -1,0 +1,48 @@
+@use '../../styles/tokens/index.scss' as *;
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+
+.app-layout {
+  @include mx.main-bg;
+
+  display: flex;
+  flex-direction: column;
+  
+  min-height: 100vh;
+  position: relative;
+
+  gap: s.$space-l;
+  padding: 16px 0;
+
+  width: 100%;
+
+  @include mx.mq(break-768) {
+    padding: 16px 8px;
+  }
+
+  @include mx.mq(break-1440) {
+    padding: 16px 30px;
+    gap: s.$space-xl;
+  }
+}
+
+.app-content {
+  // flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+  padding: 0 s.$space-s;
+
+  @include mx.mq(break-1024) {
+    padding: 0 s.$space-m;
+  }
+
+  @include mx.mq(break-1280) {
+    padding: 0 s.$space-l;
+  }
+
+  @include mx.mq(break-1440) {
+    padding: 0 30px;
+  }
+}

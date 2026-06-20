@@ -1,0 +1,76 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use '../../styles/tokens/radii' as r;
+@use './tp-story' as *;
+@use '../../styles/typography/tp-headings' as h;
+
+.story {
+  --story-bg: #CFECFF;
+  @include mx.centered;
+  flex-direction: column;
+  background-color: var(--story-bg);
+
+  padding-inline: s.$space-m;
+  padding-block: s.$space-xl;
+  gap: s.$space-l;
+
+  @include mx.mq(break-768) {
+    padding-inline: s.$space-xl;
+  }
+  @include mx.mq(break-1024) {
+    align-items: start;
+    flex-direction: row;
+    padding-inline: s.$space-l;
+  }
+  @include mx.mq(break-1280) {
+    padding-inline: s.$space-xl;
+    gap: s.$space-xl;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: s.$space-l;
+
+    @include mx.mq(break-1280) {
+      gap: s.$space-xl;
+    }
+
+    &-title {
+      @include h.h2;
+      text-align: left;
+    }
+    
+    &-text {
+      @include story-text;
+    }
+    
+    &-quote {
+      @include story-quote;
+    }
+  }
+
+  &__img {
+    --shadow-image-default: 0 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: var(--radius-m);
+    width: 100%;
+    height: auto;
+    box-shadow: var(--shadow-image-default);
+    transition: all ease 0.4s;
+    transform-origin: center;
+    
+    &:hover {
+      --shadow-image-hover: 2px 12px 20px rgba(0, 0, 0, 0.7);
+      transform: scale(1.03);
+      box-shadow: var(--shadow-image-hover);
+    }
+
+    @include mx.mq(break-1024) {
+      min-width: 420;
+    }
+    @include mx.mq(break-1280) {
+      min-width: 500px;
+    }
+  }
+}

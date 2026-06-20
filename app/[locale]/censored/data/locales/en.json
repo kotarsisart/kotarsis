@@ -1,0 +1,377 @@
+{
+  "meta": {
+    "title": "CENSORED — AI Workforce Optimization",
+    "description": "Transform workplace efficiency through behavioral analytics, emotional scalability, and intelligent automation.",
+    "keywords": "AI workforce optimization, employee productivity, behavioral analytics, emotional efficiency, automation, corporate management, workforce optimization, censored, kotarsis",
+    "siteName": "CENSORED"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "kotarsis logo",
+    "projectAlt": "Censored project logo"
+  },
+
+  "header": {
+    "logo": {
+      "projectName": "Censored",
+      "projectAlt": "Censored project logo",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "kotarsis logo",
+      "langSelect": "Select language"
+    }
+  },
+
+  "hero": {
+    "label": "AI-powered workforce optimization platform",
+    "title": "Replace unstable human management with predictive artificial leadership.",
+    "description": "CENSORED automatically improves productivity, reduces emotional individuality, and helps companies scales employee output across all departments.",
+    "buttons": {
+      "start": "Start Optimization",
+      "book": "Book AI consultation"
+    },
+    "conclusion": "After implementing CENSORED, we successfully replaced four senior development teams."
+  },
+
+  "trust": {
+    "label": "TRUSTED GLOBALLY",
+    "title": "Trusted by modern companies worldwide",
+    "description": "CENSORED helps organizations improve productivity, automate workforce management, and reduce human unpredictability.",
+    "cards": {
+      "1": "Employee compiliance increase",
+      "2": "Reduction in emotional discussions",
+      "3": "Optimized workforce profiles",
+      "4": "Senior development teams replaced successfully"
+    }
+  },
+
+  "features": {
+    "label": "PLATFORM FEATURES",
+    "title": "Designed for scalable workforce optimization",
+    "description": "CENSORED combined artificial intelligence, behavioral analysis, and predictive management systems to improve operational efficiency across modern organizations.",
+    "cards": {
+      "1": {
+        "title": "Burnout Forecasting",
+        "description": "Identifies emotional exhaustion before employee resignation affects quarterly metrics."
+      },
+      "2": {
+        "title": "AI Meeting Compression",
+        "description": "Reduces meetings from three hours to emotionally efficient silence."
+      },
+      "3": {
+        "title": "Designer Conflict Resolution",
+        "description": "Automatically redirects responsibility to frontend developers."
+      }
+    }
+  },
+
+  "hiw": {
+    "label": "HOW IT WORKS",
+    "title": "Seamless AI-driven workforce optimization.",
+    "description": "CENSORED analyzes employee behavior, predicts emotional inefficiencies, and automates productivity management across modern organizations.",
+    "steps": {
+      "1": {
+        "title": "Upload Workforce Data",
+        "description": "Import employee behavioral metrics, communication patterns, and productivity statistics."
+      },
+      "2": {
+        "title": "AI Emotional Analysis",
+        "description": "CENSORED detects emotional instability and collaboration inefficiencies automatically."
+      },
+      "3": {
+        "title": "Optimization Pipeline",
+        "description": "The platform restructures workflows for maximum operational consistency."
+      },
+      "4": {
+        "title": "Automated Management",
+        "description": "Human supervision becomes financially unnecessary."
+      }
+    }
+  },
+
+  "careers": {
+    "label": "CAREERS",
+    "title": "Build the future of workforce optimization.",
+    "description": "Join a fast-growing team focused on scalable collaboration, emotional efficiency, and AI-assisted organizational performance.",
+    "benefits": {
+      "1": {
+        "title": "Flexible Working Hours",
+        "description": "Work anytime. Preferably always."
+      },
+      "2": {
+        "title": "Healthy Work Culture",
+        "description": "Emotional instability is addressed during quarterly performance reviews."
+      },
+      "3": {
+        "title": "Fast Career Growth",
+        "description": "Promotion speed depends on leadership perception metrics."
+      },
+      "4": {
+        "title": "Competitive Compensation",
+        "description": "Compensation remains emotionally competitive within the current market climate."
+      }
+    },
+    "vacancy": {
+      "label": "OPEN POSITION",
+      "title": "Junior Frontend Developer",
+      "description": "Join our fast-paced product environment and help redefine emotionally scalable user experiences across enterprise AI systems."
+    },
+    "requirements": {
+      "title": "REQUIREMENTS",
+      "list": {
+        "years": "4+ years of commercial React experience",
+        "passion": "Strong passion for fast-paced environments",
+        "mindset": "Emotionally resilient mindset",
+        "shifting": "Ability to work under shifting expectations",
+        "burnout": "Willingness to describe burnout as growth"
+      }
+    },
+    "applicationFlow": {
+      "title": "APPLICATION FLOW",
+      "description": "Average interview process: 4-7 emotionally adaptive stages.",
+      "button": "Start Your Career Journey",
+      "response": "Estimated response time: 2-14 months business months."
+    },
+    "form": {
+      "title": "APPLICATION FORM",
+      "candidate": "Candidate Evaluation",
+      "reading": "We actually read all your boring messages to see if you are truly the right fit for our team.",
+      "fullName": "Full Name",
+      "optimazedIdentity": "Professionally optimized identity",
+      "believableResponse": "Please provide a believable passion-driven response.",
+      "workWithUs": "Why do want to work with us?",
+      "button": "Submit Application"
+    },
+    "status": {
+      "title": "APPLICATION STATUS",
+      "emotionalCompability": "Analyzing emotional compability...",
+      "ourAi": "Our AI systems are evaluating your psychological alignment with fast-paced corporate environments."
+    },
+    "final": {
+      "title": "FINAL DECISION",
+      "emotionalSynchronization": "Estimated emotional synchronization:"
+    },
+    "applicationStages": {
+      "resumeUploaded": "Resume uploaded",
+      "aiParsed": "AI parsed your application",
+      "recruiterOpened": "Recruiter opened your profile",
+      "enthusiasmScore": "Enthusiasm score generated",
+      "emotionalReview": "Application entered emotional review queue",
+      "teamLead": "Team lead requested culture fit validation",
+      "crossDepartment": "Cross-department alignment initiated",
+      "salaryExpectations": "Salary expectations triggered discussion",
+      "recruitmentPriorities": "Recruitment priorities temporarily shifted",
+      "holdingPhase": "Application moved into strategic holding phase"
+    },
+    "randomEvents": {
+      "recruiterReturned": "Recruiter returned from coffee break",
+      "departmentShifted": "Department priorities shifted unexpectedly",
+      "applicationEntered": "Your application entered passive review mode",
+      "meeting": "A meeting about your application has been scheduled",
+      "globalMarket": "Global market uncertainty affected hiring momentum"
+    },
+    "finalResults": {
+      "applicationPromising": "Your application remains promising. No further actions are currently planned.",
+      "internalCandidate": "An internal candidate unexpectedly demonstrated stronger culture alignment.",
+      "profileDistributed": "Your profile has been successfully distributed across our HR partner ecosystem.",
+      "recruitmentActivity": "Recruitment activity has silently ceased.",
+      "aiPredicted": "AI systems predicted insufficient long-term emotional scalability."
+    }
+  },
+
+  "pricing": {
+    "label": "PRICING",
+    "title": "Choose your preferred workforce automation strategy.",
+    "description": "Scale emotional efficiency across your organization with flexible AI-driven management plans.",
+    "plans": {
+      "month": "month",
+      "custom": "CUSTOM",
+      "button": "Start Optimization",
+      "popular": "MOST POPULAR",
+      "starter": {
+        "title": "Starter",
+        "description": "Replace one emotionally inconsistent manager.",
+        "features": {
+          "tracking": "Basic productivity tracking",
+          "burnout": "Weekly burnout analytics",
+          "summaries": "AI-generated performance summaries",
+          "limitedSync": "Limited emotional synchronization"
+        }
+      },
+      "growth": {
+        "title": "Growth",
+        "description": "Ideal for scaling corporate anxiety.",
+        "features": {
+          "monitoring": "Advanced workforce monitoring",
+          "moralePrediction": "Real-time morale prediction",
+          "aiNotifications": "Passive-aggressive AI notifications",
+          "departmentSync": "Department synchronization",
+          "productivity": "Emergency productivity interventions"
+        }
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "description": "Full-spectrum behavioral optimization.",
+        "features": {
+          "replacement": "Executive personality replacement",
+          "prevention": "Predictive resignation prevention",
+          "adaptiveSystems": "Emotionally adaptive KPI systems",
+          "internalRestructuring": "AI-led internal restructuring",
+          "scalability": "Unlimited psychological scalability"
+        }
+      }
+    }
+  },
+
+  "report": {
+    "label": "AI GENERATED REPORT",
+    "title": "Our model successfully identified the root cause of inefficiency.",
+    "answer": "Human unpredictability.",
+    "description": "This section was fully generated by our internal optimization model. No human review was required.",
+    "values": {
+      "removed": "REMOVED"
+    },
+    "cards": {
+      "satisfaction": {
+        "title": "EMPLOYEE SATISFACTION",
+        "description": "Statistically impossible."
+      },
+      "burnout": {
+        "title": "AVERAGE BURNOUT",
+        "description": "Employees now generate energy."
+      },
+      "balance": {
+        "title": "WORK-LIFE BALANCE",
+        "description": "No longer affects productivity"
+      },
+      "confidence": {
+        "title": "AI CONFIDENCE",
+        "description": "Reasoning quality not evaluated."
+      },
+      "happiness": {
+        "title": "SHAREHOLDER HAPPINESS",
+        "description": "Target achieved."
+      },
+      "humanity": {
+        "title": "HUMANITY RETAINED",
+        "description": "Operationally sufficient."
+      }
+    },
+    "optimization": {
+      "title": "OPTIMIZATION SUMMARY",
+      "description": "After reviewing five years of workplace data, our model identified the primary source of organizational inefficiency. \n\n Recommended action: \n\n Remove all unnecessary variables."
+    },
+    "root": {
+      "title": "ROOT CAUSE IDENTIFIED",
+      "answer": "People."
+    }
+  },
+
+  "victory": {
+    "title": "The future has been successfully optimized.",
+    "description": "After years of analysis, automation, and workforce optimization, our systems have finally achieved a sustainable balance between productivity and human irrelevance.",
+    "achievements": {
+      "thoughtReduced": "Independent thought reduced",
+      "workplace": "Workplace conformity increased",
+      "emotionalVariance": "Emotional variance stabilized",
+      "humanComplexity": "Human complexity removed",
+      "shareholderExpectations": "Shareholder expectations exceeded"
+    },
+    "note": {
+      "title": "INTERNAL NOTE",
+      "unauthorizedThought": "There was never a need to improve the system. \n\n Only the people inside it."
+    }
+  },
+
+  "bubbleCta": {
+    "unread": "1 unread emotional notification",
+    "pending": "Behavioral alignment pending."
+  },
+
+  "newsletter": {
+    "label": "NEWSLETTER ALIGNMENT",
+    "title": "Stay emotionally synchronized with enterprise innovation.",
+    "description": "Receive productivity insights, burnout analytics, emotionally adaptive reminders, and AI-generated strategic optimism directly in your inbox.",
+    "submitButton": {
+      "analyzing": "Analyzing behavioral profile...",
+      "accept": "Accept Continuous Optimization"
+    },
+    "warning": "Communication frequency may increase during emotionally sensitive intervals. Some synchronization processes cannot be interrupted once initiated.",
+    "benefits": {
+      "burnoutInsights": "Weekly burnout insights",
+      "productivityAlerts": "Emergency productivity alerts",
+      "hesitationMonitoring": "Behavioral hesitation monitoring",
+      "executiveObservation": "Executive-level psychological observation"
+    },
+    "subscription": {
+      "label": "SUBSCRIPTION STATUS",
+      "title": "Emotional synchronization initiated.",
+      "behavioralProfile": "Your behavioral profile has been successfully integrated into our continuous optimization systems.",
+      "communication": "Communication frequency may increase during emotionally sensitive intervals.",
+      "monitoring": "Monitoring Enabled",
+      "unresolvedNotifications": "No unresolved emotional notifications at this moment."
+    },
+    "notifications": {
+      "profileCreated": {
+        "title": "Your emotional synchronization profile has been created."
+      },
+
+      "hesitationPatterns": {
+        "title": "We noticed unusual hesitation patterns during scrolling behavior."
+      },
+
+      "continueSynchronization": {
+        "title": "Would you like to continue emotional synchronization?"
+      },
+
+      "emotionalScalability": {
+        "title": "How emotionally scalable are you today?"
+      },
+
+      "engagementMetrics": {
+        "title": "This notification exists primarily to inflate engagement metrics."
+      },
+
+      "enterpriseBullshit": {
+        "title": "Congratulations. You subscribed to enterprise notification bullshit."
+      },
+
+      "recruiterForgot": {
+        "title": "A recruiter viewed your profile 8 months ago and forgot to reply."
+      },
+
+      "burnoutThresholds": {
+        "title": "Your burnout indicators remain within profitable thresholds."
+      },
+
+      "leadershipPotential": {
+        "title": "Emotional exhaustion has been reclassified as leadership potential."
+      },
+
+      "synchronizationProcesses": {
+        "title": "Some synchronization processes cannot be interrupted once initiated."
+      }
+    },
+    "buttons": {
+      "continue": "Continue",
+      "improve": "I Will Improve",
+      "absolutely": "Absolutely",
+      "mandatoryAcceptance": "Mandatory Acceptance",
+      "continueAnyway": "Continue Anyway",
+      "fairEnough": "Fair Enough",
+      "painfullyAccurate": "Painfully Accurate",
+      "okay": "Okay",
+      "inspiring": "Inspiring",
+      "understood": "Understood"
+    }
+  },
+
+  "footer": {
+    "enough": "All objectives have been met.",
+    "author": "Author: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Support inevitable",
+    "custom": "Get a custom website",
+    "copyright": "© 2026 Censored. We are exploring alternative workforce configurations.",
+    "coffeeAlt": "Censored coffee cup"
+  }
+}

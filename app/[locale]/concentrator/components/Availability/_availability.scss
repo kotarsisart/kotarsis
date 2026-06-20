@@ -1,0 +1,221 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use '../../styles/tokens/radii' as r;
+@use './tp-availability' as *;
+@use '../../styles/typography/tp-button' as btn;
+@use '@/utils/animations/animations.scss' as *;
+@use '../../styles/typography/tp-headings' as h;
+
+.availability {
+  --availability-bg: #FEF3C7;
+
+  // --availability-bg: #FFF7D6;
+
+  @include animate-section(1);
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-s;
+  padding-block: s.$space-m;
+  background-color: var(--availability-bg);
+
+  @include mx.mq(break-834) {
+    gap: s.$space-l;
+  }
+  @include mx.mq(break-1024) {
+    gap: s.$space-xl;
+  }
+
+  &__promotion {
+    --availability-promotion-zone: #f66f07;
+    @include mx.centered;
+    background-color: var(--availability-promotion-zone);
+    padding-block: s.$space-s;
+    overflow-x: hidden;
+    position: relative;
+
+
+    &-text {
+      @include availability-running-line;
+      white-space: nowrap;
+      display: inline-block;
+      animation: promoScroll 28s linear infinite;
+      position: relative;
+
+      &.is-up {
+        animation-direction: normal;
+      }
+      &.is-down {
+        // animation-direction: reverse;
+      }
+
+      &::after {
+        content: attr(data-text);
+        position: absolute;
+        left: 100%;
+        padding-left: 4rem;
+      }
+    }
+  }
+
+  &__central {
+    @include mx.centered;
+    flex-direction: column;
+    width: 100%;
+
+    @include mx.mq(break-768) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-inline: s.$space-m;
+    }
+    @include mx.mq(break-1024) {
+      padding-inline: s.$space-xl;
+    }
+    @include mx.mq(break-1280) {
+      padding-inline: s.$space-xxl;
+    }
+
+    &-content {
+      display: flex;
+      flex-shrink: 0;
+      max-width: 800px;
+      align-items: start;
+      flex-direction: column;
+      gap: s.$space-m;
+      padding-block: s.$space-s;
+      padding-inline: s.$space-s;
+
+      @include mx.mq(break-834) {
+        gap: 20px;
+      }
+    }
+  }
+
+  &__title {
+    @include h.h2;
+    text-align: left;
+  }
+
+  &__progress {
+    --availability-bar: #eed56f;
+    width: 260px;
+    height: 16px;
+    background-color: var(--availability-bar);
+    border-radius: 999px;
+    overflow: hidden;
+    
+    @include mx.mq(break-360) {
+      width: 300px;
+    }
+    @include mx.mq(break-390) {
+      width: 350px;
+    }
+    @include mx.mq(break-834) {
+      width: 400px;
+      height: 20px;
+    }
+    @include mx.mq(break-1024) {
+      width: 500px;
+    }
+    
+    &-fill {
+      --availability-bar-fill: #ffa200;
+      width: 85%;
+      height: 100%;
+      background-color: var(--availability-bar-fill);
+      transition: width 0.6s ease;
+    }
+  }
+
+  &__timer {
+    @include availability-timer;
+    text-align: left;
+  }
+
+  &__button {
+      --availability-button-bg: #fc6a03;
+      @include mx.button;
+      @include btn.button;
+      color: #FFFFFF;
+      background-color: var(--availability-button-bg);
+      transition: all 0.3s ease;
+      
+      &:hover {
+      --availability-button-hover-bg: #F15200;
+      background-color: var(--availability-button-hover-bg);
+    }
+    
+    &:active {
+      --availability-button-clicked-bg: #F96500;
+      background-color: var(--availability-button-clicked-bg);
+    }
+    
+    &.is-soldout {
+      --availability-button-after-bg: #D1D5DBCC;
+      --text-availability-after: #37415180;
+      background-color: var(--availability-button-after-bg);
+      color: var(--text-availability-after);
+      cursor: pointer;
+    }
+
+  }
+
+  &__message {
+    --availability-message-bg: #ff6a00e7;
+    @include mx.centered;
+    background-color: var(--availability-message-bg);
+    padding: s.$space-xs;
+    border-radius: var(--radius-s);
+    transition: all 0.3s ease;
+    
+    @include mx.mq(break-834) {
+      padding: s.$space-s;
+    }
+    
+    &-text {
+      @include availability-message;
+      text-align: left;
+    }
+    
+    &.is-unavailable {
+      --availability-message-bg-after: #F95659B3;
+      background-color: var(--availability-message-bg-after);
+
+      .availability__message-text {
+        --text-availability-unavailable: #CF1D20;
+        color: var(--text-availability-unavailable);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  &__image-container {
+    @include mx.centered;
+    width: 100%;
+    padding-inline: s.$space-s;
+
+    @include mx.mq(break-768) {
+      max-width: 320px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-l);
+
+    @include mx.mq(break-1024) {
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1)
+      }
+    }
+
+  }
+}
+
+
+@keyframes promoScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}

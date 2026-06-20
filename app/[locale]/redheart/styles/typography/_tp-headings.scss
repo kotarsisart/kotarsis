@@ -1,0 +1,21 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --h1-350: 60px;
+  --h1-768: 120px;
+}
+
+@mixin h1 {
+  --hero-title: #F9B87F;
+  font-size: var(--h1-350);
+  font-family: var(--font-h1);
+  white-space: pre-line;
+  color: var(--hero-title);
+  text-align: center;
+
+  @include mx.mq(break-768) {
+    font-size: var(--h1-768);
+  }
+}

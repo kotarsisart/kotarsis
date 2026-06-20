@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "title": "Minimalism — struktura umesto viška",
+    "description": "Minimalistički projekat o strukturi, kontrastu i značenju.",
+    "keywords": "minimalizam, struktura, dizajn, kotarsis",
+    "siteName": "Minimalism"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logo kotarsis",
+    "projectAlt": "logo projekta Censored"
+  },
+
+  "header": {
+    "logo": {
+      "minimalism": "Minimalism",
+      "minimalismAlt": "Logo projekta Minimalism",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo kotarsis",
+      "langSelect": "Izaberite jezik"
+    }
+  },
+
+  "hero": {
+    "title": "Šta ostaje kada ukloniš višak",
+    "subtitle": "— čak i nijanse?"
+  },
+
+  "manifesto": {
+    "title": "Ukloniti — ne izgubiti, već pronaći suštinsko.",
+    "blocks": [
+      [
+        "Bez boje.",
+        "Bez efekata.",
+        "Bez dekoracije."
+      ],
+      [
+        "Samo kontrast.",
+        "Samo struktura.",
+        "Samo značenje."
+      ]
+    ]
+  },
+
+  "structure": {
+    "title": "Kada boja nestane, struktura progovara.",
+    "items": [
+      {
+        "key": "square",
+        "label": "Ravnoteža",
+        "alt": "Kvadrat — ravnoteža"
+      },
+      {
+        "key": "circle",
+        "label": "Hijerarhija",
+        "alt": "Krug — hijerarhija"
+      },
+      {
+        "key": "triangle",
+        "label": "Ritam",
+        "alt": "Trougao — ritam"
+      }
+    ],
+    "outro": [
+      "Dizajn ogoljen do kosti —",
+      "da se vidi da li još uvek diše."
+    ]
+  },
+
+  "interpretation": {
+    "title": "Ukloni sve. Ono što ostane je istina.",
+    "lines": [
+      "Ovde nema skrivene poruke.",
+      "",
+      "Struktura nije objašnjenje.",
+      "Struktura je uslov.",
+      "",
+      "Ravnoteža nije kvadrat.",
+      "Hijerarhija nije krug.",
+      "Ritam nije trougao.",
+      "",
+      "Značenje nije u obliku.",
+      "",
+      "Struktura ćuti.",
+      "Ti govoriš."
+    ]
+  },
+
+  "negation": {
+    "title": "Ovo nije stil"
+  },
+
+  "conclusion": {
+    "title": "Ovo je sposobnost.",
+    "figures": [
+      {
+        "key": "triangle",
+        "alt": "Trougao"
+      },
+      {
+        "key": "square",
+        "alt": "Kvadrat"
+      },
+      {
+        "key": "circle",
+        "alt": "Krug"
+      }
+    ],
+    "boasting": [
+      "Ako možeš da stvoriš značenje iz ničega,",
+      "možeš da ga stvoriš iz bilo čega."
+    ],
+    "octahedronAlt": "Oktaedar"
+  },
+
+  "footer": {
+    "enough": "Ovo je dovoljno.",
+    "author": "Autor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Podrži jednostavnost",
+    "custom": "Naruči prilagođeni sajt",
+    "copyright": "© 2026 Minimalism. Stvoreno s poštovanjem prema minimalizmu.",
+    "coffeeAlt": "Šolja kafe Minimalism"
+  }
+}

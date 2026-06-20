@@ -1,0 +1,83 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-header' as *;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-footer-bg);
+  color: var(--header-footer-text);
+
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+
+  padding-inline: s.$space-s;
+  padding-block: s.$space-s;
+  height: 65px;
+  
+
+  @include mx.mq(break-768) { 
+    padding-inline: s.$space-xl;
+    height: 85px;
+  }
+  @include mx.mq(break-1024) { 
+    padding-inline: s.$space-xxl;
+  }
+
+  &-logo {
+    padding-block: s.$space-s;
+
+    .kts-logo__text {
+      color: var(--header-footer-text);
+      @include header-logo;
+    }
+    .kts-logo__icon {
+      color: var(--header-footer-text);
+    }
+
+    @include mx.mq(break-768) {
+      border: 2px solid var(--header-footer-text);
+      border-radius: 12px;
+      height: 70px;
+    }
+  }
+
+  &__langs {
+    @include mx.centered;
+    flex-direction: row;
+    gap: s.$space-s;
+    padding: s.$space-s;
+    height: 100%;
+    cursor: pointer;
+    
+    &:hover .header__langs-icon {
+      transform: rotate(360deg);
+    }
+
+    @include mx.mq(break-768) {
+      padding-inline: s.$space-m;
+      border: 2px solid var(--header-footer-text);
+      border-radius: 12px;
+    }
+
+    &-text {
+      @include header-lang-select;
+    }
+
+    &-icon {
+      display: none;
+      width: 40px;
+      transition: transform 1s ease;
+      transform-origin: center;
+
+      @include mx.mq(break-768) {
+        display: flex;
+        width: 50px; 
+      }
+    }
+  }
+}

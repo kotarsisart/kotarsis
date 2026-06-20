@@ -1,0 +1,130 @@
+@use '../../styles//system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use '../../styles/typography' as tp;
+// @use '@/utils/animations/animations.scss' as *;
+
+.gallery-swiper {
+  // @include animate-section(1);
+  display: flex;
+  flex-direction: column;
+  gap: s.$space-s;
+  position: relative;
+  width: 100%;
+  padding-block: s.$space-xs;
+
+  @include mx.mq(break-360) {
+    gap: s.$space-m;
+  }
+
+  &__container {
+    width: 100%;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-xl);
+    object-fit: cover;
+
+    @include mx.mq(break-360) {
+      width: 90%;
+      max-width: 470px;
+    }
+  }
+
+  &__arrows {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    z-index: 5;
+    width: 100%;
+
+    @include mx.mq(break-360) {
+      margin-top: 0;
+      position: absolute;
+      top: 45%;
+      left: 0;
+      right: 0;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding-inline: 4px;
+      pointer-events: none;
+    }
+    @include mx.mq(break-768) {
+      padding-inline: s.$space-xl;
+    }
+  }
+
+  &__arrow {
+    --arrow-dimensions-320: 36px;
+    --arrow-dimensions-390: 40px;
+    --arrow-dimensions-768: 50px;
+    width: var(--arrow-dimensions-320);
+    height: var(--arrow-dimensions-320);
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    pointer-events: all;
+
+    @include mx.mq(break-390) {
+      width: var(--arrow-dimensions-390);
+      height: var(--arrow-dimensions-390);
+    }
+    @include mx.mq(break-768) {
+      width: var(--arrow-dimensions-768);
+      height: var(--arrow-dimensions-768);
+    }
+    
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__pagination {
+    --pagination-dimensions-320: 11px;
+    --pagination-dimensions-768: 16px;
+    display: flex;
+    gap: s.$space-xs;
+    justify-content: center;
+    padding-block: s.$space-xs;
+
+    .swiper-pagination-bullet {
+      width: var(--pagination-dimensions-320);
+      height: var(--pagination-dimensions-320);
+      background: #BCBABA;
+      opacity: 0.6;
+      transition: all 0.3s ease;
+
+      @include mx.mq(break-768) {
+        width: var(--pagination-dimensions-768);
+        height: var(--pagination-dimensions-768);
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--accent-color, #8456ff);
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.gallery-swiper__container {
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+}

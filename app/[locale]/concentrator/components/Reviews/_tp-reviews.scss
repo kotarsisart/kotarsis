@@ -1,0 +1,46 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --reviews-text-320: 15px;
+  --reviews-text-360: 18px;
+  --reviews-text-390: 20px;
+  --reviews-text-1440: 22px;
+  --reviews-text-size: var(--reviews-text-320);
+
+  --reviews-footer-320: 14px;
+  --reviews-footer-390: 16px;
+  --reviews-footer-1440: 18px;
+
+}
+
+@mixin reviews-text {
+  font-size: var(--reviews-text-320);
+  font-weight: var(--font-weight-medium);
+  text-align: left;
+  font-style: italic;
+
+  @include mx.mq(break-360) {
+    font-size: var(--reviews-text-360);
+  }
+  @include mx.mq(break-390) {
+    font-size: var(--reviews-text-390);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--reviews-text-1440);
+    font-weight: var(--font-weight-regular);
+  }
+}
+
+@mixin reviews-footer {
+  font-size: var(--reviews-footer-320);
+  font-weight: var(--font-weight-semibold);
+
+  @include mx.mq(break-390) {
+    font-size: var(--reviews-footer-390);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--reviews-footer-1440);
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Redheart – 1000 прычын любіць рудых",
+    "description": "1000 прычын. Ад ведзьмаў і агню да пледаў і пяшчотных момантаў. Лінейны маніфест пра рудых і пра тое, чаму іх немагчыма ігнараваць.",
+    "keywords": "рудая, рудыя валасы, 1000 прычын, маніфест, каханне, рэдкасць, характар, цеплыня, восень, kotarsis",
+    "siteName": "Redheart",
+    "imgAlt": "Папярэдні прагляд Redheart"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "лагатып kotarsis",
+    "projectAlt": "лагатып праекта redheart"
+  },
+
+  "header": {
+    "logo": {
+      "redheart": "Redheart",
+      "redheartAlt": "Лагатып праекта Redheart",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Лагатып kotarsis",
+      "langSelect": "Выберыце мову"
+    }
+  },
+
+  "hero": {
+    "title": "1000\nПрычын любіць рудых"
+  },
+
+  "reasons": {
+    "hint": "Ты мяне ўжо пераканаў."
+  },
+
+  "footer": {
+    "title": "Любіце адно аднаго.",
+    "author": "Аўтар: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Падтрымай каханне",
+    "custom": "Замовіць індывідуальны сайт",
+    "copyright": "© 2026 Redheart. Створана з любоўю да рудых.",
+    "coffeeAlt": "Кубак кавы Redheart"
+  }
+}

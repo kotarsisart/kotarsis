@@ -1,0 +1,56 @@
+@use '../../../styles/system/mixins' as mx;
+@use '../../../styles/typography/index' as *;
+@use '../../../styles/tokens/index.scss' as *;
+
+:root {
+  --project-card-title-320: 26px;
+  --project-card-title-360: 30px;
+  --project-card-title-390: 34px;
+
+  --project-card-description-320: 18px;
+  --project-card-description-360: 20px;
+  --project-card-description-1024: 22px;
+
+  --project-card-page-link-320: 18px;
+  --project-card-page-link-360: 20px;
+  --project-card-page-link-1024: 22px;
+}
+
+@mixin project-card-title {
+  font-size: var(--project-card-title-320);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: 1px;
+
+  @include mx.mq(break-360) {
+    font-size: var(--project-card-title-360);
+  }
+  @include mx.mq(break-390) {
+    font-size: var(--project-card-title-390);
+  }
+}
+
+@mixin project-card-description {
+  font-size: var(--project-card-description-320);
+  font-weight: var(--font-weight-semibold);
+  white-space: pre-line;
+
+  @include mx.mq(break-360) {
+    font-size: var(--project-card-description-360);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--project-card-description-1024);
+  }
+}
+
+@mixin project-card-page-link {
+  font-size: var(--project-card-page-link-320);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+
+  @include mx.mq(break-360) {
+    font-size: var(--project-card-page-link-360);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--project-card-page-link-1024);
+  }
+}

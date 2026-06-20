@@ -1,0 +1,77 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --footer-nav-320: 20px;
+  --footer-nav-1024: 24px;
+  --footer-nav-1280: 26px;
+  --footer-nav-1440: 28px;
+
+  --footer-me-320: 20px;
+  --footer-me-1280: 22px;
+  --footer-me-1440: 24px;
+
+  --footer-copy-320: 14px;
+  --footer-copy-768: 20px;
+  --footer-copy-1280: 24px;
+
+}
+
+@mixin footer-nav {
+  font-size: var(--footer-nav-320);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  letter-spacing: 0.15rem;
+  color: var(--text-secondary);
+  transition: transform 0.3s ease;
+  display: inline-block;
+  will-change: transform;
+  transform-origin: center;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @include mx.mq(break-1024) {
+    font-size: var(--footer-nav-1024);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--footer-nav-1280);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--footer-nav-1440);
+  }
+}
+
+@mixin footer-me {
+  font-size: var(--footer-me-320);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #83FFFD;;
+  }
+
+  @include mx.mq(break-1280) {
+    font-size: var(--footer-me-1280);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--footer-me-1440);
+  }
+}
+
+@mixin footer-copy {
+  font-size: var(--footer-copy-320);
+  font-weight: var(--font-weight-semibold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--footer-copy-768);
+  }
+
+  @include mx.mq(break-1280) {
+    font-size: var(--footer-copy-1280);
+  }
+}

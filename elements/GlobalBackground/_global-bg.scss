@@ -1,0 +1,9 @@
+.global-bg {
+  position: fixed;
+  height: 100vh;
+  inset: 0;
+  z-index: -1;
+  background: url("./bg.jpg") center/cover no-repeat;
+  opacity: 0.85;
+  pointer-events: none;
+}

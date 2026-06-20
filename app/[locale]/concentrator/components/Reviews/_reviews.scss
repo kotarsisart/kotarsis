@@ -1,0 +1,92 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-reviews' as *;
+@use '../../styles/typography/tp-headings' as h;
+
+.reviews {
+  --reviews-bg: #E0F2FE;
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-l;
+  padding-block: s.$space-xl;
+  overflow: hidden;
+  background-color: var(--reviews-bg);
+
+  @include mx.mq(break-1280) {
+    padding-block: s.$space-xxl;
+  }
+
+  &__title {
+    @include h.h2;
+    text-align: center;
+  }
+
+  &__carousel {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    // user-select: none;
+    // -ms-overflow-style: none;
+    // overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  &__track {
+    display: flex;
+    gap: s.$space-l;
+    padding-block: s.$space-l;
+    padding-inline: s.$space-l;
+    width: max-content;
+  }
+
+  &__card {
+    --shadow-review-default: 4px 16px 4px rgba(0, 0, 0, 0.1);
+    --reviews-card-bg: #FFFFFF;
+
+    flex: 0 0 auto;
+    @include mx.centered;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--reviews-card-bg);
+    border-radius: var(--radius-l);
+    padding-block: 20px;
+    padding-inline: s.$space-l;
+    width: 260px;
+    height: 130px;
+    box-shadow: var(--shadow-review-default);
+    transition: all 0.3s ease;
+
+    @include mx.mq(break-360) {
+      width: 280px;
+      height: 140px;
+    }
+    @include mx.mq(break-390) {
+      width: 320px;
+      height: 150px;
+    }
+    @include mx.mq(break-1440) {
+      width: 360px;
+      height: 170px;
+    }
+
+    &:hover {
+      --reviews-card-bg-hover: #6FFDFF;
+      --shadow-review-hover: 4px 16px 4px rgba(0, 0, 0, 0.2);
+
+      transform: translateY(-4px) scale(1.02);
+      background-color: var(--reviews-card-bg-hover);
+      box-shadow: var(--shadow-review-hover);
+    }
+    
+    &-text {
+    @include reviews-text;
+  }
+
+  &-footer {
+    @include reviews-footer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  }
+}

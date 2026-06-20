@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "title": "Concentrator™ — Uređaj za lakšu koncentraciju",
+    "description": "Koncentriši se bez napora uz Concentrator™ — interaktivni alat nove generacije za trening pažnje.",
+    "keywords": "koncentracija, fokus, kotarsis, produktivnost, uređaj, mozak",
+    "siteName": "Concentrator™",
+    "imgAlt": "Pregledna slika Concentrator™"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logo kotarsis",
+    "projectAlt": "logo projekta Concentrator™"
+  },
+
+  "header": {
+    "logo": {
+      "project": "Concentrator™",
+      "projectAlt": "Logo projekta Concentrator™",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo kotarsis"
+    },
+    "slogan": "Stabilizuj svoj nivo kognitivne energije.",
+    "focus": {
+      "label": "Fokus:"
+    },
+    "langButton": {
+      "default": "Izaberi jezik"
+    }
+  },
+
+  "hero": {
+    "slogan": "Koncentriši se bez napora",
+    "title": "Concentrator™",
+    "outro": "Tehnologija fokusa nove generacije",
+    "button": {
+      "default": "Aktiviraj fokus",
+      "active": "Fokus je aktiviran!"
+    },
+    "counter": {
+      "label": "Već se koncentrisalo"
+    },
+    "cognitive": "Kognitivna sinhronizacija završena",
+    "image": {
+      "alt": "Uređaj Concentrator"
+    }
+  },
+
+  "hiw": {
+    "title": "Kako radi Concentrator™?",
+    "steps": {
+      "laptop": {
+        "alt": "Laptop",
+        "text": "Postavi ga u blizini"
+      },
+      "off": {
+        "alt": "Ne radi ništa",
+        "text": "On zaista ne radi ništa"
+      },
+      "flame": {
+        "alt": "Radiš kao zver",
+        "text": "Radiš kao zver"
+      }
+    }
+  },
+
+  "story": {
+    "title": "Poreklo Concentratora™",
+    "paragraphs": [
+      "U zaboravljenoj laboratoriji pod Karpatima, grupa ekscentričnih naučnika otkrila je oscilirajuće polje čiste koncentracije.",
+      "Posle 7 godina neuspelih eksperimenata, rasprava i prosute kafe, konačno su usmerili energiju u jedan uređaj — Concentrator™.",
+      "Ono što je počelo kao projekat pokrenut kofeinom, brzo je dovelo do takozvanog Događaja fokusa. Jedna biljka se udvostručila, a mačka je rešila sudoku.",
+      "Shvativši snagu koju su otkrili, tim — sastavljen od teorijskih neurohemičara, jednog neuspešnog mađioničara i pripravnika koji je mislio da je ovo kulinarski kurs — požurio je da stabilizuje fenomen.",
+      "Koristite sa oprezom. Neželjeni efekti mogu uključivati neverovatnu produktivnost i čudan osećaj svrhe."
+    ],
+    "quote": {
+      "text": "Nismo znali kako radi. Ali je radilo.",
+      "author": "Prof. Kostjuk"
+    },
+    "image": {
+      "alt": "Priča o Concentratoru"
+    }
+  },
+
+  "benefits": {
+    "title": "Zašto izabrati Concentrator™?",
+    "cards": [
+      {
+        "icon": "/src/assets/images/section-icons/benefits/no-charge.svg",
+        "alt": "bez punjenja",
+        "title": "Radi bez punjenja",
+        "description": "Pokreće ga čista namera. Puni se pogledima kolega."
+      },
+      {
+        "icon": "/src/assets/images/section-icons/benefits/book-question-icon.svg",
+        "alt": "bez uputstava",
+        "title": "Ne zahteva uputstva",
+        "description": "Samo ga postavi pored sebe. Već sve zna. Možda čak i tebe."
+      },
+      {
+        "icon": "/src/assets/images/section-icons/benefits/coffee-cat.png",
+        "alt": "prijatelj kafi i mačaka",
+        "title": "Prijatelj kafe i mačaka",
+        "description": "Ne remeti tvoj jutarnji ritual i odlično se slaže sa mrnjaukanjem."
+      }
+    ]
+  },
+
+  "comparison": {
+    "title": "Concentrator™ vs Običan tajmer",
+    "headers": ["Parametar", "Concentrator™", "Običan tajmer"],
+    "rows": [
+      {
+        "parameter": "Povećanje fokusa",
+        "concentrator": "+300%",
+        "regular": "0%"
+      },
+      {
+        "parameter": "Izvor energije",
+        "concentrator": "Nije potreban",
+        "regular": "Potreban"
+      },
+      {
+        "parameter": "Naučna vrednost",
+        "concentrator": "Pseudonaučna",
+        "regular": "Nikakva"
+      },
+      {
+        "parameter": "Otpornost na vodu",
+        "concentrator": "IP68",
+        "regular": "Niska"
+      }
+    ]
+  },
+
+  "availability": {
+    "promotions": {
+      "up": "Postanite prvi tester CPhone-a — novog telefona koji radi na polju koncentracije. Naručite Concentrator™ sada da biste obezbedili pristup i rezervisali prototip.",
+      "down": "Concentrator™ je bila samo prva faza. Sada gradimo višeslojni kognitivni ekosistem — a CPhone je vaš portal u tu budućnost. Beta testiranje počinje uskoro — spremni ste?"
+    },
+    "title": {
+      "part1": "Preostalo je samo",
+      "part2": "uređaja od"
+    },
+    "timer": {
+      "label": "Ponuda ističe za"
+    },
+    "image": {
+      "alt": "Oprema Concentratora"
+    },
+    "messages": {
+      "normal": "Prestignite ostale i naručite Concentrator™ odmah!",
+      "unavailable": "Fokus nije dostupan. Molimo vas, izvršite sesiju samokontrole."
+    },
+    "buttons": {
+      "try": "Pokušaj kupiti",
+      "soldout": "Nažalost, prekasno!"
+    }
+  },
+
+  "gallery": {
+    "title": "Galerija uređaja",
+    "alts": {
+      "front": "pogled spreda",
+      "side": "pogled sa strane",
+      "top": "pogled odozgo",
+      "press": "pritiskanje dugmeta",
+      "interior": "u enterijeru",
+      "meditation": "meditacija",
+      "equipment": "oprema",
+      "hands": "u rukama",
+      "full": "potpuni pogled u enterijeru"
+    }
+  },
+
+  "reviews": {
+    "title": "Iskustva korisnika",
+    "items": [
+      { "text": "„Završio sam diplomski za jednu noć. Nemam pojma kako.“", "author": "Jakub", "date": "21.05.2025" },
+      { "text": "„Obrisao sam TikTok. Upalio je.“", "author": "James", "date": "15.04.2025" },
+      { "text": "„Concentrator™ je samo stajao. Ja nisam.“", "author": "Olena", "date": "12.03.2025" },
+      { "text": "„Ranije sam otvarao YouTube. Sada — oči.“", "author": "Emily", "date": "06.04.2025" },
+      { "text": "„Seo sam na 10 minuta — ustao posle 6 sati.“", "author": "Ivan", "date": "25.04.2025" },
+      { "text": "„Poslao izveštaj i oprao veš. Istovremeno.“", "author": "Carlos", "date": "29.03.2025" },
+      { "text": "„Zaboravio sam na pauze. I na hranu.“", "author": "Dmytro", "date": "03.05.2025" },
+      { "text": "„Fokus nije nestao. Čak ni sa mojom mačkom.“", "author": "Katya", "date": "14.04.2025" },
+      { "text": "„Samo sam ga uključio. Ostalo je istorija.“", "author": "Marta", "date": "18.03.2025" }
+    ]
+  },
+
+  "faq": {
+    "title": "Često postavljana pitanja",
+    "items": [
+      {
+        "q": "Kako radi Concentrator™?",
+        "a": "Povećava fokus za 300% pomoću pseudonaučnih impulsa i mašte."
+      },
+      {
+        "q": "Zašto Concentrator™ ništa ne radi?",
+        "a": "Zato što je već uradio sve što je trebalo."
+      },
+      {
+        "q": "Mogu li ga koristiti u javnom prevozu?",
+        "a": "Da, naročito ako želite da se fokusirate na sitna slova na kazni."
+      },
+      {
+        "q": "Postoje li nuspojave?",
+        "a": "Samo pozitivne: veća produktivnost, šarm i smisao za humor."
+      },
+      {
+        "q": "Da li je legalan u mojoj zemlji?",
+        "a": "Tehnički — da."
+      },
+      {
+        "q": "Mogu li koristiti dva istovremeno?",
+        "a": "Samo ako imate dva mozga."
+      }
+    ]
+  },
+
+  "order": {
+    "form": {
+      "title": "Naruči fokus",
+      "placeholders": {
+        "name": "Tvoje ime",
+        "comment": "Komentar ili pitanje"
+      },
+      "labels": {
+        "submit": "Naruči fokus",
+        "sending": "Slanje..."
+      },
+      "messages": {
+        "nameRequired": "Unesi svoje ime 🥺",
+        "validEmail": "Unesi ispravan imejl",
+        "noNumbers": "Ne koristi brojeve u imenu 😊",
+        "success": "Forma uspešno poslata!"
+      }
+    },
+    "delivery": {
+      "title": "Isporuka je transparentna",
+      "steps": [
+        {
+          "title": "Naručio si",
+          "description": "Tvoja narudžbina je primljena"
+        },
+        {
+          "title": "Pripremamo i šaljemo",
+          "description": "Isporučuje obučeni poštanski golub"
+        },
+        {
+          "title": "Primaš",
+          "description": "Zajedno sa povećanom produktivnošću"
+        }
+      ]
+    }
+  },
+
+  "footer": {
+    "nav": {
+      "links": {
+        "hiw": "Kako radi",
+        "reviews": "Iskustva",
+        "order": "Naručivanje",
+        "faq": "FAQ"
+      },
+      "team": "Pošalji kafu i biografiju"
+    },
+    "me": {
+      "author": "Autor: kotarsis_art",
+      "coffee": "Kupi mi kafu",
+      "telegram": "Telegram",
+      "custom": "Poruči prilagođen sajt"
+    },
+    "copyright": "© 2025 Concentrator™ Napravljeno s ljubavlju i pseudonaukom. Sva prava zadržana."
+  }
+}

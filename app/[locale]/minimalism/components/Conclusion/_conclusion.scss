@@ -1,0 +1,52 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-conclusion' as *;
+@use '../../styles/typography/tp-headings' as h;
+
+.conclusion {
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-xxxl;
+  padding-inline: s.$space-m;
+  padding-block: s.$space-xxxl;
+
+  background-color: var(--white);
+  color: var(--black);
+  
+  @include mx.mq(break-768) {
+    padding-inline: s.$space-xxxl;
+  }
+
+  &__title {
+    @include h.h2;
+  }
+
+  &__main {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-xxl;
+  }
+
+  &__figures {
+    @include mx.centered;
+    flex-direction: row;
+    gap: s.$space-m;
+  }
+
+  &__figure {
+    height: 80px;
+  }
+
+  &__boasting {
+    @include conclusion-boasting;
+  }
+
+  &__octahedron {
+    height: 210px;
+
+
+    @include mx.mq(break-768) {
+      height: 320px;
+    }
+  }
+}

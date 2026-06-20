@@ -1,0 +1,43 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-hero' as *;
+@use '../../styles/typography/tp-headings' as h;
+
+.hero {
+  @include mx.centered;
+  flex-direction: column;
+  height: 100vh;
+
+  &__top, &__down {
+    height: 100%;
+    width: 100%;
+    padding-inline: s.$space-m;
+    justify-content: start;
+
+    @include mx.mq(break-768) {
+      justify-content: center;
+    }
+  }
+
+  &__top {
+    background-color: var(--white);
+    display: flex;
+    align-items: end;
+
+    &-text {
+      @include h.h1;
+      text-align: left;
+    }
+  }
+
+  &__down {
+    background-color: var(--black);
+    display: flex;
+    align-items: start;
+
+    &-text {
+      @include hero-continuation;
+      color: var(--white);
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@use './language-page-base';
+@use './tp-languages' as *;
+
+.lang-select {
+  --lang-page-bg-start: rgba(153,177,255,.08);
+  --lang-page-bg-end: rgba(152,198,255,.12);
+
+  backdrop-filter: blur(40px);
+
+  color: var(--text-secondary);
+
+  &__inner {
+    background: linear-gradient(
+      to bottom,
+      var(--lang-page-bg-start),
+      var(--lang-page-bg-end)
+    );
+  }
+
+  &__close {
+    @include lang-page-close;
+    --shadow-lang-close: 0 4px 4px #0000003e;
+
+    &:hover {
+      text-shadow: var(--shadow-lang-close);
+    }
+  }
+
+  &__group-title {
+    @include lang-page-geography;
+  }
+
+  &__subgroup-title {
+    @include lang-page-internal;
+  }
+
+  &__name {
+    @include lang-page-lang;
+
+    border-bottom: 2px solid transparent;
+
+    transition: .3s;
+
+    &:hover {
+      border-bottom-color: white;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "title": "kotarsis — kde se myšlenky stávají průhlednými",
+    "description": "Místo, kde se myšlenky stávají průzračnými jako sklo. Vstup a nech světlo projít skrz sebe — zde začíná tvá katarze.",
+    "keywords": "kotarsis, katarze, projektový hub, digitální světy, filozofie, průhlednost, sklo, osvícení, tvůrčí cesta, atmosféra, osobní vesmír",
+    "siteName": "kotarsis",
+    "imgAlt": "Náhled kotarsis"
+  },
+
+  "header": {
+    "logo": "kotarsis",
+    "lang": "Čeština",
+    "alt": {
+      "logo": "logo hlavičky",
+      "themeDark": "ikona tmavého režimu",
+      "themeLight": "ikona světlého režimu",
+      "globe": "ikona výběru jazyka"
+    }
+  },
+
+  "hero": {
+    "brand": "kotarsis",
+    "ideology": {
+      "line1": "Nezávislá tvorba jako cesta ke katarzi",
+      "line2": "Tvorba světů, ve kterých stojí za to žít — společně"
+    },
+    "button": "Pomoz tomu růst!"
+  },
+
+  "projects": {
+    "go": "→ přejít na stránku",
+    "comingSoon": "Již brzy",
+    "oraculux": {
+      "description": "Chceš trochu magie? Chceš poznat svůj osud? Zeptej se Oraculux!"
+    },
+
+    "concentrator": {
+      "description": "Chybí ti soustředění? Znám řešení tvého problému:"
+    },
+
+    "minimalism": {
+      "description": "Black, White \nand\n Space Between"
+    },
+
+    "redacted": {
+      "description": "Chyba byla přijata. \nKontrola byla zamítnuta. \nTuto chybu nelze opravit."
+    },
+
+    "redheart": {
+      "description": "1000 důvodů milovat zrzky, protože jeden nikdy nestačí."
+    },
+
+    "birthday": {
+      "description": "Osobní narozeninové překvapení, uchované až do té správné chvíle."
+    },
+
+    "censored": {
+      "description": "A personal birthday surprise, waiting for the right moment."
+    }
+  },
+
+  "about": {
+    "title": "Kdo jsem — a proč tvořím",
+    "subline": "Nezávislý tvůrce • Vývojář • Designér",
+    "description": "Jsem nezávislý tvůrce, který zkoumá průsečík technologií, designu a emocí. Moje práce je o tvorbě produktů, které myslí — a cítí.\nKatarze je jejím jádrem: moment, kdy tvorba promění emoci v jasnost. Prostřednictvím umění, kódu a zvědavosti chci vytvářet světy, ve kterých stojí za to žít — společně.\nKaždý projekt je částí této cesty — odrazem smyslu, rovnováhy a hledání něčeho skutečného."
+  },
+
+  "indie": {
+    "title": "Nezávislá tvorba od začátku do konce",
+    "subline": "Jeden ucelený systém — od nápadu po nasazení",
+    "outro": "To všechno je jeden kontinuum. Tak chápu „nezávislou tvorbu“.",
+
+    "alt": {
+      "chain": "řetěz propojení mezi vrstvami",
+      "continuum": "symbol tvůrčí kontinuity",
+
+      "brain": "ikona mozku",
+      "light": "ikona žárovky",
+
+      "palette": "ikona palety",
+      "pencil": "ikona tužky",
+
+      "laptop": "ikona notebooku",
+      "gear": "ikona ozubeného kola",
+      "instruments": "ikona vývojářských nástrojů",
+
+      "loop": "ikona nekonečné smyčky",
+      "world": "ikona světa",
+
+      "dna": "ikona DNA",
+      "hexa": "ikona šestiúhelníku",
+      "needle": "ikona jehly"
+    },
+
+    "layers": {
+      "management": {
+        "title": "Manažerská Vrstva",
+        "description": "Společně určují, co a proč tvoříme.",
+        "elements": [
+          "Vize Produktu — určování účelu a směru",
+          "Branding — převádění vize do rozpoznatelného pocitu"
+        ]
+      },
+
+      "design": {
+        "title": "Designová Vrstva",
+        "description": "Společně vytvářejí emocionální jasnost a plynutí.",
+        "elements": [
+          "Grafický design — formování vizuální tváře",
+          "UI/UX — formování toho, jak se věci cítí"
+        ]
+      },
+
+      "development": {
+        "title": "Vývojová Vrstva",
+        "description": "Společně činí myšlenku hmatatelnou.",
+        "elements": [
+          "Frontend — zážitek vtělený do kódu",
+          "Backend — logika a struktura",
+          "Fullstack — most mezi vizuálnem a logikou"
+        ]
+      },
+
+      "infrastructure": {
+        "title": "Infrastrukturní Vrstva",
+        "description": "Společně udržují a rozšiřují tvorbu.",
+        "elements": [
+          "DevOps — systémy, které dýchají",
+          "i18n — dávající řeč univerzálnosti"
+        ]
+      },
+
+      "meta": {
+        "title": "Meta Vrstva",
+        "description": "Společně ztělesňují ducha nezávislého tvůrce.",
+        "elements": [
+          "Plný Cyklus — od nápadu po vydání",
+          "Design Systémy — harmonie mezi částmi",
+          "Produktové řízení — protkávání smyslu skrze strukturu"
+        ]
+      }
+    }
+  },
+
+  "footer": {
+    "title": "kotarsis — systém nezávislé tvorby",
+    "philosophy1": "„Ne firma — ale vzorec tvorby.“",
+    "philosophy2": "∞ Vytvořeno nezávisle · Sdíleno univerzálně",
+    "warm": "Děkuji, že jsi součástí tohoto kontinua — za zvědavost, podporu nebo jen přítomnost.",
+    "support": {
+      "text": "Podpořit tvorbu na Buy Me A Coffee",
+      "alt": "káva"
+    },
+    "copyright": "© 2025 kotarsis. Všechna práva vyhrazena."
+  },
+
+  "notFound": {
+    "title": "Stránka se rozpustila ve skle",
+    "description": "Opustili jste známé cesty kotarsis. Některé střepy však lze stále posbírat.",
+    "home": "Zpět domů",
+    "worlds": "Známé světy",
+    "origin": "Ne všechny cesty jsou ztraceny.",
+    "quotes": [
+      "Některé stránky zmizí dříve, než je stihneme otevřít.",
+      "Sklo si pamatuje cestu lépe než lidé.",
+      "Ne každá ztráta znamená konec cesty.",
+      "Někdy je chyba jen jiným vchodem.",
+      "Našli jste prázdnotu mezi světy.",
+      "Ne všechny trasy byly určeny k tomu, aby byly projity.",
+      "I ztracená stránka zanechá odraz."
+    ]
+  }
+}

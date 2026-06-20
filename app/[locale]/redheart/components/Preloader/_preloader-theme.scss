@@ -1,0 +1,60 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-preloader' as *;
+
+
+.preloader {
+  --preloader-bg: #E96937;
+  --preloader-main-color: #F7CDB4;  
+
+  background-color: var(--preloader-bg);
+  color: var(--preloader-main-color);
+
+  &__content {
+    @include mx.centered;
+    flex-direction: column;
+    gap: 24px;
+    padding-inline: s.$space-xs;
+    width: 100%;
+
+    @include mx.mq(break-390) {
+      padding-inline: s.$space-l;
+    }
+  }
+
+  &__kotarsis {
+
+    &-title {
+      @include preloader-kotarsis;
+    }
+
+    &-icon {
+      // color: var(--preloader-main-color);
+    }
+  }
+
+  &__divider {
+    background-color: var(--preloader-main-color);
+  }
+
+  &__presents {
+    @include preloader-presents;
+  }
+
+  &__project {
+    --preloader-project-bg: #FBAF81;
+    background-color: var(--preloader-project-bg);
+
+    border-radius: 28px;
+
+    @include mx.mq(break-768) {
+      padding-block: s.$space-m;
+      padding-inline: s.$space-l;
+    }
+
+
+    &-title {
+      @include preloader-project;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+:root {
+  /* === FONT FAMILY === */
+  --font-primary: "Manrope", "Inter" sans-serif;
+
+  /* === FOR PROJECTS === */
+  --font-oraculux: "Cinzel Variable", serif;
+  --font-concentrator: "Exo 2 Variable", sans-serif;
+  --font-minimalism: "Comfortaa Variable", sans-serif;
+  --font-redacted: "JetBrains Mono Variable", sans-serif;
+  --font-redheart: "Great Vibes", sans-serif;
+  --font-birthday: "Balsamiq Sans", sans-serif;
+  --font-censor: "Roboto Slab", sans-serif;
+
+  /* === FONT WEIGHTS === */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* === LINE HEIGHTS === */
+  --line-height-default: 1.4;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+}
+
+p, a, span, button, input,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: var(--line-height-default);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

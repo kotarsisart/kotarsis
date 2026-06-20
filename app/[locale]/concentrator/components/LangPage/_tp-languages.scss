@@ -1,0 +1,52 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --lang-page-lang-320: 22px;
+  --lang-page-lang-1440: 24px;
+
+  --lang-page-geography-320: 28px;
+  --lang-page-geography-1440: 32px;
+
+  --lang-page-internal-320: 24px;
+  --lang-page-internal-1440: 28px;
+
+  --lang-page-close-320: 60px;
+}
+
+@mixin lang-page-lang {
+  font-size: var(--lang-page-lang-320);
+  font-weight: var(--font-weight-semibold);
+  text-align: left;
+
+  @include mx.mq(break-1440) {
+    font-size: var(--lang-page-lang-1440);
+  }
+}
+
+@mixin lang-page-geography {
+  font-size: var(--lang-page-geography-320);
+  font-weight: var(--font-weight-bold);
+  text-align: left;
+
+  @include mx.mq(break-1440) {
+    font-size: var(--lang-page-geography-1440);
+  }
+}
+
+@mixin lang-page-internal {
+  font-size: var(--lang-page-internal-320);
+  font-weight: var(--font-weight-bold);
+  text-align: left;
+
+  @include mx.mq(break-1440) {
+    font-size: var(--lang-page-internal-1440);
+  }
+}
+
+@mixin lang-page-close {
+  font-size: var(--lang-page-close-320);
+  line-height: 50%;
+  font-weight: var(--font-weight-medium);
+}

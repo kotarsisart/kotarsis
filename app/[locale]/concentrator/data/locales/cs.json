@@ -1,0 +1,276 @@
+{
+  "meta": {
+    "title": "Concentrator™ — Zařízení pro soustředění",
+    "description": "Soustřeďte se bez námahy s Concentrator™ — interaktivním nástrojem nové generace pro trénink koncentrace.",
+    "keywords": "koncentrace, fokus, produktivita, kotarsis, zařízení",
+    "siteName": "Concentrator™",
+    "imgAlt": "Náhled Concentrator™"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logo kotarsis",
+    "projectAlt": "logo projektu Concentrator™"
+  },
+
+  "header": {
+    "logo": {
+      "project": "Concentrator™",
+      "projectAlt": "Logo projektu Concentrator™",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo kotarsis"
+    },
+    "slogan": "Stabilizujte úroveň své kognitivní energie.",
+    "focus": {
+      "label": "Fokus:"
+    },
+    "langButton": {
+      "default": "Vybrat jazyk"
+    }
+  },
+
+  "hero": {
+    "slogan": "Soustřeďte se bez námahy",
+    "title": "Concentrator™",
+    "outro": "Technologie soustředění nové generace",
+    "button": {
+      "default": "Aktivovat fokus",
+      "active": "Fokus aktivován!"
+    },
+    "counter": {
+      "label": "Již se soustředí"
+    },
+    "cognitive": "Kognitivní synchronizace dokončena",
+    "image": {
+      "alt": "Zařízení Concentrator"
+    }
+  },
+
+  "hiw": {
+    "title": "Jak Concentrator™ funguje?",
+    "steps": {
+      "laptop": {
+        "alt": "Notebook",
+        "text": "Položte jej poblíž"
+      },
+      "off": {
+        "alt": "Nedělá nic",
+        "text": "Nedělá vůbec nic"
+      },
+      "flame": {
+        "alt": "Pracujete jako šelma",
+        "text": "Pracujete jako šelma"
+      }
+    }
+  },
+
+  "story": {
+    "title": "Původ Concentrator™",
+    "paragraphs": [
+      "V zapomenuté laboratoři pod Karpaty skupina excentrických vědců objevila oscilující pole čisté koncentrace.",
+      "Po sedmi letech neúspěšných pokusů, hádek a rozlité kávy se jim podařilo tuto sílu nasměrovat do jednoho zařízení — Concentrator™.",
+      "To, co začalo jako kofeinový vedlejší projekt, brzy vyvolalo to, co dnes nazývají Událost Fokusu. Jedna laboratorní rostlina zdvojnásobila svůj růst a kočka vyřešila sudoku.",
+      "Když si tým — složený z teoretických neurochemiků, jednoho neúspěšného kouzelníka a stážisty, který si myslel, že jde o kurz vaření — uvědomil, co objevil, okamžitě se pustil do stabilizace jevu.",
+      "Používejte s opatrností. Vedlejší účinky mohou zahrnovat bezprecedentní produktivitu a zvláštní pocit smyslu života."
+    ],
+    "quote": {
+      "text": "Nevěděli jsme, jak to funguje. Ale fungovalo to.",
+      "author": "Prof. Kostjuk"
+    },
+    "image": {
+      "alt": "Příběh Concentratoru"
+    }
+  },
+
+  "benefits": {
+    "title": "Proč si vybrat Concentrator™?",
+    "cards": [
+      {
+        "icon": "/src/assets/images/section-icons/benefits/no-charge.svg",
+        "alt": "bez nabíjení",
+        "title": "Funguje bez nabíjení",
+        "description": "Napájen čistým úmyslem. Dobíjí se pohledy kolegů."
+      },
+      {
+        "icon": "/src/assets/images/section-icons/benefits/book-question-icon.svg",
+        "alt": "bez návodu",
+        "title": "Ne potřebuje žádný návod",
+        "description": "Stačí jej položit poblíž. Už ví všechno. Možná i o vás."
+      },
+      {
+        "icon": "/src/assets/images/section-icons/benefits/coffee-cat.png",
+        "alt": "miluje kávu a kočky",
+        "title": "Miluje kávu i kočky",
+        "description": "Nenaruší váš ranní rituál a krásně ladí s předením."
+      }
+    ]
+  },
+
+  "comparison": {
+    "title": "Concentrator™ vs běžný časovač",
+    "headers": ["Parametr", "Concentrator™", "Běžný časovač"],
+    "rows": [
+      {
+        "parameter": "Zvýšení soustředění",
+        "concentrator": "+300%",
+        "regular": "0%"
+      },
+      {
+        "parameter": "Zdroj energie",
+        "concentrator": "Není potřeba",
+        "regular": "Je potřeba"
+      },
+      {
+        "parameter": "Vědecká hodnota",
+        "concentrator": "Pseudovědecká",
+        "regular": "Žádná"
+      },
+      {
+        "parameter": "Odolnost proti vodě",
+        "concentrator": "IP68",
+        "regular": "Nízká"
+      }
+    ]
+  },
+
+  "availability": {
+    "promotions": {
+      "up": "Staňte se prvním testerem CPhone — nového chytrého telefonu poháněného polem soustředění. Objednejte si Concentrator™ nyní a získejte přístup i rezervaci prototypu.",
+      "down": "Concentrator™ byl první fází. Nyní budujeme vícevrstvý kognitivní ekosystém — a CPhone je vaším portálem do této budoucnosti. Beta testování začíná brzy — jste připraveni?"
+    },
+    "title": {
+      "part1": "Zbývá už jen",
+      "part2": "zařízení z celkového počtu"
+    },
+    "timer": {
+      "label": "Nabídka končí za"
+    },
+    "image": {
+      "alt": "Vybavení Concentratoru"
+    },
+    "messages": {
+      "normal": "Buďte napřed a pořiďte si Concentrator™ hned teď!",
+      "unavailable": "Fokus není dostupný. Proveďte prosím seanci sebekontroly."
+    },
+    "buttons": {
+      "try": "Zkusit koupit",
+      "soldout": "Bohužel pozdě!"
+    }
+  },
+
+  "gallery": {
+    "title": "Galerie zařízení",
+    "alts": {
+      "front": "pohled zepředu",
+      "side": "pohled z boku",
+      "top": "pohled shora",
+      "press": "stisknutí tlačítka",
+      "interior": "v interiéru",
+      "meditation": "meditace",
+      "equipment": "vybavení",
+      "hands": "v rukou",
+      "full": "celkový pohled v interiéru"
+    }
+  },
+
+  "reviews": {
+    "title": "Recenze uživatelů",
+    "items": [
+      { "text": "„Dokončil jsem diplom za jednu noc. Netuším jak.“", "author": "Jakub", "date": "21.05.2025" },
+      { "text": "„Smazal jsem TikTok. Zázrak.“", "author": "James", "date": "15.04.2025" },
+      { "text": "„Concentrator™ jen stál. Já ne.“", "author": "Olena", "date": "12.03.2025" },
+      { "text": "„Dřív jsem otevíral YouTube. Teď oči.“", "author": "Emily", "date": "06.04.2025" },
+      { "text": "„Sedl jsem na 10 minut — odešel po 6 hodinách.“", "author": "Ivan", "date": "25.04.2025" },
+      { "text": "„Poslal jsem zprávu a vypral prádlo. Zároveň.“", "author": "Carlos", "date": "29.03.2025" },
+      { "text": "„Zapomněl jsem na přestávky. I na jídlo.“", "author": "Dmytro", "date": "03.05.2025" },
+      { "text": "„Fokus nezmizel. Ani s mojí kočkou.“", "author": "Katya", "date": "14.04.2025" },
+      { "text": "„Jen jsem to zapnul. Zbytek je historie.“", "author": "Marta", "date": "18.03.2025" }
+    ]
+  },
+
+  "faq": {
+    "title": "Často kladené otázky",
+    "items": [
+      {
+        "q": "Jak Concentrator™ funguje?",
+        "a": "Zvyšuje soustředění o 300 % pomocí pseudovědeckých impulsů a představivosti."
+      },
+      {
+        "q": "Proč Concentrator™ nic nedělá?",
+        "a": "Protože už udělal vše potřebné."
+      },
+      {
+        "q": "Mohu ho použít ve veřejné dopravě?",
+        "a": "Ano, zvlášť pokud se chcete soustředit na drobný text na pokutě."
+      },
+      {
+        "q": "Má nějaké vedlejší účinky?",
+        "a": "Jen vedlejší úspěchy: vyšší produktivitu, šarm a smysl pro humor."
+      },
+      {
+        "q": "Je to legální v mé zemi?",
+        "a": "Technicky ano."
+      },
+      {
+        "q": "Mohu použít dva Concentratory™ najednou?",
+        "a": "Jen pokud máte dva mozky."
+      }
+    ]
+  },
+
+  "order": {
+    "form": {
+      "title": "Objednat fokus",
+      "placeholders": {
+        "name": "Vaše jméno",
+        "email": "Example@gmail.com",
+        "comment": "Komentář nebo dotaz"
+      },
+      "labels": {
+        "submit": "Objednat fokus",
+        "sending": "Odesílání..."
+      },
+      "messages": {
+        "nameRequired": "Zadejte své jméno 🥺",
+        "validEmail": "Zadejte platný email",
+        "noNumbers": "Nepoužívejte čísla ve jménu 😊",
+        "success": "Formulář úspěšně odeslán!"
+      }
+    },
+    "delivery": {
+      "title": "Doručení je průhledné",
+      "steps": [
+        {
+          "title": "Objednali jste produkt",
+          "description": "Objednávka úspěšně vytvořena na webu"
+        },
+        {
+          "title": "Připravujeme a odesíláme",
+          "description": "Doručuje vycvičený poštovní holub"
+        },
+        {
+          "title": "Přijímáte zásilku",
+          "description": "Spolu s vyšší produktivitou"
+        }
+      ]
+    }
+  },
+
+  "footer": {
+    "nav": {
+      "links": {
+        "hiw": "Jak to funguje",
+        "reviews": "Recenze",
+        "order": "Objednávka",
+        "faq": "FAQ"
+      },
+      "team": "Pošlete kávu a životopis"
+    },
+    "me": {
+      "author": "Autor: kotarsis_art",
+      "coffee": "Podpora experimentu kávou",
+      "telegram": "Telegram",
+      "custom": "Získat vlastní web"
+    },
+    "copyright": "© 2025 Concentrator™ Vytvořeno s láskou a pseudovědou. Všechna práva vyhrazena."
+  }
+}

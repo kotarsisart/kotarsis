@@ -1,0 +1,67 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --footer-nav-320: 16px;
+  --footer-nav-390: 20px;
+  --footer-nav-1280: 24px;
+
+  --footer-me-links-320: 20px;
+  --footer-me-links-1280: 24px;
+
+  --footer-outro-320: 16px;
+  --footer-outro-1280: 20px;
+
+  --footer-easter-egg-320: 14px;
+}
+
+@mixin footer-nav {
+  --text-footer-nav: #EAD6F9;
+  font-size: var(--footer-nav-320);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.1em;
+  color: var(--text-footer-nav);
+  text-decoration: none;
+
+  @include mx.mq(break-390) {
+    font-size: var(--footer-nav-390);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--footer-nav-1280);
+  }
+}
+
+@mixin footer-me-links {
+  --text-footer-me-links: #E0D0FF;
+  font-family: var(--font-secondary);
+  font-size: var(--footer-me-links-320);
+  letter-spacing: 0.1em;
+  color: var(--text-footer-me-links);
+  text-decoration: none;
+
+  @include mx.mq(break-1280) {
+    font-size: var(--footer-me-links-1280);
+  }
+}
+
+@mixin footer-outro {
+  --text-footer-outro: #C2B3E0;
+  font-family: var(--font-secondary);
+  font-size: var(--footer-outro-320);
+  font-weight: var(--font-weight-light);
+  color: var(--text-footer-outro);
+
+  @include mx.mq(break-1280) {
+    font-size: var(--footer-outro-1280);
+  }
+}
+
+@mixin footer-easter-egg {
+  --text-footer-easter-egg: #6b44c640;
+  font-family: var(--font-secondary);
+  font-size: var(--footer-easter-egg-320);
+  font-weight: var(--font-weight-light);
+  letter-spacing: 0.2em;
+  color: var(--text-footer-easter-egg);
+}

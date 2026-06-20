@@ -1,0 +1,85 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-header' as *;
+@use '../../styles/typography/tp-headings' as h;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--white);
+
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+
+  padding-inline: s.$space-s;
+  padding-block: s.$space-s;
+  background-color: var(--black);
+  height: 65px;
+  
+
+  @include mx.mq(break-768) { 
+    padding-inline: s.$space-xl;
+    height: 85px;
+  }
+  @include mx.mq(break-1024) { 
+    padding-inline: s.$space-xxl;
+  }
+
+  &-logo {
+    padding-block: s.$space-s;
+
+    .kts-logo__icon {
+      color: var(--white);
+    }
+
+    .kts-logo__text {
+      @include header-logo;
+    }
+
+    @include mx.mq(break-768) {
+      border: 2px solid var(--white);
+      border-radius: 12px;
+    }
+  }
+
+  &__langs {
+    @include mx.centered;
+    flex-direction: row;
+    gap: s.$space-s;
+    padding: s.$space-s;
+    height: 100%;
+    cursor: pointer;
+    
+    &:hover .header__langs-icon {
+      transform: rotate(360deg);
+    }
+
+    @include mx.mq(break-768) {
+      padding-inline: s.$space-m;
+      border: 2px solid var(--white);
+      border-radius: 12px;
+    }
+
+    &-text {
+      @include header-lang-select;
+    }
+
+    &-icon {
+      display: none;
+      width: 40px;
+      transition: transform 1s ease;
+      transform-origin: center;
+
+      @include mx.mq(break-768) {
+        display: flex;
+        width: 50px; 
+      }
+    }
+  }
+}
+

@@ -1,0 +1,73 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-preloader' as *;
+
+
+.preloader {
+  --preloader-bg-start: #12021C;
+  --preloader-bg-middle: #0A071A;
+  --preloader-bg-end: #020208;
+
+  --preloader-main-color: #F1EEFF;
+  
+  color: var(--preloader-main-color);
+
+  background: linear-gradient(
+    135deg, 
+    var(--preloader-bg-start),
+    var(--preloader-bg-middle),
+    var(--preloader-bg-end),
+  );
+
+  &__content {
+    flex-direction: column;
+    gap: 24px;
+    padding-inline: s.$space-xs;
+    width: 100%;
+
+    @include mx.mq(break-390) {
+      padding-inline: s.$space-l;
+    }
+  }
+
+  &__kotarsis {
+
+    &-title {
+      @include preloader-kotarsis;
+      color: var(--preloader-main-color);
+    }
+  }
+
+  &__divider {
+    --shadow-preloader-first: 0 0 14px rgba(180, 80, 255, 0.7);
+    --shadow-preloader-second: 0 1px 3px rgba(180, 80, 255, 0.3);
+    --preloader-divider: #5500D5BF;
+
+    height: 3px;
+    background-color: var(--preloader-divider);
+    box-shadow:
+      var(--shadow-preloader-first),
+      var(--shadow-preloader-second);
+  }
+
+  &__presents {
+    @include preloader-presents;
+  }
+
+  &__project {
+
+    @include mx.mq(break-768) {
+      padding-block: s.$space-m;
+      padding-inline: s.$space-l;
+    }
+
+
+    &-icon {
+      color: var(--text-logo);
+    }
+
+    &-title {
+      @include preloader-project;
+    }
+  }
+}

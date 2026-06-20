@@ -1,0 +1,49 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/index.scss' as *;
+@use '../../styles/typography/tp-base' as *;
+
+:root {
+  --preloader-kotarsis-350: 68px;
+  --preloader-kotarsis-768: 100px;
+
+  --preloader-presents-520: 28px;
+  --preloader-presents-768: 40px;
+
+  --preloader-project-350: 32px;
+  --preloader-project-768: 68px;
+}
+
+@mixin preloader-kotarsis {
+  font-size: var(--preloader-kotarsis-350);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.05em;
+  line-height: var(--line-height-light);
+  font-display: optional;
+
+  @include mx.mq(break-768) {
+    font-size: var(--preloader-kotarsis-768);
+  }
+}
+
+@mixin preloader-presents {
+  font-size: var(--preloader-presents-350);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.15em;
+
+  @include mx.mq(break-768) {
+    font-size: var(--preloader-presents-768);
+  }
+}
+
+@mixin preloader-project {
+  --preloader-project-text: #FF5D00;
+  font-size: var(--preloader-project-350);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.02em;
+  line-height: var(--line-height-light);
+  color: var(--preloader-project-text);
+
+  @include mx.mq(break-768) {
+    font-size: var(--preloader-project-768);
+  }
+}

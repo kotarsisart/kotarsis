@@ -1,0 +1,42 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --delivery-step-title-320: 18px;
+  --delivery-step-title-360: 20px;
+  --delivery-step-title-1440: 22px;
+  --delivery-step-title-size: var(--delivery-step-title-320);
+
+  --delivery-step-description-320: 16px;
+  --delivery-step-description-360: 18px;
+  --delivery-step-description-1440: 20px;
+  --delivery-step-description-size: var(--delivery-step-text-320);
+}
+
+@mixin delivery-step-title {
+  --text-delivery-step: #D5DCFF;
+  font-size: var(--delivery-step-title-320);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--text-delivery-step);
+
+  @include mx.mq(break-360) {
+    font-size: var(--delivery-step-title-360);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--delivery-step-title-1440);
+  }
+}
+
+@mixin delivery-step-description {
+  font-size: var(--delivery-step-description-320);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-delivery-step-hover);
+
+  @include mx.mq(break-360) {
+    font-size: var(--delivery-step-description-360);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--delivery-step-description-1440);
+  }
+}

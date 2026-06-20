@@ -1,0 +1,22 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --button-320: 18px;
+  --button-1024: 20px;
+  --button-1440: 24px;
+}
+
+@mixin button {
+  font-family: var(--font-primary);
+  font-size: var(--button-320);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-1024) {
+    font-size: var(--button-1024);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--button-1440);
+  }
+}

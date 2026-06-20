@@ -1,0 +1,47 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+/* BASE value */
+:root {
+  --reasons-font-size: 18px;
+
+  --reasons-skip-350: 18px;
+  --reasons-skip-768: 24px;
+}
+
+html:not(.font-custom) {
+  @include mx.mq(break-768) {
+    --reasons-font-size: 24px;
+  }
+
+  @include mx.mq(break-1024) {
+    --reasons-font-size: 30px;
+  }
+}
+
+@mixin reasons-reason {
+  --reasons-text: #FFDABA;
+  font-size: var(--reasons-font-size);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.4;
+  text-align: left;
+  color: var(--reasons-text);
+
+  @include mx.mq(break-768) {
+    line-height: 1.5;
+  }
+
+  @include mx.mq(break-1024) {
+    line-height: 1.6;
+  }
+}
+
+@mixin reasons-skip {
+  --reasons-skip-text: #F9B87F;
+  font-size: var(--reasons-skip-350);
+  font-weight: var(--font-weight-semibold);
+  color: var(--reasons-skip-text);
+  cursor: pointer;
+  
+}

@@ -1,0 +1,109 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --input-page-clue-350: 20px;
+  --input-page-clue-768: 32px;
+
+  --input-page-input-350: 18px;
+  --input-page-input-768: 28px;
+  
+  --input-page-button-create-350: 18px;
+  --input-page-button-create-768: 32px;
+
+  --input-page-button-copy-350: 14px;
+  --input-page-button-copy-768: 24px;
+
+  --input-page-succes-350: 20px;
+  --input-page-succes-768: 32px;
+
+  --input-page-link-350: 16px;
+  --input-page-link-768: 24px;
+
+  --input-page-view-350: 16px;
+  --input-page-view-768: 32px;
+
+  --form-warning-320: 14px;
+  --form-warning-768: 16px;
+  --form-warning-1024: 20px;
+}
+
+@mixin input-page-clue {
+  font-size: var(--input-page-clue-350);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--input-page-clue-768);
+  }
+}
+
+@mixin input-page-input {
+  font-size: var(--input-page-input-350);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--input-page-input-768);
+  }
+}
+
+@mixin input-page-button-create {
+  font-size: var(--input-page-inpubutton-create-350);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--input-page-button-create-768);
+  }
+}
+
+@mixin input-page-button-copy {
+  font-size: var(--input-page-inpubutton-copy-350);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--input-page-button-copy-768);
+  }
+}
+
+@mixin input-page-succes {
+  font-size: var(--input-page-succes-350);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--input-page-succes-768);
+  }
+}
+
+@mixin input-page-link {
+  font-size: var(--input-page-link-350);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--input-page-link-768);
+  }
+}
+
+@mixin input-page-view {
+  font-size: var(--input-page-view-350);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--input-page-view-768);
+  }
+}
+
+@mixin input-page-warning {
+  font-size: var(--form-warning-320);
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-primary); 
+  color: var(--input-page-secondary-text);
+  white-space: nowrap;
+
+  @include mx.mq(break-768) {
+    font-size: var(--form-warning-768);
+  }
+
+  @include mx.mq(break-1024) {
+    font-size: var(--form-warning-1024);
+  }
+}

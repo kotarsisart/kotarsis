@@ -1,0 +1,37 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --header-logo-768: 32px;
+
+  --header-lang-select-768: 20px;
+
+  --header-font-control-350: 14px;
+  --header-font-control-390: 18px;
+  --header-font-control-430: 24px;
+}
+
+@mixin header-logo {
+  font-size: var(--header-logo-768);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.02em;
+  color: var(--header-text);
+}
+
+@mixin header-lang-select {
+  font-size: var(--header-lang-select-768);
+  font-weight: var(--font-weight-bold);
+}
+
+@mixin header-font-control {
+  font-size: var(--header-font-control-350);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-390) {
+    font-size: var(--header-font-control-390);
+  }
+  @include mx.mq(break-430) {
+    font-size: var(--header-font-control-430);
+  }
+}

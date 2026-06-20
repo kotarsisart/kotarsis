@@ -1,0 +1,213 @@
+@use '../../../styles/system/mixins' as mx;
+@use '../../../styles/tokens/spacing' as s;
+@use './tp-bargaining' as *;
+@use '../tp-headings-home' as h;
+
+.bargaining {
+  --bargaining-bg-start: #060B3B;
+  --bargaining-bg-middle: #17112D;
+  --bargaining-bg-end: #242B71;
+
+  @include mx.centered;
+  text-align: left;
+  flex-direction: column;
+  gap: s.$space-m;
+  padding-inline: s.$space-m;
+  padding-block: s.$space-xxl;
+
+  background: linear-gradient(
+    to bottom,
+    var(--bargaining-bg-start),
+    var(--bargaining-bg-middle),
+    var(--bargaining-bg-end)
+  );
+
+  @include mx.mq(break-768) {
+    text-align: center;
+    gap: s.$space-m;
+    padding: s.$space-xxl;
+  }
+
+  &__title {
+    @include h.h2;
+  }
+
+  &__subline {
+    @include bargaining-subline;
+  }
+
+  &__select {
+    @include bargaining-select;
+  }
+
+  &__parameters {
+    --bargaining-parameters-max-width-350: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: s.$space-m;
+    width: 100%;
+    max-width: var(--bargaining-parameters-max-width-350);
+
+    @include mx.mq(break-768) {
+      gap: s.$space-l;
+    }
+    @include mx.mq(break-1024) {
+      --bargaining-parameters-max-width-1024: 1100px;
+      flex-direction: row;
+      gap: s.$space-xxxl;
+      max-width: var(--bargaining-parameters-max-width-1024);
+    }
+
+    &-inner {
+      @include mx.centered;
+      flex-direction: column;
+      gap: s.$space-s;
+      width: 100%;
+
+      @include mx.mq(break-768) {
+        gap: s.$space-m;
+      }
+    }
+  }
+
+  &__parameter {
+    @include mx.centered;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    &-text {
+      @include bargaining-parameter;
+    }
+
+    &-checkbox {
+      --bargaining-checkbox-dimensions-350: 40px;
+      --bargaining-checkbox-bg-start: #08BAEB;
+      --bargaining-checkbox-bg-end: #0049DB;
+      --bargaining-checkbox-border: #25FBFF;
+
+      width: var(--bargaining-checkbox-dimensions-350);
+      height: var(--bargaining-checkbox-dimensions-350);
+      background: linear-gradient(
+        to bottom,
+        var(--bargaining-checkbox-bg-start),
+        var(--bargaining-checkbox-bg-end)
+      );
+      border: 2.4px solid var(--bargaining-checkbox-border);
+      border-radius: var(--main-radius);
+      padding: s.$space-s;
+      cursor: grab;
+
+      @include mx.mq(break-768) {
+        --bargaining-checkbox-dimensions-768: 50px;
+        width: var(--bargaining-checkbox-dimensions-768);
+        height: var(--bargaining-checkbox-dimensions-768);
+      }
+    }
+
+    &-icon {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.15s ease;
+
+      &.visible {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__press {
+    @include bargaining-press;
+  }
+
+  &__button {
+    --bargaining-button-default-bg: #84ADF8;
+    --bargaining-button-default-text: #C1D1FC;
+    --shadow-bargaining-button: 1px 4px 8px #080c36be;
+    @include mx.basic-button;
+    @include bargaining-button;
+    border-radius: var(--bargaining-button-radius);
+
+    background-color: var(--bargaining-button-default-bg);
+    color: var(--bargaining-button-default-text);
+    box-shadow: var(--shadow-bargaining-button);
+
+    transition: background 0.3s ease;
+     
+    &.ready {
+      --bargaining-button-ready-bg: #659AFB;
+      --bargaining-button-ready-text: #E3E6FF;
+      background-color: var(--bargaining-button-ready-bg);
+      color: var(--bargaining-button-ready-text);
+    }
+    
+    &:hover {
+      --bargaining-button-hover-bg: #1C6AF9;
+      background-color: var(--bargaining-button-hover-bg);
+    }
+    
+    &.activated {
+      --bargaining-button-activated-bg: #0039a2;
+      --bargaining-button-activated-text: #FFFFFF;
+      background-color: var(--bargaining-button-activated-bg);
+      color: var(--bargaining-button-activated-text);
+    }
+  }
+
+  &__loading {
+    @include bargaining-loading;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+
+    &.visible {
+      opacity: 1;
+    }
+  }
+
+  &__down {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-m;
+  }
+
+  &__track {
+    --bargaining-progress-bar-height: 26px;
+    --bargaining-progress-bar-width-350: 280px;
+    --bargaining-progress-bg: #3E78E5;
+    --bargaining-progress-bar-radius: 999px;
+
+    height: var(--bargaining-progress-bar-height);
+    width: var(--bargaining-progress-bar-width-350);
+    background-color: var(--bargaining-progress-bg);
+    border-radius: var(--bargaining-progress-bar-radius);
+    overflow: hidden;
+    
+    opacity: 0;
+
+    &.visible {
+      opacity: 1;
+    }
+
+    @include mx.mq(break-768) {
+      --bargaining-progress-bar-width-768: 550px;
+      width: var(--bargaining-progress-bar-width-768);
+    }
+  }
+
+  &__fill {
+    --bargaining-progress-fill: #0D46AF;
+    background-color: var(--bargaining-progress-fill);
+    height: 100%
+  }
+
+  &__processing {
+    @include bargaining-processing;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &.visible {
+      opacity: 1;
+    }
+  }
+}

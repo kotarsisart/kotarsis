@@ -1,0 +1,53 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/index' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --hero-button-320: 18px;
+  --hero-button-360: 20px;
+  --hero-button-430: 24px;
+
+  --hero-ideology-320: 20px;
+  --hero-ideology-360: 24px;
+  --hero-ideology-430: 30px;
+  --hero-ideology-834: 34px;
+  --hero-ideology-1024: 40px;
+  --hero-ideology-1280: 48px;
+}
+
+@mixin hero-ideology {
+  font-size: var(--hero-ideology-320);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: 1px;
+  color: var(--text-primary);
+
+  @include mx.mq(break-360) {
+    font-size: var(--hero-ideology-360);
+  }
+  @include mx.mq(break-430) {
+    font-size: var(--hero-ideology-430);
+  }
+  @include mx.mq(break-834) {
+    font-size: var(--hero-ideology-834);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--hero-ideology-1024);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--hero-ideology-1280);
+  }
+}
+
+@mixin hero-button {
+  font-size: var(--hero-button-320);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: 2px;
+  color: var(--text-secondary);
+
+  @include mx.mq(break-360) {
+    font-size: var(--hero-button-360);
+  }
+  @include mx.mq(break-430) {
+    font-size: var(--hero-button-430);
+  }
+}

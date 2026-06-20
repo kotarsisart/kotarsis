@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Birthday Capsule — vytvor jedinečné narodeninové prianie!",
+    "description": "Miesto, kde môžeš vytvoriť prianie pre blízku osobu a popriať jej k narodeninám!",
+    "keywords": "narodeniny, prianie, blahoželanie, oslava, darček, kotarsis",
+    "siteName": "Birthday Capsule",
+    "imgAlt": "Ukážka Birthday Capsule"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logo kotarsis",
+    "projectAlt": "logo projektu Birthday Capsule"
+  },
+
+  "header": {
+    "logo": {
+      "birthday": "Birthday",
+      "birthdayAlt": "Logo projektu Birthday Capsule",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo kotarsis",
+      "langSelect": "Vyberte jazyk"
+    }
+  },
+
+  "input": {
+    "title": "Koho chceš potešiť?",
+    "name": "Meno (alebo prezývka)",
+    "from": "Od koho",
+    "birthday": "Dátum narodenia",
+    "age": "Vek",
+    "message": "Správa",
+    "submit": "Vytvoriť prianie",
+
+    "resultTitle": "Tvoj odkaz je pripravený!",
+    "copy": "Kopírovať",
+    "preview": "Náhľad",
+
+    "error": {
+      "failAlt": "upozornenie",
+      "invalidAge": "Zadajte prosím platný vek",
+      "required": "Zadaj vek alebo dátum"
+    }
+  },
+
+  "hero": {
+    "title": "Všetko najlepšie",
+    "subtitle": "Toto prianie je špeciálne pre teba 🎂",
+
+    "from": "Blahoželá {{name}}",
+    "messageTitle": "{{name}} ti chce povedať:",
+
+    "defaultFrom": "Niekto výnimočný",
+    "defaultMessage": "Prajem ti všetko najlepšie!",
+    "altCelebratingIcon": "ikona oslavy"
+  },
+
+  "facts": {
+    "title": "Mimochodom, ak ťa to zaujíma:",
+    "liveAlready": "Žiješ už",
+    "days": "dní",
+    "hoursApprox": "To je približne",
+    "hours": "hodín",
+    "heartbeats": "Tvoje srdce urobilo",
+    "beats": "úderov",
+    "populationBorn": "Po tvojom narodení sa narodilo",
+    "people": "ľudí",
+    "stage": "Teraz si vo fáze",
+
+    "stages": {
+      "childhood": "Detstvo",
+      "teen": "Dospievanie",
+      "youth": "Mládež",
+      "maturity": "Dospelosť",
+      "experience": "Skúsenosť"
+    },
+
+    "outro": {
+      "line1": "A to je len začiatok,",
+      "line2": "pred tebou je ešte veľa rokov"
+    },
+    "altBirthdayStar": "narodeninová hviezda"
+  },
+
+  "footer": {
+    "title": "Všetko najlepšie!",
+    "author": "Autor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Podpor takéto momenty",
+    "custom": "Objednať individuálny web",
+    "copyright": "© 2026 Birthday Capsule. Si viac než len dátum.",
+    "coffeeAlt": "Šálka kávy Birthday Capsule"
+  }
+}

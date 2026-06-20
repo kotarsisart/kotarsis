@@ -1,0 +1,29 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+
+  opacity: 1;
+  transition:
+    opacity 1s ease,
+    filter 1s ease;
+
+  &--hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__divider {
+    width: 0%;
+    max-width: 800px;
+    border-radius: 20px;
+    opacity: 0;
+    animation: divider-grow 2s ease forwards;
+    animation-delay: 0.7s;
+  }
+}
+
+@keyframes divider-grow {
+  from { width: 0%; opacity: 0; }
+  to { width: 100%; opacity: 1; }
+}

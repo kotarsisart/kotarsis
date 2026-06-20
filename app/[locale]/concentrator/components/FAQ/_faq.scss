@@ -1,0 +1,128 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-faq' as *;
+@use '../../styles/typography/tp-headings' as h;
+@use '@/utils/animations/animations.scss' as *;
+
+.faq {
+  --faq-bg: #F9F0FC;
+  @include animate-section(0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: s.$space-l;
+  padding-block: s.$space-xl;
+  padding-inline: s.$space-s;
+  background-color: var(--faq-bg);
+
+  @include mx.mq(break-360) {
+    padding-inline: s.$space-m;
+  }
+  @include mx.mq(break-768) {
+    padding-inline: s.$space-xl;
+    gap: s.$space-xl;
+  }
+  @include mx.mq(break-1280) {
+    @include animate-section(1);
+    padding-inline: 0;
+  }
+
+  &__title {
+    @include h.h2;
+  }
+
+  &__items {
+    @include mx.centered;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+  }
+
+  &__item {
+    --shadow-faq-item: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: s.$space-m;
+    width: 100%;
+    max-width: 800px;
+    background: #FFFFFF;
+    padding-block: 12px;
+    padding-inline: s.$space-m;
+    border-radius: var(--radius-l);
+    box-shadow: var(--shadow-faq-item);
+    transition: 0.3s ease;
+    overflow: hidden;
+    will-change: height; 
+    gap: 0;
+
+    &:hover {
+      .faq__arrow {
+        @include mx.mq(break-1024){
+          transform: scale(1.4);
+        }
+      }
+    }
+
+    @include mx.mq(break-1280) {
+      max-width: 550px;
+    }
+    @include mx.mq(break-1440) {
+      max-width: 620px;
+    }
+
+    &::after {
+      gap: 80px;
+    }
+  }
+
+  &__item-question {
+    @include faq-question;
+    width: 100%;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &.active {
+      .faq__arrow {
+        rotate: 180deg;
+      }
+    }
+  }
+
+  &__item-answer {
+    --faq-aswer-bg: #EEF1FF;
+    @include faq-answer;
+    background: var(--faq-aswer-bg);
+    padding-inline: s.$space-s;
+    border-radius: var(--radius-s);
+    
+    margin-top: 8px;
+    --h: 0;
+    height: var(--h);
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+    will-change: height, opacity;
+    transform: translateZ(0);
+
+    & > p {
+      opacity: 1;
+      transition: opacity 0.2s ease;
+    }
+  }
+
+  &__arrow {
+    @include faq-question-arrow;
+    transition: transform 0.3s ease;
+
+    &--open {
+      transform: rotate(180deg);
+    }
+  }
+}

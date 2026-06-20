@@ -1,0 +1,92 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use '../../styles/tokens/radii' as r;
+@use './tp-benefits' as *;
+@use '../../styles/typography/tp-headings' as h;
+
+.benefits {
+  --benefits-bg: #E0E2FF;
+  @include mx.centered;
+  background-color: var(--benefits-bg);
+  flex-direction: column;
+  padding-block: s.$space-xl;
+  gap: s.$space-l;
+
+  @include mx.mq(break-390) {
+    padding-inline: s.$space-m;
+  }
+  @include mx.mq(break-768) {
+    padding-inline: 0;
+  }
+  @include mx.mq(break-1280) {
+    padding-block: s.$space-xxl;
+  }
+
+  &__title {
+    @include h.h2;
+  }
+
+  &__container {
+    @include mx.centered;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: s.$space-l;
+    padding-block: s.$space-s;
+  }
+
+  &-card {
+    --benefits-card-bg: #EEF9FF;
+    --shadow-benefits-card: 0 8px 24px rgba(0, 0, 0, 0.08);
+    @include mx.centered;
+    flex-direction: column;
+    justify-content: start;
+    gap: 12px;
+    padding-block: s.$space-l;
+    padding-inline: s.$space-m;
+    background-color: var(--benefits-card-bg);
+    box-shadow: var(--shadow-benefits-card);
+
+    width: 290px;
+    height: 250px;
+    border-radius: var(--radius-xl);
+
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+
+    &:hover {
+      transform: translateY(-8px);
+    }
+
+    @include mx.mq(break-360) {
+      width: 320px;
+    }
+    @include mx.mq(break-834) {
+      width: 370px;
+      height: 270px;
+      gap: s.$space-m;
+    }
+    @include mx.mq(break-1440) {
+      width: 400px;
+      height: 290px;
+    }
+
+    &__icon {
+      height: 50px;
+      width: auto;
+
+      @include mx.mq(break-834) {
+        height: 60px;
+      }
+      @include mx.mq(break-1440) {
+        height: 64px;
+      }
+    }
+
+    &__title {
+      @include benefits-card-title;
+    }
+    &__description {
+      @include benefits-card-description;
+    }
+  }
+}

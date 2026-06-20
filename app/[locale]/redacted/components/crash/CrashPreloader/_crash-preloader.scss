@@ -1,0 +1,219 @@
+@use '../../../styles/system/mixins' as mx;
+@use '../../../styles/tokens/spacing' as s;
+@use '../../preloader/tp-preloader' as *;
+
+.crash-preloader {
+  --preloader-bg: #0A1158;
+  --preloader-text: #CA0303;
+  --project-bg: #CA0000;
+
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+
+  background-color: var(--preloader-bg);
+
+  @include mx.centered;
+  flex-direction: column;
+
+  gap: 24px;
+
+  padding-inline: s.$space-m;
+
+  &__kotarsis {
+    @include mx.centered;
+    flex-direction: column;
+
+    &-icon {
+      width: 90px;
+      color: var(--preloader-text);
+  
+      opacity: 0;
+  
+      animation:
+        logoReveal .6s ease forwards;
+  
+      animation-delay: 3.4s;
+  
+      width: 90px;
+      color: var(--preloader-text);
+      
+      @include mx.mq(break-768) {
+        width: 120px;
+      }
+  
+      @include mx.mq(break-768) {
+        width: 120px;
+      }
+    }
+  }
+  
+
+  &__kotarsis-title {
+    opacity: 0;
+    @include preloader-kotarsis;
+
+    color: var(--preloader-text);
+  }
+
+  &__divider {
+    opacity: 0;
+    width: 100%;
+    max-width: 800px;
+    height: 6px;
+
+    border-radius: 999px;
+
+    background-color: var(--preloader-text);
+
+    box-shadow:
+      0 0 16px rgba(49, 70, 255, .6),
+      0 0 32px rgba(49, 70, 255, .3);
+
+    animation:
+      dividerGrow 2s ease forwards;
+  }
+
+  &__presents {
+    opacity: 0;
+    @include preloader-presents;
+
+    color: var(--preloader-text);
+  }
+
+  &__project {
+    opacity: 0;
+    max-width: 300px;
+    max-height: 90px;
+    padding-block: s.$space-m;
+    padding-inline: s.$space-l;
+    
+    border-radius: 24px;
+    background-color: var(--project-bg);
+
+    @include mx.mq(break-768) {
+      max-width: 500px;
+      max-height: 140px;
+    }
+  }
+
+  &__project-title {
+    opacity: 0;
+
+    @include preloader-project;
+    color: #F1EEFF;
+  }
+
+  &--invert {
+    filter:
+      contrast(2)
+      brightness(4)
+      saturate(1);
+
+    flex-direction: column-reverse;
+
+    @include mx.mq(break-768) {
+      flex-direction: row-reverse;
+    }
+
+    .crash-preloader__kotarsis-icon {
+      opacity: 0;
+    }
+  }
+
+  &--invert-final {
+    filter:
+      contrast(.2)
+      brightness(.4)
+      saturate(8);
+
+    animation:
+      glitchShift .1s ease;
+  }
+}
+
+.fade-up-1 {
+  animation:
+    fadeUp .8s ease forwards;
+  animation-delay: .5s;
+}
+
+.fade-up-2 {
+  animation:
+    fadeUp .8s ease forwards;
+  animation-delay: .7s;
+}
+
+.fade-up-3 {
+  animation:
+    fadeUp 1s ease forwards;
+  animation-delay: .9s;
+}
+
+.fade-up-4 {
+  animation:
+    fadeUp .8s ease forwards;
+  animation-delay: 1.1s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dividerGrow {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes glitchShift {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(300px);
+  }
+
+  40% {
+    transform: translateX(-180px);
+  }
+
+  60% {
+    transform: translateX(150px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes logoReveal {
+  from {
+    opacity: 0;
+    transform:
+      scale(.7)
+      rotate(-20deg);
+  }
+
+  to {
+    opacity: 1;
+    transform:
+      scale(1)
+      rotate(0deg);
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "Minimalism — structure over excess",
+    "description": "A minimalistic project exploring structure, contrast, meaning, and the art of removing everything unnecessary.",
+    "keywords": "minimalism, structure, design, kotarsis",
+    "siteName": "Minimalism",
+    "imgAlt": "Minimalism preview image"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "kotarsis logo",
+    "projectAlt": "minimalism project logo",
+    "langSelect": "Select language"
+  }, 
+
+  "header": {
+    "logo": {
+      "project": "Minimalism",
+      "projectAlt": "Minimalism project logo",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "kotarsis logo"
+    }
+  },
+
+  "hero": {
+    "title": "What remains if you remove the excess",
+    "subtitle": "– even shades?"
+  },
+
+  "manifesto": {
+    "title": "To remove is not to lose — it’s to find what matters.",
+    "blocks": [
+      [
+        "No color.",
+        "No effects.",
+        "No decoration."
+      ],
+      [
+        "Only contrast.",
+        "Only structure.",
+        "Only meaning."
+      ]
+    ]
+  },
+
+  "structure": {
+    "title": "When color dies, structure speaks.",
+    "items": [
+      {
+        "key": "square",
+        "label": "Balance",
+        "alt": "Square — balance"
+      },
+      {
+        "key": "circle",
+        "label": "Hierarchy",
+        "alt": "Circle — hierarchy"
+      },
+      {
+        "key": "triangle",
+        "label": "Rhythm",
+        "alt": "Triangle — rhythm"
+      }
+    ],
+    "outro": [
+      "A design stripped to the bone —",
+      "to see if it still breathes."
+    ]
+  },
+
+  "interpretation": {
+    "title": "Remove everything. What remains is truth.",
+    "lines": [
+      "There is no hidden message here.",
+      "",
+      "Structure is not an explanation.",
+      "Structure is a condition.",
+      "",
+      "Balance is not a square.",
+      "Hierarchy is not a circle.",
+      "Rhythm is not a triangle.",
+      "",
+      "Meaning is not in the shape.",
+      "",
+      "The structure remains silent.",
+      "You speak."
+    ]
+  },
+
+  "negation": {
+    "title": "This is not a style"
+  },
+
+  "conclusion": {
+    "title": "It’s a capability.",
+    "figures": [
+      {
+        "key": "triangle",
+        "alt": "Triangle"
+      },
+      {
+        "key": "square",
+        "alt": "Square"
+      },
+      {
+        "key": "circle",
+        "alt": "Circle"
+      }
+    ],
+    "boasting": [
+      "If you can build meaning from nothing,",
+      "you can build it from anything."
+    ],
+    "octahedronAlt": "Octahedron"
+  },
+
+  "footer": {
+    "enough": "This is enough.",
+    "author": "Author: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Support simplicity",
+    "custom": "Get a custom website",
+    "copyright": "© 2026 Minimalism. Made with respect to minimalism.",
+    "coffeeAlt": "Minimalism coffee cup"
+  }
+}

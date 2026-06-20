@@ -1,0 +1,55 @@
+// colors
+:root {
+  --proj-oraculux-bg-1: #5507A1;
+  --proj-oraculux-bg-2: #7A1DD6;
+  --proj-oraculux-text-main: #E18BFF;
+  --proj-oraculux-text-secondary: #EED5F8;
+  --proj-conc-bg-1: #97AFFF;
+  --proj-conc-bg-2: #98C7FF;
+  --proj-conc-text-main: #000000;
+  --proj-conc-text-secondary: #A6FFED;
+  --proj-min-bg: #000000;
+  --proj-min-text: #ffffff;
+  --proj-redc-bg-1: #050A3B;
+  --proj-redc-bg-2: #160303;
+  --proj-redc-text-main: #E50000;
+  --proj-redc-text-secondary: #3182ec;
+  --proj-heart-bg: #EB5317;
+  --proj-heart-text: #FFDABA;
+  --proj-birth-bg-1: #E5E7FD;
+  --proj-birth-bg-2: #FDE0F0;
+  --proj-birth-text: #4099FF;
+  --proj-censor-bg-1: #997440;
+  --proj-censor-bg-2: #5B401A;
+  --proj-censor-text: #171717;
+}
+
+
+// fonts
+.oraculux-font {
+  font-family: var(--font-oraculux);
+}
+
+.concentrator-font {
+  font-family: var(--font-concentrator);
+}
+
+.minimalism-font {
+  font-family: var(--font-minimalism);
+}
+
+.redacted-font {
+  font-family: var(--font-redacted);
+}
+
+.redheart-font {
+  font-family: var(--font-redheart);
+}
+
+.birthday-font {
+  font-family: var(--font-birthday);
+}
+
+.censor-font {
+  font-family: var(--font-censor);
+}

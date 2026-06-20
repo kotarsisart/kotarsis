@@ -1,0 +1,42 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-preloader' as *;
+
+
+.preloader {
+  background-color: var(--white);
+
+  &__kotarsis {
+
+    &-title {
+      @include preloader-kotarsis;
+    }
+
+    &-icon {
+      color: var(--black);
+    }
+  }
+
+  &__divider {
+    background-color: var(--black);
+  }
+
+  &__presents {
+    @include preloader-presents;
+  }
+
+  &__project {
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 28px;
+
+    @include mx.mq(break-768) {
+      padding-block: s.$space-m;
+      padding-inline: s.$space-l;
+    }
+
+    &-title {
+      @include preloader-project;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-hiw' as tp;
+@use '../../styles/typography/tp-headings' as h;
+
+.hiw {
+  --hiw-bg: #DCFAFF;
+  @include mx.centered;
+  flex-direction: column;
+  background: var(--hiw-bg);
+  padding-block: s.$space-xl;
+  gap: s.$space-l;
+
+  @include mx.mq(break-1440) {
+    gap: s.$space-xl;
+  }
+  
+  &__title {
+    @include h.h2;
+  }
+ 
+  &__steps {
+    @include mx.centered;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-inline: s.$space-s;
+      padding-block: s.$space-m;
+      gap: s.$space-l;
+
+      @include mx.mq(break-430) {
+        gap: s.$space-xl;
+      }
+
+      @include mx.mq(break-768) {
+        padding-inline: s.$space-m;
+      }
+
+      @include mx.mq(break-1024) {
+        justify-content: space-between;
+        padding-inline: s.$space-xs;
+      }
+
+      @include mx.mq(break-1280) {
+        flex-wrap: nowrap;
+      }
+
+    &-card {
+      @include mx.centered;
+      flex-direction: column;
+      gap: s.$space-s;
+      padding: s.$space-xs;
+
+      &-icon {
+        width: 100px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+        @include mx.mq(break-430) {
+          width: 116px
+        }
+        @include mx.mq(break-1280) {
+          width: 120px;
+        }
+        @include mx.mq(break-1440) {
+          width: 140px;
+        }
+      }
+
+      &-text {
+        @include tp.hiw-description;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+      }
+    }
+
+    &-arrow {
+      @include tp.hiw-arrow;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Redheart – 1000 razlogov ljubiti rdečelase",
+    "description": "1000 razlogov. Od čarovnic in ognja do odej in nežnih trenutkov. Linearni manifest o rdečelaseh in zakaj jih je nemogoče prezreti.",
+    "keywords": "rdečelasa, rdeči lasje, 1000 razlogov, manifest, ljubezen, redkost, značaj, toplina, jesen, kotarsis",
+    "siteName": "Redheart",
+    "imgAlt": "Predogled Redhearta"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logotip kotarsis",
+    "projectAlt": "logotip projekta redheart"
+  },
+
+  "header": {
+    "logo": {
+      "redheart": "Redheart",
+      "redheartAlt": "Logotip projekta Redheart",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logotip kotarsis",
+      "langSelect": "Izberite jezik"
+    }
+  },
+
+  "hero": {
+    "title": "1000\nRazlogov ljubiti rdečelase"
+  },
+
+  "reasons": {
+    "hint": "Že si me že prepričal."
+  },
+
+  "footer": {
+    "title": "Ljubite drug drugega.",
+    "author": "Avtor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Podpri ljubezen",
+    "custom": "Naroči individualno spletno stran",
+    "copyright": "© 2026 Redheart. Ustvarjeno z ljubeznijo do rdečelasih.",
+    "coffeeAlt": "Skodelica kave Redheart"
+  }
+}

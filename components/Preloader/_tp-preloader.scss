@@ -1,0 +1,62 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/index' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --preloader-kotarsis-320: 58px;
+  --preloader-kotarsis-390: 64px;
+  --preloader-kotarsis-768: 100px;
+
+  --preloader-init-320: 24px;
+  --preloader-init-390: 28px;
+  --preloader-init-768: 38px;
+}
+
+@mixin preloader-kotarsis {
+  --text-preloader-kotarsis-start: #F1EEFFc4;
+  --text-preloader-kotarsis-end: #F1EEFF80;
+
+  background: linear-gradient(
+    to bottom,
+    var(--text-preloader-kotarsis-start),
+    var(--text-preloader-kotarsis-end),
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: var(--preloader-kotarsis-320);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-light);
+  letter-spacing: 0.1em;
+  font-display: optional;
+  text-shadow:
+    0 4px 20px rgba(255,255,255,0.18),
+    0 1px 5px rgba(255,255,255,0.12);
+
+  @include mx.mq(break-390) {
+    font-size: var(--preloader-kotarsis-390);
+  }
+
+  @include mx.mq(break-768) {
+    font-size: var(--preloader-kotarsis-768);
+    letter-spacing: 0.15em;
+  }
+}
+
+@mixin preloader-init {
+  --text-preloader-init: #F1EEFF;
+
+  font-size: var(--preloader-init-320);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-preloader-init);
+  line-height: var(--line-height-light);
+  letter-spacing: 0.02em;
+
+  @include mx.mq(break-390) {
+    font-size: var(--preloader-init-390);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--preloader-init-768);
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "/redacted",
+
+  "name": "Redacted",
+  "short_name": "Redacted",
+
+  "description": "You cannot fix this error. An interactive journey through control, frustration and acceptance.",
+
+  "start_url": "/en/redacted",
+  "scope": "/",
+
+  "display": "standalone",
+
+  "theme_color": "#0b297a",
+  "background_color": "#0b297a",
+
+  "icons": [
+    {
+      "src": "/projects/redacted/favicon/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/projects/redacted/favicon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/projects/redacted/favicon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

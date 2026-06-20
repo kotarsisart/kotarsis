@@ -1,0 +1,73 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/index' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --footer-title-320: 20px;
+  --footer-title-768: 34px;
+  --footer-title-1024: 38px;
+  --footer-title-1280: 40px;
+
+  --footer-philosophy-320: 18px;
+  --footer-philosophy-768: 30px;
+  --footer-philosophy-1024: 36px;
+
+  --footer-warm-text-320: 16px;
+  --footer-warm-text-768: 24px;
+  --footer-warm-text-1024: 28px;
+
+  --footer-outro-320: 16px;
+  --footer-outro-768: 20px;
+  --footer-outro-1280: 24px;
+}
+
+@mixin footer-title {
+  font-size: var(--footer-title-320);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--footer-title-768);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--footer-title-1024);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--footer-title-1280);
+  }
+}
+
+@mixin footer-philosophy {
+  font-size: var(--footer-philosophy-320);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--footer-philosophy-768);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--footer-philosophy-1024);
+  }
+}
+
+@mixin footer-warm-text {
+  font-size: var(--footer-warm-text-320);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--footer-warm-text-768);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--footer-warm-text-1024);
+  }
+}
+
+@mixin footer-outro {
+  font-size: var(--footer-outro-320);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--footer-outro-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--footer-outro-1280);
+  }
+}

@@ -1,0 +1,55 @@
+@use 'sass:map';
+@use '../system/variables' as *;
+
+@mixin centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@mixin mq($point) {
+  $size: map.get($breakpoints, $point);
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin glass-section(
+  $blur: 6px,
+  $bg-opacity: 0.2,
+  $border-opacity: 0.16,
+
+) {
+  --section-glass-bg-start: rgba(255, 255, 255, 0.05);
+  --section-glass-bg-end: rgba(255, 255, 255, 0.08);
+
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    var(--section-glass-bg-start),
+    var(--section-glass-bg-end),
+    $bg-opacity
+  );
+  backdrop-filter: blur($blur);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, $bg-opacity * 0.7) 0%,
+      rgba(255, 255, 255, $bg-opacity * 0.3) 10%,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(255, 255, 255, $bg-opacity * 0.3) 90%,
+      rgba(255, 255, 255, $bg-opacity * 0.7) 100%
+    );
+    mix-blend-mode: soft-light;
+  }
+}
+

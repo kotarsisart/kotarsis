@@ -1,0 +1,58 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/index' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --hero-subline-350: 28px;
+  --hero-subline-768: 48px;
+
+  --hero-sender-350: 24px;
+  --hero-sender-768: 40px;
+
+  --hero-message-title-350: 28px;
+  --hero-message-title-768: 40px;
+
+  --hero-message-text-350: 24px;
+  --hero-message-text-768: 32px;
+}
+
+
+@mixin hero-subline {
+  font-size: var(--hero-subline-350);
+
+  @include mx.mq(break-768) {
+    font-size: var(--hero-subline-768);
+  }
+}
+
+@mixin hero-sender {
+  font-size: var(--hero-sender-350);
+
+  @include mx.mq(break-768) {
+    font-size: var(--hero-sender-768);
+  }
+}
+
+@mixin hero-message-title {
+  --hero-message-title: #006A95;
+
+  font-size: var(--hero-message-title-350);
+  font-weight: var(--font-weight-bold);
+  color: var(--hero-message-title);
+
+  @include mx.mq(break-768) {
+    font-size: var(--hero-message-title-768);
+  }
+}
+
+@mixin hero-message-text {
+  --hero-message-text: #2C9EFC;
+
+  font-size: var(--hero-message-text-350);
+  font-weight: var(--font-weight-bold);
+  color: var(--hero-message-text);
+  
+  @include mx.mq(break-768) {
+    font-size: var(--hero-message-text-768);
+  }
+}

@@ -1,0 +1,287 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-input-page' as *;
+@use '../../styles/typography/tp-headings' as h;
+
+@mixin input-page-buttons {
+  @include mx.centered;
+  padding-inline: s.$space-l;
+  padding-block: s.$space-m;
+  border: none;
+
+  --input-page-buttons-bg-default: #FF6B9A; 
+  --input-page-buttons-bg-hover: #FF4782;  
+
+  cursor: pointer;
+  
+  background-color: var(--input-page-buttons-bg-default);
+  color: var(--input-page-secondary-text);
+
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: var(--input-page-buttons-bg-hover);
+  }
+}
+
+
+.inputpage {
+  --input-page-bg-start: #FFF0F6;
+  --input-page-bg-end: #E6F7FF;
+
+  --input-page-primary-text: #25008B;
+  --input-page-secondary-text: #E6F6FF;
+
+  --input-page-input-radius: 16px;
+
+  @include mx.centered;
+  padding-inline: s.$space-s;
+  padding-block: s.$space-m;
+  background: linear-gradient(
+    to bottom,
+    var(--input-page-bg-start),
+    var(--input-page-bg-end)
+  );
+  color: var(--input-page-primary-text);
+
+  @include mx.mq(break-390) {
+    padding: s.$space-m;
+  }
+  @include mx.mq(break-768) {
+    padding: s.$space-xxl;
+  }
+  @include mx.mq(break-1440) {
+    padding: s.$space-xxxl;
+  }
+
+  &__inner {
+    --input-page-inner-bg: #FBFBFF;
+    --input-page-inner-shadow: 4px 8px 24px rgba(0, 0, 0, 0.5);
+    --input-page-inner-radius: 32px;
+
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-l;
+    padding-inline: s.$space-s;
+    padding-block: s.$space-l;
+    width: 100%;
+
+    background-color: var(--input-page-inner-bg);
+    border-radius: var(--input-page-inner-radius);
+    box-shadow: var(--input-page-inner-shadow);
+
+    @include mx.mq(break-390) {
+      padding-inline: s.$space-m;
+    }
+    @include mx.mq(break-1024) {
+      padding: s.$space-xxl;
+    }
+    @include mx.mq(break-1440) {
+      padding: s.$space-xxxl;
+    }
+  }
+
+  &__content {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-l;
+    width: 100%;
+  }
+
+  &__title {
+    @include h.h2;
+  }
+
+  &__form {
+    @include mx.centered;
+    position: relative;
+    flex-direction: column;
+    gap: s.$space-m;
+    padding-inline: s.$space-s;
+    width: 100%;
+    
+    @include mx.mq(break-390) {
+      padding-inline: s.$space-m;
+    }
+    @include mx.mq(break-768) {
+      padding-inline: s.$space-l;
+    }
+    @include mx.mq(break-1024) {
+      padding-inline: s.$space-xxxl;
+    }
+
+    &-button {
+      --input-page-form-button-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+      --input-page-form-button-radius: 16px;
+
+      @include input-page-buttons;
+      @include input-page-button-create;
+      border-radius: var(--input-page-form-button-radius);
+      box-shadow: var(--input-page-form-button-shadow);
+    }
+  }
+  
+  &__data {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: s.$space-xs;
+    width: 100%;
+  }
+
+  &__clue {
+    @include input-page-clue;
+  }
+
+
+
+  &__input {
+    display: flex;
+    padding-inline: s.$space-m;
+    padding-block: s.$space-s;
+    width: 100%;
+    @include input-page-input;
+    color: var(--input-page-primary-text);
+    border-radius: var(--input-page-input-radius);
+    transition: border-color 0.6s ease;
+    border: 2px solid var(--input-page-primary-text);
+    outline: none;
+
+    &:focus {
+      --input-page-input-focus: #CF29E9;
+      border: 2px solid var(--input-page-input-focus);
+    }
+  }
+
+  &__divider {
+    --input-page-divider-radius: 999px;
+
+    height: 5px;
+    width: 100%;
+    background-color: var(--input-page-primary-text);
+    border-radius: var(--input-page-divider-radius)
+  }
+
+  &__result {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-m;
+    padding-inline: s.$space-xs;
+    width: 100%;
+    
+    @include mx.mq(break-768) {
+      padding-inline: s.$space-l;
+    }
+
+    &-title {
+      @include input-page-succes;
+    }
+
+    &-link-container {
+      --input-page-link-bg: #FF5F92;
+      --input-page-link-border-radius: 8px;
+
+      @include mx.centered;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      border: 2px solid var(--input-page-link-bg);
+      border-radius: var(--input-page-link-border-radius);
+    }
+
+    &-link {
+      @include input-page-link;
+      border: none;
+      width: 100%;
+    }
+
+    &-button {
+      @include input-page-buttons;
+      @include input-page-button-copy;
+      padding-inline: s.$space-m; 
+      padding-block: s.$space-s;
+    }
+  }
+
+  &__view {
+    @include input-page-view;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &__warning {
+    --input-page-warning-radius: 12px;
+
+    @include input-page-warning;
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    height: auto;
+    opacity: 0;
+    z-index: 999;
+    overflow: hidden;
+    background-color: #d183fb;
+    border-radius: var(--input-page-warning-radius);
+    padding-block: s.$space-xs;
+    padding-inline: s.$space-s;
+    pointer-events: none;
+
+    @include mx.centered;
+    gap: s.$space-s;
+
+    transition:
+      width 3s ease,
+      height 1s ease,
+      opacity 0.4s ease,
+      transform 0.4s ease;
+
+    @include mx.mq(break-768) {
+      padding-block: 12px;
+      padding-inline: s.$space-l;
+    }
+
+    &.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(-100%);
+      width: auto;
+      min-width: 30px;
+    }
+
+    &.hide {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-50%);
+      width: 40px;
+      height: 20px;
+    }
+
+    &-icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.mui-input {
+  
+  .MuiPickersOutlinedInput-root {
+    border-radius: var(--input-page-input-radius);
+    
+    fieldset {
+      border: 2px solid var(--input-page-primary-text) !important;
+    }
+    
+    .MuiPickersSectionList-root {
+      display: flex;
+      width: 100%;
+      @include input-page-input;
+      color: var(--input-page-primary-text);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use 'sass:map';
+@use '../system/variables' as *;
+@use '../tokens/spacing' as s;
+
+@mixin centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@mixin mq($point) {
+  $size: map.get($breakpoints, $point);
+  @media (min-width: $size) {
+    @content;
+  }
+}

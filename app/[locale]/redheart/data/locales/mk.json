@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Redheart – 1000 причини да ги сакаме црвенокосите",
+    "description": "1000 причини. Од вештерки и оган до ќебиња и нежни моменти. Линеарен манифест за црвенокосите и зошто е невозможно да се игнорираат.",
+    "keywords": "црвенокоса, црвена коса, 1000 причини, манифест, љубов, реткост, карактер, топлина, есен, kotarsis",
+    "siteName": "Redheart",
+    "imgAlt": "Преглед на Redheart"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "лого на kotarsis",
+    "projectAlt": "лого на проектот redheart"
+  },
+
+  "header": {
+    "logo": {
+      "redheart": "Redheart",
+      "redheartAlt": "Лого на проектот Redheart",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Лого kotarsis",
+      "langSelect": "Изберете јазик"
+    }
+  },
+
+  "hero": {
+    "title": "1000\nПричини да ги сакаме црвенокосите"
+  },
+
+  "reasons": {
+    "hint": "Веќе ме убеди."
+  },
+
+  "footer": {
+    "title": "Сакајте се еден со друг.",
+    "author": "Автор: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Поддржи ја љубовта",
+    "custom": "Нарачај индивидуална веб-страница",
+    "copyright": "© 2026 Redheart. Создадено со љубов кон црвенокосите.",
+    "coffeeAlt": "Шолја кафе Redheart"
+  }
+}
