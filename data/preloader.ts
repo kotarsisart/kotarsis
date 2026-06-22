@@ -20,15 +20,16 @@ export function shouldShowPreloader() {
     return true;
   }
 
-  const skip =
-    sessionStorage.getItem(
-      PRELOADER_SKIP_KEY
-    );
+  const skip = sessionStorage.getItem(
+    PRELOADER_SKIP_KEY
+  );
 
   if (skip) {
-    sessionStorage.removeItem(
-      PRELOADER_SKIP_KEY
-    );
+    setTimeout(() => {
+      sessionStorage.removeItem(
+        PRELOADER_SKIP_KEY
+      );
+    }, 0);
 
     return false;
   }

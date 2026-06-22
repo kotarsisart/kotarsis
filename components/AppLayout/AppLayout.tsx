@@ -18,6 +18,7 @@ interface AppLayoutProps {
 }
 
 export default function AppLayout({ children }: AppLayoutProps) {
+  console.log("APP LAYOUT MOUNT");
   const [isLangOpen, setLangOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();

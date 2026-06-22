@@ -12,6 +12,7 @@ import { useI18n } from "@/data/I18nProvider";
 import '../globals.css'
 
 export default function HomePage() {
+  console.log("HOME PAGE MOUNT");
   const { t, locale } = useI18n();
 
   return (

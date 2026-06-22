@@ -6,8 +6,6 @@ import {
 
 import "./_language-page-base.scss";
 
-import { useI18n } from "@/data/I18nProvider";
-
 import Image from "next/image";
 import { skipNextPreloader } from "@/data/preloader";
 
