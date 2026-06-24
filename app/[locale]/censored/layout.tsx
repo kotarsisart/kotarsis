@@ -1,5 +1,3 @@
-import { I18nProvider } from "@/data/I18nProvider";
-
 import { 
   messages,
   type Locale 
@@ -9,8 +7,6 @@ import { createAlternates } from "@/data/seo/createAlternates";
 import { createFaviconSet } from "@/data/seo/createFaviconSet";
 
 import ProjectLayout from "@/components/layouts/ProjectLayout";
-
-import ScrollRevealProvider from "@/utils/animations/ScrollRevealProvider";
 
 import { Metadata } from "next";
 import { Viewport } from "next";

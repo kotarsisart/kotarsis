@@ -1,5 +1,3 @@
-import { I18nProvider } from "@/data/I18nProvider";
-
 import { 
   messages,
   type Locale 
@@ -16,8 +14,6 @@ import { Viewport } from "next";
 export const viewport: Viewport = {
   themeColor: "#C9D5FF",
 };
-
-import ScrollRevealProvider from "@/utils/animations/ScrollRevealProvider";
 
 export async function generateMetadata({
   params,

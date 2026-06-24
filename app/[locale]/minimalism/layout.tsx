@@ -1,5 +1,3 @@
-import { I18nProvider } from "@/data/I18nProvider";
-
 import { 
   messages,
   type Locale 
