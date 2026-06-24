@@ -1,5 +1,3 @@
-import { I18nProvider } from "@/data/I18nProvider";
-
 import { 
   messages,
   type Locale 
@@ -12,8 +10,6 @@ import ProjectLayout from "@/components/layouts/ProjectLayout";
 
 import { Metadata } from "next";
 import { Viewport } from "next";
-
-import ScrollRevealProvider from "@/utils/animations/ScrollRevealProvider";
 
 export const viewport: Viewport = {
   themeColor: "#C6F3FF",
