@@ -115,11 +115,10 @@
   },
 
   "footer": {
-    "enough": "To wystarczy.",
-    "author": "Autor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Wesprzeć prostotę",
-    "custom": "Zamówić indywidualną stronę",
+    "title": "To wystarczy.",
+    "links": {
+      "support": "Wesprzeć prostotę"
+    },
     "copyright": "© 2026 Minimalism. Stworzone z szacunkiem dla minimalizmu.",
     "coffeeAlt": "Filiżanka kawy Minimalism"
   }

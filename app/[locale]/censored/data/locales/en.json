@@ -366,11 +366,10 @@
   },
 
   "footer": {
-    "enough": "All objectives have been met.",
-    "author": "Author: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Support inevitable",
-    "custom": "Get a custom website",
+    "title": "All objectives have been met.",
+    "links": {
+      "support": "Support inevitable"
+    },
     "copyright": "© 2026 Censored. We are exploring alternative workforce configurations.",
     "coffeeAlt": "Censored coffee cup"
   }

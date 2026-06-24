@@ -177,10 +177,9 @@
 
   "footer": {
     "title": "Кінець запису",
-    "author": "Автор: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Підтримати недосконалість",
-    "custom": "Замовити власний сайт",
+    "links": {
+      "support": "Підтримати недосконалість"
+    },
     "copyright": "© 2026 Redacted. Створено навколо помилки.",
     "coffeeAlt": "чашка Redacted"
   }

@@ -32,10 +32,9 @@
 
   "footer": {
     "title": "Milujte sa navzájom.",
-    "author": "Autor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Podpor lásku",
-    "custom": "Objednať individuálny web",
+    "links": {
+      "support": "Podpor lásku"
+    },
     "copyright": "© 2026 Redheart. Vytvorené s láskou k ryšavým.",
     "coffeeAlt": "Šálka kávy Redheart"
   }

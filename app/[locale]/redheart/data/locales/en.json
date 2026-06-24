@@ -32,10 +32,9 @@
 
   "footer": {
     "title": "Love one another.",
-    "author": "Author: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Support the love",
-    "custom": "Order a custom website",
+    "links": {
+      "support": "Support the love"
+    },
     "copyright": "© 2026 Redheart. Made with love for redheads.",
     "coffeeAlt": "Redheart coffee cup"
   }

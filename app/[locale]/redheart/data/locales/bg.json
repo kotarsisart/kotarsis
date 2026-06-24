@@ -32,10 +32,9 @@
 
   "footer": {
     "title": "Обичайте се един друг.",
-    "author": "Автор: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Подкрепи любовта",
-    "custom": "Поръчай индивидуален сайт",
+    "links": {
+      "support": "Подкрепи любовта"
+    },
     "copyright": "© 2026 Redheart. Създадено с любов към червенокосите.",
     "coffeeAlt": "Чаша кафе Redheart"
   }

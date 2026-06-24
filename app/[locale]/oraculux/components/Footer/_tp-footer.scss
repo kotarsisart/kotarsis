@@ -7,8 +7,8 @@
   --footer-nav-390: 20px;
   --footer-nav-1280: 24px;
 
-  --footer-me-links-320: 20px;
-  --footer-me-links-1280: 24px;
+  --footer-links-320: 20px;
+  --footer-links-1280: 24px;
 
   --footer-outro-320: 16px;
   --footer-outro-1280: 20px;
@@ -32,16 +32,16 @@
   }
 }
 
-@mixin footer-me-links {
-  --text-footer-me-links: #E0D0FF;
+@mixin footer-links {
+  --text-footer-links: #E0D0FF;
   font-family: var(--font-secondary);
-  font-size: var(--footer-me-links-320);
+  font-size: var(--footer-links-320);
   letter-spacing: 0.1em;
-  color: var(--text-footer-me-links);
+  color: var(--text-footer-links);
   text-decoration: none;
 
   @include mx.mq(break-1280) {
-    font-size: var(--footer-me-links-1280);
+    font-size: var(--footer-links-1280);
   }
 }
 

@@ -32,10 +32,9 @@
 
   "footer": {
     "title": "Milujte jeden druhého.",
-    "author": "Autor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Podpoř lásku",
-    "custom": "Objednat individuální web",
+    "links": {
+      "support": "Podpoř lásku"
+    },
     "copyright": "© 2026 Redheart. Vytvořeno s láskou ke zrzavým.",
     "coffeeAlt": "Šálek kávy Redheart"
   }

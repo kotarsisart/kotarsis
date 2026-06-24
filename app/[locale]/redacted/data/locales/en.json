@@ -178,10 +178,9 @@
 
   "footer": {
     "title": "End of log.",
-    "author": "Author: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Support imperfection",
-    "custom": "Get a custom website",
+    "links": {
+      "support": "Support imperfection"
+    },
     "copyright": "© 2026 Redacted. Designed around error.",
     "coffeeAlt": "Redacted coffee cup"
   }

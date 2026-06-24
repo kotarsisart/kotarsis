@@ -177,10 +177,9 @@
 
   "footer": {
     "title": "Канец журнала.",
-    "author": "Аўтар: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Падтрымаць недасканаласць",
-    "custom": "Замовіць уласны сайт",
+    "links": {
+      "support": "Падтрымаць недасканаласць"
+    },
     "copyright": "© 2026 Redacted. Створана вакол памылкі.",
     "coffeeAlt": "кубак Redacted"
   }

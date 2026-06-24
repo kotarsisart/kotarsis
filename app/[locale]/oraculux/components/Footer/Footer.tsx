@@ -1,8 +1,9 @@
 "use client"
 
 import './_footer.scss';
-import Image from 'next/image';
 import { useI18n } from "@/data/I18nProvider";
+
+import FooterLinks from '@/components/Footer/FooterLinks';
 
 export default function Footer() {
   const { t } = useI18n();
@@ -25,45 +26,12 @@ export default function Footer() {
       </div> 
 
       {/* === LINKS === */}
-      <div className="footer__me-links">
-        <p className="footer__me-links-text">
-          {t("footer.me.author")}
-        </p>
-
-        <a
-          href="https://buymeacoffee.com/kotarsis"
-          className="footer__bmac"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            src="/projects/oraculux/icons/footer/coffee.svg"
-            className="footer__bmac-icon"
-            width={34}
-            height={34}
-            alt={t("footer.alt.coffee")}
-          />
-          <p className="footer__me-links-text">
-            {t("footer.me.buyCoffee")}
-          </p>
-        </a>
-
-        <a
-          href="https://t.me/kotarsis_art"
-          className="footer__me-links-text"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("footer.me.telegram")}
-        </a>
-
-        <a
-          href="mailto:kotarsis.studio@gmail.com?subject=Custom website"
-          className="footer__me-links-text"
-        >
-          {t("footer.me.customSite")}
-        </a>
-      </div>
+      <FooterLinks
+        coffeeIcon="/projects/oraculux/icons/footer/coffee.svg"
+        coffeeWidth={24}
+        coffeeHeight={30}
+        coffeeAlt={t("footer.coffeeAlt")}
+      />
 
       {/* === CREATION INFO BLOCK === */}
       <div className="footer__outro">

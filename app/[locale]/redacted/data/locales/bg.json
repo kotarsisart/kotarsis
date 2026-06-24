@@ -177,10 +177,9 @@
 
   "footer": {
     "title": "Край на записа.",
-    "author": "Автор: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Подкрепи несъвършенството",
-    "custom": "Поръчай собствен сайт",
+    "links": {
+      "support": "Подкрепи несъвършенството"
+    },
     "copyright": "© 2026 Redacted. Създадено около грешката.",
     "coffeeAlt": "чаша Redacted"
   }

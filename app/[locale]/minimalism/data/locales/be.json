@@ -115,11 +115,10 @@
   },
 
   "footer": {
-    "enough": "Гэтага дастаткова.",
-    "author": "Аўтар: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Падтрымаць прастату",
-    "custom": "Замовіць індывідуальны сайт",
+    "title": "Гэтага дастаткова.",
+    "links": {
+      "support": "Падтрымаць прастату"
+    },
     "copyright": "© 2026 Minimalism. Створана з павагай да мінімалізму.",
     "coffeeAlt": "Кубак кавы Minimalism"
   }

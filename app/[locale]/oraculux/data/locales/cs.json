@@ -295,11 +295,8 @@
       "sources": "Zdroje odpovědí"
     },
 
-    "me": {
-      "author": "Autor: kotarsis_art",
-      "buyCoffee": "Podpořit Orákulum kávou",
-      "telegram": "Telegram",
-      "customSite": "Objednat web"
+    "links": {
+      "support": "Podpořit Orákulum kávou"
     },
 
     "about": {

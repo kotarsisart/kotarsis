@@ -295,11 +295,8 @@
       "sources": "Sources Of Oracle Answers"
     },
 
-    "me": {
-      "author": "Author: kotarsis_art",
-      "buyCoffee": "Buy me a coffee",
-      "telegram": "Telegram",
-      "customSite": "Get a custom website"
+    "links": {
+      "support": "Buy me a coffee"
     },
 
     "about": {

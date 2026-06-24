@@ -178,10 +178,9 @@
 
   "footer": {
     "title": "Koniec logu.",
-    "author": "Autor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Wesprzyj niedoskonałość",
-    "custom": "Zamów własną stronę",
+    "links": {
+      "support": "Wesprzyj niedoskonałość"
+    },
     "copyright": "© 2026 Redacted. Zaprojektowane wokół błędu.",
     "coffeeAlt": "kubek Redacted"
   }

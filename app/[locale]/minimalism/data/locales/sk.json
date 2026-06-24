@@ -115,11 +115,10 @@
   },
 
   "footer": {
-    "enough": "To stačí.",
-    "author": "Autor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Podporiť jednoduchosť",
-    "custom": "Objednať vlastnú webovú stránku",
+    "title": "To stačí.",
+    "links": {
+      "support": "Podporiť jednoduchosť"
+    },
     "copyright": "© 2026 Minimalism. Vytvorené s úctou k minimalizmu.",
     "coffeeAlt": "Šálka kávy Minimalism"
   }

@@ -83,10 +83,9 @@
 
   "footer": {
     "title": "Všetko najlepšie!",
-    "author": "Autor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Podpor takéto momenty",
-    "custom": "Objednať individuálny web",
+    "links": {
+      "support": "Podpor takéto momenty"
+    },
     "copyright": "© 2026 Birthday Capsule. Si viac než len dátum.",
     "coffeeAlt": "Šálka kávy Birthday Capsule"
   }

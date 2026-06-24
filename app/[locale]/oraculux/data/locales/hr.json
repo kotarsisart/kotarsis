@@ -295,11 +295,8 @@
       "sources": "Izvori odgovora"
     },
 
-    "me": {
-      "author": "Autor: kotarsis_art",
-      "buyCoffee": "Podrži Orakula kavom",
-      "telegram": "Telegram",
-      "customSite": "Naruči web"
+    "links": {
+      "support": "Podrži Orakula kavom"
     },
 
     "about": {

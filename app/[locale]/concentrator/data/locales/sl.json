@@ -264,11 +264,8 @@
       },
       "team": "Pošlji kavo in življenjepis"
     },
-    "me": {
-      "author": "Avtor: kotarsis_art",
-      "coffee": "Podpora eksperimenta s kavo",
-      "telegram": "Telegram",
-      "custom": "Naroči prilagojeno spletno stran"
+    "links": {
+      "support": "Podpora eksperimenta s kavo"
     },
     "copyright": "© 2026 Concentrator™ Ustvarjeno z ljubeznijo in psevdoznanostjo. Vse pravice pridržane."
   }

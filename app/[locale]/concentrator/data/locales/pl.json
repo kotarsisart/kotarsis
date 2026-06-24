@@ -264,11 +264,8 @@
       },
       "team": "Wyślij kawę i CV"
     },
-    "me": {
-      "author": "Autor: kotarsis_art",
-      "coffee": "Wsparcie eksperymentu kawą",
-      "telegram": "Telegram",
-      "custom": "Zamów spersonalizowaną stronę"
+    "links": {
+      "support": "Wsparcie eksperymentu kawą"
     },
     "copyright": "© 2026 Concentrator™ Stworzone z miłości i pseudonauki. Wszelkie prawa zastrzeżone."
   }

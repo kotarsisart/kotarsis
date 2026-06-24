@@ -3,8 +3,8 @@
 @use '../../styles/tokens/index.scss' as *;
 
 :root {
-  --footer-enough-350: 24px;
-  --footer-enough-768: 32px;
+  --footer-title-350: 24px;
+  --footer-title-768: 32px;
 
   --footer-link-350: 20px;
   --footer-link-768: 24px;
@@ -13,13 +13,13 @@
   --footer-copyright-768: 24px;
 }
 
-@mixin footer-enough {
-  font-size: var(--footer-enough-350);
+@mixin footer-title {
+  font-size: var(--footer-title-350);
   font-weight: var(--font-weight-bold);
   letter-spacing: 0.05em;
 
   @include mx.mq(break-768) {
-    font-size: var(--footer-enough-768);
+    font-size: var(--footer-title-768);
   }
 }
 

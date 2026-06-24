@@ -32,10 +32,9 @@
 
   "footer": {
     "title": "Volite jedni druge.",
-    "author": "Autor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Podrži ljubav",
-    "custom": "Naruči individualni sajt",
+    "links": {
+      "support": "Podrži ljubav"
+    },
     "copyright": "© 2026 Redheart. Napravljeno s ljubavlju prema crvenokosima.",
     "coffeeAlt": "Šolja kafe Redheart"
   }

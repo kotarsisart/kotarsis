@@ -83,10 +83,9 @@
 
   "footer": {
     "title": "Sretan rođendan!",
-    "author": "Autor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Podrži ovakve trenutke",
-    "custom": "Naruči individualnu web stranicu",
+    "links": {
+      "support": "Podrži ovakve trenutke"
+    },
     "copyright": "© 2026 Birthday Capsule. Ti si više od samog datuma.",
     "coffeeAlt": "Šalica kave Birthday Capsule"
   }

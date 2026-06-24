@@ -11,8 +11,8 @@
   background-color: var(--header-footer-bg);
   color: var(--header-footer-text);
 
-  &__enough {
-    @include footer-enough;
+  &__title {
+    @include footer-title;
   }
 
   &__links {

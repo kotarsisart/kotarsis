@@ -264,11 +264,8 @@
       },
       "team": "Pošalji kafu i biografiju"
     },
-    "me": {
-      "author": "Autor: kotarsis_art",
-      "coffee": "Kupi mi kafu",
-      "telegram": "Telegram",
-      "custom": "Poruči prilagođen sajt"
+    "links": {
+      "support": "Kupi mi kafu"
     },
     "copyright": "© 2026 Concentrator™ Napravljeno s ljubavlju i pseudonaukom. Sva prava zadržana."
   }

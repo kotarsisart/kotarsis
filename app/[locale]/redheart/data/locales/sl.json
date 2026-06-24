@@ -32,10 +32,9 @@
 
   "footer": {
     "title": "Ljubite drug drugega.",
-    "author": "Avtor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Podpri ljubezen",
-    "custom": "Naroči individualno spletno stran",
+    "links": {
+      "support": "Podpri ljubezen"
+    },
     "copyright": "© 2026 Redheart. Ustvarjeno z ljubeznijo do rdečelasih.",
     "coffeeAlt": "Skodelica kave Redheart"
   }

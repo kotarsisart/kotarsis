@@ -32,10 +32,9 @@
 
   "footer": {
     "title": "Kochajcie się nawzajem.",
-    "author": "Autor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Wesprzyj miłość",
-    "custom": "Zamów indywidualną stronę",
+    "links": {
+      "support": "Wesprzyj miłość"
+    },
     "copyright": "© 2026 Redheart. Stworzone z miłości do rudowłosych.",
     "coffeeAlt": "Filiżanka kawy Redheart"
   }
