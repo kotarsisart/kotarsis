@@ -259,3 +259,17 @@ languages.sort((a, b) => {
   }
   return a.name.localeCompare(b.name);
 });
+
+// const languageConfig = {
+
+//   ukrainian: {
+
+//     name: "Українська",
+
+//     routeCode: "uk",
+
+//     mainGroup: "slavic",
+
+//     subGroup: "east",
+
+//   }, 

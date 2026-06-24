@@ -7,23 +7,23 @@
   --hero-bg-start: #060B3B;
   --hero-bg-middle: #010639;
   --hero-bg-end: #08105F;
-
   @include mx.centered;
   flex-direction: column;
   gap: s.$space-xxxl;
   padding-block: s.$space-xxl;
   padding-inline: s.$space-l;
+  margin-top: 60px;
   min-height: 90vh;
   background: linear-gradient(
     to bottom,
     var(--hero-bg-start),
     var(--hero-bg-middle),
     var(--hero-bg-end)
-  );
-
-  @include mx.mq(break-768) {
-    padding-block: s.$space-xxxl;
-    padding-inline: s.$space-xxl;
+    );
+    
+    @include mx.mq(break-768) {
+      padding-block: s.$space-xxxl;
+      padding-inline: s.$space-xxl;
   }
 
   &__project {

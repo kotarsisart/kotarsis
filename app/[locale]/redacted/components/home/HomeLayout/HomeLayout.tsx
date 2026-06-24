@@ -8,8 +8,6 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import LanguagePage from "@/components/LangPage/LanguagePage";
 
-import "./_home-layout.scss";
-
 import { messages } from "../../../data/messages";
 
 import "../../home/LangPage/_lang-page-theme.scss"

@@ -6,8 +6,6 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import LanguagePage from "@/components/LangPage/LanguagePage";
 
-import './_app-layout.scss'
-
 import { messages } from "../../data/messages";
 
 import "../../components/LangPage/_lang-page-theme.scss";

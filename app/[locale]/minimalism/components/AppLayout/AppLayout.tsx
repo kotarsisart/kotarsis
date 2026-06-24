@@ -14,8 +14,6 @@ import { messages } from "../../data/messages";
 
 import "../../components/LangPage/_lang-page-theme.scss";
 
-import "./app-layout.scss";
-
 interface AppLayoutProps {
   children: ReactNode;
 }

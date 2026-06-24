@@ -7,7 +7,6 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import GlobalBackground from "../../elements/GlobalBackground/GlobalBackground";
 import LanguagePage from "@/components/LangPage/LanguagePage";
-import "./_app-layout.scss";
 
 import { messages } from "../../data/messages";
 
@@ -18,7 +17,6 @@ interface AppLayoutProps {
 }
 
 export default function AppLayout({ children }: AppLayoutProps) {
-  console.log("APP LAYOUT MOUNT");
   const [isLangOpen, setLangOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
