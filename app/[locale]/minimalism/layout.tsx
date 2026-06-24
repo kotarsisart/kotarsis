@@ -6,6 +6,7 @@ import {
 } from "./data/messages";
 import { ogLocales } from "@/data/seo/ogLocales";
 import { createAlternates } from "@/data/seo/createAlternates";
+import { createFaviconSet } from "@/data/seo/createFaviconSet";
 
 import { Metadata } from "next";
 import { Viewport } from "next";
@@ -35,34 +36,9 @@ export async function generateMetadata({
 
     keywords: meta.keywords,
 
-    icons: {
-      icon: [
-        {
-          url: "/projects/minimalism/favicon/favicon.svg",
-          type: "image/svg+xml",
-        },
-        {
-          url: "/projects/minimalism/favicon/favicon.ico",
-        },
-        {
-          url: "/projects/minimalism/favicon/icon-16.png",
-          sizes: "16x16",
-          type: "image/png",
-        },
-        {
-          url: "/projects/minimalism/favicon/icon-32.png",
-          sizes: "32x32",
-          type: "image/png",
-        },
-      ],
-
-      apple: [
-        {
-          url: "/projects/minimalism/favicon/apple-touch-icon.png",
-          sizes: "180x180",
-        }
-      ]
-    },
+    icons: createFaviconSet(
+      "minimalism"
+    ),
 
     openGraph: {
       title: meta.title,

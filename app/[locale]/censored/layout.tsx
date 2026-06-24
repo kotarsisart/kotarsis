@@ -6,6 +6,7 @@ import {
 } from "./data/messages";
 import { ogLocales } from "@/data/seo/ogLocales";
 import { createAlternates } from "@/data/seo/createAlternates";
+import { createFaviconSet } from "@/data/seo/createFaviconSet";
 
 import ScrollRevealProvider from "@/utils/animations/ScrollRevealProvider";
 
@@ -37,34 +38,9 @@ export async function generateMetadata({
 
     keywords: meta.keywords,
 
-    icons: {
-      icon: [
-        {
-          url: "/projects/censored/favicon/favicon.svg",
-          type: "image/svg+xml",
-        },
-        {
-          url: "/projects/censored/favicon/favicon.ico",
-        },
-        {
-          url: "/projects/censored/favicon/icon-16.png",
-          sizes: "16x16",
-          type: "image/png",
-        },
-        {
-          url: "/projects/censored/favicon/icon-32.png",
-          sizes: "32x32",
-          type: "image/png",
-        },
-      ],
-
-      apple: [
-        {
-          url: "/projects/censored/favicon/apple-touch-icon.png",
-          sizes: "180x180",
-        }
-      ]
-    },
+    icons: createFaviconSet(
+      "censored"
+    ),
 
     openGraph: {
       title: meta.title,

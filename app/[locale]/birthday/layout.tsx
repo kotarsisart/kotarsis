@@ -6,6 +6,7 @@ import {
 } from "./data/messages";
 import { ogLocales } from "@/data/seo/ogLocales";
 import { createAlternates } from "@/data/seo/createAlternates";
+import { createFaviconSet } from "@/data/seo/createFaviconSet";
 
 import { Metadata } from "next";
 import { Viewport } from "next";
@@ -37,34 +38,9 @@ export async function generateMetadata({
 
     keywords: meta.keywords,
 
-    icons: {
-      icon: [
-        {
-          url: "/projects/birthday/favicon/favicon.svg",
-          type: "image/svg+xml",
-        },
-        {
-          url: "/projects/birthday/favicon/favicon.ico",
-        },
-        {
-          url: "/projects/birthday/favicon/icon-16.png",
-          sizes: "16x16",
-          type: "image/png",
-        },
-        {
-          url: "/projects/birthday/favicon/icon-32.png",
-          sizes: "32x32",
-          type: "image/png",
-        },
-      ],
-
-      apple: [
-        {
-          url: "/projects/birthday/favicon/apple-touch-icon.png",
-          sizes: "180x180",
-        }
-      ]
-    },
+    icons: createFaviconSet(
+      "birthday"
+    ),
 
     openGraph: {
       title: meta.title,
