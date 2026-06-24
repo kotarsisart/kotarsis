@@ -4,6 +4,8 @@ import {
   messages,
   type Locale 
 } from "../../data/messages";
+import { ogLocales } from "@/data/seo/ogLocales";
+import { createAlternates } from "@/data/seo/createAlternates";
 
 import { Metadata } from "next";
 import { Viewport } from "next";
@@ -20,30 +22,11 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  
+
+  const ogLocale =
+    ogLocales[locale as keyof typeof ogLocales] ?? "en_US";
+
   const meta = messages[locale as Locale].meta;
-
-  const ogLocales: Record<string, string> = {
-    en: "en_US",
-    ru: "ru_RU",
-    pl: "pl_PL",
-    uk: "uk_UA",
-    be: "be_BY",
-    cs: "cs_CZ",
-    sk: "sk_SK",
-    bg: "bg_BG",
-    mk: "mk_MK",
-    sr: "sr_RS",
-    hr: "hr_HR",
-    sl: "sl_SI",
-  };
-
-  const languages = Object.fromEntries(
-    Object.keys(messages).map((lang) => [
-      lang,
-      `https://kotarsis.com/${lang}`,
-    ])
-  );
 
   return {
     title: meta.title,
@@ -69,7 +52,7 @@ export async function generateMetadata({
         },
       ],
 
-      locale: ogLocales[locale] ?? "en_US",
+      locale: ogLocale,
       type: "website",
     },
 
@@ -85,10 +68,7 @@ export async function generateMetadata({
       ],
     },
 
-    alternates: {
-      canonical: `https://kotarsis.com/${locale}`,
-      languages,
-    },
+    alternates: createAlternates(locale),
   };
 }
 
