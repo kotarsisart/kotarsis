@@ -9,6 +9,7 @@ import "@fontsource/great-vibes";
 import "@fontsource/balsamiq-sans";
 import "@fontsource-variable/roboto-slab";
 
+import { createFaviconSet } from "@/data/seo/createFaviconSet";
 
 import type { Metadata } from "next";
 import { Viewport } from "next";
@@ -28,34 +29,7 @@ export const metadata: Metadata = {
   keywords:
     "kotarsis, catharsis, project hub, digital worlds, philosophy, transparency, glass, enlightenment, creative path, atmosphere, personal universe",
 
-  icons: {
-    icon: [
-      {
-        url: "/favicon/favicon.svg",
-        type: "image/svg+xml",
-      },
-      {
-        url: "/favicon/favicon.ico",
-      },
-      {
-        url: "/favicon/icon-16.png",
-        sizes: "16x16",
-        type: "image/png",
-      },
-      {
-        url: "/favicon/icon-32.png",
-        sizes: "32x32",
-        type: "image/png",
-      },
-    ],
-
-    apple: [
-      {
-        url: "/favicon/apple-touch-icon.png",
-        sizes: "180x180",
-      }
-    ]
-  },
+  icons: createFaviconSet(),
 
   openGraph: {
     title: "kotarsis — where thoughts become transparent",

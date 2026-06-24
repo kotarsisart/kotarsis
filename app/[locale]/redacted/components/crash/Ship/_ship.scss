@@ -10,6 +10,9 @@
   overflow: hidden;
   touch-action: none;
 
+  --ship-cup-height-350: 250px;
+  --ship-cup-height-768: 400px;
+
   &__target {
     position: absolute;
     inset: 0;
@@ -20,11 +23,9 @@
     opacity: 0.4;
 
     &-icon {
-      --ship-cup-height-350: 250px;
       height: var(--ship-cup-height-350);
       
       @include mx.mq(break-768) {
-        --ship-cup-height-768: 400px;
         height: var(--ship-cup-height-768);
       }
     }

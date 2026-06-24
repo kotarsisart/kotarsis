@@ -4,6 +4,11 @@ import {
   messages,
   type Locale 
 } from "./data/messages";
+import { ogLocales } from "@/data/seo/ogLocales";
+import { createAlternates } from "@/data/seo/createAlternates";
+import { createFaviconSet } from "@/data/seo/createFaviconSet";
+
+import ProjectLayout from "@/components/layouts/ProjectLayout";
 
 import { Metadata } from "next";
 import { Viewport } from "next";
@@ -19,29 +24,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
+  const ogLocale =
+    ogLocales[locale as keyof typeof ogLocales] ?? "en_US";
+
   const meta = messages[locale as Locale].meta;
-
-  const ogLocales: Record<string, string> = {
-    en: "en_US",
-    ru: "ru_RU",
-    pl: "pl_PL",
-    uk: "uk_UA",
-    be: "be_BY",
-    cs: "cs_CZ",
-    sk: "sk_SK",
-    bg: "bg_BG",
-    mk: "mk_MK",
-    sr: "sr_RS",
-    hr: "hr_HR",
-    sl: "sl_SI",
-  };
-
-  const languages = Object.fromEntries(
-    Object.keys(messages).map((lang) => [
-      lang,
-      `https://kotarsis.com/${lang}/redheart`,
-    ])
-  );
 
   return {
     manifest: "/projects/redheart/webmanifest",
@@ -52,34 +38,9 @@ export async function generateMetadata({
 
     keywords: meta.keywords,
 
-    icons: {
-      icon: [
-        {
-          url: "/projects/redheart/favicon/favicon.svg",
-          type: "image/svg+xml",
-        },
-        {
-          url: "/projects/redheart/favicon/favicon.ico",
-        },
-        {
-          url: "/projects/redheart/favicon/icon-16.png",
-          sizes: "16x16",
-          type: "image/png",
-        },
-        {
-          url: "/projects/redheart/favicon/icon-32.png",
-          sizes: "32x32",
-          type: "image/png",
-        },
-      ],
-
-      apple: [
-        {
-          url: "/projects/redheart/favicon/apple-touch-icon.png",
-          sizes: "180x180",
-        }
-      ]
-    },
+    icons: createFaviconSet(
+      "redheart"
+    ),
 
     openGraph: {
       title: meta.title,
@@ -98,7 +59,7 @@ export async function generateMetadata({
         },
       ],
 
-      locale: ogLocales[locale] ?? "en_US",
+      locale: ogLocale,
       type: "website",
     },
 
@@ -114,10 +75,10 @@ export async function generateMetadata({
       ],
     },
 
-    alternates: {
-      canonical: `https://kotarsis.com/${locale}/redheart`,
-      languages,
-    },
+    alternates: createAlternates(
+      locale,
+      "/redheart"
+    ),
   };
 }
 
@@ -131,11 +92,11 @@ export default async function LocaleLayout({
   const { locale } = await params;
 
   return (
-    <I18nProvider
-      initialLocale={locale}
+    <ProjectLayout
+      locale={locale}
       messages={messages}
     >
       {children}
-    </I18nProvider>
+    </ProjectLayout>
   );
 }
