@@ -8,6 +8,8 @@ import { ogLocales } from "@/data/seo/ogLocales";
 import { createAlternates } from "@/data/seo/createAlternates";
 import { createFaviconSet } from "@/data/seo/createFaviconSet";
 
+import ProjectLayout from "@/components/layouts/ProjectLayout";
+
 import { Metadata } from "next";
 import { Viewport } from "next";
 
@@ -90,11 +92,11 @@ export default async function LocaleLayout({
   const { locale } = await params;
 
   return (
-    <I18nProvider
-      initialLocale={locale}
+    <ProjectLayout
+      locale={locale}
       messages={messages}
     >
       {children}
-    </I18nProvider>
+    </ProjectLayout>
   );
 }
