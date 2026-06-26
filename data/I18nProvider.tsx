@@ -78,9 +78,8 @@ export function I18nProvider({
   useEffect(() => {
     document.documentElement.lang = initialLocale;
 
-    try {
-      localStorage.setItem("lang", initialLocale);
-    } catch {}
+    document.cookie =
+      `lang=${initialLocale}; Path=/; Max-Age=31536000`;
   }, [initialLocale]);
 
   /*

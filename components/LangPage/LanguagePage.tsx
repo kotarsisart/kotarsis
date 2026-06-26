@@ -43,9 +43,6 @@ export default function LanguagePage({
     const lang = languages.find((l) => l.code === code);
     if (!lang) return;
 
-    // save the language
-    localStorage.setItem("lang", lang.routeCode);
-
     // UI closes
     setLeaving(true);
     setTimeout(() => {
