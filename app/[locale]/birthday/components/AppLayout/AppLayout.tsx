@@ -20,8 +20,7 @@ export default function AppLayout({ children }: AppLayoutProps) {
   const pathname = usePathname();
 
   function handleSelectLanguage(newLang: string) {
-    localStorage.setItem("lang", newLang);
-    
+
     const segments = pathname.split("/");
 
     segments[1] = newLang;
