@@ -15,6 +15,8 @@ const locales = [
   "sl",
 ] as const;
 
+type Locale = (typeof locales)[number];
+
 const projects = [
   "oraculux",
   "minimalism",
@@ -24,6 +26,37 @@ const projects = [
   "birthday",
   "censored",
 ];
+
+function getPreferredLocale(
+  request: NextRequest
+): Locale {
+
+  const cookieLocale =
+    request.cookies.get("lang")?.value;
+
+  if (
+    cookieLocale &&
+    locales.includes(cookieLocale as Locale)
+  ) {
+    return cookieLocale as Locale;
+  }
+
+  const browserLang =
+    request.headers
+      .get("accept-language")
+      ?.split(",")[0]
+      ?.split("-")[0]
+      ?.toLowerCase();
+
+  if (
+    browserLang &&
+    locales.includes(browserLang as Locale)
+  ) {
+    return browserLang as Locale;
+  }
+
+  return "en";
+}
 
 export function proxy(
   request: NextRequest
@@ -43,7 +76,7 @@ export function proxy(
 
   // already localized
   const hasLocale = locales.some(
-    locale =>
+    (locale) =>
       pathname === `/${locale}` ||
       pathname.startsWith(`/${locale}/`)
   );
@@ -52,22 +85,19 @@ export function proxy(
     return NextResponse.next();
   }
 
+  const locale = getPreferredLocale(request);
+
+  // root
+  if (pathname === "/") {
+    return NextResponse.redirect(
+      new URL(`/${locale}`, request.url)
+    );
+  }
+
   // legacy project URLs
-  const project = pathname.replace("/", "");
+  const project = pathname.slice(1);
 
-  if (projects.includes(project)) {
-    const browserLang =
-      request.headers
-        .get("accept-language")
-        ?.split(",")[0]
-        ?.split("-")[0]
-        ?.toLowerCase();
-
-    const locale =
-      locales.includes(browserLang as any)
-        ? browserLang
-        : "en";
-
+  if (projects.includes(project as (typeof projects)[number])) {
     return NextResponse.redirect(
       new URL(
         `/${locale}/${project}`,

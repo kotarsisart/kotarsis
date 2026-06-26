@@ -30,6 +30,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ])
       );
 
+      languages["x-default"] = project
+        ? `${baseUrl}/en/${project}`
+        : `${baseUrl}/en`;
+
       return {
         url: `${baseUrl}${path}`,
 
