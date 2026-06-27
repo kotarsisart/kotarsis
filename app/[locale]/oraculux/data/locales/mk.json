@@ -295,11 +295,8 @@
       "sources": "Извори на одговори"
     },
 
-    "me": {
-      "author": "Автор: kotarsis_art",
-      "buyCoffee": "Поддржи го Оракулот со кафе",
-      "telegram": "Telegram",
-      "customSite": "Нарачај веб-страница"
+    "links": {
+      "support": "Поддржи го Оракулот со кафе"
     },
 
     "about": {

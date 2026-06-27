@@ -7,17 +7,6 @@
     "imgAlt": "Папярэдні прагляд kotarsis"
   },
 
-  "header": {
-    "logo": "kotarsis",
-    "lang": "Беларуская",
-    "alt": {
-      "logo": "лагатып загалоўка",
-      "themeDark": "іконка цёмнай тэмы",
-      "themeLight": "іконка светлай тэмы",
-      "globe": "іконка выбару мовы"
-    }
-  },
-
   "hero": {
     "brand": "kotarsis",
     "ideology": {

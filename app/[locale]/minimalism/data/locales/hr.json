@@ -115,11 +115,10 @@
   },
 
   "footer": {
-    "enough": "Ovo je dovoljno.",
-    "author": "Autor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Podrži jednostavnost",
-    "custom": "Naruči prilagođenu web stranicu",
+    "title": "Ovo je dovoljno.",
+    "links": {
+      "support": "Podrži jednostavnost"
+    },
     "copyright": "© 2026 Minimalism. Stvoreno s poštovanjem prema minimalizmu.",
     "coffeeAlt": "Šalica kave Minimalism"
   }

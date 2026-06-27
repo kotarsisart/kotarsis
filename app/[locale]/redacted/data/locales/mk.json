@@ -177,10 +177,9 @@
 
   "footer": {
     "title": "Крај на снимањето",
-    "author": "Автор: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Поддржи несовршеност",
-    "custom": "Нарачај сопствен веб-сајт",
+    "links": {
+      "support": "Поддржи несовршеност"
+    },
     "copyright": "© 2026 Redacted. Создадено околу грешката.",
     "coffeeAlt": "шолја Redacted"
   }

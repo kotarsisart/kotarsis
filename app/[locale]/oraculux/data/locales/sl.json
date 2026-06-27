@@ -295,11 +295,8 @@
       "sources": "Viri odgovorov"
     },
 
-    "me": {
-      "author": "Avtor: kotarsis_art",
-      "buyCoffee": "Podpri Orakla s kavo",
-      "telegram": "Telegram",
-      "customSite": "Naroči spletno stran"
+    "links": {
+      "buyCoffee": "Podpri Orakla s kavo"
     },
 
     "about": {

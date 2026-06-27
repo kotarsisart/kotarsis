@@ -83,10 +83,9 @@
 
   "footer": {
     "title": "Среќен роденден!",
-    "author": "Автор: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Поддржи вакви моменти",
-    "custom": "Нарачај индивидуална веб-страница",
+    "links": {
+      "support": "Поддржи вакви моменти"
+    },
     "copyright": "© 2026 Birthday Capsule. Ти си повеќе од само датум.",
     "coffeeAlt": "Шолја кафе Birthday Capsule"
   }

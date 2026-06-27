@@ -2,13 +2,12 @@
 
 import "./_footer.scss"
 
-import Image from "next/image";
-
 import BlockWrapper from "../../elements/BlockWrapper/BlockWrapper"; 
 import useTypewriter from "@/hooks/useTypeWriter";
 
 import useTypeWriterReveal from "@/utils/animations/useTypeWriterReveal";
 import { useI18n } from "@/data/I18nProvider";
+import FooterLinks from "@/components/Footer/FooterLinks";
 
 export default function Footer() {
   const { t } = useI18n();
@@ -72,48 +71,12 @@ export default function Footer() {
 
         </div>
 
-        <div className="footer__me">
-
-          <p className="footer__me-text">
-            {t("footer.me.author")}
-          </p>
-
-          <a
-            href="https://buymeacoffee.com/kotarsis"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer__me-bmac"
-          >
-            <Image
-              src="/projects/concentrator/images/section-icons/footer/coffee.svg"
-              width={32}
-              height={32}
-              alt={t("footer.me.coffee")}
-              className="footer__me-links-icon"
-            />
-
-            <p className="footer__me-text">
-              {t("footer.me.coffee")}
-            </p>
-          </a>
-
-          <a
-            href="https://t.me/kotarsis_art"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="footer__me-text"
-          >
-            {t("footer.me.telegram")}
-          </a>
-
-          <a
-            href="mailto:kotarsis.studio@gmail.com?subject=Custom website"
-            className="footer__me-text"
-          >
-            {t("footer.me.custom")}
-          </a>
-
-        </div>
+        <FooterLinks
+          coffeeIcon="/projects/concentrator/images/section-icons/footer/coffee.svg"
+          coffeeWidth={32}
+          coffeeHeight={32}
+          coffeeAlt={t("footer.coffeeAlt")}
+        />
 
         <div
             ref={ref}

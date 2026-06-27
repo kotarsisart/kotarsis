@@ -32,10 +32,9 @@
 
   "footer": {
     "title": "Любите друг друга.",
-    "author": "Автор: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Поддержи любовь",
-    "custom": "Заказать индивидуальный сайт",
+    "links": {
+      "support": "Поддержи любовь"
+    },
     "copyright": "© 2026 Redheart. Сделано с любовью к рыжим.",
     "coffeeAlt": "Чашка кофе Redheart"
   }

@@ -83,10 +83,9 @@
 
   "footer": {
     "title": "С днём рождения!",
-    "author": "Автор: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Поддержать такие моменты",
-    "custom": "Заказать индивидуальный сайт",
+    "links": {
+      "support": "Поддержать такие моменты"
+    },
     "copyright": "© 2026 Birthday Capsule. Ты - больше, чем просто дата.",
     "coffeeAlt": "Чашка кофе Birthday Capsule"
   }

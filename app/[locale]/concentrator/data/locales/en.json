@@ -264,11 +264,8 @@
       },
       "team": "Send coffee & resume"
     },
-    "me": {
-      "author": "Author: kotarsis_art",
-      "coffee": "Buy me a coffee",
-      "telegram": "Telegram",
-      "custom": "Get a custom website"
+    "links": {
+      "support": "Buy me a coffee"
     },
     "copyright": "© 2026 Concentrator™ Made with love and pseudoscience. All rights are reserved."
   } 

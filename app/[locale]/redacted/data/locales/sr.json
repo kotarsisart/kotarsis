@@ -177,10 +177,9 @@
 
   "footer": {
     "title": "Kraj zapisa.",
-    "author": "Autor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Podrži nesavršenost",
-    "custom": "Naruči sopstveni sajt",
+    "links": {
+      "support": "Podrži nesavršenost"
+    },
     "copyright": "© 2026 Redacted. Dizajnirano oko greške.",
     "coffeeAlt": "šolja Redacted"
   }

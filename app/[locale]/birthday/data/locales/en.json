@@ -84,10 +84,9 @@
 
   "footer": {
     "title": "Happy Birthday!",
-    "author": "Created by kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Support moments like this",
-    "custom": "Order a custom website",
+    "links": {
+      "support": "Support moments like this"
+    },
     "copyright": "© 2026 Birthday Capsule. You are more than just a date.",
     "coffeeAlt": "Birthday Capsule coffee cup"
   }

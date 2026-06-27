@@ -177,10 +177,9 @@
 
   "footer": {
     "title": "Konec logu.",
-    "author": "Autor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Podpoř nedokonalost",
-    "custom": "Objednat vlastní web",
+    "links": {
+      "support": "Podpoř nedokonalost"
+    },
     "copyright": "© 2026 Redacted. Navrženo kolem chyby.",
     "coffeeAlt": "hrnek Redacted"
   }

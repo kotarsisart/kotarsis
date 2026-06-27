@@ -115,11 +115,10 @@
   },
 
   "footer": {
-    "enough": "To je dovolj.",
-    "author": "Avtor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Podpri preprostost",
-    "custom": "Naroči spletno stran po meri",
+    "title": "To je dovolj.",
+    "links": {
+      "support": "Podpri preprostost"
+    },
     "copyright": "© 2026 Minimalism. Ustvarjeno s spoštovanjem do minimalizma.",
     "coffeeAlt": "Skodelica kave Minimalism"
   }

@@ -83,10 +83,9 @@
 
   "footer": {
     "title": "Vse najboljše!",
-    "author": "Avtor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Podpri takšne trenutke",
-    "custom": "Naroči individualno spletno stran",
+    "links": {
+      "support": "Podpri takšne trenutke"
+    },
     "copyright": "© 2026 Birthday Capsule. Si več kot le datum.",
     "coffeeAlt": "Skodelica kave Birthday Capsule"
   }

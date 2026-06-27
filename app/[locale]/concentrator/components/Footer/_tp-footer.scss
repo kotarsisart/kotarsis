@@ -8,9 +8,9 @@
   --footer-nav-1280: 26px;
   --footer-nav-1440: 28px;
 
-  --footer-me-320: 20px;
-  --footer-me-1280: 22px;
-  --footer-me-1440: 24px;
+  --footer-link-320: 20px;
+  --footer-link-1280: 22px;
+  --footer-link-1440: 24px;
 
   --footer-copy-320: 14px;
   --footer-copy-768: 20px;
@@ -44,8 +44,8 @@
   }
 }
 
-@mixin footer-me {
-  font-size: var(--footer-me-320);
+@mixin footer-link {
+  font-size: var(--footer-link-320);
   font-weight: var(--font-weight-regular);
   color: var(--text-secondary);
   text-decoration: none;
@@ -56,10 +56,10 @@
   }
 
   @include mx.mq(break-1280) {
-    font-size: var(--footer-me-1280);
+    font-size: var(--footer-link-1280);
   }
   @include mx.mq(break-1440) {
-    font-size: var(--footer-me-1440);
+    font-size: var(--footer-link-1440);
   }
 }
 

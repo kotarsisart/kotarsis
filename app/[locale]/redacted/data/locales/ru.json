@@ -177,10 +177,9 @@
 
   "footer": {
     "title": "Конец отчёта.",
-    "author": "Автор: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Поддержать несовершенство",
-    "custom": "Заказать собственный сайт",
+    "links": {
+      "support": "Поддержать несовершенство"
+    },
     "copyright": "© 2026 Redacted. Создан вокруг ошибки.",
     "coffeeAlt": "чашка Redacted"
   }

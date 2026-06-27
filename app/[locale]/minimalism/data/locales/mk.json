@@ -115,11 +115,10 @@
   },
 
   "footer": {
-    "enough": "Ова е доволно.",
-    "author": "Автор: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Поддржи ја едноставноста",
-    "custom": "Нарачај индивидуална веб-страница",
+    "title": "Ова е доволно.",
+    "links": {
+      "support": "Поддржи ја едноставноста"
+    },
     "copyright": "© 2026 Minimalism. Создадено со почит кон минимализмот.",
     "coffeeAlt": "Шолја кафе Minimalism"
   }

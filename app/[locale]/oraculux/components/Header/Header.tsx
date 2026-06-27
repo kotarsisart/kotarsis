@@ -1,5 +1,3 @@
-"use client";
-
 import "./_header.scss";
 
 import LogoSwitcher from "@/elements/LogoSwitcher/LogoSwitcher";
@@ -20,6 +18,7 @@ export default function Header({
   const logo = (
     <a
       href="https://kotarsis.com"
+      aria-label="Go to kotarsis homepage"
       className="header-logo__link"
       rel="noopener noreferrer"
     >
@@ -39,14 +38,16 @@ export default function Header({
     </a>
   );
 
+  const actions = (
+    <LanguageButton
+      onClick={onOpenLanguages}
+    />
+  );
+
   return (
     <BaseHeader
       logo={logo}
-      actions={
-        <LanguageButton
-          onClick={onOpenLanguages}
-        />
-      }
+      actions={actions}
     />
   );
 }

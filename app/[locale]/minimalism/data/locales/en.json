@@ -115,11 +115,10 @@
   },
 
   "footer": {
-    "enough": "This is enough.",
-    "author": "Author: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Support simplicity",
-    "custom": "Get a custom website",
+    "title": "This is enough.",
+    "links": {
+      "support": "Support simplicity"
+    },
     "copyright": "© 2026 Minimalism. Made with respect to minimalism.",
     "coffeeAlt": "Minimalism coffee cup"
   }

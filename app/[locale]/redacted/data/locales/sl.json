@@ -177,10 +177,9 @@
 
   "footer": {
     "title": "Konec zapisa.",
-    "author": "Avtor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Podpri nepopolnost",
-    "custom": "Naroči lastno spletno stran",
+    "links": {
+      "support": "Podpri nepopolnost"
+    },
     "copyright": "© 2026 Redacted. Oblikovano okoli napake.",
     "coffeeAlt": "skodelica Redacted"
   }

@@ -32,10 +32,9 @@
 
   "footer": {
     "title": "Сакајте се еден со друг.",
-    "author": "Автор: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Поддржи ја љубовта",
-    "custom": "Нарачај индивидуална веб-страница",
+    "links": {
+      "support": "Поддржи ја љубовта"
+    },
     "copyright": "© 2026 Redheart. Создадено со љубов кон црвенокосите.",
     "coffeeAlt": "Шолја кафе Redheart"
   }

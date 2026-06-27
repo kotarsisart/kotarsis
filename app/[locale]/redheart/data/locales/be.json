@@ -32,10 +32,9 @@
 
   "footer": {
     "title": "Любіце адно аднаго.",
-    "author": "Аўтар: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Падтрымай каханне",
-    "custom": "Замовіць індывідуальны сайт",
+    "links": {
+      "support": "Падтрымай каханне"
+    },
     "copyright": "© 2026 Redheart. Створана з любоўю да рудых.",
     "coffeeAlt": "Кубак кавы Redheart"
   }

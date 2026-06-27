@@ -83,10 +83,9 @@
 
   "footer": {
     "title": "Wszystkiego najlepszego!",
-    "author": "Autor: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Wesprzyj takie chwile",
-    "custom": "Zamów indywidualną stronę",
+    "links": {
+      "support": "Wesprzyj takie chwile"
+    },
     "copyright": "© 2026 Birthday Capsule. Jesteś czymś więcej niż tylko datą.",
     "coffeeAlt": "Filiżanka kawy Birthday Capsule"
   }

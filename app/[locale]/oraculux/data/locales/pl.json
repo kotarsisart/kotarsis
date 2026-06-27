@@ -295,11 +295,8 @@
       "sources": "Źródła odpowiedzi"
     },
 
-    "me": {
-      "author": "Autor: kotarsis_art",
-      "buyCoffee": "Wesprzeć Wyrocznię kawą",
-      "telegram": "Telegram",
-      "customSite": "Zamówić stronę"
+    "links": {
+      "support": "Wesprzeć Wyrocznię kawą"
     },
 
     "about": {

@@ -35,7 +35,7 @@
     }
   }
 
-  &__me-links {
+  &__links {
     @include mx.centered;
     flex-direction: row;
     flex-wrap: wrap;
@@ -48,14 +48,15 @@
       gap: s.$space-xl;
     }
 
-    &-text {
-      @include footer-me-links;
-      transition: color 0.4s ease;
+  }
+  
+  &__link {
+    @include footer-links;
+    transition: color 0.4s ease;
 
-      &:hover {
-        --text-footer-me-links-hover: #c14fe7;
-        color: var(--text-footer-me-links-hover);
-      }
+    &:hover {
+      --text-footer-links-hover: #c14fe7;
+      color: var(--text-footer-links-hover);
     }
   }
 

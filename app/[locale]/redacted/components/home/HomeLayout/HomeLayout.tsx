@@ -1,6 +1,7 @@
 "use client";
 
 import { type ReactNode } from "react";
+import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
 
 import Preloader from "../../preloader/Preloader";
@@ -18,9 +19,20 @@ interface HomeLayoutProps {
 
 export default function HomeLayout({ children }: HomeLayoutProps) {
   const [isLangOpen, setLangOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
   function handleSelectLanguage(newLang: string) {
-    console.log("selected locale:", newLang);
+    localStorage.setItem("lang", newLang);
+    
+    const segments = pathname.split("/");
+
+    segments[1] = newLang;
+
+    router.replace(
+      segments.join("/"),
+      { scroll: false }
+    );
 
     setLangOpen(false);
   }

@@ -60,7 +60,7 @@
     }
   }
 
-  &__me {
+  &__links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -75,28 +75,31 @@
       gap: s.$space-xl;
     }
 
-    &-bmac {
-      @include mx.centered;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: s.$space-s;
-      text-decoration: none;
-
-      &:hover {
-        .footer__me-links-icon {
-          animation: cup-tilt 0.75s ease-out;
-          transform-origin: center bottom;
-        }
-      }
-    }
-
+    
+    
+  }
+  
+  &__link {
+    @include footer-link;
+  }
+  
+  &__bmac {
+    @include mx.centered;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: s.$space-s;
+    text-decoration: none;
+    
     &-icon {
-      height: 28px;
-      width: 28px;
+      height: 32px;
+      width: 32px;
     }
-
-    &-text {
-      @include footer-me;
+    
+    &:hover {
+      .footer__links-icon {
+        animation: cup-tilt 0.75s ease-out;
+        transform-origin: center bottom;
+      }
     }
   }
 

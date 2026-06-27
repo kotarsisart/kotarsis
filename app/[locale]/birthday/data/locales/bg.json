@@ -83,10 +83,9 @@
 
   "footer": {
     "title": "Честит рожден ден!",
-    "author": "Автор: kotarsis_art",
-    "telegram": "Telegram",
-    "support": "Подкрепи такива моменти",
-    "custom": "Поръчай индивидуален сайт",
+    "links": {
+      "support": "Подкрепи такива моменти"
+    },
     "copyright": "© 2026 Birthday Capsule. Ти си повече от просто дата.",
     "coffeeAlt": "Чаша кафе Birthday Capsule"
   }

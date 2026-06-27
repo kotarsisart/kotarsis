@@ -295,11 +295,8 @@
       "sources": "Источники ответов"
     },
 
-    "me": {
-      "author": "Автор: kotarsis_art",
-      "buyCoffee": "Поддержать Оракула кофе",
-      "telegram": "Telegram",
-      "customSite": "Заказать сайт"
+    "links": {
+      "support": "Поддержать Оракула кофе"
     },
 
     "about": {

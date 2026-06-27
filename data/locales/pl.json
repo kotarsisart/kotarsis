@@ -7,17 +7,6 @@
     "imgAlt": "Podgląd kotarsis"
   },
 
-  "header": {
-    "logo": "kotarsis",
-    "lang": "Polski",
-    "alt": {
-      "logo": "logo nagłówka",
-      "themeDark": "ciemnego motywu",
-      "themeLight": "jasnego motywu",
-      "globe": "ikona wyboru języka"
-    }
-  },
-
   "hero": {
     "brand": "kotarsis",
     "ideology": {
