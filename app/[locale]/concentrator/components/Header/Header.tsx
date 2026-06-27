@@ -1,17 +1,21 @@
 "use client";
 
 import "./_header.scss";
-import LogoSwitcher from "@/elements/LogoSwitcher/LogoSwitcher"
 
-import Image from "next/image";
-import LangGlobe from "@/icons/LangGlobe";
-import { useEffect, useState } from "react";
+import LogoSwitcher from "@/elements/LogoSwitcher/LogoSwitcher";
 
-import BlockWrapper from "../../elements/BlockWrapper/BlockWrapper";
-import { useI18n } from "@/data/I18nProvider";
-import { languages } from "@/data/languages";
 import KotarsisLogo from "@/icons/KotarsisLogo";
 import ConcentratorLogo from "../../icons/ConcentratorLogo";
+
+import BaseHeader from "@/components/Header/BaseHeader";
+import LanguageButton from "@/components/Header/LanguageButton";
+
+import BlockWrapper from "../../elements/BlockWrapper/BlockWrapper";
+import Image from "next/image";
+
+import { useI18n } from "@/data/I18nProvider";
+
+import { useEffect, useState } from "react";
 
 interface HeaderProps {
   onOpenLanguages: () => void;
@@ -20,9 +24,30 @@ interface HeaderProps {
 export default function Header({
   onOpenLanguages,
 }: HeaderProps) {
-  const { t, locale } = useI18n();
+  const { t } = useI18n();
 
-  const langObj = languages.find((l) => l.routeCode === locale);
+  const logo = (
+    <a
+      href="https://kotarsis.com"
+      aria-label="Go to kotarsis homepage"
+      className="header-logo__link"
+      rel="noopener noreferrer"
+    >
+      <LogoSwitcher
+        className="header-logo"
+        versions={[
+          {
+            icon: <ConcentratorLogo />,
+            text: "Concentrator™",
+          },
+          {
+            icon: <KotarsisLogo />,
+            text: "kotarsis",
+          },
+        ]}
+      />
+    </a>
+  );
 
   const [focusLevel, setFocusLevel] = useState(50);
 
@@ -110,39 +135,11 @@ export default function Header({
     };
   }, []);
 
-  return (
-    <BlockWrapper>
-      <header className="header">
-
-        {/* Logo */}
-        <div className="header-logo">
-
-          <a
-            href="https://kotarsis.com"
-            className="header-logo__link"
-          >
-            <LogoSwitcher
-              className="header-logo"
-              versions={[
-                {
-                  icon: <ConcentratorLogo />,
-                  text: "Concentrator™",
-                },
-                {
-                  icon: <KotarsisLogo />,
-                  text: "kotarsis",
-                },
-              ]}
-            />
-          </a>
-
-        </div>
-
-        <p className="header-slogan">
-          {t("header.slogan")}
-        </p>
-
-        <div className="header-actions">
+  const center = (
+    <>
+          <p className="header-slogan">
+            {t("header.slogan")}
+          </p>
 
           <div
             className={`header-focus-bar ${
@@ -179,24 +176,23 @@ export default function Header({
             </div>
 
           </div>
+    </>
 
-          <div
-            className="header__langs"
-            onClick={onOpenLanguages}
-          >
-            <p className="header__langs-text">
-              {langObj?.name ?? locale.toUpperCase()}
-            </p>
+  );
 
-            <LangGlobe
-              className="header__langs-icon"
-            />
-          </div>
+  const actions = (
+    <LanguageButton
+      onClick={onOpenLanguages}
+    />
+  );
 
-        </div>
-
-      </header>
-
+  return (
+    <BlockWrapper>
+      <BaseHeader
+        logo={logo}
+        center={center}
+        actions={actions}
+      />
     </BlockWrapper>
   );
 }

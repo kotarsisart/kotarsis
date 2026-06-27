@@ -7,17 +7,6 @@
     "imgAlt": "Превью-изображение kotarsis"
   },
 
-  "header": {
-    "logo": "kotarsis",
-    "lang": "Русский",
-    "alt": {
-      "logo": "логотип заголовка",
-      "themeDark": "иконка тёмной темы",
-      "themeLight": "иконка светлой темы",
-      "globe": "иконка выбора языка"
-    }
-  },
-
   "hero": {
     "brand": "kotarsis",
     "ideology": {

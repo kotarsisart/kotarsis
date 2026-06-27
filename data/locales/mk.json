@@ -7,17 +7,6 @@
     "imgAlt": "Преглед на kotarsis"
   },
 
-  "header": {
-    "logo": "kotarsis",
-    "lang": "Македонски",
-    "alt": {
-      "logo": "лого на заглавниот дел",
-      "themeDark": "икона за темна тема",
-      "themeLight": "икона за светла тема",
-      "globe": "икона за избор на јазик"
-    }
-  },
-
   "hero": {
     "brand": "kotarsis",
     "ideology": {

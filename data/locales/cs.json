@@ -7,17 +7,6 @@
     "imgAlt": "Náhled kotarsis"
   },
 
-  "header": {
-    "logo": "kotarsis",
-    "lang": "Čeština",
-    "alt": {
-      "logo": "logo hlavičky",
-      "themeDark": "ikona tmavého režimu",
-      "themeLight": "ikona světlého režimu",
-      "globe": "ikona výběru jazyka"
-    }
-  },
-
   "hero": {
     "brand": "kotarsis",
     "ideology": {

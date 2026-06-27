@@ -7,17 +7,6 @@
     "imgAlt": "Predogled kotarsisa"
   },
 
-  "header": {
-    "logo": "kotarsis",
-    "lang": "Slovenščina",
-    "alt": {
-      "logo": "glavni logotip",
-      "themeDark": "ikona temne teme",
-      "themeLight": "ikona svetle teme",
-      "globe": "ikona za izbiro jezika"
-    }
-  },
-
   "hero": {
     "brand": "kotarsis",
     "ideology": {

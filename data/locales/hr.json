@@ -7,17 +7,6 @@
     "imgAlt": "Pregledna slika kotarsisa"
   },
 
-  "header": {
-    "logo": "kotarsis",
-    "lang": "Hrvatski",
-    "alt": {
-      "logo": "logo zaglavlja",
-      "themeDark": "ikona tamne teme",
-      "themeLight": "ikona svijetle teme",
-      "globe": "ikona za odabir jezika"
-    }
-  },
-
   "hero": {
     "brand": "kotarsis",
     "ideology": {

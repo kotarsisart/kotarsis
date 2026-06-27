@@ -7,17 +7,6 @@
     "imgAlt": "kotarsis preview image"
   },
 
-  "header": {
-    "logo": "kotarsis",
-    "lang": "English",
-    "alt": {
-      "logo": "header logo",
-      "themeDark": "dark theme",
-      "themeLight": "light theme",
-      "globe": "language globe"
-    }
-  },
-
   "hero": {
     "brand": "kotarsis",
     "ideology": {

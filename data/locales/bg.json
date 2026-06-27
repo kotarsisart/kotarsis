@@ -7,17 +7,6 @@
     "imgAlt": "Предварителен преглед на kotarsis"
   },
 
-  "header": {
-    "logo": "kotarsis",
-    "lang": "Български",
-    "alt": {
-      "logo": "лого на заглавната част",
-      "themeDark": "икона на тъмната тема",
-      "themeLight": "икона на светлата тема",
-      "globe": "икона за избор на език"
-    }
-  },
-
   "hero": {
     "brand": "kotarsis",
     "ideology": {

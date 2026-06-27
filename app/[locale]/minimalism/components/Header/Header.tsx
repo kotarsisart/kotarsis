@@ -1,61 +1,53 @@
-import { useI18n } from "@/data/I18nProvider";
-import { languages } from "@/data/languages";
+import "./_header.scss";
 
-import './_header.scss';
-
-import LogoSwitcher from "@/elements/LogoSwitcher/LogoSwitcher"
+import LogoSwitcher from "@/elements/LogoSwitcher/LogoSwitcher";
 
 import KotarsisLogo from "@/icons/KotarsisLogo";
-import MinimalismLogo from "../../icons/MinimalismLogo"
+import MinimalismLogo from "../../icons/MinimalismLogo";
 
-import LangGlobe from "@/icons/LangGlobe";
+import BaseHeader from "@/components/Header/BaseHeader";
+import LanguageButton from "@/components/Header/LanguageButton";
 
 interface HeaderProps {
   onOpenLanguages: () => void;
 }
 
-export default function Header({ onOpenLanguages }: HeaderProps) {
-  const { locale } = useI18n();
+export default function Header({
+  onOpenLanguages,
+}: HeaderProps) {
+  const logo = (
+    <a
+      href="https://kotarsis.com"
+      aria-label="Go to kotarsis homepage"
+      className="header-logo__link"
+      rel="noopener noreferrer"
+    >
+      <LogoSwitcher
+        className="header-logo"
+        versions={[
+          {
+            icon: <MinimalismLogo />,
+            text: "Minimalism",
+          },
+          {
+            icon: <KotarsisLogo />,
+            text: "kotarsis",
+          },
+        ]}
+      />
+    </a>
+  );
 
-  // find correct lang object by locale
-  const langObj = languages.find((l) => l.routeCode === locale);
+  const actions = (
+    <LanguageButton
+      onClick={onOpenLanguages}
+    />
+  );
 
   return (
-    <header className="header">
-
-      <a
-        href="https://kotarsis.com"
-        className="header-logo__link"
-        rel="noopener noreferrer"
-      >
-        <LogoSwitcher
-          className="header-logo"
-          versions={[
-            {
-              icon: <MinimalismLogo />,
-              text: "Minimalism",
-            },
-            {
-              icon: <KotarsisLogo />,
-              text: "kotarsis",
-            },
-          ]}
-        />
-      </a>
-
-      <div
-        className="header__langs"
-        onClick={onOpenLanguages}
-      >
-        <p className="header__langs-text">
-          {langObj?.name ?? locale.toUpperCase()}
-        </p>
-
-        <LangGlobe
-          className="header__langs-icon"
-        />
-      </div>
-
-    </header>
+    <BaseHeader
+      logo={logo}
+      actions={actions}
+    />
   );
 }
