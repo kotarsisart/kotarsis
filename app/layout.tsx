@@ -14,6 +14,8 @@ import { createFaviconSet } from "@/data/seo/createFaviconSet";
 import type { Metadata } from "next";
 import { Viewport } from "next";
 
+import "@/app/globals.css"
+
 export const viewport: Viewport = {
   themeColor: "#F6F4FF",
 };

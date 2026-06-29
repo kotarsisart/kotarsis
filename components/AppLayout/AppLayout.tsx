@@ -11,6 +11,7 @@ import LanguagePage from "@/components/LangPage/LanguagePage";
 import { messages } from "../../data/messages";
 
 import "../../components/LangPage/_lang-page-theme.scss";
+import { useChangeLanguage } from "@/hooks/handleSelectLanguage";
 
 interface AppLayoutProps {
   children: ReactNode;
@@ -18,20 +19,11 @@ interface AppLayoutProps {
 
 export default function AppLayout({ children }: AppLayoutProps) {
   const [isLangOpen, setLangOpen] = useState(false);
-  const router = useRouter();
-  const pathname = usePathname();
 
-  function handleSelectLanguage(newLang: string) {
-    
-    const segments = pathname.split("/");
+  const changeLanguage = useChangeLanguage();
 
-    segments[1] = newLang;
-
-    router.replace(
-      segments.join("/"),
-      { scroll: false }
-    );
-
+  function handleSelectLanguage(lang: string) {
+    changeLanguage(lang);
     setLangOpen(false);
   }
 

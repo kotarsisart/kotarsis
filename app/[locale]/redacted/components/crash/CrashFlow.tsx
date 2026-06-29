@@ -6,9 +6,7 @@ import Contrast from "./Contrast/Contrast";
 import Focus from "./Focus/Focus";
 import Clarity from "./Clarity/Clarity";
 import Ship from "./Ship/Ship";
-import '../../globals.css'
 
-import '../../globals.css';
 type Stage =
   | "crash-preloader"
   | "entry"

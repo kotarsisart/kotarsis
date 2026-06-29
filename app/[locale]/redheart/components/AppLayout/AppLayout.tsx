@@ -1,7 +1,6 @@
 "use client"
 
 import { type ReactNode } from "react";
-import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
 
 import Preloader from "../Preloader/Preloader";
@@ -9,6 +8,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import LanguagePage from "@/components/LangPage/LanguagePage";
 
+import { useChangeLanguage } from "@/hooks/handleSelectLanguage";
 import { messages } from "../../data/messages";
 
 import "../../components/LangPage/_lang-page-theme.scss";
@@ -19,20 +19,10 @@ interface AppLayoutProps {
 
 export default function AppLayout({ children }: AppLayoutProps) {
   const [isLangOpen, setLangOpen] = useState(false);
-  const router = useRouter();
-  const pathname = usePathname();
+  const changeLanguage = useChangeLanguage();
 
-  function handleSelectLanguage(newLang: string) {
-    
-    const segments = pathname.split("/");
-
-    segments[1] = newLang;
-
-    router.replace(
-      segments.join("/"),
-      { scroll: false }
-    );
-
+  function handleSelectLanguage(lang: string) {
+    changeLanguage(lang);
     setLangOpen(false);
   }
 

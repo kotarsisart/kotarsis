@@ -1,7 +1,6 @@
 "use client"
 
 import "./_input-page.scss";
-import '../../globals.css';
 
 import { useI18n } from "@/data/I18nProvider";
 import { useState, useRef } from "react";

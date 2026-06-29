@@ -12,7 +12,6 @@ import Negation from "./components/Negation/Negation";
 import Conclusion from "./components/Conclusion/Conclusion";
 
 import { useI18n } from "@/data/I18nProvider";
-import './globals.css';
 
 export default function CorePage() {
   const { t, locale } = useI18n();

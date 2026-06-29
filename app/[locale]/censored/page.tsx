@@ -12,8 +12,6 @@ import Report from './components/Report/Report';
 import Victory from './components/Victory/Victory';
 import BubbleCTA from './components/BubbleCTA/BubbleCTA';
 
-import './globals.css';
-
 export default function LocalePage() {
   return (
     <AppLayout>

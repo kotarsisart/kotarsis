@@ -14,7 +14,6 @@ import Graffiti from "./components/Graffiti/Graffiti";
 
 import { useI18n } from "@/data/I18nProvider";
 import '@/utils/animations/animations.scss'
-import './globals.css';
 
 export default function LocalePage() {
   const { t, locale } = useI18n();
