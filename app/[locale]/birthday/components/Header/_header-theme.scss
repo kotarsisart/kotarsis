@@ -1,0 +1,34 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-header' as *;
+
+.header {
+  --header-bg: #d2a8ff;
+  --header-text: #ffffff;
+
+  background-color: var(--header-bg);
+  color: var(--header-text);
+
+  &-logo {
+    .kts-logo__text {
+      @include header-logo;
+    }
+
+    @include mx.mq(break-768) {
+      border: 2px solid var(--header-text);
+      border-radius: 12px;
+    }
+  }
+
+  &__langs {
+
+    @include mx.mq(break-768) {
+      border: 2px solid var(--header-text);
+      border-radius: 12px;
+    }
+
+    &-text {
+      @include header-lang-select;
+    }
+  }
+}

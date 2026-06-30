@@ -1,6 +1,6 @@
 "use client";
 
-import "./_header.scss";
+import "./_header-theme.scss";
 
 import LogoSwitcher from "@/elements/LogoSwitcher/LogoSwitcher";
 

@@ -8,45 +8,16 @@
   --header-buttons-radius: 28px;
   --header-buttons-bg: #F4A676;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   background-color: var(--header-bg);
   color: var(--header-text);
 
-  position: sticky;
-  z-index: var(--z-index-lang-header);
-  width: 100%;
-  top: 0;
-  left: 0;
-
-  padding-inline: s.$space-s;
-  padding-block: s.$space-xs;
-  height: 65px;
-  
-
-  @include mx.mq(break-768) { 
-    padding-inline: s.$space-xl;
-    height: 75px;
-  }
-  @include mx.mq(break-1024) { 
-    padding-inline: s.$space-xxl;
-  }
-
   &-logo {
-    padding-block: s.$space-xs;
+    background-color: var(--header-buttons-bg);
+    border-radius: var(--header-buttons-radius);
     
     .kts-logo__text {
       @include header-logo;
-    }
-    
-    background-color: var(--header-buttons-bg);
-    border-radius: var(--header-buttons-radius);
-
-    @include mx.mq(break-768) {
-      height: 65px;
-    }
+    }    
   }
 
   &__font-controls {
@@ -86,35 +57,15 @@
   }
 
   &__langs {
-    @include mx.centered;
-    flex-direction: row;
-    gap: s.$space-s;
-    padding: s.$space-s;
     border-radius: var(--header-buttons-radius);
     cursor: pointer;
-    
-    &:hover .header__langs-icon {
-      transform: rotate(360deg);
-    }
-    
+
     @include mx.mq(break-768) {
       background-color: var(--header-buttons-bg);
-      padding-inline: s.$space-m;
     }
 
     &-text {
       @include header-lang-select;
-    }
-
-    &-icon {
-      display: none;
-      transition: transform 1s ease;
-      transform-origin: center;
-
-      @include mx.mq(break-768) {
-        display: flex;
-        width: 50px; 
-      }
     }
   }
 }
