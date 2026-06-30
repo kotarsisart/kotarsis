@@ -1,0 +1,31 @@
+@use '../../../styles/system/mixins' as mx;
+@use '../../../styles/tokens/spacing' as s;
+@use './tp-header' as *;
+
+.header {
+  --header-bg: #040830;
+  --header-containers: #D10000;
+
+  background-color: var(--header-bg);
+
+  &-logo__link {
+    @include mx.mq(break-768) {
+      padding-inline: s.$space-m;
+      border-radius: 12px;
+      background-color: var(--header-containers);
+    }
+  }
+
+  &__langs {
+    color: #F1EEFF;
+
+    @include mx.mq(break-768) {
+      border-radius: 12px;
+      background-color: var(--header-containers);
+    }
+
+    &-text {
+      @include header-lang-select;
+    }
+  }
+}

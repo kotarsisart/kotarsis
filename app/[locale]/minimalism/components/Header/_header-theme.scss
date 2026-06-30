@@ -1,0 +1,39 @@
+@use './tp-header' as *;
+@use '../../styles/system/mixins' as mx;
+
+.header {
+  background-color: var(--black);
+  color: var(--white);
+
+  --header-height: 65px;
+  --header-height-desktop: 85px;
+
+  &-logo {
+
+    .kts-logo__icon {
+      color: var(--white);
+    }
+
+    .kts-logo__text {
+      @include header-logo;
+    }
+
+    @include mx.mq(break-768) {
+      border: 2px solid var(--white);
+      border-radius: 12px;
+    }
+  }
+
+  &__langs {
+
+    @include mx.mq(break-768) {
+      padding-inline: 1rem;
+      border: 2px solid var(--white);
+      border-radius: 12px;
+    }
+
+    &-text {
+      @include header-lang-select;
+    }
+  }
+}

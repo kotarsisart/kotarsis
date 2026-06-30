@@ -1,4 +1,5 @@
-import "./_header.scss";
+import "./_header-theme.scss";
+import "@/components/Header/_base-header.scss"
 
 import LogoSwitcher from "@/elements/LogoSwitcher/LogoSwitcher";
 

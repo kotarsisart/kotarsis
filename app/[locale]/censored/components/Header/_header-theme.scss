@@ -1,0 +1,38 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/tokens/spacing' as s;
+@use './tp-header' as *;
+
+.header {
+  background-color: var(--header-footer-bg);
+  color: var(--header-footer-text);
+
+  &-logo {
+    padding-block: s.$space-s;
+
+    .kts-logo__text {
+      color: var(--header-footer-text);
+      @include header-logo;
+    }
+    .kts-logo__icon {
+      color: var(--header-footer-text);
+    }
+
+    @include mx.mq(break-768) {
+      border: 2px solid var(--header-footer-text);
+      border-radius: 12px;
+      height: 70px;
+    }
+  }
+
+  &__langs {
+
+    @include mx.mq(break-768) {
+      border: 2px solid var(--header-footer-text);
+      border-radius: 12px;
+    }
+
+    &-text {
+      @include header-lang-select;
+    }
+  }
+}
