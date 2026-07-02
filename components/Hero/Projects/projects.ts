@@ -108,8 +108,8 @@ export const projects = [
   {
     id: "censored",
     title: "CENSORED",
-    descriptionKey: "projects.comingSoon",
-    // link: "/censored",
+    descriptionKey: "projects.censored.description",
+    link: "/censored",
     image: "/previews/censored.jpg",
 
     font: "censor-font",
