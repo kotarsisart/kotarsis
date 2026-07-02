@@ -55,17 +55,20 @@ export default function BubbleCTA() {
         <button
           onClick={() => setIsOpen(true)}
           className={`
-            fixed bottom-6 right-6 z-40
+            fixed z-40
+            w-60 bp-md:w-auto
+            bottom-6 bp-md:bottom-2 right-[8px]
+            bp-md:bottom-6 right-6
             rounded-full border border-violet-500/30
             bg-zinc-950
             text-xs tracking-tight font-medium text-white
-            px-4 py-3
-            shadow-2xl shadow-violet-500/20
+            px-1 py-1 bp-md:px-4 bp-md:py-3
+            shadow-2xl shadow-violet-500/10
             transition duration-300
             hover:scale-105
             hover:animate-none
             ${
-              isShaking ? "animate-bounce" : "animate-none opacity-50"
+              isShaking ? "animate-bounce" : "animate-none opacity-80"
             }
           `}
         >

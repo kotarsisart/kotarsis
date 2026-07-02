@@ -1,6 +1,6 @@
 import en from "./locales/en.json";
-// import pl from "./locales/pl.json";
-// import uk from "./locales/uk.json";
+import pl from "./locales/pl.json";
+import uk from "./locales/uk.json";
 import ru from "./locales/ru.json";
 // import be from "./locales/be.json";
 // import cs from "./locales/cs.json";
@@ -23,8 +23,8 @@ import ru from "./locales/ru.json";
 
 export const messages = {
   en,
-  // pl,
-  // uk,
+  pl,
+  uk,
   ru,
   // be,
   // cs,

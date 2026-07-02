@@ -6,7 +6,12 @@ export default function Report () {
   const { t } = useI18n();
 
   return (
-    <section className="px-6 py-32">
+    <section
+      className="
+        px-3 py-8 bp-md:px-6 bp-md:py-32
+        bg-black
+      "
+    >
 
       <div className="mx-auto max-w-7xl">
 
@@ -15,18 +20,18 @@ export default function Report () {
             rounded-4xl
             border border-zinc-800
             bg-zinc-950
-            p-8
-            md:p-12
-            lg:p-16
+            px-2 py-6
+            bp-md:p-8
+            bp-lg:p-12
           "
         >
           <p 
             className="
-              text-base
+              text-xs bp-md:text-base
               font-semibold
               uppercase
               tracking-widest
-              text-violet-400
+              text-violet-500
             "
           >
             {t("report.label")}
@@ -38,9 +43,10 @@ export default function Report () {
               max-w-4xl
               font-semibold
               leading-none
-              text-white
-              md:text-5xl
-              lg:text-6xl
+              text-slate-200
+              text-sm
+              bp-md:text-3xl
+              bp-lg:text-5xl
             "
           >
             {t("report.title")}
@@ -48,11 +54,10 @@ export default function Report () {
 
           <p 
             className="
-              mt-12
-              text-3xl
+              mt-4 bp-md:mt-12
+              text-xl bp-md:text-4xl
               font-semibold
-              text-violet-400
-              md:text-3xl
+              text-slate-400
             "
           >
             {t("report.answer")}
@@ -60,11 +65,12 @@ export default function Report () {
 
           <p 
             className="
-              mt-8
+              mt-4 bp-md:mt-8
               max-w-3xl
-              text-lg 
-              leading-relaxed
-              text-zinc-400
+              bp-md:text-lg 
+              leading-tight
+              bp-md:leading-relaxed
+              text-slate-600
             "
           >
             {t("report.description")}
@@ -72,11 +78,11 @@ export default function Report () {
 
           <div 
             className="
-              mt-16 
+              mt-8 bp-md:mt-16
               grid
-              gap-6
-              md:grid-cols-2
-              lg:grid-cols-3
+              gap-3 bp-lg:gap-6
+              bp-md:grid-cols-2
+              bp-lg:grid-cols-3
             "
           >
             {reportCards.map((card) => (
@@ -100,34 +106,51 @@ export default function Report () {
               rounded-3xl
               border border-zinc-800
               bg-zinc-900
-              p-8
+              p-3 bp-md:p-8
             "
           >
-            <p className="text-2xl font-semibold text-violet-400">
+            <p
+              className="
+                text-sm bp-md:text-2xl
+                font-semibold
+                text-violet-400
+              "
+            >
               {t("report.optimization.title")}
             </p>
 
             <p 
               className="
                 mt-4
-                text-lg font-light text-zinc-400
+                text-sm bp-md:text-lg
+                font-light
                 whitespace-pre-line
+                text-slate-400
               "
             >
               {t("report.optimization.description")}
             </p>
           </div>
 
-          <div className="mt-20 text-center">
+          <div className="mt-10 bp-md:mt-20 text-center">
 
-            <p className="text-3xl text-stone-200 font-semibold">
+            <p
+              className="
+                text-xl bp-md:text-3xl
+                font-semibold
+                text-slate-400
+              "
+            >
               {t("report.root.title")}
             </p>
 
             <p 
               className="
-                text-5xl md:text-7xl lg:text-8xl font-medium
-                text-black/80
+                mt-4
+                text-5xl bp-md:text-7xl bp-lg:text-8xl
+                font-medium
+                text-zinc-900
+                bp-md:text-neutral-900
               "
             >
               {t("report.root.answer")}

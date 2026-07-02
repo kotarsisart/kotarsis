@@ -1,14 +1,12 @@
 import { I18nProvider } from "@/data/I18nProvider";
 
-import { 
-  messages,
-  type Locale 
-} from "../../data/messages";
+import { messages } from "@/data/messages";
 import { ogLocales } from "@/data/seo/ogLocales";
 import { createAlternates } from "@/data/seo/createAlternates";
 
 import { Metadata } from "next";
 import { Viewport } from "next";
+import { projectLocale } from "@/data/projectLocale";
 
 export const viewport: Viewport = {
   themeColor: "#F6F4FF",
@@ -21,12 +19,18 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const { locale } = await params;
+  const { locale: requestedLocale } = await params;
+
+  const locale = projectLocale(
+    requestedLocale,
+    messages,
+    "",
+  );
+
+  const meta = messages[locale].meta;
 
   const ogLocale =
     ogLocales[locale as keyof typeof ogLocales] ?? "en_US";
-
-  const meta = messages[locale as Locale].meta;
 
   return {
     title: meta.title,
@@ -79,7 +83,13 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
+  const { locale: requestedLocale } = await params;
+
+  const locale = projectLocale(
+    requestedLocale,
+    messages,
+    "",
+  );
 
   return (
     <html lang={locale}>

@@ -6,6 +6,7 @@ type PricingCardProps = {
   isCustom?: boolean;
   description: string;
   features: string[];
+  onBuy: () => void;
   highlighted?: boolean;
 };
 
@@ -15,6 +16,7 @@ export default function PricingCard({
   isCustom,
   description,
   features,
+  onBuy,
   highlighted,
 }: PricingCardProps) {
   const { t } = useI18n();
@@ -22,32 +24,50 @@ export default function PricingCard({
   return (
     <div
       className={`
-        relative rounded-4xl border p-8 transition duration-300 hover:-translate-y-2
+        relative
+        rounded-4xl border-2
+        p-4 bp-lg:p-8
+        transition duration-300 hover:-translate-y-2
         ${
           highlighted
-            ? "border-violet-500 bg-violet-500/10 shadow-2xl shadow-violet-500/20"
-            : "border-zinc-800 bg-zinc-950"
+            ? "border-violet-500 bg-indigo-500/20 shadow-2xl shadow-violet-500/20"
+            : "border-zinc-600 bg-slate-950"
         }
       `}
     >
     
         {highlighted && (
-          <div className="absolute right-4 top-6 rounded-full bg-violet-500 px-4 py-2 text-xs font-semibold uppercase text-white">
+          <div
+            className="
+              w-30 bp-lg:w-auto
+              absolute right-4 top-2 bp-lg:top-6
+              rounded-full
+              bg-violet-500
+              px-4 py-2
+              whitespace-preline
+              text-xs font-semibold uppercase text-slate-100
+            "
+          >
             {t("pricing.plans.popular")}
           </div>
         )}
 
-        <p className="text-sm font-semibold uppercase tracking-widest text-violet-400">
+        <p
+          className="
+            text-sm font-semibold uppercase tracking-widest
+            text-violet-500
+          "
+        >
           {title}
         </p>
 
         <div className="mt-6 flex items-end gap-2">
           <h3 className={`
-             font-semibold text-white
+             font-semibold text-slate-500
             ${
               isCustom
-                ? "text-xl lg:text-2xl"
-                : "text-3xl lg:text-4xl"
+                ? "text-xl bp-lg:text-2xl"
+                : "text-3xl bp-lg:text-4xl"
             }
           `}
             
@@ -75,7 +95,14 @@ export default function PricingCard({
           {description}
         </p>
 
-        <div className="mt-10 flex flex-col gap-4">
+        <div
+          className="
+            mt-4
+            bp-md:mt-10
+            flex flex-col
+            gap-2 bp-md:gap-4
+          "
+        >
           {features.map((feature) => (
             <div 
               key={feature}
@@ -85,6 +112,7 @@ export default function PricingCard({
 
               <p 
                 className={`
+                  text-xs bp-md:text-sm
                   ${
                   highlighted
                     ? "bg-linear-to-br from-indigo-800 to-amber-800 bg-clip-text text-transparent"
@@ -99,8 +127,16 @@ export default function PricingCard({
         </div>
 
         <button
+          onClick={onBuy}
           className={`
-            mt-10 w-full rounded-2xl px-6 py-4 text-sm text-white font-semibold transition duration-300
+            mt-6 bp-md:mt-10
+            w-full
+            rounded-2xl
+            px-3 py-2 bp-md:px-6 bp-md:py-4
+            text-sm
+            text-white
+            font-semibold
+            transition duration-300
             ${
               highlighted
                 ? "bg-violet-500 hover:bg-violet-400"

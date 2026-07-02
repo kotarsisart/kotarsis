@@ -12,19 +12,23 @@ export default function Victory() {
   const { t } = useI18n();
 
   return (
-    <section className="px-6 py-32">
+    <section
+      className="
+        px-3 py-8 bp-md:px-6 bp-md:py-32
+        bg-black
+      "
+    >
       <div className="mx-auto max-w-5xl">
 
         <h2 
           className="
-            mt-8
             text-center
-            text-4xl
+            text-xl
+            bp-md:text-6xl
+            bp-lg:text-7xl
             font-semibold
             leading-none
-            text-white
-            md:text-6xl
-            lg:text-7xl
+            text-slate-300
           "
         >
           {t("victory.title")}
@@ -33,12 +37,12 @@ export default function Victory() {
         <p 
           className="
             mx-auto
-            mt-8
+            mt-4 bp-md:mt-8
             max-w-3xl
             text-center
-            text-lg
+            text-sm bp-md:text-lg
             leading-relaxed
-            text-zinc-400
+            text-slate-400
           "
         >
           {t("victory.description")}
@@ -50,7 +54,7 @@ export default function Victory() {
             flex-col
             items-center
             mx-auto
-            mt-20
+            mt-8 bp-md:mt-20
             max-w-3xl
             space-y-6
           "
@@ -58,7 +62,7 @@ export default function Victory() {
 
           {achievements.map((achievement) => (
             <div
-              className="flex items-center gap-4"
+              className="flex items-center gap-3 bp-md:gap-4"
               key={achievement}
             >
               
@@ -66,15 +70,20 @@ export default function Victory() {
                 ✓
               </span>
 
-              <p className="text-xl text-zinc-200">
+              <p
+                className="
+                  text-sm bp-md:text-xl
+                  text-slate-500
+                "
+              >
                 {t(`victory.achievements.${achievement}`)}
               </p>
             </div>
-          ))};
+          ))}
 
         </div>
 
-        <div className="mt-32 text-center">
+        <div className="mt-10 bp-md:mt-32 text-center">
           <p 
             className="
               text-sm
@@ -91,11 +100,11 @@ export default function Victory() {
               mx-auto
               mt-8
               max-w-3xl
-              text-3xl
+              text-xl bp-md:text-3xl
               leading-relaxed
               whitespace-pre-line
               text-zinc-500
-              md:text-5xl
+              bp-md:text-5xl
             "
           >
             {t("victory.note.unauthorizedThought")}

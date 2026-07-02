@@ -12,16 +12,17 @@ export default function TrustCard({
   return (
     <div
       className={`
-        rounded-3xl
-        border border-violet-100
+        rounded-3xl        
+        
+        backdrop-blur-xl
+        border border-white/10
         p-8
         transition-all duration-300
-        hover:border-violet-300
 
         ${
           highlighted
-            ? "bg-stone-50 hover:shadow-2xl shadow-indigo-400/50"
-            : "bg-white"
+            ? "bg-white/8"
+            : "bg-white/5"
         }
       `}
     >
@@ -30,8 +31,8 @@ export default function TrustCard({
             text-5xl font-semibold
             tracking-tight
             bg-linear-to-br
-            from-violet-500
-            to-indigo-700
+            from-violet-600
+            to-indigo-600
             bg-clip-text
             text-transparent
           "
@@ -41,10 +42,11 @@ export default function TrustCard({
 
       <p
         className={`
-          mt-4 text-sm
+          mt-4
+          text-sm font-medium
           ${highlighted
-            ? "text-blue-900"
-            : "text-black"}
+            ? "text-indigo-900"
+            : "text-blue-900"}
         `}
       >
         {text}

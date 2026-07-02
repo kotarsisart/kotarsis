@@ -9,8 +9,8 @@ export default function HowItWorks () {
     <section 
       className="
         relative overflow-hidden
-        bg-linear-to-b from-indigo-100 via-neutral-50 to-blue-50
-        px-6 py-32
+        bg-linear-to-b from-indigo-300 via-green-50 to-blue-50
+        px-3 py-8 bp-md:px-6 bp-md:py-32
       "
     >
       <div className="mx-auto max-w-7xl">
@@ -18,7 +18,9 @@ export default function HowItWorks () {
         <div className="mx-auto max-w-3xl text-center">
           <p 
             className="
-                text-xl font-semibold uppercase tracking-widest text-violet-600
+                text-base bp-md:text-xl
+                font-semibold uppercase tracking-widest
+                text-violet-600
               "
             >
             {t("hiw.label")}
@@ -27,7 +29,9 @@ export default function HowItWorks () {
           <h2 
             className="
               mt-4
-              text-4xl font-semibold tracking-tight text-zinc-950 md:text-6xl
+              text-3xl bp-md:text-4xl bp-lg:text-5xl
+              font-semibold tracking-tight
+              text-sky-950
             "
           >
             {t("hiw.title")}
@@ -36,13 +40,21 @@ export default function HowItWorks () {
           <p 
             className="
               mt-6
-              text-lg leading-relaxed text-zinc-500"
+              text-sm bp-md:text-lg
+              leading-relaxed
+              text-cyan-700
+            "
           >
             {t("hiw.description")}
           </p>
         </div>
 
-        <div className="mt-24 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div
+          className="
+            mt-8 bp-md:mt-24
+            grid gap-6 bp-md:grid-cols-2 bp-lg:grid-cols-4
+          "
+        >
           {hiwSteps.map((step) => (
             <HowItWorksCard
               key={step.number}
