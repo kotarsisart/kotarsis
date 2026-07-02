@@ -1,4 +1,6 @@
 import { useI18n } from "@/data/I18nProvider";
+import { heroCards } from "./heroCards";
+import HeroCard from "./HeroCard";
 
 export default function Hero() {
   const { t } = useI18n();
@@ -6,9 +8,9 @@ export default function Hero() {
   return (
     <section 
       className="
-        min-h-screen flex items-center
-        bg-linear-to-b from-white via-zinc-50 to-blue-50 
-        px-6 py-20
+        min-h-screen flex flex-col bp-md:flex-row items-center
+        bg-linear-to-b from-indigo-900 via-zinc-950 to-blue-950
+        px-3 py-8 bp-md:px-6 bp-bp-md:py-20
       "
     >
       
@@ -17,7 +19,7 @@ export default function Hero() {
           absolute left-1/2 top-0 h-125 w-225
           -translate-x-1/2
           rounded-full
-          bg-blue-300
+          bg-cyan-900
           blur-3xl opacity-20
         "
       />
@@ -36,13 +38,12 @@ export default function Hero() {
           >
 
             <p className="
-                text-xl font-semibold
-                bg-linear-to-tr from-zinc-950 to-stone-900
+                text-sm bp-md:text-lg font-semibold
+                bg-linear-to-tr from-cyan-50 to-indigo-300
                 bg-clip-text text-transparent
               "
             >
-              {t("hero.label")}
-              
+              CENSORED™ ENTERPRISE
             </p>
 
           </div>
@@ -51,9 +52,10 @@ export default function Hero() {
 
         <h1 
           className="
-            max-w-5xl text-3xl md:text-5xl lg:text-6xl
-            font-bold leading-tight tracking-tight
-            bg-linear-to-br from-violet-600 to-indigo-500
+            max-w-5xl
+            text-3xl bp-md:text-5xl bp-lg:text-6xl
+            font-bold leading-[1.3] tracking-tight whitespace-pre-line
+            bg-linear-to-br from-violet-500 to-indigo-500
             bg-clip-text text-transparent
           "
         >
@@ -63,55 +65,41 @@ export default function Hero() {
         <p 
           className="
             mt-8 max-w-3xl
-            text-sm md:text-xl
+            text-sm bp-md:text-xl
             leading-relaxed
-            text-zinc-600
+            text-blue-400
           "
         >
           {t("hero.description")}
         </p>
 
-        <div className="mt-10 flex flex-wrap gap-4">
-
-          <button
-            className="
-              rounded-xl 
-              font-semibold text-white 
-              bg-blue-600 hover:bg-blue-500 
-              transition 
-              px-6 py-3 text-sm 
-              shadow-lg shadow-blue-500/20
-              cursor-pointer
-            "
-          >
-            {t("hero.buttons.start")}
-          </button>
-
-          <button 
-            className="
-              rounded-xl 
-              border border-cyan-300 bg-white/80
-              backdrop:blur 
-              text-sm font-semibold text-black
-              px-6 py-3
-              transition hover:bg-zinc-100
-              cursor-pointer
-            "
-          >
-            {t("hero.buttons.book")}
-          </button>
-
-        </div>
-
         <p 
           className="
             mt-6
-            text-sm text-zinc-400
+            text-sm text-blue-300
           "
         >
           {t("hero.conclusion")}
         </p>
 
+      </div>
+
+      <div className="mt-10 bp-md:mt-1 bp-md:ml-8 w-full max-w-sm">
+        <h2
+          className="text-xl font-bold text-zinc-400"
+        >
+          SYSTEM STATUS
+        </h2>
+
+        <div className="mt-4 bp-md:mt-8 grid gap-6 grid-cols-1">
+          {heroCards.map((card) => (
+            <HeroCard 
+              key={card.id}
+              title={t(card.titleKey)}
+            />
+          ))}
+        </div>
+      
       </div>
 
     </section>

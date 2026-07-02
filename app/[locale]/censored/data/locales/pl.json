@@ -1,0 +1,434 @@
+{
+  "meta": {
+    "title": "CENSORED — Optymalizacja pracowników z wykorzystaniem AI",
+    "description": "Zwiększ efektywność organizacji dzięki analizie behawioralnej, skalowalności emocjonalnej i inteligentnej automatyzacji.",
+    "keywords": "AI, optymalizacja pracowników, produktywność pracowników, analiza behawioralna, efektywność emocjonalna, automatyzacja, zarządzanie korporacyjne, optymalizacja personelu, censored, kotarsis",
+    "siteName": "CENSORED"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logo kotarsis",
+    "projectAlt": "logo projektu Censored"
+  },
+
+  "header": {
+    "logo": {
+      "projectName": "Censored",
+      "projectAlt": "Logo projektu Censored",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo kotarsis",
+      "langSelect": "Wybierz język"
+    }
+  },
+
+  "hero": {
+    "title": "Wyeliminuj \n czynnik ludzki. \nNa zawsze.",
+    "description": "CENSORED analizuje pracowników, przewiduje odchylenia behawioralne i stopniowo zastępuje ludzkie decyzje predykcyjnym systemem zarządzania.",
+    "cards": {
+      "1": {
+        "title": "Przewidywalność jest lepsza od wolności."
+      },
+      "2": {
+        "title": "Efektywność jest lepsza od indywidualności."
+      },
+      "3": {
+        "title": "Algorytmy są lepsze od ludzi."
+      }
+    },
+    "conclusion": "Po wdrożeniu CENSORED z powodzeniem zastąpiliśmy cztery zespoły senior developerów."
+  },
+
+  "trust": {
+    "label": "ZAUFALI NAM NA CAŁYM ŚWIECIE",
+    "title": "Nowoczesne firmy na całym świecie nam ufają",
+    "description": "CENSORED pomaga organizacjom zwiększać produktywność, automatyzować zarządzanie personelem i ograniczać ludzką nieprzewidywalność.",
+    "cards": {
+      "1": "Wyższa zgodność pracowników z wymaganiami",
+      "2": "Mniej emocjonalnych dyskusji",
+      "3": "Zoptymalizowane profile pracowników",
+      "4": "Zespoły seniorów pomyślnie zastąpione"
+    }
+  },
+
+  "features": {
+    "label": "MOŻLIWOŚCI PLATFORMY",
+    "title": "Stworzone z myślą o skalowalnej optymalizacji pracowników",
+    "description": "CENSORED łączy sztuczną inteligencję, analizę behawioralną i predykcyjne systemy zarządzania, aby zwiększać efektywność nowoczesnych organizacji.",
+    "cards": {
+      "1": {
+        "title": "Przewidywanie wypalenia zawodowego",
+        "description": "Wykrywa wyczerpanie emocjonalne, zanim odejście pracownika wpłynie na wyniki kwartalne."
+      },
+      "2": {
+        "title": "Kompresja spotkań z pomocą AI",
+        "description": "Skraca trzygodzinne spotkania do emocjonalnie efektywnej ciszy."
+      },
+      "3": {
+        "title": "Rozwiązywanie konfliktów projektantów",
+        "description": "Automatycznie przekierowuje odpowiedzialność na frontend developerów."
+      }
+    }
+  },
+
+  "hiw": {
+    "label": "JAK TO DZIAŁA",
+    "title": "Bezproblemowa optymalizacja pracowników z wykorzystaniem AI.",
+    "description": "CENSORED analizuje zachowania pracowników, przewiduje nieefektywność emocjonalną i automatyzuje zarządzanie produktywnością w nowoczesnych organizacjach.",
+    "steps": {
+      "1": {
+        "title": "Prześlij dane pracowników",
+        "description": "Importuj metryki behawioralne, wzorce komunikacji i wskaźniki produktywności."
+      },
+      "2": {
+        "title": "Emocjonalna analiza AI",
+        "description": "CENSORED automatycznie wykrywa niestabilność emocjonalną i problemy we współpracy."
+      },
+      "3": {
+        "title": "Proces optymalizacji",
+        "description": "Platforma przebudowuje procesy pracy w celu osiągnięcia maksymalnej stabilności operacyjnej."
+      },
+      "4": {
+        "title": "Zautomatyzowane zarządzanie",
+        "description": "Ludzki nadzór staje się finansowo nieuzasadniony."
+      }
+    }
+  },
+
+  "careers": {
+    "label": "KARIERA",
+    "title": "Buduj przyszłość optymalizacji pracowników.",
+    "description": "Dołącz do szybko rozwijającego się zespołu skupionego na skalowalnej współpracy, efektywności emocjonalnej i produktywności napędzanej przez AI.",
+
+    "benefits": {
+      "1": {
+        "title": "Elastyczne godziny pracy",
+        "description": "Pracuj, kiedy chcesz. Najlepiej cały czas."
+      },
+      "2": {
+        "title": "Zdrowa kultura korporacyjna",
+        "description": "Niestabilność emocjonalna jest omawiana podczas kwartalnych ocen wydajności."
+      },
+      "3": {
+        "title": "Szybki rozwój kariery",
+        "description": "Tempo awansu zależy od wskaźników postrzegania przez kierownictwo."
+      },
+      "4": {
+        "title": "Konkurencyjne wynagrodzenie",
+        "description": "Wynagrodzenie pozostaje emocjonalnie konkurencyjne w obecnych warunkach rynkowych."
+      }
+    },
+
+    "vacancy": {
+      "label": "OTWARTE STANOWISKO",
+      "title": "Junior Frontend Developer",
+      "description": "Dołącz do naszego dynamicznego środowiska produktowego i pomóż na nowo zdefiniować emocjonalnie skalowalne doświadczenia użytkownika dla korporacyjnych systemów AI."
+    },
+
+    "requirements": {
+      "title": "WYMAGANIA",
+      "list": {
+        "years": "Ponad 4 lata komercyjnego doświadczenia z React",
+        "passion": "Prawdziwa pasja do pracy w dynamicznym środowisku",
+        "mindset": "Odporność emocjonalna",
+        "shifting": "Umiejętność pracy przy stale zmieniających się oczekiwaniach",
+        "burnout": "Gotowość do nazywania wypalenia zawodowego rozwojem kariery"
+      }
+    },
+
+    "applicationFlow": {
+      "title": "PROCES REKRUTACJI",
+      "description": "Średni czas rozmowy kwalifikacyjnej: 4–7 emocjonalnie adaptacyjnych etapów.",
+      "button": "Rozpocznij swoją ścieżkę kariery",
+      "response": "Szacowany czas odpowiedzi: od 2 do 14 miesięcy biznesowych."
+    },
+
+    "form": {
+      "title": "FORMULARZ ZGŁOSZENIA",
+      "candidate": "Ocena kandydata",
+      "reading": "Naprawdę czytamy wszystkie wasze nudne wiadomości, aby sprawdzić, czy pasujecie do naszego zespołu.",
+      "fullName": "Imię i nazwisko",
+      "optimazedIdentity": "Profesjonalnie zoptymalizowana tożsamość",
+      "believableResponse": "Prosimy o przekonującą odpowiedź opartą na Twojej pasji.",
+      "workWithUs": "Dlaczego chcesz z nami pracować?",
+      "button": "Wyślij zgłoszenie"
+    },
+
+    "status": {
+      "title": "STATUS ZGŁOSZENIA",
+      "emotionalCompability": "Analiza zgodności emocjonalnej...",
+      "ourAi": "Nasze systemy AI oceniają Twoją zgodność psychologiczną z szybko zmieniającym się środowiskiem korporacyjnym."
+    },
+
+    "final": {
+      "title": "OSTATECZNA DECYZJA",
+      "emotionalSynchronization": "Szacowany poziom synchronizacji emocjonalnej:"
+    },
+
+    "applicationStages": {
+      "resumeUploaded": "CV zostało przesłane",
+      "aiParsed": "AI przetworzyło Twoje zgłoszenie",
+      "recruiterOpened": "Rekruter otworzył Twój profil",
+      "enthusiasmScore": "Wygenerowano wskaźnik entuzjazmu",
+      "emotionalReview": "Zgłoszenie wysłano do oceny emocjonalnej",
+      "teamLead": "Team leader poprosił o ocenę dopasowania kulturowego",
+      "crossDepartment": "Rozpoczęto międzydziałowy proces zatwierdzania",
+      "salaryExpectations": "Oczekiwania finansowe wywołały dyskusję",
+      "recruitmentPriorities": "Priorytety rekrutacyjne zostały tymczasowo zmienione",
+      "holdingPhase": "Zgłoszenie przeniesiono do fazy strategicznego oczekiwania"
+    },
+
+    "randomEvents": {
+      "recruiterReturned": "Rekruter wrócił z przerwy na kawę",
+      "departmentShifted": "Priorytety działu niespodziewanie się zmieniły",
+      "applicationEntered": "Twoje zgłoszenie przeszło do trybu pasywnego rozpatrywania",
+      "meeting": "Zaplanowano spotkanie w sprawie Twojego zgłoszenia",
+      "globalMarket": "Globalna niepewność rynkowa wpłynęła na tempo rekrutacji"
+    },
+
+    "finalResults": {
+      "applicationPromising": "Twoje zgłoszenie pozostaje obiecujące. Na ten moment nie są planowane dalsze działania.",
+      "internalCandidate": "Kandydat wewnętrzny niespodziewanie wykazał wyższy poziom dopasowania kulturowego.",
+      "profileDistributed": "Twój profil został pomyślnie udostępniony naszym partnerom HR.",
+      "recruitmentActivity": "Proces rekrutacji po cichu dobiegł końca.",
+      "aiPredicted": "AI przewidziało niewystarczającą długoterminową skalowalność emocjonalną."
+    }
+  },
+
+  "pricing": {
+    "label": "CENNIK",
+    "title": "Wybierz preferowaną strategię automatyzacji pracowników.",
+    "description": "Skaluj emocjonalną efektywność swojej organizacji dzięki elastycznym planom zarządzania personelem opartym na AI.",
+    "plans": {
+      "month": "miesiąc",
+      "custom": "INDYWIDUALNIE",
+      "button": "Rozpocznij optymalizację",
+      "popular": "NAJPOPULARNIEJSZY",
+
+      "starter": {
+        "title": "Starter",
+        "description": "Zastąp jednego emocjonalnie niestabilnego menedżera.",
+        "features": {
+          "tracking": "Podstawowe monitorowanie produktywności",
+          "burnout": "Cotygodniowa analiza wypalenia zawodowego",
+          "summaries": "Raporty wydajności generowane przez AI",
+          "limitedSync": "Ograniczona synchronizacja emocjonalna"
+        }
+      },
+
+      "growth": {
+        "title": "Growth",
+        "description": "Idealny do skalowania korporacyjnego niepokoju.",
+        "features": {
+          "monitoring": "Zaawansowany monitoring pracowników",
+          "moralePrediction": "Prognozowanie morale w czasie rzeczywistym",
+          "aiNotifications": "Pasywno-agresywne powiadomienia AI",
+          "departmentSync": "Synchronizacja działów",
+          "productivity": "Awaryjna interwencja w produktywność"
+        }
+      },
+
+      "enterprise": {
+        "title": "Enterprise",
+        "description": "Kompletny pakiet optymalizacji behawioralnej.",
+        "features": {
+          "replacement": "Zastąpienie osobowości kierownika",
+          "prevention": "Predykcyjne zapobieganie odejściom z pracy",
+          "adaptiveSystems": "Emocjonalnie adaptacyjne systemy KPI",
+          "internalRestructuring": "Wewnętrzna restrukturyzacja zarządzana przez AI",
+          "scalability": "Nieograniczona skalowalność psychologiczna"
+        }
+      }
+    },
+
+    "modal": {
+      "label": "ZAKUP ENTERPRISE",
+      "title": "Zakup licencji Enterprise",
+      "description": "Niestety zakup jest obecnie tymczasowo niedostępny.\nSpecjalista odpowiedzialny za integrację systemu płatności wykazał niewystarczający poziom zgodności emocjonalnej z kulturą korporacyjną.\nPo udanej optymalizacji nie udało nam się znaleźć kolejnego programisty zaakceptowanego przez nasz system oceny kandydatów.\nKontynuujemy poszukiwania.\nDziękujemy za cierpliwość.\n",
+      "status": "STATUS",
+      "lookingFor": "Poszukiwany Frontend Developer",
+      "problem": "Ostatni kandydat wykazał oznaki samodzielnego myślenia.",
+      "aboutRole": "Jeśli potrafisz podłączać event handlery i jesteś gotów zrezygnować z emocjonalnej niezależności, zapoznaj się z naszymi ofertami pracy.",
+      "buttons": {
+        "close": "Zamknij",
+        "goToVacancy": "Przejdź do ofert pracy"
+      }
+    }
+  },
+
+  "report": {
+    "label": "RAPORT WYGENEROWANY PRZEZ AI",
+    "title": "Nasz model pomyślnie zidentyfikował główną przyczynę nieefektywności:",
+    "answer": "Ludzka nieprzewidywalność",
+    "description": "Ta sekcja została w całości wygenerowana przez nasz wewnętrzny system optymalizacji. Weryfikacja przez człowieka nie była wymagana.",
+
+    "values": {
+      "removed": "USUNIĘTO"
+    },
+
+    "cards": {
+      "satisfaction": {
+        "title": "SATYSFAKCJA PRACOWNIKÓW",
+        "description": "Statystycznie niemożliwe."
+      },
+
+      "burnout": {
+        "title": "ŚREDNI POZIOM WYPALENIA",
+        "description": "Pracownicy teraz generują energię."
+      },
+
+      "balance": {
+        "title": "RÓWNOWAGA MIĘDZY PRACĄ A ŻYCIEM",
+        "description": "Nie wpływa już na produktywność."
+      },
+
+      "confidence": {
+        "title": "PEWNOŚĆ AI",
+        "description": "Jakość rozumowania nie była oceniana."
+      },
+
+      "happiness": {
+        "title": "SZCZĘŚCIE AKCJONARIUSZY",
+        "description": "Cel został osiągnięty."
+      },
+
+      "humanity": {
+        "title": "ZACHOWANE CZŁOWIECZEŃSTWO",
+        "description": "Operacyjnie wystarczające."
+      }
+    },
+
+    "optimization": {
+      "title": "WYNIKI OPTYMALIZACJI",
+      "description": "Po przeanalizowaniu pięciu lat danych korporacyjnych nasz model zidentyfikował główne źródło nieefektywności organizacyjnej.\n\nZalecane działanie:\n\nUsunąć wszystkie zbędne zmienne."
+    },
+
+    "root": {
+      "title": "WYKRYTO GŁÓWNĄ PRZYCZYNĘ",
+      "answer": "Ludzie."
+    }
+  },
+
+  "victory": {
+    "title": "Przyszłość została pomyślnie zoptymalizowana.",
+
+    "description": "Po latach analiz, automatyzacji i optymalizacji pracowników nasze systemy wreszcie osiągnęły stabilną równowagę między produktywnością a ludzką nieistotnością.",
+
+    "achievements": {
+      "thoughtReduced": "Niezależne myślenie zostało ograniczone",
+      "workplace": "Zwiększono korporacyjny konformizm",
+      "emotionalVariance": "Ustabilizowano zmienność emocjonalną",
+      "humanComplexity": "Wyeliminowano ludzką złożoność",
+      "shareholderExpectations": "Przekroczono oczekiwania akcjonariuszy"
+    },
+
+    "note": {
+      "title": "NOTATKA WEWNĘTRZNA",
+      "unauthorizedThought": "Nigdy nie było potrzeby ulepszania systemu.\n\nTylko ludzi znajdujących się w jego wnętrzu."
+    }
+  },
+
+  "bubbleCta": {
+    "unread": "1 nieprzeczytane powiadomienie emocjonalne",
+    "pending": "Oczekiwanie na zatwierdzenie behawioralne."
+  },
+
+  "newsletter": {
+    "label": "SYNCHRONIZACJA\nNEWSLETTERA",
+
+    "title": "Pozostań emocjonalnie zsynchronizowany z korporacyjnymi innowacjami.",
+
+    "description": "Otrzymuj analizy produktywności, raporty wypalenia zawodowego, emocjonalnie adaptacyjne przypomnienia oraz strategiczny optymizm generowany przez AI bezpośrednio na swoją skrzynkę.",
+
+    "submitButton": {
+      "analyzing": "Analizowanie profilu behawioralnego...",
+      "accept": "Akceptuję ciągłą optymalizację"
+    },
+
+    "warning": "Częstotliwość komunikacji może wzrosnąć w okresach zwiększonej wrażliwości emocjonalnej. Niektórych procesów synchronizacji nie można zatrzymać po ich uruchomieniu.",
+
+    "benefits": {
+      "burnoutInsights": "Cotygodniowa analiza wypalenia zawodowego",
+      "productivityAlerts": "Awaryjne alerty produktywności",
+      "hesitationMonitoring": "Monitorowanie wahań behawioralnych",
+      "executiveObservation": "Psychologiczna obserwacja kadry kierowniczej"
+    },
+
+    "subscription": {
+      "label": "STATUS SUBSKRYPCJI",
+
+      "title": "Synchronizacja emocjonalna została rozpoczęta.",
+
+      "behavioralProfile": "Twój profil behawioralny został pomyślnie zintegrowany z naszymi systemami ciągłej optymalizacji.",
+
+      "communication": "Częstotliwość komunikacji może wzrosnąć w okresach zwiększonej wrażliwości emocjonalnej.",
+
+      "monitoring": "Monitoring aktywny",
+
+      "unresolvedNotifications": "Obecnie nie wykryto nierozwiązanych powiadomień emocjonalnych."
+    },
+
+    "notifications": {
+      "profileCreated": {
+        "title": "Twój profil synchronizacji emocjonalnej został utworzony."
+      },
+
+      "hesitationPatterns": {
+        "title": "Wykryliśmy nietypowe wahania w Twoim zachowaniu podczas przewijania strony."
+      },
+
+      "continueSynchronization": {
+        "title": "Czy chcesz kontynuować synchronizację emocjonalną?"
+      },
+
+      "emotionalScalability": {
+        "title": "Jak bardzo skalowalny emocjonalnie jesteś dzisiaj?"
+      },
+
+      "engagementMetrics": {
+        "title": "To powiadomienie istnieje wyłącznie w celu poprawy wskaźników zaangażowania."
+      },
+
+      "enterpriseBullshit": {
+        "title": "Gratulacje. Zasubskrybowałeś korporacyjne powiadomieniowe bzdury."
+      },
+
+      "recruiterForgot": {
+        "title": "Rekruter obejrzał Twój profil osiem miesięcy temu i zapomniał odpowiedzieć."
+      },
+
+      "burnoutThresholds": {
+        "title": "Twoje wskaźniki wypalenia pozostają w opłacalnym zakresie."
+      },
+
+      "leadershipPotential": {
+        "title": "Wyczerpanie emocjonalne zostało przeklasyfikowane jako potencjał przywódczy."
+      },
+
+      "synchronizationProcesses": {
+        "title": "Niektórych procesów synchronizacji nie można zatrzymać po ich uruchomieniu."
+      }
+    },
+
+    "buttons": {
+      "continue": "Kontynuuj",
+      "improve": "Poprawię się",
+      "absolutely": "Oczywiście",
+      "mandatoryAcceptance": "Obowiązkowa zgoda",
+      "continueAnyway": "Kontynuuj mimo wszystko",
+      "fairEnough": "To uczciwe",
+      "painfullyAccurate": "Boleśnie trafne",
+      "okay": "Dobrze",
+      "inspiring": "Inspirujące",
+      "understood": "Rozumiem"
+    }
+  },
+
+  "footer": {
+    "title": "Wszystkie cele zostały osiągnięte.",
+    "links": {
+      "support": "Wesprzyj nieuniknione"
+    },
+    "copyright": "© 2026 CENSORED. Badamy alternatywne konfiguracje siły roboczej.",
+    "coffeeAlt": "Kubek kawy CENSORED"
+  }
+}

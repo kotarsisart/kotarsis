@@ -27,8 +27,8 @@ export default function Trust() {
   return (
     <section 
       className="
-        bg-linear-to-b from-blue-50 via-white to-zinc-100
-        px-6 py-24
+        bg-linear-to-b from-blue-950 via-indigo-400 to-blue-200
+        px-3 py-8 bp-md:py-24
       "
     >
       
@@ -38,7 +38,9 @@ export default function Trust() {
         
           <p 
             className="
-                text-xl font-bold uppercase tracking-widest text-indigo-500
+                text-sm bp-md:text-xl
+                font-bold uppercase tracking-widest
+                text-indigo-500
               "
             >
             {t("trust.label")}
@@ -47,7 +49,9 @@ export default function Trust() {
           <h2 
             className="
               mt-6
-              text-3xl font-semibold tracking-tight text-zinc-950 md:text-5xl
+              text-2xl bp-md:text-4xl bp-lg:text-5xl
+              font-semibold tracking-tight
+              text-indigo-300 
             "
           >
             {t("trust.title")}
@@ -55,14 +59,18 @@ export default function Trust() {
 
           <p 
             className="
-              mt-8
-              text-lg leading-relaxed text-zinc-950
+              mt-4 bp-md:mt-8
+              text-sm bp-md:text-lg leading-relaxed text-blue-200
             "
           >
             {t("trust.description")}
           </p>
 
-          <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div
+            className="
+              mt-8 bp-md:mt-16 grid gap-3 bp-md:gap-6 bp-md:grid-cols-2 xl:grid-cols-4
+            "
+          >
             {cards.map((card) => (
               <TrustCard
                 key={card.value}

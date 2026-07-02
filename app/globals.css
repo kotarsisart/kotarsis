@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-bp-xs: 390px;
+  --breakpoint-bp-s: 430px;
+  --breakpoint-bp-md: 768px;
+  --breakpoint-bp-lg: 1280px;
+}
+
 html, body {
   padding: 0;
   margin: 0;

@@ -8,8 +8,8 @@ export default function Features() {
   return (
     <section 
       className="
-        bg-linear-to-b from-zinc-100 to-indigo-100
-        px-6 py-32
+        bg-linear-to-b from-blue-200 to-indigo-300
+        px-3 py-8 bp-md:px-6 bp-md:py-32
       "
     >
       <div className="mx-auto max-w-7xl">
@@ -18,7 +18,7 @@ export default function Features() {
 
           <p 
             className="
-              text-xl font-semibold text-blue-600
+              text-sm bp-md:text-xl font-semibold text-blue-600
               uppercase tracking-widest 
             "
           >
@@ -28,8 +28,8 @@ export default function Features() {
           <h2 
           className="
               mt-4
-              text-2xl md:text-3xl lg:text-5xl
-              font-semibold tracking-tight text-zinc-950
+              text-2xl bp-md:text-3xl bp-lg:text-5xl
+              font-semibold tracking-tight text-indigo-900
             "
           >
             {t("features.title")}
@@ -37,13 +37,21 @@ export default function Features() {
 
           <p 
             className="
-                mt-6 text-lg leading-relaxed text-zinc-500
+                mt-6
+                text-sm bp-md:text-lg
+                leading-relaxed
+                text-indigo-400
               "
             >
             {t("features.description")}
           </p>
 
-          <div className="mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            className="
+              mt-10 bp-md:mt-20
+              grid gap-6 bp-md:grid-cols-2 bp-lg:grid-cols-3
+            "
+          >
             {featureCards.map((card) => (
               <FeaturesCard 
                 key={card.id}

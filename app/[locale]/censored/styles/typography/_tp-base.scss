@@ -15,12 +15,3 @@
   --line-height-light: 1;
 }
 
-p, a, span, button, input, textarea,
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  line-height: var(--line-height-default);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: var(--font-primary);
-}

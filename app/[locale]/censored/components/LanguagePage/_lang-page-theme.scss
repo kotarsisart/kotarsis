@@ -2,12 +2,9 @@
 
 .lang-select {
   --lang-page-bg: #2e2e2e;
-  --lang-page-text: #999999;
+  --lang-page-text: #ccc;
   background: var(--lang-page-bg);
   color: var(--lang-page-text);
-
-  // &__inner {
-  // }
 
   &__close {
     @include lang-page-close;

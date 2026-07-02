@@ -60,7 +60,16 @@ export default function FooterLinks({
         </p>
       </a>
 
-
+      
+      <a
+        href="https://t.me/kotarsis_art"
+        className="footer__link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Telegram
+      </a>
+      
       <a
         href="mailto:kotarsis.studio@gmail.com?subject=Custom website"
         className="footer__link"

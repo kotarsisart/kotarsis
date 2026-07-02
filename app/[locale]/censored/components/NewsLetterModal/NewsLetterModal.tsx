@@ -48,23 +48,28 @@ export default function NewsLetterModal({
     <div 
       className="
         fixed inset-0 z-9999 overflow-y-auto 
-        bg-black/70 p-6 backdrop-blur-sm
+        bg-black/70 p-2 bp-md:p-6 backdrop-blur-sm
       "
     >
 
       <div className="flex min-h-full items-center justify-center">
 
         <div 
-          className="
-            relative w-full max-w-2xl rounded-4xl 
-            border border-zinc-800 bg-zinc-950 p-10
+            className="
+            relative w-full max-w-2xl
+            rounded-4xl 
+            border border-zinc-800
+            bg-zinc-950 
+            p-4 bp-md:p-10
           "
-        >
+        > 
 
           <button
             onClick={onClose}
             className="
-              absolute right-6 top-6 text-zinc-500
+              absolute right-6 top-4 bp-md:top-6
+              text-lg
+              text-zinc-500
               transition hover:text-white
             "
           >
@@ -76,7 +81,7 @@ export default function NewsLetterModal({
               <>
                 <p 
                   className="
-                    text-sm font-semibold uppercase 
+                    text-xs bp-md:text-sm font-semibold uppercase whitespace-pre-line bp-md:whitespace-nowrap
                     tracking-widest text-violet-400
                   "
                 >
@@ -85,27 +90,36 @@ export default function NewsLetterModal({
 
                 <h3 
                   className="
-                    mt-6 max-w-xl text-4xl font-semibold 
+                    mt-3 bp-md:mt-6
+                    max-w-xl
+                    text-xl bp-md:text-4xl font-semibold 
                     leading-none text-white
                   "
                 >
                   {t("newsletter.title")}
                 </h3>
 
-                <p className="mt-6 leading-relaxed text-zinc-400">
+                <p
+                  className="
+                    mt-3 bp-md:mt-6
+                    leading-relaxed text-zinc-400
+                  "
+                >
                   {t("newsletter.description")}
                 </p>
 
-                <ul className="mt-10 flex flex-col gap-3">
+                <ul className="mt-4 bp-md:mt-10 flex flex-col gap-3">
 
                   {benefits.map((benefit) => (
                     <li
                       key={benefit}
                       className="
                         rounded-2xl
-                        border border-zinc-800 bg-zinc-900
-                        text-base text-zinc-300
-                        p-3
+                        border border-zinc-800
+                        bg-zinc-900
+                        text-xs bp-md:text-base
+                        text-zinc-300
+                        p-2 bp-md:p-4
                       "  
                     >
                       ✓ {t(`newsletter.benefits.${benefit}`)}
@@ -118,10 +132,13 @@ export default function NewsLetterModal({
                   onClick={handleSubscription}
                   disabled={isSubmitting}
                   className="
-                    mt-10 w-full rounded-2xl
+                    mt-4 bp-md:mt-10
+                    w-full
+                    rounded-2xl
                     bg-linear-to-r from-violet-600 to-indigo-600
-                    text-lg font-semibold text-white
-                    px-6 py-5
+                    text-sm bp-md:text-lg font-semibold
+                    text-white
+                    px-3 py-2 bp-md:px-4 bp-md:py-4
                     transition duration-300
                     hover:scale-[1.01]
                     hover:shadow-2xl hover:shadow-violet-500/30
@@ -134,7 +151,13 @@ export default function NewsLetterModal({
                   }
                 </button>
 
-                <p className="mt-6 text-sm leading-relaxed text-zinc-600">
+                <p
+                  className="
+                    mt-6
+                    text-xs bp-md:text-sm leading-relaxed
+                    text-zinc-600
+                  "
+                >
                   {t("newsletter.warning")}
                 </p>
 
@@ -151,20 +174,30 @@ export default function NewsLetterModal({
                   {t("newsletter.subscription.label")}
                 </p>
 
-                <h3 className="mt-6 text-4xl font-semibold leading-none text-white">
+                <h3 
+                  className="
+                    mt-6
+                    text-xl bp-md:text-4xl font-semibold leading-none text-white
+                  "
+                >
                   {t("newsletter.subscription.title")}
                 </h3>
 
-                <p className="mt-6 leading-relaxed text-zinc-400">
+                <p
+                  className="
+                    mt-2 bp-md:mt-6
+                    leading-relaxed text-sm text-zinc-400
+                  "
+                >
                   {t("newsletter.subscription.behavioralProfile")}
                 </p>
 
                 <div 
                   className="
-                    mt-8 rounded-2xl
+                    mt-4 bp-md:mt-8 rounded-2xl
                     border border-violet-500/20
                     bg-violet-500/10
-                    p-6
+                    p-2 bp-md:p-6
                   "
                 >
 
@@ -177,10 +210,12 @@ export default function NewsLetterModal({
                 <button
                   disabled
                   className="
-                    mt-8 w-full
+                    mt-4 bp-md:mt-8
+                    w-full
                     rounded-2xl bg-zinc-800
+                    text-sm bp-md:text-lg
                     font-semibold text-zinc-400
-                    px-6 py-4 
+                    px-3 py-2 bp-md:px-6 bp-md:py-4
                   "
                 >
                   {t("newsletter.subscription.monitoring")}
@@ -194,9 +229,10 @@ export default function NewsLetterModal({
                         t(`newsletter.notifications.${notifications[currentNotification].id}.title`)
                       }
                       buttons={
-                        notifications[currentNotification].buttons.map(
-                          (button) =>
-                            t(`newsletter.buttons.${button}`)
+                        notifications[currentNotification].buttons.map((button) =>
+                          notifications[currentNotification].id === "emotionalScalability"
+                            ? button
+                            : t(`newsletter.buttons.${button}`)
                         )
                       }
                       onNext={() => {
@@ -217,11 +253,16 @@ export default function NewsLetterModal({
                         mt-10 rounded-4xl
                         border border-zinc-800
                         bg-zinc-900
-                        p-8
+                        p-4
                       "
                     >
 
-                      <p className="text-lg text-zinc-400">
+                      <p
+                        className="
+                          text-base bp-md:text-lg
+                          text-zinc-400
+                        "
+                      >
                         {t("newsletter.subscription.unresolvedNotifications")}
                       </p>
 
