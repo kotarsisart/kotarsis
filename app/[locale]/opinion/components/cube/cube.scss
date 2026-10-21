@@ -15,33 +15,17 @@ body {
 .scene {
   position: fixed;
   inset: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   overflow: hidden;
 
-  perspective: 1400px;
-  perspective-origin: center center;
+  perspective: 1600px;
+  perspective-origin: 50% 50%;
+
+  background: #080808;
 }
 
-.cube {
-  --size: min(65vw, 65vh, 500px);
+/* Полноэкранное содержимое */
 
-  position: relative;
-
-  width: var(--size);
-  height: var(--size);
-
-  transform-style: preserve-3d;
-  transform-origin: center center;
-
-  transition:
-    transform 800ms cubic-bezier(.22, .61, .36, 1);
-}
-
-.face {
+.screen {
   position: absolute;
   inset: 0;
 
@@ -52,79 +36,142 @@ body {
   align-items: center;
   justify-content: center;
 
+  color: #fff;
   font-family: Arial, sans-serif;
-  font-size: clamp(24px, 5vw, 56px);
+  font-size: clamp(32px, 6vw, 96px);
   font-weight: 800;
-  letter-spacing: .08em;
-
-  color: white;
+  letter-spacing: 0.08em;
 
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-
-  border: 2px solid rgba(255, 255, 255, .3);
 }
 
-/* FRONT */
+/* Контейнер двух граней */
 
-.face.front {
-  background: #e83e75;
+.transition {
+  --depth-x: 50vw;
+  --depth-y: 50vh;
 
-  transform:
-    translateZ(calc(var(--size) / 2));
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  transform-style: preserve-3d;
+  transform-origin: center center;
+
+  transition:
+    transform 800ms cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-/* BACK */
+.panel {
+  position: absolute;
+  inset: 0;
 
-.face.back {
-  background: #333333;
+  width: 100%;
+  height: 100%;
 
-  transform:
-    rotateY(180deg)
-    translateZ(calc(var(--size) / 2));
+  transform-style: preserve-3d;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
-/* LEFT */
-
-.face.left {
-  background: #3668db;
-
-  transform:
-    rotateY(-90deg)
-    translateZ(calc(var(--size) / 2));
+.panel .screen {
+  position: absolute;
+  inset: 0;
 }
 
-/* RIGHT */
+/* =========================================
+   S — вперёд / вниз
+   ========================================= */
 
-.face.right {
-  background: #2aab78;
-
-  transform:
-    rotateY(90deg)
-    translateZ(calc(var(--size) / 2));
+.transition-s {
+  transform: rotateX(0deg);
 }
 
-/* TOP */
-
-.face.top {
-  background: #d98b29;
-
-  transform:
-    rotateX(90deg)
-    translateZ(calc(var(--size) / 2));
+.transition-s .panel-current {
+  transform: translateZ(var(--depth-y));
 }
 
-/* BOTTOM */
-
-.face.bottom {
-  background: #884ed2;
-
+.transition-s .panel-next {
   transform:
     rotateX(-90deg)
-    translateZ(calc(var(--size) / 2));
+    translateZ(var(--depth-y));
 }
 
-/* DEBUG */
+.transition-s.is-active {
+  transform: rotateX(90deg);
+}
+
+/* =========================================
+   W — назад / вверх
+   ========================================= */
+
+.transition-w {
+  transform: rotateX(0deg);
+}
+
+.transition-w .panel-current {
+  transform: translateZ(var(--depth-y));
+}
+
+.transition-w .panel-next {
+  transform:
+    rotateX(90deg)
+    translateZ(var(--depth-y));
+}
+
+.transition-w.is-active {
+  transform: rotateX(-90deg);
+}
+
+/* =========================================
+   A — влево
+   ========================================= */
+
+.transition-a {
+  transform: rotateY(0deg);
+}
+
+.transition-a .panel-current {
+  transform: translateZ(var(--depth-x));
+}
+
+.transition-a .panel-next {
+  transform:
+    rotateY(-90deg)
+    translateZ(var(--depth-x));
+}
+
+.transition-a.is-active {
+  transform: rotateY(90deg);
+}
+
+/* =========================================
+   D — вправо
+   ========================================= */
+
+.transition-d {
+  transform: rotateY(0deg);
+}
+
+.transition-d .panel-current {
+  transform: translateZ(var(--depth-x));
+}
+
+.transition-d .panel-next {
+  transform:
+    rotateY(90deg)
+    translateZ(var(--depth-x));
+}
+
+.transition-d.is-active {
+  transform: rotateY(-90deg);
+}
+
+/* Отладка */
 
 .debug {
   position: fixed;
@@ -135,40 +182,39 @@ body {
 
   padding: 12px 16px;
 
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, 0.8);
   border: 1px solid #444;
   border-radius: 8px;
 
   color: #fff;
-
   font-family: monospace;
   font-size: 13px;
   line-height: 1.8;
 
   pointer-events: none;
 }
-
-.face-content {
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.transition-s,
+.transition-w {
+  transform: translateZ(-50vh) rotateX(0deg);
 }
 
-.face.left .face-content {
-  transform: rotate(-90deg);
+.transition-s.is-active {
+  transform: translateZ(-50vh) rotateX(90deg);
 }
 
-.face.right .face-content {
-  transform: rotate(-90deg);
+.transition-w.is-active {
+  transform: translateZ(-50vh) rotateX(-90deg);
 }
 
-.face.left .face-content {
-  transform: rotate(90deg);
+.transition-a,
+.transition-d {
+  transform: translateZ(-50vw) rotateY(0deg);
 }
 
-.face.back .face-content {
-  transform: rotate(180deg);
+.transition-a.is-active {
+  transform: translateZ(-50vw) rotateY(90deg);
+}
+
+.transition-d.is-active {
+  transform: translateZ(-50vw) rotateY(-90deg);
 }

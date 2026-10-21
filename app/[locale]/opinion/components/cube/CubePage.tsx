@@ -16,47 +16,39 @@ type Key = "w" | "a" | "s" | "d";
 
 const routes: Record<Face, Partial<Record<Key, Face>>> = {
   front: { s: "bottom", w: "top" },
-
   bottom: {
     w: "front",
     s: "back",
     a: "left",
     d: "right",
   },
-
   back: { w: "bottom", s: "top" },
-
   top: { w: "back", s: "front" },
-
   left: { d: "bottom" },
-
   right: { a: "bottom" },
 };
 
-const labels: Face[] = [
-  "front",
-  "back",
-  "left",
-  "right",
-  "top",
-  "bottom",
-];
+type Transition = {
+  from: Face;
+  to: Face;
+  key: Key;
+};
 
-type Rotation = {
-  x: number;
-  y: number;
-  z: number;
+const colors: Record<Face, string> = {
+  front: "#e83e75",
+  bottom: "#884ed2",
+  back: "#333333",
+  top: "#d98b29",
+  left: "#3668db",
+  right: "#2aab78",
 };
 
 export default function CubePage() {
   const [face, setFace] = useState<Face>("front");
+  const [transition, setTransition] =
+    useState<Transition | null>(null);
 
-  const [rotation, setRotation] = useState<Rotation>({
-    x: 0,
-    y: 0,
-    z: 0,
-  });
-
+  const [active, setActive] = useState(false);
   const locked = useRef(false);
 
   useEffect(() => {
@@ -64,84 +56,84 @@ export default function CubePage() {
       const key = e.key.toLowerCase() as Key;
 
       if (!["w", "a", "s", "d"].includes(key)) return;
-      if (e.repeat || locked.current) return;
+      if (locked.current) return;
 
       const next = routes[face][key];
       if (!next) return;
 
       locked.current = true;
 
-      setFace(next);
+      setTransition({
+        from: face,
+        to: next,
+        key,
+      });
 
-      setRotation((current) => {
-        switch (key) {
-          case "w":
-            return {
-              ...current,
-              x: current.x - 90,
-            };
+      setActive(false);
 
-          case "s":
-            return {
-              ...current,
-              x: current.x + 90,
-            };
-
-          case "a":
-            return {
-              ...current,
-              z: current.z - 90,
-            };
-
-          case "d":
-            return {
-              ...current,
-              z: current.z + 90,
-            };
-        }
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          setActive(true);
+        });
       });
     }
 
     window.addEventListener("keydown", onKey);
-
     return () => window.removeEventListener("keydown", onKey);
   }, [face]);
 
+  function finishTransition() {
+    if (!transition) return;
+
+    setFace(transition.to);
+    setTransition(null);
+    setActive(false);
+    locked.current = false;
+  }
+
+  function renderFace(name: Face) {
+    return (
+      <section
+        className={`screen screen-${name}`}
+        style={{ background: colors[name] }}
+      >
+        {name.toUpperCase()}
+      </section>
+    );
+  }
+
   return (
     <main className="scene">
-      <div
-        className="cube"
-        style={{
-          transform: `
-            rotateX(${rotation.x}deg)
-            rotateY(${rotation.y}deg)
-            rotateZ(${rotation.z}deg)
-          `,
-        }}
-        onTransitionEnd={(e) => {
-          if (
-            e.target === e.currentTarget &&
-            e.propertyName === "transform"
-          ) {
-            locked.current = false;
-          }
-        }}
-      >
-        {labels.map((name) => (
-          <section key={name} className={`face ${name}`}>
-            <div className="face-content">
-              {name.toUpperCase()}
-            </div>
-          </section>
-        ))}
-      </div>
+      {!transition && renderFace(face)}
+
+      {transition && (
+        <div
+          className={[
+            "transition",
+            `transition-${transition.key}`,
+            active ? "is-active" : "",
+          ].join(" ")}
+          onTransitionEnd={(e) => {
+            if (
+              e.target === e.currentTarget &&
+              e.propertyName === "transform"
+            ) {
+              finishTransition();
+            }
+          }}
+        >
+          <div className="panel panel-current">
+            {renderFace(transition.from)}
+          </div>
+
+          <div className="panel panel-next">
+            {renderFace(transition.to)}
+          </div>
+        </div>
+      )}
 
       <div className="debug">
-        <div>FACE: {face.toUpperCase()}</div>
-        <div>W A S D — navigation</div>
-        <div>
-          X: {rotation.x}° Y: {rotation.y}°
-        </div>
+        FACE: {transition?.to ?? face}
       </div>
     </main>
   );
