@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import CubePage from "../components/cube/CubePage";
+import CubePage from "../components/cube/engine/CubePage";
 import HomePage from "../components/home/HomePage";
 
 type Screen = "cube" | "home";

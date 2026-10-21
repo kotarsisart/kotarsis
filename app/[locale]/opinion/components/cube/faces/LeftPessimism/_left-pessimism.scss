@@ -1,10 +1,11 @@
-@use '../../../styles/system/mixins' as mx;
-@use '../../../styles/tokens/spacing' as s;
-@use '../../../styles/typography/tp-headings' as h;
+@use '../../../../styles/system/mixins' as mx;
+@use '../../../../styles/tokens/spacing' as s;
+@use '../../../../styles/typography/tp-headings' as h;
 
-.optimism {
+.pessimism {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: start;
   text-align: left;
   gap: s.$space-xxl;
@@ -12,11 +13,11 @@
   padding-inline: s.$space-l;
 
   background: linear-gradient(
-    to bottom,
-    #58A1FF,
-    #FFB5D2,
+    90deg,
+    #090304,
+    #221B22,
   );
-  color: #FFEDED;
+  color: #898989;
 
   @include mx.mq(break-768) {
     padding: s.$space-xxl;

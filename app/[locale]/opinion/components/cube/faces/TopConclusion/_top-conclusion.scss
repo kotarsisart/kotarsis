@@ -1,7 +1,7 @@
-@use '../../../styles/system/mixins' as mx;
-@use '../../../styles/tokens/spacing' as s;
-@use '../../../styles/typography/tp-headings' as h;
-@use '../../../styles/typography/tp-base' as *;
+@use '../../../../styles/system/mixins' as mx;
+@use '../../../../styles/tokens/spacing' as s;
+@use '../../../../styles/typography/tp-headings' as h;
+@use '../../../../styles/typography/tp-base' as *;
 
 @mixin text-gradient($direction, $colors...) {
   background: linear-gradient($direction, $colors...);
