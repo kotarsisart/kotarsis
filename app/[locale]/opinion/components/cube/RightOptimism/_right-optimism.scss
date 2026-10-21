@@ -1,0 +1,31 @@
+@use '../../../styles/system/mixins' as mx;
+@use '../../../styles/tokens/spacing' as s;
+@use '../../../styles/typography/tp-headings' as h;
+
+.optimism {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+  gap: s.$space-xxl;
+  padding-block: s.$space-xxl;
+  padding-inline: s.$space-l;
+
+  background: linear-gradient(
+    to bottom,
+    #58A1FF,
+    #FFB5D2,
+  );
+  color: #FFEDED;
+
+  @include mx.mq(break-768) {
+    padding: s.$space-xxl;
+  }
+  @include mx.mq(break-1024) {
+    padding: s.$space-xxxl;
+  }
+
+  &__title {
+    @include h.h2;
+  }
+}

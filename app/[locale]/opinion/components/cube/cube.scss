@@ -1,0 +1,174 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #080808;
+}
+
+.scene {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  perspective: 1400px;
+  perspective-origin: center center;
+}
+
+.cube {
+  --size: min(65vw, 65vh, 500px);
+
+  position: relative;
+
+  width: var(--size);
+  height: var(--size);
+
+  transform-style: preserve-3d;
+  transform-origin: center center;
+
+  transition:
+    transform 800ms cubic-bezier(.22, .61, .36, 1);
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Arial, sans-serif;
+  font-size: clamp(24px, 5vw, 56px);
+  font-weight: 800;
+  letter-spacing: .08em;
+
+  color: white;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  border: 2px solid rgba(255, 255, 255, .3);
+}
+
+/* FRONT */
+
+.face.front {
+  background: #e83e75;
+
+  transform:
+    translateZ(calc(var(--size) / 2));
+}
+
+/* BACK */
+
+.face.back {
+  background: #333333;
+
+  transform:
+    rotateY(180deg)
+    translateZ(calc(var(--size) / 2));
+}
+
+/* LEFT */
+
+.face.left {
+  background: #3668db;
+
+  transform:
+    rotateY(-90deg)
+    translateZ(calc(var(--size) / 2));
+}
+
+/* RIGHT */
+
+.face.right {
+  background: #2aab78;
+
+  transform:
+    rotateY(90deg)
+    translateZ(calc(var(--size) / 2));
+}
+
+/* TOP */
+
+.face.top {
+  background: #d98b29;
+
+  transform:
+    rotateX(90deg)
+    translateZ(calc(var(--size) / 2));
+}
+
+/* BOTTOM */
+
+.face.bottom {
+  background: #884ed2;
+
+  transform:
+    rotateX(-90deg)
+    translateZ(calc(var(--size) / 2));
+}
+
+/* DEBUG */
+
+.debug {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  z-index: 100;
+
+  padding: 12px 16px;
+
+  background: rgba(0, 0, 0, .8);
+  border: 1px solid #444;
+  border-radius: 8px;
+
+  color: #fff;
+
+  font-family: monospace;
+  font-size: 13px;
+  line-height: 1.8;
+
+  pointer-events: none;
+}
+
+.face-content {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.face.left .face-content {
+  transform: rotate(-90deg);
+}
+
+.face.right .face-content {
+  transform: rotate(-90deg);
+}
+
+.face.left .face-content {
+  transform: rotate(90deg);
+}
+
+.face.back .face-content {
+  transform: rotate(180deg);
+}

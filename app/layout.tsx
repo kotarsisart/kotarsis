@@ -8,6 +8,7 @@ import "@fontsource-variable/comfortaa";
 import "@fontsource/great-vibes";
 import "@fontsource/balsamiq-sans";
 import "@fontsource-variable/roboto-slab";
+import "@fontsource-variable/jost";
 
 import { createFaviconSet } from "@/data/seo/createFaviconSet";
 

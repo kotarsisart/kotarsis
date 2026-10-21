@@ -1,0 +1,41 @@
+@use '../../../styles/system/mixins' as mx;
+@use '../../../styles/tokens/spacing' as s;
+@use '../../../styles/typography/tp-headings' as h;
+@use '../../../styles/typography/tp-base' as *;
+
+@mixin text-gradient($direction, $colors...) {
+  background: linear-gradient($direction, $colors...);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.conclusion {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: s.$space-xxl;
+  padding-block: s.$space-l;
+  padding-inline: s.$space-m;
+
+  background-color: #000000;
+  @include text-gradient(
+    to right,
+    #F1EEFF,
+    #AAAAAA,
+  );
+
+  @include mx.mq(break-768) {
+    padding: s.$space-xxl;
+  }
+
+  &__title {
+    @include h.h2;
+  }
+  &__subline {
+    @include h.h3;
+  }
+  &__outro {
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
