@@ -125,7 +125,7 @@ export const projects = [
   {
     id: "opinion",
     title: "◽PINI◽N",
-    descriptionKey: "projects.comingSoon",
+    descriptionKey: "projects.opinion.description",
     link: "/opinion",
     image: "/previews/opinion.jpg",
 
