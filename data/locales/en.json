@@ -45,6 +45,9 @@
     
     "censored": {
       "description": "Your next\nmanager is\nan algorithm."
+    },
+    "opinion": {
+      "description": "Are you sure that's your own opinion?"
     }
   },
 

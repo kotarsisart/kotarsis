@@ -45,6 +45,9 @@
 
     "censored": {
       "description": "Váš příští\nnadřízený bude\nalgoritmus."
+    },
+    "opinion": {
+      "description": "A jsi si jistý, že je to tvůj názor?"
     }
   },
 

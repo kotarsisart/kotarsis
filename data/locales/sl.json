@@ -46,6 +46,9 @@
 
     "censored": {
       "description": "Vaš naslednji\nvodja bo\nalgoritem."
+    },
+    "opinion": {
+      "description": "Pa si prepričan, da je to tvoje mnenje?"
     }
   },
 

@@ -45,6 +45,9 @@
 
     "censored": {
       "description": "Twoim następnym\nprzełożonym będzie\nalgorytm."
+    },
+    "opinion": {
+      "description": "A jesteś pewien, że to twoja opinia?"
     }
   },
 

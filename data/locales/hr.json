@@ -45,6 +45,9 @@
 
     "censored": {
       "description": "Vaš sljedeći\nnadređeni je\nalgoritam."
+    },
+    "opinion": {
+      "description": "A jesi li siguran da je to tvoje mišljenje?"
     }
   },
 
