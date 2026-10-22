@@ -1,0 +1,219 @@
+@use '../../../styles/system/mixins' as mx;
+@use '../../../styles/tokens/spacing' as s;
+@use '../../../styles/typography/tp-headings' as h;
+
+.instruction {
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-l;
+  padding: s.$space-xxl;
+  min-height: 90vh;
+
+  background: linear-gradient(
+    155deg,
+    #ee3936,
+    #08346C 50%,
+  );
+
+  @include mx.mq(break-768) {
+    padding: s.$space-xxxl;
+  }
+
+  &__description,
+  &__philosophy,
+  &__controls-swipe,
+  &__controls-keyboard {
+    white-space: pre-line;
+  }
+
+  // top
+  &__top {
+    @include mx.centered;
+    flex-direction: column;
+    width: 100%;
+    
+    @include mx.mq(break-1280) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: left;
+    gap: s.$space-m;
+    width: 100%;
+    max-width: 800px;
+
+    @include mx.mq(break-1280) {
+      gap: s.$space-l;
+    }
+  }
+
+  &__title {
+    @include h.h2;
+    color: #F0F5FF;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+  }
+
+  &__description,
+  &__philosophy {
+    @include h.h3;
+    color: #A9EDFF;
+  }
+
+  &__logo {
+    --logo-dimensions-1280: 330px;
+    --logo-dimensions-1440: 420px;
+
+    color: #7bc1fe;
+    display: none;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @include mx.mq(break-1280) {
+      display: flex;
+      width: var(--logo-dimensions-1280);
+      height: var(--logo-dimensions-1280);
+    }
+    @include mx.mq(break-1440) {
+      width: var(--logo-dimensions-1440);
+      height: var(--logo-dimensions-1440);
+    }
+  }
+
+  // controls
+  &__controls {
+    @include mx.centered;
+    width: 100%;
+
+    @include mx.mq(break-768) {
+      gap: s.$space-m;
+    }
+
+    &-swipe,
+    &-keyboard {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      text-align: left;
+      gap: s.$space-l;
+      padding: s.$space-m;
+
+      background-color: #8498D920;
+      border: 4px solid #106de720;
+      width: 100%;
+
+      @include mx.mq(break-768) {
+        height: 290px;
+        padding: s.$space-xl;
+      }
+      @include mx.mq(break-1280) {
+        flex-direction: row;
+        height: 250px;
+      }
+
+      &-icons {
+        @include mx.centered;
+        width: 100%;
+        gap: 12px;
+      }
+    }
+
+    &-keyboard {
+      display: none;
+
+      @include mx.mq(break-768) {
+        display: flex;
+      }
+    }
+
+    &-text {
+      font-size: 22px;
+
+      @include mx.mq(break-1024) {
+        font-size: 24px;
+      }
+      @include mx.mq(break-1280) {
+        font-size: 28px;
+      }
+      color: #E1FFFC;
+    }
+
+    &-icons {
+      height: 40px;
+
+      @include mx.mq(break-768) {
+        height: 90px;
+      }
+      @include mx.mq(break-1024) {
+        height: 110px;
+      }
+    }
+  }
+
+  // cta
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: left;
+    gap: s.$space-l;
+    width: 100%;
+    color: #F0F5FF;
+
+    &-losung {
+      font-size: 20px;
+
+      @include mx.mq(break-768) {
+        font-size: 32px;
+      }
+      @include mx.mq(break-1024) {
+        font-size: 36px;
+      }
+    }
+
+    &-inner {
+      @include mx.centered;
+      gap: 12px;
+      cursor: pointer;
+
+      &:hover {
+        .instruction__cta-start {
+          color: #ffffff;
+        }
+        .instruction__cta-icon {
+          transform: rotate(8deg);
+        }
+      }
+    }
+
+    &-icon {
+      width: 15px;
+      transition: transform 0.2s ease;
+
+      @include mx.mq(break-768) {
+        width: 20px;
+      }
+    }
+    &-start {
+      @include h.h3;
+      text-shadow: 2px 4px 2px black;
+      transition: color .3s ease;
+    }
+  }
+}

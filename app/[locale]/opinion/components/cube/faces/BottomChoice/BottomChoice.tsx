@@ -1,22 +1,31 @@
-import './_bottom-choice.scss'
+
+import { useI18n } from "@/data/I18nProvider";
+import "./_bottom-choice.scss";
 
 export default function BottomChoice() {
+  const { t } = useI18n();
+
   return (
     <section className="face bottom choice">
       <h2 className="choice__title">
-        Как и всегда, человечество придумало простой способ.
+        {t("bottom.title")}
       </h2>
+
       <h3 className="choice__subline">
-        Достаточно разделить людей на две категории.
+        {t("bottom.subline")}
       </h3>
+
       <div className="choice__separation">
         <p className="choice__separation-text">
-          ← Пессимисты
+          <span aria-hidden="true">←</span>{" "}
+          {t("bottom.pessimists")}
         </p>
+
         <p className="choice__separation-text">
-          Оптимисты →
+          {t("bottom.optimists")}{" "}
+          <span aria-hidden="true">→</span>
         </p>
       </div>
     </section>
-  )
+  );
 }

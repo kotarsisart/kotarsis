@@ -46,13 +46,6 @@
     gap: s.$space-s;
     text-decoration: none;
 
-    &:hover {
-      .footer__bmac-icon {
-        animation: cup-tilt-soft 0.8s ease;
-        transform-origin: center bottom;
-      }
-    }
-
     &-icon {
       height: 25px;
       width: auto;
@@ -67,13 +60,3 @@
     @include footer-copyright;
   }
 }
-
-@keyframes cup-tilt-soft {
-  0%   { transform: rotate(0deg); }
-  20%  { transform: scale(1.01);}
-  40%  { transform: rotate(-1deg); }
-  70%  { transform: rotate(0.5deg); }
-  90%  { transform: scale(1);}
-  100% { transform: rotate(0deg); }
-}
- 

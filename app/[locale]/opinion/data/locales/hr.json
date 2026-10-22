@@ -1,125 +1,100 @@
+
 {
   "meta": {
-    "title": "Minimalism — struktura umjesto viška",
-    "description": "Minimalistički projekt o strukturi, kontrastu, značenju i umjetnosti uklanjanja svega suvišnog kako bi ostalo ono najvažnije.",
-    "keywords": "minimalizam, struktura, dizajn, kotarsis",
-    "siteName": "Minimalism",
-    "imgAlt": "Pregledna slika Minimalism"
+    "title": "OPINION — Svako mišljenje ima i drugu stranu",
+    "description": "Interaktivni filozofski projekt o mišljenjima, suprotnostima i izboru. Okreći strane, istražuj različita gledišta i pokušaj vidjeti više.",
+    "keywords": "OPINION, mišljenje, gledište, filozofija, interaktivni projekt, perspektive, pesimizam, optimizam, 3D kocka, kotarsis",
+    "siteName": "OPINION",
+    "imgAlt": "Slika za pregled projekta OPINION"
   },
 
   "preloader": {
-    "kotarsisAlt": "logo kotarsis",
-    "projectAlt": "logo projekta minimalism",
+    "kotarsisAlt": "logotip kotarsis",
+    "projectAlt": "logotip projekta OPINION",
     "langSelect": "Odaberite jezik"
   },
 
   "header": {
     "logo": {
-      "project": "Minimalism",
-      "projectAlt": "Logo projekta Minimalism",
+      "project": "OPINION",
+      "projectAlt": "Logotip projekta OPINION",
       "kotarsis": "kotarsis",
-      "kotarsisAlt": "Logo kotarsis"
+      "kotarsisAlt": "Logotip kotarsis"
     }
   },
 
-  "hero": {
-    "title": "Što ostaje kada ukloniš višak",
-    "subtitle": "— čak i nijanse?"
+  "instruction": {
+    "description": "Najbolje je proći kroz ovaj projekt\nbez pokušaja pronalaska točnog odgovora.",
+    "philosophy": "Svako mišljenje ima i drugu stranu.\nDa bi je vidio, okreni stranicu.",
+    "swipe": "Listaj u bilo kojem smjeru – prstom ili mišem.",
+    "keyboard": "Na računalu možeš koristiti i strelice i WASD.",
+    "keyboardAlt": "Tipkovnica WASD",
+    "mouseAlt": "Miš za upravljanje",
+    "swipeAlt": "Povlačenje prstom",
+    "losung": "Listaj. Razmišljaj. Vrati se.",
+    "start": "Započni"
   },
 
-  "manifesto": {
-    "title": "Ukloniti ne znači izgubiti. Znači pronaći ono bitno.",
-    "blocks": [
-      [
-        "Bez boje.",
-        "Bez efekata.",
-        "Bez dekoracije."
-      ],
-      [
-        "Samo kontrast.",
-        "Samo struktura.",
-        "Samo značenje."
-      ]
-    ]
+  "outro": {
+    "title": "Svako mišljenje ima i drugu stranu.",
+    "description": "Ali nijedna od njih ne mora biti tvoja.",
+    "sides": "Možda nije stvar u tome da odabereš stranu.",
+    "seen": "Nego da naučiš vidjeti sve strane.",
+    "button": "Pogledaj još jednom",
+    "buttonAlt": "strelica za povratak"
   },
 
-  "structure": {
-    "title": "Kada boja utihne, struktura progovara.",
-    "items": [
-      {
-        "key": "square",
-        "label": "Ravnoteža",
-        "alt": "Kvadrat — ravnoteža"
-      },
-      {
-        "key": "circle",
-        "label": "Hijerarhija",
-        "alt": "Krug — hijerarhija"
-      },
-      {
-        "key": "triangle",
-        "label": "Ritam",
-        "alt": "Trokut — ritam"
+  "front": {
+    "title": "Što je mišljenje?",
+    "subline": "Preokreni svoju predodžbu"
+  },
+
+  "bottom": {
+    "title": "Kao i uvijek, čovječanstvo je smislilo jednostavan način.",
+    "subline": "Dovoljno je podijeliti ljude u dvije kategorije.",
+    "pessimists": "Pesimisti",
+    "optimists": "Optimisti"
+  },
+
+  "back": {
+    "title": "Jesi li doista odabrao stranu?",
+    "or": "Ili...",
+    "conclusion": "je ona odabrala tebe?"
+  },
+
+  "top": {
+    "title": "Prošao si cijelu kocku.",
+    "subline": "Ali još uvijek nisi odabrao",
+    "sublineSecond": "pravu stranu.",
+    "outro": "I to je u redu.",
+    "finish": "Završi\nputovanje"
+  },
+
+  "sides": {
+    "left": {
+      "title": "Većinu mišljenja bolje je nikada ne izgovoriti.",
+      "arguments": {
+        "people": "Ljudi su zauzeti vlastitim životima. \nNe zanima ih što ti misliš.",
+        "dispute": "Većina rasprava ne donosi istinu. \nOne donose samo pobjednika.",
+        "silence": "Ponekad je šutnja \njedino zrelo mišljenje."
       }
-    ],
-    "outro": [
-      "Dizajn ogoljen do kosti —",
-      "kako bi se vidjelo diše li još uvijek."
-    ]
-  },
-
-  "interpretation": {
-    "title": "Ukloni sve. Ono što ostane je istina.",
-    "lines": [
-      "Ovdje nema skrivene poruke.",
-      "",
-      "Struktura nije objašnjenje.",
-      "Struktura je uvjet.",
-      "",
-      "Ravnoteža nije kvadrat.",
-      "Hijerarhija nije krug.",
-      "Ritam nije trokut.",
-      "",
-      "Značenje nije u obliku.",
-      "",
-      "Struktura šuti.",
-      "Ti govoriš."
-    ]
-  },
-
-  "negation": {
-    "title": "Ovo nije stil"
-  },
-
-  "conclusion": {
-    "title": "Ovo je sposobnost.",
-    "figures": [
-      {
-        "key": "triangle",
-        "alt": "Trokut"
-      },
-      {
-        "key": "square",
-        "alt": "Kvadrat"
-      },
-      {
-        "key": "circle",
-        "alt": "Krug"
+    },
+    "right": {
+      "title": "Bez tuđih mišljenja čovječanstvo se nikada ne bi promijenilo.",
+      "arguments": {
+        "people": "Svaka ideja započela je \nkao nečije mišljenje.",
+        "dispute": "Da su ljudi šutjeli, \nsvijet bi i danas stajao na mjestu.",
+        "silence": "Čak i ako se ne slažu s tobom, \ntvoje ih riječi mogu potaknuti na razmišljanje."
       }
-    ],
-    "boasting": [
-      "Ako možeš stvoriti značenje iz ničega,",
-      "možeš ga stvoriti iz bilo čega."
-    ],
-    "octahedronAlt": "Oktaedar"
+    }
   },
 
   "footer": {
-    "title": "Ovo je dovoljno.",
+    "title": "Možda prava strana nikada nije ni postojala.",
     "links": {
-      "support": "Podrži jednostavnost"
+      "support": "Podrži drukčije gledište"
     },
-    "copyright": "© 2026 Minimalism. Stvoreno s poštovanjem prema minimalizmu.",
-    "coffeeAlt": "Šalica kave Minimalism"
+    "copyright": "© 2026 OPINION. Možda si još uvijek unutra.",
+    "coffeeAlt": "Šalica kave OPINION"
   }
 }

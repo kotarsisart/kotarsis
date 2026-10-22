@@ -11,7 +11,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  // overflow: hidden;
   background: #080808;
 }
 
@@ -71,6 +71,10 @@ body {
   // These values define the rotation depth.
   --depth-x: 50vw;
   --depth-y: 50vh;
+
+  .panel {
+    pointer-events: none;
+  }
 
   position: absolute;
   inset: 0;

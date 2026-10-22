@@ -12,7 +12,7 @@ export default function RightOptimism() {
     <section className="face right optimism">
 
       <h2 className="optimism__title">
-        Без чужих мнений человечество никогда бы не изменилось.
+        {t("sides.right.title")}
       </h2>
 
       <ul className="pessimism__arguments">

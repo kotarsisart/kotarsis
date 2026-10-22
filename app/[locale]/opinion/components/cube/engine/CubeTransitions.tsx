@@ -6,12 +6,14 @@ type Props = {
   transition: CubeTransitionState;
   active: boolean;
   onFinish: () => void;
+  onComplete: () => void;
 };
 
 export default function CubeTransition({
   transition,
   active,
   onFinish,
+  onComplete,
 }: Props) {
   return (
     <div
@@ -30,11 +32,17 @@ export default function CubeTransition({
       }}
     >
       <div className="panel panel-current">
-        <CubeFace face={transition.from} />
+        <CubeFace
+          face={transition.from}
+          onFinish={onComplete}
+        />
       </div>
 
       <div className="panel panel-next">
-        <CubeFace face={transition.to} />
+        <CubeFace
+          face={transition.to}
+          onFinish={onComplete}
+        />
       </div>
     </div>
   );

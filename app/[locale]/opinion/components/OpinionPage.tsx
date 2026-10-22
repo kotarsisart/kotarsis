@@ -2,28 +2,27 @@
 
 import { useState } from "react";
 
-import CubePage from "../components/cube/engine/CubePage";
-import HomePage from "../components/home/HomePage";
+import CubePage from "./cube/engine/CubePage";
+import MainPage from "./main/MainPage";
 
-type Screen = "cube" | "home";
+type Screen = "intro" | "cube" | "outro";
 
 export default function OpinionPage() {
-  const [screen, setScreen] = useState<Screen>("cube");
+  const [screen, setScreen] = useState<Screen>("intro");
 
-  // for develop
-  // const [screen, setScreen] = useState<Screen>("home");
-
-  if (screen === "home") {
+  if (screen === "cube") {
     return (
-      <HomePage
-        onRestart={() => setScreen("cube")}
+      <CubePage
+        onFinish={() => setScreen("outro")}
       />
     );
   }
 
   return (
-    <CubePage
-      onFinish={() => setScreen("home")}
+    <MainPage
+      screen={screen}
+      onStart={() => setScreen("cube")}
+      onRestart={() => setScreen("cube")}
     />
   );
 }

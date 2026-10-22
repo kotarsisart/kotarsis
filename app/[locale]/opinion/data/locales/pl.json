@@ -1,125 +1,100 @@
+
 {
   "meta": {
-    "title": "Minimalism — struktura ponad nadmiar",
-    "description": "Minimalistyczny projekt o strukturze, kontraście, znaczeniu i sztuce usuwania wszystkiego, co zbędne, aby dostrzec to, co naprawdę ważne.",
-    "keywords": "minimalizm, struktura, design, kotarsis",
-    "siteName": "Minimalism",
-    "imgAlt": "Podgląd Minimalism"
+    "title": "OPINION — Każda opinia ma drugą stronę",
+    "description": "Interaktywny projekt filozoficzny o opiniach, przeciwieństwach i wyborze. Odwracaj strony, odkrywaj różne punkty widzenia i spróbuj dostrzec więcej.",
+    "keywords": "OPINION, opinia, punkt widzenia, filozofia, projekt interaktywny, perspektywy, pesymizm, optymizm, kostka 3D, kotarsis",
+    "siteName": "OPINION",
+    "imgAlt": "Obraz podglądowy projektu OPINION"
   },
 
   "preloader": {
     "kotarsisAlt": "logo kotarsis",
-    "projectAlt": "logo projektu minimalism",
+    "projectAlt": "logo projektu OPINION",
     "langSelect": "Wybierz język"
   },
 
   "header": {
     "logo": {
-      "project": "Minimalism",
-      "projectAlt": "Logo projektu Minimalism",
+      "project": "OPINION",
+      "projectAlt": "Logo projektu OPINION",
       "kotarsis": "kotarsis",
       "kotarsisAlt": "Logo kotarsis"
     }
   },
 
-  "hero": {
-    "title": "Co pozostaje, gdy usuniesz nadmiar",
-    "subtitle": "— nawet odcienie?"
+  "instruction": {
+    "description": "Najlepiej przejść przez ten projekt,\nnie próbując znaleźć właściwej odpowiedzi.",
+    "philosophy": "Każda opinia ma drugą stronę.\nAby ją zobaczyć – odwróć stronę.",
+    "swipe": "Przesuwaj w dowolnym kierunku – palcem lub myszką.",
+    "keyboard": "Na komputerze działają również strzałki i WASD.",
+    "keyboardAlt": "Klawiatura WASD",
+    "mouseAlt": "Mysz do sterowania",
+    "swipeAlt": "Przesunięcie palcem",
+    "losung": "Przesuwaj. Myśl. Wracaj.",
+    "start": "Rozpocznij"
   },
 
-  "manifesto": {
-    "title": "Usunąć nie znaczy stracić. To znaczy odnaleźć to, co istotne.",
-    "blocks": [
-      [
-        "Bez koloru.",
-        "Bez efektów.",
-        "Bez dekoracji."
-      ],
-      [
-        "Tylko kontrast.",
-        "Tylko struktura.",
-        "Tylko znaczenie."
-      ]
-    ]
+  "outro": {
+    "title": "Każda opinia ma drugą stronę.",
+    "description": "Ale żadna z nich nie musi być twoja.",
+    "sides": "Może nie chodzi o to, by wybrać stronę.",
+    "seen": "Lecz o to, by nauczyć się je dostrzegać.",
+    "button": "Zobacz jeszcze raz",
+    "buttonAlt": "strzałka powrotu"
   },
 
-  "structure": {
-    "title": "Gdy kolor milknie, przemawia struktura.",
-    "items": [
-      {
-        "key": "square",
-        "label": "Równowaga",
-        "alt": "Kwadrat — równowaga"
-      },
-      {
-        "key": "circle",
-        "label": "Hierarchia",
-        "alt": "Koło — hierarchia"
-      },
-      {
-        "key": "triangle",
-        "label": "Rytm",
-        "alt": "Trójkąt — rytm"
+  "front": {
+    "title": "Czym jest opinia?",
+    "subline": "Odwróć swoje spojrzenie"
+  },
+
+  "bottom": {
+    "title": "Jak zawsze, ludzkość wymyśliła prosty sposób.",
+    "subline": "Wystarczy podzielić ludzi na dwie kategorie.",
+    "pessimists": "Pesymiści",
+    "optimists": "Optymiści"
+  },
+
+  "back": {
+    "title": "Czy naprawdę wybrałeś stronę?",
+    "or": "A może...",
+    "conclusion": "to ona wybrała ciebie?"
+  },
+
+  "top": {
+    "title": "Przeszedłeś przez całą kostkę.",
+    "subline": "Ale wciąż nie wybrałeś",
+    "sublineSecond": "właściwej strony.",
+    "outro": "I to jest w porządku.",
+    "finish": "Zakończ\npodróż"
+  },
+
+  "sides": {
+    "left": {
+      "title": "Większości opinii lepiej nigdy nie wypowiadać.",
+      "arguments": {
+        "people": "Ludzie są zajęci własnym życiem. \nNie interesuje ich, co myślisz.",
+        "dispute": "Większość sporów nie prowadzi do prawdy. \nWyłania jedynie zwycięzcę.",
+        "silence": "Czasem milczenie to \njedyna dojrzała opinia."
       }
-    ],
-    "outro": [
-      "Projekt obnażony do kości —",
-      "aby sprawdzić, czy wciąż oddycha."
-    ]
-  },
-
-  "interpretation": {
-    "title": "Usuń wszystko. To, co pozostanie, jest prawdą.",
-    "lines": [
-      "Nie ma tu ukrytego przekazu.",
-      "",
-      "Struktura nie jest wyjaśnieniem.",
-      "Struktura jest warunkiem.",
-      "",
-      "Równowaga nie jest kwadratem.",
-      "Hierarchia nie jest kołem.",
-      "Rytm nie jest trójkątem.",
-      "",
-      "Znaczenie nie tkwi w kształcie.",
-      "",
-      "Struktura milczy.",
-      "Ty mówisz."
-    ]
-  },
-
-  "negation": {
-    "title": "To nie jest styl"
-  },
-
-  "conclusion": {
-    "title": "To zdolność.",
-    "figures": [
-      {
-        "key": "triangle",
-        "alt": "Trójkąt"
-      },
-      {
-        "key": "square",
-        "alt": "Kwadrat"
-      },
-      {
-        "key": "circle",
-        "alt": "Koło"
+    },
+    "right": {
+      "title": "Bez opinii innych ludzi ludzkość nigdy by się nie zmieniła.",
+      "arguments": {
+        "people": "Każda idea zaczynała się \nod czyjejś opinii.",
+        "dispute": "Gdyby ludzie milczeli, \nświat wciąż stałby w miejscu.",
+        "silence": "Nawet jeśli inni się z tobą nie zgadzają, \ntwoje słowa mogą skłonić ich do refleksji."
       }
-    ],
-    "boasting": [
-      "Jeśli potrafisz stworzyć znaczenie z niczego,",
-      "potrafisz stworzyć je z czegokolwiek."
-    ],
-    "octahedronAlt": "Ośmiościan"
+    }
   },
 
   "footer": {
-    "title": "To wystarczy.",
+    "title": "Może właściwa strona nigdy nie istniała.",
     "links": {
-      "support": "Wesprzeć prostotę"
+      "support": "Wesprzyj inny punkt widzenia"
     },
-    "copyright": "© 2026 Minimalism. Stworzone z szacunkiem dla minimalizmu.",
-    "coffeeAlt": "Filiżanka kawy Minimalism"
+    "copyright": "© 2026 OPINION. Może wciąż jesteś w środku.",
+    "coffeeAlt": "Filiżanka kawy OPINION"
   }
 }

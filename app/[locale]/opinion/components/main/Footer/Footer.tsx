@@ -1,7 +1,8 @@
-import './_footer.scss';
+import "./_footer.scss";
 import { useI18n } from "@/data/I18nProvider";
 
-import FooterLinks from '@/components/Footer/FooterLinks';
+import FooterCup from "./FooterCup";
+import FooterLinks from "@/components/Footer/FooterLinks";
 
 export default function Footer() {
   const { t } = useI18n();
@@ -13,10 +14,7 @@ export default function Footer() {
       </p>
 
       <FooterLinks
-        coffeeIcon="/projects/opinion/icons/footer/coffee.svg"
-        coffeeWidth={34}
-        coffeeHeight={20}
-        coffeeAlt={t("footer.coffeeAlt")}
+        coffeeElement={<FooterCup />}
       />
 
       <p className="footer__copyright">

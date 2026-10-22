@@ -124,12 +124,12 @@ export const projects = [
 
   {
     id: "opinion",
-    title: "□PINI□N",
+    title: "◽PINI◽N",
     descriptionKey: "projects.comingSoon",
     link: "/opinion",
     image: "/previews/opinion.jpg",
 
-    font: "",
+    font: "opin-font",
 
     colors: {
       bg1: "var(--proj-opin-bg-1)",

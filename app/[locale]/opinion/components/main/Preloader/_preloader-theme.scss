@@ -4,7 +4,9 @@
 
 
 .preloader {
-  background-color: var(--white);
+  background-color: #1f1e22;
+  --main-color: #D7E6FF;
+  color: var(--main-color);
 
   &__kotarsis {
 
@@ -13,12 +15,12 @@
     }
 
     &-icon {
-      color: var(--black);
+      color: var(--main-color);
     }
   }
 
   &__divider {
-    background-color: var(--black);
+    background-color: var(--main-color);
   }
 
   &__presents {
@@ -26,8 +28,8 @@
   }
 
   &__project {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: #3914a7;
+    color: #776dff;
     border-radius: 28px;
 
     padding-block: s.$space-s;

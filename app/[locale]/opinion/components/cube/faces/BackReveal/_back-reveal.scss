@@ -5,6 +5,7 @@
 .reveal {
   display: flex;
   align-items: start;
+  justify-content: center;
   flex-direction: column;
   gap: s.$space-xxl;
   padding-block: s.$space-xxl;
@@ -25,12 +26,14 @@
   @include mx.mq(break-1024) {
     padding: s.$space-xxxl;
   }
+
   &__title {
     @include h.h2;
   }
 
-  &__subline {
+  &__or {
     @include h.h3;
+
   }
 
   &__conclusion {

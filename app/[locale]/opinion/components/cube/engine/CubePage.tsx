@@ -8,7 +8,13 @@ import CubeTransition from "./CubeTransitions";
 import { useCubeNavigation } from "./hooks/useCubeNavigation";
 import { useCubeControls } from "./hooks/useCubeControls";
 
-export default function CubePage() {
+type CubePageProps = {
+  onFinish: () => void;
+};
+
+export default function CubePage({
+  onFinish,
+}: CubePageProps) {
   const {
     face,
     transition,
@@ -21,20 +27,26 @@ export default function CubePage() {
 
   return (
     <main className="scene">
-      {!transition && <CubeFace face={face} />}
+      {!transition && (
+        <CubeFace
+          face={face}
+          onFinish={onFinish}
+        />
+      )}
 
       {transition && (
         <CubeTransition
           transition={transition}
           active={active}
           onFinish={finishTransition}
+          onComplete={onFinish}
         />
       )}
 
-      <div className="debug">
+      {/* <div className="debug">
         <div>FACE: {transition?.to ?? face}</div>
         <div>WASD / Arrows / Swipe</div>
-      </div>
+      </div> */}
     </main>
   );
 }

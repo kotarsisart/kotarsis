@@ -12,7 +12,7 @@ export default function LeftPessimism() {
     <section className="face left pessimism">
 
       <h2 className="pessimism__title">
-        Большинство мнений лучше никогда не произносить.
+        {t("sides.left.title")}
       </h2>
 
       <ul className="pessimism__arguments">

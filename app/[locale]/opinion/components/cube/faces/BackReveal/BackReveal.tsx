@@ -1,17 +1,23 @@
-import './_back-reveal.scss'
+
+import { useI18n } from "@/data/I18nProvider";
+import "./_back-reveal.scss";
 
 export default function BackReveal() {
+  const { t } = useI18n();
+
   return (
     <section className="face back reveal">
       <h2 className="reveal__title">
-        Ты действительно выбрал сторону?
+        {t("back.title")}
       </h2>
+
       <h3 className="reveal__or">
-        Или...
+        {t("back.or")}
       </h3>
+
       <p className="reveal__conclusion">
-        она выбрала тебя?
+        {t("back.conclusion")}
       </p>
     </section>
-  )
+  );
 }
