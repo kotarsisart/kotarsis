@@ -1,0 +1,100 @@
+
+{
+  "meta": {
+    "title": "OPINION — Každý názor má aj druhú stranu",
+    "description": "Interaktívny filozofický projekt o názoroch, protikladoch a voľbe. Otáčaj strany, skúmaj rôzne uhly pohľadu a pokús sa vidieť viac.",
+    "keywords": "OPINION, názor, uhol pohľadu, filozofia, interaktívny projekt, perspektívy, pesimizmus, optimizmus, 3D kocka, kotarsis",
+    "siteName": "OPINION",
+    "imgAlt": "Náhľadový obrázok projektu OPINION"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logo kotarsis",
+    "projectAlt": "logo projektu OPINION",
+    "langSelect": "Vyberte jazyk"
+  },
+
+  "header": {
+    "logo": {
+      "project": "OPINION",
+      "projectAlt": "Logo projektu OPINION",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo kotarsis"
+    }
+  },
+
+  "instruction": {
+    "description": "Týmto projektom je lepšie prejsť\nbez snahy nájsť správnu odpoveď.",
+    "philosophy": "Každý názor má aj druhú stranu.\nAk ju chceš vidieť – otoč stránku.",
+    "swipe": "Listuj ľubovoľným smerom – prstom alebo myšou.",
+    "keyboard": "Na počítači fungujú aj šípky a WASD.",
+    "keyboardAlt": "Klávesnica WASD",
+    "mouseAlt": "Myš na ovládanie",
+    "swipeAlt": "Potiahnutie prstom",
+    "losung": "Listuj. Premýšľaj. Vracaj sa.",
+    "start": "Začať"
+  },
+
+  "outro": {
+    "title": "Každý názor má aj druhú stranu.",
+    "description": "Ale ani jedna z nich nemusí byť tvoja.",
+    "sides": "Možno nejde o to, aby si si vybral stranu.",
+    "seen": "Ale o to, aby si sa ich naučil vidieť.",
+    "button": "Pozrieť ešte raz",
+    "buttonAlt": "šípka späť"
+  },
+
+  "front": {
+    "title": "Čo je to názor?",
+    "subline": "Obráť svoj pohľad"
+  },
+
+  "bottom": {
+    "title": "Ako vždy, ľudstvo vymyslelo jednoduchý spôsob.",
+    "subline": "Stačí rozdeliť ľudí do dvoch kategórií.",
+    "pessimists": "Pesimisti",
+    "optimists": "Optimisti"
+  },
+
+  "back": {
+    "title": "Naozaj si si vybral stranu?",
+    "or": "Alebo...",
+    "conclusion": "si ona vybrala teba?"
+  },
+
+  "top": {
+    "title": "Prešiel si celou kockou.",
+    "subline": "Ale stále si si nevybral",
+    "sublineSecond": "tú správnu stranu.",
+    "outro": "A to je v poriadku.",
+    "finish": "Dokončiť\ncestu"
+  },
+
+  "sides": {
+    "left": {
+      "title": "Väčšinu názorov je lepšie nikdy nevysloviť.",
+      "arguments": {
+        "people": "Ľudia sú zaneprázdnení vlastným životom. \nNezaujíma ich, čo si myslíš.",
+        "dispute": "Väčšina sporov neprináša pravdu. \nPrináša iba víťaza.",
+        "silence": "Niekedy je mlčanie \njediným zrelým názorom."
+      }
+    },
+    "right": {
+      "title": "Bez názorov iných by sa ľudstvo nikdy nezmenilo.",
+      "arguments": {
+        "people": "Každá myšlienka sa začala \nako niečí názor.",
+        "dispute": "Keby ľudia mlčali, \nsvet by dodnes stál na mieste.",
+        "silence": "Aj keď s tebou nesúhlasia, \ntvoje slová ich môžu prinútiť zamyslieť sa."
+      }
+    }
+  },
+
+  "footer": {
+    "title": "Možno správna strana nikdy neexistovala.",
+    "links": {
+      "support": "Podporiť iný uhol pohľadu"
+    },
+    "copyright": "© 2026 OPINION. Možno si stále vo vnútri.",
+    "coffeeAlt": "Šálka kávy OPINION"
+  }
+}

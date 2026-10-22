@@ -1,0 +1,67 @@
+@use '../../../../styles/system/mixins' as mx;
+@use '../../../../styles/tokens/spacing' as s;
+@use '../../../../styles/typography/tp-headings' as h;
+@use '../../../../styles/typography/tp-base' as *;
+
+@mixin text-gradient($direction, $colors...) {
+  background: linear-gradient($direction, $colors...);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.conclusion {
+  @include mx.centered;  
+  padding-block: s.$space-l;
+  padding-inline: s.$space-m;
+  
+  background-color: #000000;
+
+  @include mx.mq(break-768) {
+    padding: s.$space-xxl;
+  }
+  @include mx.mq(break-1024) {
+    padding: s.$space-xxxl;
+  }
+
+  &__title,
+  &__subline,
+  &__outro {
+    @include text-gradient(to right, #F1EEFF, #AAAAAA);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: s.$space-xxl;
+
+    width: 100%;
+  }
+
+  &__title {
+    @include h.h2;
+  }
+  &__subline {
+    @include h.h3;
+  }
+  &__outro {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  &__finish {
+    font-size: 16px;
+    white-space: pre-line;
+    text-align: right;
+    color: #c2c2c2;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    
+    @include mx.mq(break-768) {
+      font-size: 24px;
+    } 
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

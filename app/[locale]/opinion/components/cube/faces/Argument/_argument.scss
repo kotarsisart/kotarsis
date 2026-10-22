@@ -1,0 +1,32 @@
+@use '../../../../styles/system/mixins' as mx;
+@use '../../../../styles/tokens/spacing' as s;
+@use '../../../../styles/typography/tp-headings' as h;
+
+.argument {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: s.$space-m;
+
+  @include mx.mq(break-768) {
+    gap: s.$space-l;
+  }
+
+  &__icon {
+    --icon-dimensions-350: 28px;
+    --icon-dimensions-768: 40px;
+    width: var(--icon-dimensions-350);
+    height: var(--icon-dimensions-350);
+    margin-top: 8px;
+
+    @include mx.mq(break-768) {
+      width: var(--icon-dimensions-768);
+      height: var(--icon-dimensions-768);
+    }
+  }
+
+  &__text {
+    @include h.h3;
+  }
+}

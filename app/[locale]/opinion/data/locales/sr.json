@@ -1,0 +1,100 @@
+
+{
+  "meta": {
+    "title": "OPINION — Svako mišljenje ima i drugu stranu",
+    "description": "Interaktivni filozofski projekat o mišljenjima, suprotnostima i izboru. Okreći strane, istražuj različite tačke gledišta i pokušaj da vidiš više.",
+    "keywords": "OPINION, mišljenje, tačka gledišta, filozofija, interaktivni projekat, perspektive, pesimizam, optimizam, 3D kocka, kotarsis",
+    "siteName": "OPINION",
+    "imgAlt": "Slika za pregled projekta OPINION"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logotip kotarsis",
+    "projectAlt": "logotip projekta OPINION",
+    "langSelect": "Izaberite jezik"
+  },
+
+  "header": {
+    "logo": {
+      "project": "OPINION",
+      "projectAlt": "Logotip projekta OPINION",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logotip kotarsis"
+    }
+  },
+
+  "instruction": {
+    "description": "Najbolje je da prođeš kroz ovaj projekat\nbez pokušaja da pronađeš pravi odgovor.",
+    "philosophy": "Svako mišljenje ima i drugu stranu.\nDa bi je video – okreni stranicu.",
+    "swipe": "Listaj u bilo kom smeru – prstom ili mišem.",
+    "keyboard": "Na računaru rade i strelice i WASD.",
+    "keyboardAlt": "Tastatura WASD",
+    "mouseAlt": "Miš za upravljanje",
+    "swipeAlt": "Prevlačenje prstom",
+    "losung": "Listaj. Razmišljaj. Vraćaj se.",
+    "start": "Započni"
+  },
+
+  "outro": {
+    "title": "Svako mišljenje ima i drugu stranu.",
+    "description": "Ali nijedna od njih ne mora biti tvoja.",
+    "sides": "Možda nije poenta u tome da izabereš stranu.",
+    "seen": "Već u tome da naučiš da ih vidiš.",
+    "button": "Pogledaj još jednom",
+    "buttonAlt": "strelica za povratak"
+  },
+
+  "front": {
+    "title": "Šta je mišljenje?",
+    "subline": "Preokreni svoju predstavu"
+  },
+
+  "bottom": {
+    "title": "Kao i uvek, čovečanstvo je smislilo jednostavan način.",
+    "subline": "Dovoljno je podeliti ljude u dve kategorije.",
+    "pessimists": "Pesimisti",
+    "optimists": "Optimisti"
+  },
+
+  "back": {
+    "title": "Da li si zaista izabrao stranu?",
+    "or": "Ili...",
+    "conclusion": "je ona izabrala tebe?"
+  },
+
+  "top": {
+    "title": "Prošao si kroz celu kocku.",
+    "subline": "Ali još uvek nisi izabrao",
+    "sublineSecond": "pravu stranu.",
+    "outro": "I to je u redu.",
+    "finish": "Završi\nputovanje"
+  },
+
+  "sides": {
+    "left": {
+      "title": "Većinu mišljenja bolje je nikada ne izgovoriti.",
+      "arguments": {
+        "people": "Ljudi su zauzeti sopstvenim životima. \nNe zanima ih šta ti misliš.",
+        "dispute": "Većina rasprava ne rađa istinu. \nOne rađaju samo pobednika.",
+        "silence": "Ponekad je ćutanje \njedino zrelo mišljenje."
+      }
+    },
+    "right": {
+      "title": "Bez tuđih mišljenja čovečanstvo se nikada ne bi promenilo.",
+      "arguments": {
+        "people": "Svaka ideja počela je \nkao nečije mišljenje.",
+        "dispute": "Da su ljudi ćutali, \nsvet bi i danas stajao u mestu.",
+        "silence": "Čak i ako se ne slažu s tobom, \ntvoje reči mogu da ih navedu na razmišljanje."
+      }
+    }
+  },
+
+  "footer": {
+    "title": "Možda prava strana nikada nije ni postojala.",
+    "links": {
+      "support": "Podrži drugačiju tačku gledišta"
+    },
+    "copyright": "© 2026 OPINION. Možda si još uvek unutra.",
+    "coffeeAlt": "Šoljica kafe OPINION"
+  }
+}

@@ -1,0 +1,63 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --h1-350: 40px;
+  --h1-768: 68px;
+  --h1-1024: 80px;
+
+  --h2-350: 24px;
+  --h2-390: 28px;
+  --h2-768: 48px;
+  --h2-1024: 60px;
+
+  --h3-350: 20px;
+  --h3-390: 24px;
+  --h3-768: 36px;
+  --h3-1024: 42px;
+}
+
+@mixin h1 {
+  font-size: var(--h1-350);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--h1-768);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--h1-1024);
+  }
+}
+
+@mixin h2 {
+  font-size: var(--h2-350);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.05em;
+
+  @include mx.mq(break-390) {
+    font-size: var(--h2-390);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--h2-768);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--h2-1024);
+  }
+}
+
+@mixin h3 {
+  font-size: var(--h3-350);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.05em;
+
+  @include mx.mq(break-390) {
+    font-size: var(--h3-390);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--h3-768);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--h3-1024);
+  }
+}

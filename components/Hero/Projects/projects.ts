@@ -120,5 +120,22 @@ export const projects = [
       textMain: "var(--proj-censor-text)",
       textSecondary: "var(--proj-censor-text)"
     }
-  }
+  },
+
+  {
+    id: "opinion",
+    title: "◽PINI◽N",
+    descriptionKey: "projects.comingSoon",
+    link: "/opinion",
+    image: "/previews/opinion.jpg",
+
+    font: "opin-font",
+
+    colors: {
+      bg1: "var(--proj-opin-bg-1)",
+      bg2: "var(--proj-opin-bg-2)",
+      textMain: "var(--proj-opin-text)",
+      textSecondary: "var(--proj-opin-text)"
+    }
+  },
 ];

@@ -1,0 +1,93 @@
+@use '../../../styles/system/mixins' as mx;
+@use '../../../styles/tokens/spacing' as s;
+@use '../../../styles/typography/tp-headings' as h;
+@use '../../../styles/typography/tp-base' as *;
+
+.outro {
+  background-color: #111720;
+  --main-color: #F0F5FF;
+  color: var(--main-color);
+  min-height: 90vh;
+
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-xxl;
+  padding: s.$space-l;
+
+  @include mx.mq(break-768) {
+    padding: s.$space-xxxl;
+  }
+
+  &__title {
+    @include h.h2;
+  }
+
+  &__description,
+  &__sides {
+    font-size: 24px;
+
+    @include mx.mq(break-768) {
+      font-size: 36px;
+    }
+  }
+
+  &__description {
+    opacity: 0.8;
+  } 
+
+  &__divider {
+    height: 4px;
+    width: 100%;
+    background-color: var(--main-color);
+    border-radius: 999px;
+  }
+
+  &__sides {
+    opacity: 0.7;
+  }
+
+  &__seen {
+    font-size: 26px;
+    font-weight: var(--font-weight-bold);
+
+    @include mx.mq(break-768) {
+      font-size: 40px;
+    }
+  }
+
+  &__button {
+    @include mx.centered;
+    gap: s.$space-s;
+    
+    transform-origin: center;
+
+    &:hover img {
+      animation: outro-spin 1.5s linear infinite;
+    }
+    
+    &-text {
+      font-size: 20px;
+      cursor: pointer;
+      text-shadow: 1px 2px 2px black;
+      transition: text-shadow 0.3s ease;
+    
+      &:hover {
+        text-shadow: 2px 2px 0 rgb(61, 84, 166);
+      }
+
+      @include mx.mq(break-768) {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@keyframes outro-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,100 @@
+
+{
+  "meta": {
+    "title": "OPINION — Every opinion has another side",
+    "description": "An interactive philosophical project about opinions, opposites, and choices. Turn the sides, explore different points of view, and try to see beyond your own perspective.",
+    "keywords": "OPINION, opinion, point of view, philosophy, interactive project, perspectives, pessimism, optimism, 3D cube, kotarsis",
+    "siteName": "OPINION",
+    "imgAlt": "OPINION preview image"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "kotarsis logo",
+    "projectAlt": "OPINION project logo",
+    "langSelect": "Choose a language"
+  },
+
+  "header": {
+    "logo": {
+      "project": "OPINION",
+      "projectAlt": "OPINION project logo",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "kotarsis logo"
+    }
+  },
+
+  "instruction": {
+    "description": "This project is best experienced\nwithout trying to find the right answer.",
+    "philosophy": "Every opinion has another side.\nTo see it, turn the page.",
+    "swipe": "Swipe in any direction – with your finger or mouse.",
+    "keyboard": "On a computer, you can also use arrow keys or WASD.",
+    "keyboardAlt": "WASD keyboard",
+    "mouseAlt": "Mouse for navigation",
+    "swipeAlt": "Finger swipe",
+    "losung": "Swipe. Think. Come back.",
+    "start": "Start"
+  },
+
+  "outro": {
+    "title": "Every opinion has another side.",
+    "description": "But none of them has to be yours.",
+    "sides": "Maybe it's not about choosing a side.",
+    "seen": "But about learning to see them all.",
+    "button": "Take another look",
+    "buttonAlt": "return arrow"
+  },
+
+  "front": {
+    "title": "What is an opinion?",
+    "subline": "Turn your perspective around"
+  },
+
+  "bottom": {
+    "title": "As always, humanity came up with a simple solution.",
+    "subline": "Just divide people into two categories.",
+    "pessimists": "Pessimists",
+    "optimists": "Optimists"
+  },
+
+  "back": {
+    "title": "Did you really choose a side?",
+    "or": "Or...",
+    "conclusion": "did it choose you?"
+  },
+
+  "top": {
+    "title": "You've explored the entire cube.",
+    "subline": "But you still haven't chosen",
+    "sublineSecond": "the right side.",
+    "outro": "And that's okay.",
+    "finish": "Finish the\njourney"
+  },
+
+  "sides": {
+    "left": {
+      "title": "Most opinions are better left unspoken.",
+      "arguments": {
+        "people": "People are busy with their own lives. \nThey don't care what you think.",
+        "dispute": "Most arguments don't lead to truth. \nThey only produce a winner.",
+        "silence": "Sometimes silence is \nthe only mature opinion."
+      }
+    },
+    "right": {
+      "title": "Without other people's opinions, humanity would never have changed.",
+      "arguments": {
+        "people": "Every idea began \nas someone's opinion.",
+        "dispute": "If people had stayed silent, \nthe world would still be standing still.",
+        "silence": "Even if people disagree with you, \nyour words might make them think."
+      }
+    }
+  },
+
+  "footer": {
+    "title": "Maybe there was never a right side.",
+    "links": {
+      "support": "Support another point of view"
+    },
+    "copyright": "© 2026 OPINION. Maybe you're still inside.",
+    "coffeeAlt": "OPINION coffee cup"
+  }
+}

@@ -1,0 +1,41 @@
+@use '../../../../styles/system/mixins' as mx;
+@use '../../../../styles/tokens/spacing' as s;
+@use '../../../../styles/typography/tp-headings' as h;
+
+.introduction {
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-xxl;
+  padding-block: s.$space-xxl;
+  padding-inline: s.$space-l;
+
+  background: linear-gradient(
+    60deg,
+    #0B1CB1,
+    #A300DE,
+  );
+  color: #B9D7F9;
+
+  @include mx.mq(break-1024) {
+    padding: s.$space-xxxl;
+  }
+
+  &__title {
+    @include h.h1;
+  }
+
+  &__subline {
+    @include h.h3;
+  }
+
+  &__arrow {
+    font-family: "Jost";
+    font-size: 50px;
+    line-height: 80%;
+    rotate: 90deg;
+
+    @include mx.mq(break-768) {
+      font-size: 90px;
+    }
+  }
+}

@@ -57,8 +57,8 @@ export default function BubbleCTA() {
           className={`
             fixed z-40
             w-60 bp-md:w-auto
-            bottom-6 bp-md:bottom-2 right-[8px]
-            bp-md:bottom-6 right-6
+            bottom-6 bp-md:bottom-6
+            right-6
             rounded-full border border-violet-500/30
             bg-zinc-950
             text-xs tracking-tight font-medium text-white

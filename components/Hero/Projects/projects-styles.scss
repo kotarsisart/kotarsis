@@ -22,6 +22,9 @@
   --proj-censor-bg-1: #1E274B;
   --proj-censor-bg-2: #0F1922;
   --proj-censor-text: #dcf7ff;
+  --proj-opin-bg-1: #0e0e0e;
+  --proj-opin-bg-2: #0f0f0f;
+  --proj-opin-text: #edeaea;
 }
 
 
@@ -52,4 +55,8 @@
 
 .censor-font {
   font-family: var(--font-censor);
+}
+
+.opin-font {
+  font-family: var(--font-opin);
 }

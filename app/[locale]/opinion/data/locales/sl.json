@@ -1,0 +1,100 @@
+
+{
+  "meta": {
+    "title": "OPINION — Vsako mnenje ima tudi drugo plat",
+    "description": "Interaktivni filozofski projekt o mnenjih, nasprotjih in izbiri. Obračaj strani, raziskuj različne poglede in poskusi videti več.",
+    "keywords": "OPINION, mnenje, stališče, filozofija, interaktivni projekt, perspektive, pesimizem, optimizem, 3D kocka, kotarsis",
+    "siteName": "OPINION",
+    "imgAlt": "Predogledna slika projekta OPINION"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logotip kotarsis",
+    "projectAlt": "logotip projekta OPINION",
+    "langSelect": "Izberite jezik"
+  },
+
+  "header": {
+    "logo": {
+      "project": "OPINION",
+      "projectAlt": "Logotip projekta OPINION",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logotip kotarsis"
+    }
+  },
+
+  "instruction": {
+    "description": "Najbolje je, da ta projekt doživiš,\nne da bi iskal pravi odgovor.",
+    "philosophy": "Vsako mnenje ima tudi drugo plat.\nDa bi jo videl – obrni stran.",
+    "swipe": "Listaj v katero koli smer – s prstom ali miško.",
+    "keyboard": "Na računalniku delujejo tudi puščice in WASD.",
+    "keyboardAlt": "Tipkovnica WASD",
+    "mouseAlt": "Miška za upravljanje",
+    "swipeAlt": "Poteg s prstom",
+    "losung": "Listaj. Razmišljaj. Vračaj se.",
+    "start": "Začni"
+  },
+
+  "outro": {
+    "title": "Vsako mnenje ima tudi drugo plat.",
+    "description": "A nobena od njih ni nujno tvoja.",
+    "sides": "Morda ne gre za to, da izbereš stran.",
+    "seen": "Temveč za to, da se jih naučiš videti.",
+    "button": "Poglej še enkrat",
+    "buttonAlt": "puščica za vrnitev"
+  },
+
+  "front": {
+    "title": "Kaj je mnenje?",
+    "subline": "Obrni svoj pogled"
+  },
+
+  "bottom": {
+    "title": "Kot vedno je človeštvo našlo preprost način.",
+    "subline": "Dovolj je ljudi razdeliti v dve kategoriji.",
+    "pessimists": "Pesimisti",
+    "optimists": "Optimisti"
+  },
+
+  "back": {
+    "title": "Si res izbral stran?",
+    "or": "Ali pa...",
+    "conclusion": "je ona izbrala tebe?"
+  },
+
+  "top": {
+    "title": "Prešel si celotno kocko.",
+    "subline": "A še vedno nisi izbral",
+    "sublineSecond": "prave strani.",
+    "outro": "In to je v redu.",
+    "finish": "Končaj\npotovanje"
+  },
+
+  "sides": {
+    "left": {
+      "title": "Večine mnenj je bolje nikoli ne izreči.",
+      "arguments": {
+        "people": "Ljudje so zaposleni s svojim življenjem. \nNe zanima jih, kaj si misliš.",
+        "dispute": "Večina sporov ne prinese resnice. \nPrinese le zmagovalca.",
+        "silence": "Včasih je molk \nedino zrelo mnenje."
+      }
+    },
+    "right": {
+      "title": "Brez mnenj drugih se človeštvo nikoli ne bi spremenilo.",
+      "arguments": {
+        "people": "Vsaka ideja se je začela \nkot mnenje nekoga.",
+        "dispute": "Če bi ljudje molčali, \nbi svet še danes stal na mestu.",
+        "silence": "Tudi če se s teboj ne strinjajo, \njih lahko tvoje besede spodbudijo k razmisleku."
+      }
+    }
+  },
+
+  "footer": {
+    "title": "Morda prava stran nikoli ni obstajala.",
+    "links": {
+      "support": "Podpri drugačen pogled"
+    },
+    "copyright": "© 2026 OPINION. Morda si še vedno znotraj.",
+    "coffeeAlt": "Skodelica kave OPINION"
+  }
+}

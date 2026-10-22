@@ -1,0 +1,47 @@
+@use '../../../../styles/system/mixins' as mx;
+@use '../../../../styles/tokens/spacing' as s;
+@use '../../../../styles/typography/tp-headings' as h;
+
+.reveal {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: s.$space-xxl;
+  padding-block: s.$space-xxl;
+  padding-inline: s.$space-m;
+  background: linear-gradient(
+    to bottom,
+    #000000,
+    #909090,
+  );
+  color: #B9B9B9;
+
+  @include mx.mq(break-390) {
+    padding-inline: s.$space-l;
+  }
+  @include mx.mq(break-768) {
+    padding: s.$space-xxl;
+  }
+  @include mx.mq(break-1024) {
+    padding: s.$space-xxxl;
+  }
+
+  &__title {
+    @include h.h2;
+  }
+
+  &__or {
+    @include h.h3;
+
+  }
+
+  &__conclusion {
+    font-size: 20px;
+    font-weight: 700;
+    
+    @include mx.mq(break-768) {
+      font-size: 40px;
+    }
+  }
+}

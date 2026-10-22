@@ -1,0 +1,45 @@
+@use './tp-header' as *;
+@use '../../../styles/system/mixins' as mx;
+
+.header {
+  --main-color: #8B0002;
+  --header-containers: #FFA0AB;
+
+  background-color: #FF5B58;
+
+  color: var(--main-color);
+
+  --header-height: 65px;
+  --header-height-desktop: 85px;
+
+  &-logo {
+    color: var(--main-color);
+    color: #000;
+
+    .kts-logo__icon {
+      color: var(--main-color);
+    }
+
+    .kts-logo__text {
+      @include header-logo;
+    }
+
+    @include mx.mq(break-768) {
+      background-color: var(--header-containers);
+      border-radius: 12px;
+    }
+  }
+
+  &__langs {
+
+    @include mx.mq(break-768) {
+      background-color: var(--header-containers);
+      padding-inline: 1rem;
+      border-radius: 12px;
+    }
+
+    &-text {
+      @include header-lang-select;
+    }
+  }
+}

@@ -2,11 +2,14 @@ import { useI18n } from "@/data/I18nProvider";
 import { commonMessages } from "@/data/commonMessages/index";
 import Image from "next/image";
 
+import type { ReactNode } from "react";
+
 interface FooterLinksProps {
-  coffeeIcon: string;
-  coffeeWidth: number;
-  coffeeHeight: number;
-  coffeeAlt: string;
+  coffeeIcon?: string;
+  coffeeWidth?: number;
+  coffeeHeight?: number;
+  coffeeAlt?: string;
+  coffeeElement?: ReactNode;
   withWrapper?: boolean;
 }
 
@@ -15,6 +18,7 @@ export default function FooterLinks({
   coffeeWidth,
   coffeeHeight,
   coffeeAlt,
+  coffeeElement,
   withWrapper,
 }: FooterLinksProps) {
   const { t, locale } = useI18n();
@@ -24,14 +28,18 @@ export default function FooterLinks({
       locale as keyof typeof commonMessages
     ];
 
-  const coffeeImage = (
-    <Image
-      src={coffeeIcon}
-      alt={coffeeAlt}
-      width={coffeeWidth}
-      height={coffeeHeight}
-      className="footer__bmac-icon"
-    />
+  const coffeeImage = coffeeElement ?? (
+    coffeeIcon &&
+    coffeeWidth != null &&
+    coffeeHeight != null ? (
+      <Image
+        src={coffeeIcon}
+        alt={coffeeAlt ?? ""}
+        width={coffeeWidth}
+        height={coffeeHeight}
+        className="footer__bmac-icon"
+      />
+    ) : null
   );
 
   return (
