@@ -1,18 +1,28 @@
-export default function ChibiWorldPage() {
+"use client"
+
+import SeoSchema from "@/utils/SeoSchema/SeoSchema";
+
+import AppLayout from "./components/AppLayout/AppLayout";
+
+import Hero from "./components/Hero/Hero";
+
+import { useI18n } from "@/data/I18nProvider";
+import '@/utils/animations/animations.scss'
+
+export default function LocalePage() {
+  const { t, locale } = useI18n();
+
   return (
-    <main
-      className="
-        flex min-h-screen flex-col items-center justify-center
-      "
-    >
-      <h1
-        className="text-4xl font-bold"
-      >
-        kotarsis&apos; Chibi World
-      </h1>
-      <p className="mt-4 text-zinc-500">
-        Здесь скоро появится кое-что интересное.
-      </p>
-    </main>
+    <>
+      <SeoSchema
+        title={t("meta.title")}
+        description={t("meta.description")}
+        url={`https://kotarsis.com/${locale}/chibi-world`}
+      />
+
+      <AppLayout>
+        <Hero />
+      </AppLayout>
+    </>
   );
 }

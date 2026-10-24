@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "title": "Concentrator™ — Urządzenie do koncentracji",
+    "description": "Skup się bez wysiłku dzięki Concentrator™ — interaktywnemu narzędziu nowej generacji, które trenuje Twoją koncentrację.",
+    "keywords": "koncentracja, skupienie, kotarsis, produktywność, urządzenie, mózg",
+    "siteName": "Concentrator™",
+    "imgAlt": "Podgląd Concentrator™"
+  },
+
+  "preloader": {
+    "kotarsisAlt": "logo kotarsis",
+    "projectAlt": "logo projektu Concentrator™"
+  },
+
+  "header": {
+    "logo": {
+      "project": "Concentrator™",
+      "projectAlt": "Logo projektu Concentrator™",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo kotarsis"
+    },
+    "slogan": "Stabilizuj poziom swojej energii poznawczej.",
+    "focus": {
+      "label": "Fokus:"
+    },
+    "langButton": {
+      "default": "Wybierz język"
+    }
+  },
+
+  "hero": {
+    "slogan": "Koncentruj się bez wysiłku",
+    "title": "Concentrator™",
+    "outro": "Technologia skupienia nowej generacji",
+    "button": {
+      "default": "Aktywuj fokus",
+      "active": "Fokus aktywowany!"
+    },
+    "counter": {
+      "label": "Już się skoncentrowało"
+    },
+    "cognitive": "Synchronizacja kognitywna zakończona",
+    "image": {
+      "alt": "Urządzenie Concentrator"
+    }
+  },
+
+  "hiw": {
+    "title": "Jak działa Concentrator™?",
+    "steps": {
+      "laptop": {
+        "alt": "Laptop",
+        "text": "Postaw go w pobliżu"
+      },
+      "off": {
+        "alt": "Nic nie robi",
+        "text": "On naprawdę nic nie robi"
+      },
+      "flame": {
+        "alt": "Pracujesz jak bestia",
+        "text": "Pracujesz jak bestia"
+      }
+    }
+  },
+
+  "story": {
+    "title": "Pochodzenie Concentratora™",
+    "paragraphs": [
+      "W zapomnianym laboratorium pod Karpatami grupa ekscentrycznych naukowców odkryła oscylujące pole czystej koncentracji.",
+      "Po 7 latach nieudanych eksperymentów, kłótni i rozlanej kawy w końcu udało im się skupić tę energię w jednym urządzeniu — Concentrator™.",
+      "To, co zaczęło się jako projekt napędzany kofeiną, szybko doprowadziło do tzw. Zdarzenia Skupienia. Jedna roślina podwoiła rozmiar, a kot rozwiązał sudoku.",
+      "Zrozumiawszy, jaką siłę odkryli, zespół — złożony z teoretycznych neurochemików, nieudanego magika i stażysty, który myślał, że to kurs gotowania — pospieszył, by ustabilizować zjawisko.",
+      "Używaj ostrożnie. Skutki uboczne mogą obejmować niespotykaną produktywność i dziwne poczucie celu."
+    ],
+    "quote": {
+      "text": "Nie wiedzieliśmy, jak to działa. Ale działało.",
+      "author": "Prof. Kostiuk"
+    },
+    "image": {
+      "alt": "Historia Concentratora"
+    }
+  },
+
+  "benefits": {
+    "title": "Dlaczego warto wybrać Concentrator™?",
+    "cards": [
+      {
+        "icon": "/src/assets/images/section-icons/benefits/no-charge.svg",
+        "alt": "bez ładowania",
+        "title": "Działa bez ładowania",
+        "description": "Zasilany czystym zamiarem. Ładuje się spojrzeniami współpracowników."
+      },
+      {
+        "icon": "/src/assets/images/section-icons/benefits/book-question-icon.svg",
+        "alt": "bez instrukcji",
+        "title": "Nie wymaga instrukcji",
+        "description": "Po prostu postaw go obok. Już wszystko wie. Może nawet ciebie."
+      },
+      {
+        "icon": "/src/assets/images/section-icons/benefits/coffee-cat.png",
+        "alt": "przyjazny kawie i kotom",
+        "title": "Przyjazny kawie i kotom",
+        "description": "Nie zakłóca porannego rytuału i świetnie współgra z mruczeniem."
+      }
+    ]
+  },
+
+  "comparison": {
+    "title": "Concentrator™ vs Zwykły Timer",
+    "headers": ["Parametr", "Concentrator™", "Zwykły Timer"],
+    "rows": [
+      {
+        "parameter": "Wzrost skupienia",
+        "concentrator": "+300%",
+        "regular": "0%"
+      },
+      {
+        "parameter": "Źródło zasilania",
+        "concentrator": "Niepotrzebne",
+        "regular": "Wymagane"
+      },
+      {
+        "parameter": "Wartość naukowa",
+        "concentrator": "Pseudonaukowa",
+        "regular": "Brak"
+      },
+      {
+        "parameter": "Wodoodporność",
+        "concentrator": "IP68",
+        "regular": "Niska"
+      }
+    ]
+  },
+
+  "availability": {
+    "promotions": {
+      "up": "Zostań pierwszym testerem CPhone — nowego smartfona opartego na polu koncentracyjnym. Zamów Concentrator™ już teraz, aby uzyskać dostęp i zarezerwować prototyp.",
+      "down": "Concentrator™ to dopiero pierwszy etap. Teraz tworzymy wielowarstwowy ekosystem kognitywny — a CPhone jest twoją bramą do tej przyszłości. Testy beta już wkrótce — jesteś gotów?"
+    },
+    "title": {
+      "part1": "Pozostało tylko",
+      "part2": "urządzeń z"
+    },
+    "timer": {
+      "label": "Oferta kończy się za"
+    },
+    "image": {
+      "alt": "Sprzęt Concentratora"
+    },
+    "messages": {
+      "normal": "Wyprzedź innych i zamów Concentrator™ już teraz!",
+      "unavailable": "Fokus niedostępny. Przeprowadź sesję samokontroli."
+    },
+    "buttons": {
+      "try": "Spróbuj kupić",
+      "soldout": "Niestety, za późno!"
+    }
+  },
+
+  "gallery": {
+    "title": "Galeria urządzenia",
+    "alts": {
+      "front": "widok z przodu",
+      "side": "widok z boku",
+      "top": "widok z góry",
+      "press": "naciskanie przycisku",
+      "interior": "we wnętrzu",
+      "meditation": "medytacja",
+      "equipment": "sprzęt",
+      "hands": "w dłoniach",
+      "full": "pełny widok we wnętrzu"
+    }
+  },
+
+  "reviews": {
+    "title": "Opinie użytkowników",
+    "items": [
+      { "text": "„Skończyłem pracę dyplomową w jedną noc. Nie wiem jak.”", "author": "Jakub", "date": "21.05.2025" },
+      { "text": "„Usunąłem TikToka. Zadziałało.”", "author": "James", "date": "15.04.2025" },
+      { "text": "„Concentrator™ po prostu stał. A ja nie.”", "author": "Olena", "date": "12.03.2025" },
+      { "text": "„Kiedyś otwierałem YouTube. Teraz oczy.”", "author": "Emily", "date": "06.04.2025" },
+      { "text": "„Usiadłem na 10 minut — wstałem po 6 godzinach.”", "author": "Ivan", "date": "25.04.2025" },
+      { "text": "„Złożyłem raport i zrobiłem pranie. Jednocześnie.”", "author": "Carlos", "date": "29.03.2025" },
+      { "text": "„Zapomniałem o przerwach. I o jedzeniu.”", "author": "Dmytro", "date": "03.05.2025" },
+      { "text": "„Fokus nie zniknął. Nawet z moim kotem.”", "author": "Katya", "date": "14.04.2025" },
+      { "text": "„Po prostu go włączyłem. Reszta to historia.”", "author": "Marta", "date": "18.03.2025" }
+    ]
+  },
+
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      {
+        "q": "Jak działa Concentrator™?",
+        "a": "Zwiększa skupienie o 300% dzięki pseudonaukowym impulsom i wyobraźni."
+      },
+      {
+        "q": "Dlaczego Concentrator™ nic nie robi?",
+        "a": "Bo już zrobił wszystko, co trzeba było."
+      },
+      {
+        "q": "Czy mogę używać go w komunikacji miejskiej?",
+        "a": "Tak, szczególnie jeśli chcesz skupić się na drobnym druku na mandacie."
+      },
+      {
+        "q": "Czy są skutki uboczne?",
+        "a": "Tylko skutki uboczne sukcesu: większa produktywność, urok i poczucie humoru."
+      },
+      {
+        "q": "Czy to legalne w moim kraju?",
+        "a": "Technicznie rzecz biorąc — tak."
+      },
+      {
+        "q": "Czy mogę używać dwóch naraz?",
+        "a": "Tylko jeśli masz dwa mózgi."
+      }
+    ]
+  },
+
+  "order": {
+    "form": {
+      "title": "Zamów fokus",
+      "placeholders": {
+        "name": "Twoje imię",
+        "comment": "Komentarz lub pytanie"
+      },
+      "labels": {
+        "submit": "Zamów fokus",
+        "sending": "Wysyłanie..."
+      },
+      "messages": {
+        "nameRequired": "Wpisz swoje imię 🥺",
+        "validEmail": "Podaj prawidłowy adres email",
+        "noNumbers": "Nie używaj cyfr w imieniu 😊",
+        "success": "Formularz wysłany pomyślnie!"
+      }
+    },
+    "delivery": {
+      "title": "Dostawa jest przejrzysta",
+      "steps": [
+        {
+          "title": "Złożyłeś zamówienie",
+          "description": "Zamówienie zostało przyjęte"
+        },
+        {
+          "title": "Przygotowujemy i wysyłamy",
+          "description": "Dostarczane przez gołębia pocztowego"
+        },
+        {
+          "title": "Odbierasz",
+          "description": "Wraz ze wzrostem produktywności"
+        }
+      ]
+    }
+  },
+
+  "footer": {
+    "nav": {
+      "links": {
+        "hiw": "Jak to działa",
+        "reviews": "Opinie",
+        "order": "Zamówienie",
+        "faq": "FAQ"
+      },
+      "team": "Wyślij kawę i CV"
+    },
+    "links": {
+      "support": "Wsparcie eksperymentu kawą"
+    },
+    "copyright": "© 2026 Concentrator™ Stworzone z miłości i pseudonauki. Wszelkie prawa zastrzeżone."
+  }
+}

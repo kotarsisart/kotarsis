@@ -1,0 +1,28 @@
+body {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+}
+
+p, a, span, button, input,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: var(--line-height-default);
+}
+
+:root {
+  /* === FONT FAMILY === */
+  --font-primary: "Exo 2 Variable", "Manrope", "Inter", sans-serif;
+
+  /* === FONT WEIGHTS === */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* === LINE HEIGHTS === */
+  --line-height-default: 1.4;
+  --line-height-light: 1.1;
+}

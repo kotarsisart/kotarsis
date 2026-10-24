@@ -1,0 +1,50 @@
+@use "sass:map";
+
+@use '../system/variables' as *;
+@use '../tokens/radii' as r;
+
+@mixin centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@mixin mq($point) {
+  $size: map.get($breakpoints, $point);
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin main-bg {
+  --site-bg-start: #97AFFF;
+  --site-bg-end: #98C7FF;
+
+  background: linear-gradient(
+    to right,
+    var(--site-bg-start),
+    var(--site-bg-end)
+  );
+}
+
+@mixin button {
+  --button-corner: 8px;
+  --button-padding-block-320: 12px;
+  --button-padding-inline-320: 28px;
+  @include centered;
+  box-sizing: border-box;
+  padding-inline: var(--button-padding-inline-320);
+  padding-block: var(--button-padding-block-320);
+  border-radius: var(--button-corner);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  
+  @include mq(break-1024) {
+    --button-padding-block-1024: 14px;
+    --button-padding-inline-1024: 32px;
+    padding-inline: var(--button-padding-inline-1024);
+    padding-block: var(--button-padding-block-1024);
+  }
+}
