@@ -54,7 +54,7 @@ export async function generateMetadata({
 
       images: [
         {
-          url: "https://kotarsis.com/projects/opinion/preview-2.jpg",
+          url: "https://kotarsis.com/projects/opinion/preview.jpg",
           width: 1200,
           height: 630,
           alt: meta.imgAlt,
@@ -73,7 +73,7 @@ export async function generateMetadata({
       description: meta.description,
 
       images: [
-        "https://kotarsis.com/projects/opinion/preview-2.jpg",
+        "https://kotarsis.com/projects/opinion/preview.jpg",
       ],
     },
 

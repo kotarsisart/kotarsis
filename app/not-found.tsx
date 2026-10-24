@@ -44,24 +44,32 @@ export default function NotFound() {
       href: `/${locale}/oraculux`,
     },
     {
-      title: "Minimalism",
-      href: `/${locale}/minimalism`,
+      title: "Concentrator",
+      href: `/${locale}/concentrator`,
     },
     {
-      title: "Redheart",
-      href: `/${locale}/redheart`,
+      title: "Minimalism",
+      href: `/${locale}/minimalism`,
     },
     {
       title: "Redacted",
       href: `/${locale}/redacted`,
     },
     {
+      title: "Redheart",
+      href: `/${locale}/redheart`,
+    },
+    {
       title: "Birthday",
       href: `/${locale}/birthday`,
     },
     {
-      title: "Concentrator",
-      href: `/${locale}/concentrator`,
+      title: "Censored",
+      href: `/${locale}/censored`,
+    },
+    {
+      title: "OPINION",
+      href: `/${locale}/opinion`,
     },
   ];
 
@@ -218,7 +226,34 @@ export default function NotFound() {
           </div>
         </div>
 
-        <div
+        <div className="
+          relative z-10 mt-20 text-center
+        "
+        >
+          <h2 className="text-2xl font-semibold text-zinc-900">
+            Но раз уж ты сюда забрёл...
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-zinc-600">
+            Здесь есть одна кладовка.
+            В ней хранятся вещи, из которых
+            когда-то собирались целые миры.
+          </p>
+
+          <Link
+            href={`/${locale}/chibi-world`}
+            className="
+              mt-8 inline-block
+              rounded-2xl border border-zinc-300
+              px-6 py-3
+              transition hover:bg-white/70
+            "
+          >
+            Заглянуть внутрь →
+          </Link>
+        </div>
+
+        <button
+          type="button"
           onClick={() =>
             setShowOrigin(true)
           }
@@ -232,7 +267,7 @@ export default function NotFound() {
           "
         >
           •
-        </div>
+        </button>
 
         {showOrigin && (
           <Link
