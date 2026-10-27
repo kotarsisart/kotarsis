@@ -18,7 +18,7 @@ import {
 */
 
 
-type Messages = Record<Locale, Record<string, unknown>>;
+export type Messages = Record<Locale, Record<string, unknown>>;
 
 export type Locale = string;
 

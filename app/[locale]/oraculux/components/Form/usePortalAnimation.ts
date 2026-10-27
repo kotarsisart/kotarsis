@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useCallback, useRef } from "react";
 
 /**
  * Manages portal-like rotation animation with multiple phases:
@@ -16,14 +16,28 @@ export function usePortalAnimation() {
   /**
    * Starts slow continuous rotation (idle state)
    */
-  const startIdleRotation = (img: HTMLImageElement) => {
+  const startIdleRotation = useCallback((img: HTMLImageElement) => {
+    // Prevent multiple idle animation loops
+    if (idleFrame.current !== null) {
+      cancelAnimationFrame(idleFrame.current);
+    }
+
     function animate() {
       rotation.current += 0.3;
       img.style.transform = `rotate(${rotation.current}deg)`;
+
       idleFrame.current = requestAnimationFrame(animate);
     }
+
     idleFrame.current = requestAnimationFrame(animate);
-  };
+  }, []);
+
+  const stopIdleRotation = useCallback(() => {
+    if (idleFrame.current !== null) {
+      cancelAnimationFrame(idleFrame.current);
+      idleFrame.current = null;
+    }
+  }, []);
 
   /**
    * Starts slow continuous rotation (idle state)
@@ -106,6 +120,7 @@ export function usePortalAnimation() {
 
   return {
     startIdleRotation,
+    stopIdleRotation,
     accelerate,
     reverseAndStop,
   };

@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState } from "react";
 import { useI18n } from "@/data/I18nProvider";
 import "./_anger.scss";
 
@@ -13,38 +13,30 @@ import "./_anger.scss";
  * Once broken, interaction is disabled and the state becomes final.
  */
 export default function Anger() {
-  const { t, locale } = useI18n();
+  const { t } = useI18n();
 
-  const [clicks, setClicks] = useState(0); // tracks user interaction intensity
-  const [currentText, setCurrentText] = useState<string | null>(null); // currently visible emotional state
-  const [isBroken, setIsBroken] = useState(false); // final irreversible state
+  const [clicks, setClicks] = useState(0);
 
-  // Localized emotional states mapped to progression thresholds
-  const states = useMemo(() => {
-    return {
-      first: t("anger.states.first"),
-      second: t("anger.states.second"),
-      third: t("anger.states.third"),
-      fourth: t("anger.states.fourth"),
-    };
-  }, [locale]);
+  // Derived state: no separate state or effect needed
+  const isBroken = clicks >= 20;
 
-  // Progression logic based on click thresholds
-  useEffect(() => {
-    if (clicks === 2) setCurrentText(states.first);
-    if (clicks === 7) setCurrentText(states.second);
-    if (clicks === 12) setCurrentText(states.third);
-
-    if (clicks === 20) {
-      setCurrentText(states.fourth);
-      setIsBroken(true); // lock interaction at final stage
-    }
-  }, [clicks, states]);
+  // Determine the current emotional state from click thresholds
+  const currentText =
+    clicks >= 20
+      ? t("anger.states.fourth")
+      : clicks >= 12
+        ? t("anger.states.third")
+        : clicks >= 7
+          ? t("anger.states.second")
+          : clicks >= 2
+            ? t("anger.states.first")
+            : null;
 
   // Prevent further interaction after breaking point
   const handleClick = () => {
     if (isBroken) return;
-    setClicks((prev) => prev + 1);
+
+    setClicks((prev) => Math.min(prev + 1, 20));
   };
 
   return (
@@ -81,7 +73,7 @@ export default function Anger() {
       {/* Emotional state output */}
       <div className="anger__states">
         <p
-          key={currentText} // forces re-mount for transition animation
+          key={currentText}
           className={`anger__state ${
             currentText ? "visible" : ""
           }`}

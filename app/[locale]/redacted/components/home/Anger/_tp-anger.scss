@@ -41,6 +41,7 @@
 }
 
 @mixin anger-state {
+  --anger-state: #868893;
   font-size: var(--anger-state-350);
   font-weight: var(--font-weight-medium);
   letter-spacing: 0.05em;

@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import NewsLetterModal from "../../components/NewsLetterModal/NewsLetterModal";
 import { useI18n } from "@/data/I18nProvider";
 
+const SHOW_BUTTON = 2 * 60 * 1000; // show button after 2 minutes
+const SHOW_NEXT_NOTIFICATION = 20 * 1000; // 20 seconds
+const SHAKING_DURATION = 1800;
+
 export default function BubbleCTA() {
   const { t } = useI18n();
 
@@ -15,10 +19,6 @@ export default function BubbleCTA() {
 
   const [isShaking, setIsShaking] = useState(false);
 
-  const SHOW_BUTTON = 2 * 60 * 1000; // show button after 2 minutes
-  const SHOW_NEXT_NOTIFICATION = 20 * 1000; // 20 seconds
-  const SHAKING_DURATION = 1800;
-
   useEffect(() => {
     const timeout = setTimeout(() => {
         setIsVisible(true);
@@ -28,26 +28,31 @@ export default function BubbleCTA() {
   }, []);
 
   useEffect(() => {
-
-    if (!isSubscribed) return;
-
-    if (hasUnreadNotification) return;
+    if (!isSubscribed || hasUnreadNotification) return;
 
     const timeout = setTimeout(() => {
-
       setHasUnreadNotification(true);
-
-      setIsShaking(true);
-
-      setTimeout(() => {
-        setIsShaking(false);
-      }, SHAKING_DURATION);
-
     }, SHOW_NEXT_NOTIFICATION);
 
     return () => clearTimeout(timeout);
-
   }, [isSubscribed, hasUnreadNotification]);
+
+  useEffect(() => {
+    if (!hasUnreadNotification) return;
+
+    const start = setTimeout(() => {
+      setIsShaking(true);
+    }, 0);
+
+    const stop = setTimeout(() => {
+      setIsShaking(false);
+    }, SHAKING_DURATION);
+
+    return () => {
+      clearTimeout(start);
+      clearTimeout(stop);
+    };
+  }, [hasUnreadNotification]);
 
   return (
     <>

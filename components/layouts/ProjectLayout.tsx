@@ -1,9 +1,13 @@
-import { I18nProvider } from "@/data/I18nProvider";
+import {
+  I18nProvider,
+  type Messages,
+} from "@/data/I18nProvider";
+
 import ScrollRevealProvider from "@/utils/animations/ScrollRevealProvider";
 
 interface ProjectLayoutProps {
   locale: string;
-  messages: any;
+  messages: Messages;
   children: React.ReactNode;
   withScrollReveal?: boolean;
 }
@@ -19,10 +23,7 @@ export default function ProjectLayout({
       initialLocale={locale}
       messages={messages}
     >
-      {withScrollReveal && (
-        <ScrollRevealProvider />
-      )}
-
+      {withScrollReveal && <ScrollRevealProvider />}
       {children}
     </I18nProvider>
   );

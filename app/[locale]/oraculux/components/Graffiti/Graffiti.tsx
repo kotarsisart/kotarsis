@@ -29,38 +29,34 @@ export default function Graffiti() {
   const { t } = useI18n();
 
   useEffect(() => {
-    const result: Record<string, string> = {};
+    const frame = requestAnimationFrame(() => {
+      const result: Record<string, string> = {};
 
-    /**
-     * Flatten all phrase groups to apply consistent animation logic.
-     */
-    const all = [
-      ...graffitiTop,
-      ...graffitiMidTop,
-      ...graffitiCenter,
-      ...graffitiMidBottom,
-      ...graffitiBottom,
-      ...graffitiMobile,
-    ];
+      const all = [
+        ...graffitiTop,
+        ...graffitiMidTop,
+        ...graffitiCenter,
+        ...graffitiMidBottom,
+        ...graffitiBottom,
+        ...graffitiMobile,
+      ];
 
-    all.forEach((p) => {
-      if (p.isError) {
-        /**
-         * Error phrases are static — no animation applied.
-         */
-        result[p.id] = "none";
-      } else {
-        /**
-         * Randomized animation parameters create a more organic,
-         * non-repetitive visual effect.
-         */
-        const delay = (Math.random() * 4).toFixed(2);
-        const duration = (2 + Math.random() * 2).toFixed(2);
-        result[p.id] = `sparkle ${duration}s ease-in-out ${delay}s infinite`;
-      }
+      all.forEach((p) => {
+        if (p.isError) {
+          result[p.id] = "none";
+        } else {
+          const delay = (Math.random() * 4).toFixed(2);
+          const duration = (2 + Math.random() * 2).toFixed(2);
+
+          result[p.id] =
+            `sparkle ${duration}s ease-in-out ${delay}s infinite`;
+        }
+      });
+
+      setAnimations(result);
     });
 
-    setAnimations(result);
+    return () => cancelAnimationFrame(frame);
   }, []);
 
   /**

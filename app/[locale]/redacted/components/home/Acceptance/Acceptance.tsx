@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import { useI18n } from "@/data/I18nProvider";
 import "./_acceptance.scss";
 
@@ -17,22 +16,16 @@ export default function Acceptance({
 }: {
   onRestart?: () => void; // optional restart handler to replay the experience
 }) {
-  const { t, locale } = useI18n();
+  const { t } = useI18n();
 
-  // Left column facts (recomputed only on locale change)
-  const factsLeft = useMemo(() => {
-    return t("acceptance.factsLeft") as unknown as string[];
-  }, [locale]);
+  // Left column facts
+  const factsLeft = t("acceptance.factsLeft") as unknown as string[];
 
-  // Right column facts (mirrors left for visual balance)
-  const factsRight = useMemo(() => {
-    return t("acceptance.factsRight") as unknown as string[];
-  }, [locale]);
+  // Right column facts
+  const factsRight = t("acceptance.factsRight") as unknown as string[];
 
   // Multi-line reflective note
-  const noteLines = useMemo(() => {
-    return t("acceptance.note") as unknown as string[];
-  }, [locale]);
+  const noteLines = t("acceptance.note") as unknown as string[];
 
   return (
     <section className="acceptance">
