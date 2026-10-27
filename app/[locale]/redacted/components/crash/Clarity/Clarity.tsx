@@ -22,8 +22,13 @@ export default function Clarity({
 }) {
   const { t } = useI18n();
 
-  const [phase, setPhase] = useState<Phase>("drifting");
   const [stability, setStability] = useState(0);
+  const phase: Phase =
+    stability >= 1
+      ? "stable"
+      : stability > 0
+        ? "stabilizing"
+        : "drifting";
   const [showHint, setShowHint] = useState(false);
   const [showSubHint, setShowSubHint] = useState(false);
 
@@ -32,35 +37,59 @@ export default function Clarity({
   const subHintTimer = useRef<number | null>(null);
 
   // Handles idle detection and progressive hint system
-  function resetIdleTimer() {
-    const FIRST_HINT_TIMER = 8000;
-    const SECOND_HINT_TIMER = 5000;
+  const FIRST_HINT_TIMER = 8000;
+  const SECOND_HINT_TIMER = 5000;
 
-    if (idleTimer.current !== null) clearTimeout(idleTimer.current);
-    if (subHintTimer.current !== null) clearTimeout(subHintTimer.current);
+  function clearHintTimers() {
+    if (idleTimer.current !== null) {
+      clearTimeout(idleTimer.current);
+      idleTimer.current = null;
+    }
 
-    setShowHint(false);
-    setShowSubHint(false);
+    if (subHintTimer.current !== null) {
+      clearTimeout(subHintTimer.current);
+      subHintTimer.current = null;
+    }
+  }
 
+  function startIdleTimer() {
     idleTimer.current = window.setTimeout(() => {
       setShowHint(true);
 
       subHintTimer.current = window.setTimeout(() => {
         setShowSubHint(true);
       }, SECOND_HINT_TIMER);
-
     }, FIRST_HINT_TIMER);
   }
 
+  function resetIdleTimer() {
+    clearHintTimers();
+
+    setShowHint(false);
+    setShowSubHint(false);
+
+    startIdleTimer();
+  }
+
   useEffect(() => {
-    resetIdleTimer();
+    const firstTimer = window.setTimeout(() => {
+      setShowHint(true);
+
+      subHintTimer.current = window.setTimeout(() => {
+        setShowSubHint(true);
+      }, SECOND_HINT_TIMER);
+    }, FIRST_HINT_TIMER);
+
+    idleTimer.current = firstTimer;
 
     return () => {
-      if (idleTimer.current !== null) clearTimeout(idleTimer.current);
-      if (subHintTimer.current !== null) clearTimeout(subHintTimer.current);
+      clearTimeout(firstTimer);
+
+      if (subHintTimer.current !== null) {
+        clearTimeout(subHintTimer.current);
+      }
     };
   }, []);
-
   // Core loop: stability increases when holding, decreases otherwise
   useEffect(() => {
     if (phase === "stable") return;
@@ -75,21 +104,6 @@ export default function Clarity({
 
     return () => clearInterval(interval);
   }, [phase]);
-
-  // Phase transitions based on stability level
-  useEffect(() => {
-    if (stability > 0 && phase === "drifting") {
-      setPhase("stabilizing");
-    }
-
-    if (stability === 0 && phase === "stabilizing") {
-      setPhase("drifting");
-    }
-
-    if (stability >= 1 && phase !== "stable") {
-      setPhase("stable");
-    }
-  }, [stability, phase]);
 
   // Complete flow after reaching stable state
   useEffect(() => {

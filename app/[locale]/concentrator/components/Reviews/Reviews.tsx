@@ -20,19 +20,16 @@ interface Review {
 export default function Reviews() {
   const { t } = useI18n();
 
-  const reviews =
-    (t("reviews.items") as Review[]) || [];
+  const extendedReviews = useMemo(() => {
+    const reviews = (t("reviews.items") as Review[]) || [];
 
-  const multiplier = 8;
+    const multiplier = 8;
 
-  const extendedReviews = useMemo(
-    () =>
-      Array.from(
-        { length: multiplier },
-        () => reviews
-      ).flat(),
-    [reviews]
-  );
+    return Array.from(
+      { length: multiplier },
+      () => reviews
+    ).flat();
+  }, [t]);
 
   const carouselContainer =
     useRef<HTMLDivElement>(null);

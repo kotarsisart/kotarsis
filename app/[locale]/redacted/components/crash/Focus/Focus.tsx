@@ -73,7 +73,7 @@ export default function Focus({
         const updated = prev.map((b) => ({ ...b }));
 
         // Move buttons and handle wall collisions
-        for (let b of updated) {
+        for (const b of updated) {
           b.x += b.vx;
           b.y += b.vy;
 

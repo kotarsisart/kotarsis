@@ -1,7 +1,6 @@
 import {
   useState,
   useEffect,
-  useMemo,
   useCallback,
   useRef,
 } from "react";
@@ -50,6 +49,7 @@ function Checkbox({
     if (!isSectionVisible) return;
 
     let interval: ReturnType<typeof setInterval> | null = null;
+    let completionTimer: ReturnType<typeof setTimeout> | null = null;
 
     // Delay before starting progress (creates sequential flow)
     const startTimer = setTimeout(() => {
@@ -62,8 +62,7 @@ function Checkbox({
         if (value >= 100) {
           if (interval) clearInterval(interval);
 
-          // Slight delay before revealing result
-          setTimeout(() => {
+          completionTimer = setTimeout(() => {
             setShowResult(true);
             onComplete();
           }, 300);
@@ -73,16 +72,17 @@ function Checkbox({
 
     return () => {
       clearTimeout(startTimer);
+
       if (interval) clearInterval(interval);
+      if (completionTimer) clearTimeout(completionTimer);
     };
   }, [isSectionVisible, delay, onComplete]);
 
   // Force inconsistency: never allow full completion
-  useEffect(() => {
-    if (isInconsistent && progress === 100) {
-      setProgress(99);
-    }
-  }, [isInconsistent, progress]);
+  const displayedProgress =
+    isInconsistent && progress === 100
+      ? 99
+      : progress;
 
   return (
     <div
@@ -99,10 +99,10 @@ function Checkbox({
         <div className="denial__checkbox-track">
           <div
             className="denial__checkbox-fill"
-            style={{ width: progress + "%" }}
+            style={{ width: `${displayedProgress}%` }}
           />
           <p className="denial__checkbox-percent">
-            {progress}%
+            {displayedProgress}%
           </p>
         </div>
       </div>
@@ -131,7 +131,7 @@ function Checkbox({
  * breaking the illusion of reliability.
  */
 export default function Denial() {
-  const { t, locale } = useI18n();
+  const { t } = useI18n();
 
   const sectionRef = useRef<HTMLElement | null>(null);
 
@@ -162,9 +162,7 @@ export default function Denial() {
   }, []);
 
   // Localized checkbox data
-  const data = useMemo(() => {
-    return (t("denial.checks") as unknown as CheckItem[]) || [];
-  }, [locale]);
+  const data = t<CheckItem[]>("denial.checks") || [];
 
   // Increment completion count from child components
   const handleComplete = useCallback(() => {

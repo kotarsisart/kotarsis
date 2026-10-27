@@ -115,7 +115,7 @@
       --denial-checkbox-result: #12EB33;
       @include denial-checkbox-result;
       color: var(--denial-checkbox-result);
-      opacity: 0.03;
+      opacity: 0.01;
       transform: translateY(6px);
       transition: opacity 0.4s ease, transform 0.4s ease;
       width: 100%;

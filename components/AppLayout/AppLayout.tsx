@@ -1,7 +1,6 @@
-"use client"
+"use client";
 
 import { type ReactNode, useState } from "react";
-import { useRouter, usePathname } from "next/navigation";
 import Preloader from "../Preloader/Preloader";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";

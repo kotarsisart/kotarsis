@@ -9,7 +9,7 @@ import "./_language-page-base.scss";
 import Image from "next/image";
 import { skipNextPreloader } from "@/data/preloader";
 
-type Messages = Record<string, any>;
+type Messages = Record<string, unknown>;
 
 interface LanguagePageProps {
   onClose: () => void;

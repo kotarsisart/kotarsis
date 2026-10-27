@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import { useI18n } from "@/data/I18nProvider";
 import "./_overflow.scss";
 import Image from "next/image";
@@ -14,25 +13,16 @@ import Image from "next/image";
  * Layout and text density together create a sense of pressure and excess.
  */
 export default function Overflow() {
-  const { t, locale } = useI18n();
+  const { t } = useI18n();
 
   // Multi-line title (split for controlled layout and animation)
-  const title = useMemo(
-    () => t("overflow.title") as unknown as string[],
-    [locale]
-  );
+  const title = t("overflow.title") as unknown as string[];
 
   // Text mapped inside triangle (layered, directional)
-  const triangleLines = useMemo(
-    () => t("overflow.triangle") as unknown as string[],
-    [locale]
-  );
+  const triangleLines = t("overflow.triangle") as unknown as string[];
 
   // Text mapped inside circle (expanding / spreading)
-  const circleLines = useMemo(
-    () => t("overflow.circle") as unknown as string[],
-    [locale]
-  );
+  const circleLines = t("overflow.circle") as unknown as string[];
 
   return (
     <section className="overflow">

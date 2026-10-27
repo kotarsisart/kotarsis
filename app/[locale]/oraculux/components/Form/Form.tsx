@@ -27,7 +27,12 @@ export default function Form() {
   /**
    * Animation + side-effect hooks
    */
-  const { startIdleRotation, accelerate, reverseAndStop } = usePortalAnimation();
+  const {
+    startIdleRotation,
+    stopIdleRotation,
+    accelerate,
+    reverseAndStop,
+  } = usePortalAnimation();
   const { showWarning: typewriterWarning } = useTypewriterWarning(
     "/projects/oraculux//icons/form/warning.svg",
     t("form.alt.warningIcon")
@@ -110,8 +115,16 @@ export default function Form() {
    * Start idle portal animation on mount
    */
   useEffect(() => {
-    if (imgRef.current) startIdleRotation(imgRef.current);
-  }, []);
+    const img = imgRef.current;
+
+    if (!img) return;
+
+    startIdleRotation(img);
+
+    return () => {
+      stopIdleRotation();
+    };
+  }, [startIdleRotation, stopIdleRotation]);
 
   return (
     <section className="form" id="ask-oracle">

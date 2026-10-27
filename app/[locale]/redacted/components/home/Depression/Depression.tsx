@@ -17,23 +17,8 @@ type ElementKey =
   | "text8"
   | "text9";
 
-/**
- * Depression
- *
- * Passive, non-interactive state driven by randomness and absence of control.
- *
- * Elements appear and disappear unpredictably,
- * never forming a stable or meaningful structure.
- *
- * The system loops endlessly, reinforcing stagnation and detachment.
- */
-export default function Depression() {
-  const { t } = useI18n();
-
-  const [visible, setVisible] = useState<ElementKey[]>([]); // currently visible elements
-
   // All possible elements that can appear
-  const elements: ElementKey[] = [
+  const ELEMENTS: ElementKey[] = [
     "circle",
     "square",
     "apply",
@@ -48,6 +33,21 @@ export default function Depression() {
     "text8",
     "text9",
   ];
+
+/**
+ * Depression
+ *
+ * Passive, non-interactive state driven by randomness and absence of control.
+ *
+ * Elements appear and disappear unpredictably,
+ * never forming a stable or meaningful structure.
+ *
+ * The system loops endlessly, reinforcing stagnation and detachment.
+ */
+export default function Depression() {
+  const { t } = useI18n();
+
+  const [visible, setVisible] = useState<ElementKey[]>([]); // currently visible elements
 
   useEffect(() => {
     let timeout: ReturnType<typeof setTimeout>;
@@ -64,7 +64,7 @@ export default function Depression() {
         const showTwo = Math.random() < 0.2;
 
         // Randomize order
-        const shuffled = [...elements].sort(() => Math.random() - 0.5);
+        const shuffled = [...ELEMENTS].sort(() => Math.random() - 0.5);
 
         const next = showTwo
           ? [shuffled[0], shuffled[1]]

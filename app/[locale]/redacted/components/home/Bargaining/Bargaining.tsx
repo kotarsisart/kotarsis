@@ -53,15 +53,19 @@ export default function Bargaining() {
   const handleApply = () => {
     if (selected.length === 0 || isApplying) return;
 
-    // Prevent applying identical configuration
     const isSame =
       selected.length === lastApplied.length &&
       selected.every((item) => lastApplied.includes(item));
 
     if (isSame) return;
 
-    setLastApplied(selected);
+    setLastApplied([...selected]);
     setAttempts((prev) => prev + 1);
+
+    // Reset previous attempt before starting a new one
+    setProgress(0);
+    setShowProcessing(false);
+
     setIsApplying(true);
   };
 
@@ -69,22 +73,20 @@ export default function Bargaining() {
   useEffect(() => {
     if (!isApplying) return;
 
-    setProgress(0);
-    setShowProcessing(false);
-
-    // Delay before showing "processing" to simulate system response
-    const processingDelay = setTimeout(() => {
+    // Delay before showing "processing"
+    const processingDelay = window.setTimeout(() => {
       setShowProcessing(true);
     }, 1000);
 
     let start: number | null = null;
+    let animationFrame: number;
+    let cooldownTimer: number | undefined;
 
     const base = 5000;
-    // Each attempt makes the system "faster" (illusion of improvement)
     const duration = base / (1 + attempts * 0.5);
 
     const animate = (timestamp: number) => {
-      if (!start) start = timestamp;
+      if (start === null) start = timestamp;
 
       const elapsed = timestamp - start;
       const percent = Math.min((elapsed / duration) * 100, 100);
@@ -94,12 +96,11 @@ export default function Bargaining() {
       const ALLOW_NEW_TRY = 1000;
 
       if (percent < 100) {
-        requestAnimationFrame(animate);
+        animationFrame = requestAnimationFrame(animate);
       } else {
         clearTimeout(processingDelay);
 
-        // Small cooldown before allowing next attempt
-        setTimeout(() => {
+        cooldownTimer = window.setTimeout(() => {
           setIsApplying(false);
           setProgress(0);
           setShowProcessing(false);
@@ -107,10 +108,15 @@ export default function Bargaining() {
       }
     };
 
-    requestAnimationFrame(animate);
+    animationFrame = requestAnimationFrame(animate);
 
     return () => {
       clearTimeout(processingDelay);
+      cancelAnimationFrame(animationFrame);
+
+      if (cooldownTimer !== undefined) {
+        clearTimeout(cooldownTimer);
+      }
     };
   }, [isApplying, attempts]);
 

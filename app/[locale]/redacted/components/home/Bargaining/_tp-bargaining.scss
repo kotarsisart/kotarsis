@@ -111,7 +111,7 @@
 @mixin bargaining-processing {
   font-size: var(--bargaining-processing-350);
   font-weight: var(--font-weight-regular);
-  color: var(--bargaining-processing);
+  color: var(--snow-text);
 
   @include mx.mq(break-1280) {
     font-size: var(--bargaining-processing-1280);
