@@ -3,9 +3,9 @@
 import { type ReactNode } from "react";
 import { useState } from "react";
 
-import Preloader from "../Preloader/Preloader";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+// import Preloader from "../Preloader/Preloader";
+// import Header from "../Header/Header";
+// import Footer from "../Footer/Footer";
 import LanguagePage from "@/components/LangPage/LanguagePage";
 import ScrollRevealProvider from "@/utils/animations/ScrollRevealProvider";
 
