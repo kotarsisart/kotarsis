@@ -12,6 +12,7 @@ const projects = [
   "redheart",
   "redacted",
   "censored",
+  "opinion",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

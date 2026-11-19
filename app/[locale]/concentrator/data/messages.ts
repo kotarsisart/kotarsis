@@ -10,6 +10,7 @@ import mk from "./locales/mk.json";
 import sr from "./locales/sr.json";
 import hr from "./locales/hr.json";
 import sl from "./locales/sl.json";
+import de from "./locales/de.json";
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,7 @@ export const messages = {
   sr,
   hr,
   sl,
+  de,
 };
 
 export type Locale = keyof typeof messages;

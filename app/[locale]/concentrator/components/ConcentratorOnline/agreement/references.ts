@@ -1,0 +1,33 @@
+import type { AgreementReference } from "./types";
+
+/** Language-independent, directional references. */
+export const agreementReferences = [
+  { from: "1.3.2", to: "5.1.3" },
+  { from: "2.4.3", to: "10.5.2" },
+  { from: "3.2.2", to: "4.6.3" },
+  { from: "3.5.3", to: "14.2.2" },
+  { from: "4.2.2", to: "1.5.3" },
+  { from: "4.4.2", to: "11.4.1" },
+  { from: "4.6.2", to: "1.3.2" },
+  { from: "5.4.2", to: "5.8.3" },
+  { from: "5.8.3", to: "12.5.2" },
+  { from: "6.3.2", to: "7.3.3" },
+  { from: "6.8.3", to: "6.1.2", },
+  { from: "7.2.2", to: "8.3.2" },
+  { from: "8.4.3", to: "15.6.2" },
+  { from: "8.8.2", to: "5.5.3" },
+  { from: "9.4.2", to: "12.3.3" },
+  { from: "9.5.2", to: "3.2.2" },
+  { from: "10.2.3", to: "5.4.2" },
+  { from: "10.3.2", to: "12.5.2" },
+  { from: "11.2.3", to: "4.6.2" },
+  { from: "12.8.2", to: "12.6.3" },
+  { from: "13.4.2", to: "1.8.3" },
+  { from: "13.7.3", to: "16.7.2" },
+  { from: "14.3.2", to: "6.5.3" },
+  { from: "14.6.2", to: "14.7.3" },
+  { from: "15.2.3", to: "15.5.2" },
+  { from: "15.8.3", to: "14.8.2" },
+  { from: "16.2.3", to: "13.8.2" },
+  { from: "16.8.4", to: "1.5.3" },
+] as const satisfies readonly AgreementReference[];

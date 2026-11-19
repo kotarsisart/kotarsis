@@ -10,6 +10,7 @@ import sk from './sk.json';
 import sl from './sl.json';
 import sr from './sr.json';
 import uk from './uk.json';
+import de from './uk.json';
 
 export const commonMessages = {
   be,
@@ -24,4 +25,5 @@ export const commonMessages = {
   sl,
   sr,
   uk,
+  de,
 }

@@ -15,13 +15,13 @@ export const ogLocales = {
 
   de: "de_DE",
   nl: "nl_NL",
+  nb: "nb_NO",
   sv: "sv_SE",
-  no: "no_NO",
 
-  fr: "fr_FR",
   es: "es_ES",
-  pt: "pt_PT",
+  fr: "fr_FR",
   it: "it_IT",
+  "pt-BR": "pt_BR",
   ro: "ro_RO",
 
   zh: "zh_CN",

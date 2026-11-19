@@ -1,0 +1,52 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/tp-base' as *;
+@use '../../styles/tokens/index.scss' as *;
+
+:root {
+  --concentrator-online-subline-320: 20px;
+  --concentrator-online-subline-768: 28px;
+  --concentrator-online-subline-1024: 32px;
+  --concentrator-online-subline-1440: 36px;
+
+  --concentrator-online-timer-320: 20px;
+  --concentrator-online-timer-768: 32px;
+
+  --concentrator-online-status-320: 16px;
+  --concentrator-online-status-390: 20px;
+  --concentrator-online-status-768: 28px;
+}
+
+@mixin concentrator-online-subline {
+  font-size: var(--concentrator-online-subline-320);
+  font-weight: var(--font-weight-medium);
+  
+  @include mx.mq(break-768) {
+    font-size: var(--concentrator-online-subline-768);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--concentrator-online-subline-1024);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--concentrator-online-subline-1440);
+  }
+}
+
+@mixin concentrator-online-timer {
+  font-size: var(--concentrator-online-timer-320);
+  font-weight: var(--font-weight-semibold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--concentrator-online-timer-768);
+  }
+}
+
+@mixin concentrator-online-status {
+  font-size: var(--concentrator-online-status-320);
+
+  @include mx.mq(break-390) {
+    font-size: var(--concentrator-online-status-390);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--concentrator-online-status-768);
+  }
+}

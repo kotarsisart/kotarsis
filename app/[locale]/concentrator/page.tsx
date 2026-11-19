@@ -17,6 +17,7 @@ import Order from "./components/Order/Order";
 
 import { useI18n } from "@/data/I18nProvider";
 import '@/utils/animations/animations.scss'
+import ConcentratorOnline from "./components/ConcentratorOnline/ConcentratorOnline";
 
 export default function LocalePage() {
   const { t, locale } = useI18n();
@@ -30,6 +31,7 @@ export default function LocalePage() {
       />
 
       <AppLayout>
+        <ConcentratorOnline />
         <Hero />
         <HowItWorks />
         <Story />
