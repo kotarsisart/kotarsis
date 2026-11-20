@@ -1,345 +1,366 @@
+
 {
   "meta": {
-    "title": "Concentrator™ — Устройство для концентрации",
-    "description": "Концентрируйся без усилий с Concentrator™ — интерактивным устройством нового поколения для тренировки внимания.",
-    "keywords": "concentrator, концентрация, внимание, фокус, продуктивность, kotarsis",
+    "title": "Concentrator™ — Gerät für mehr Konzentration",
+    "description": "Konzentrieren Sie sich mühelos mit Concentrator™ – dem interaktiven Gerät der nächsten Generation zum Trainieren Ihrer Aufmerksamkeit.",
+    "keywords": "concentrator, Konzentration, Aufmerksamkeit, Fokus, Produktivität, kotarsis",
     "siteName": "Concentrator™",
-    "imgAlt": "Превью-изображение Concentrator™"
+    "imgAlt": "Vorschaubild von Concentrator™"
   },
-
   "preloader": {
-    "kotarsisAlt": "логотип kotarsis",
-    "projectAlt": "логотип проекта Concentrator™"
+    "kotarsisAlt": "kotarsis-Logo",
+    "projectAlt": "Logo des Projekts Concentrator™"
   },
-
   "header": {
     "logo": {
       "project": "Concentrator™",
-      "projectAlt": "Логотип проекта Concentrator™",
+      "projectAlt": "Logo des Projekts Concentrator™",
       "kotarsis": "kotarsis",
-      "kotarsisAlt": "Логотип kotarsis"
+      "kotarsisAlt": "Logo von kotarsis"
     },
-    "slogan": "Стабилизируйте когнитивную энергию.",
+    "slogan": "Stabilisieren Sie Ihre Denkenergie.",
     "focus": {
-      "label": "Фокус:"
+      "label": "Fokus:"
     },
     "langButton": {
-      "default": "Выбрать язык"
+      "default": "Sprache wählen"
     }
   },
-
   "hero": {
-    "slogan": "Концентрируйтесь без усилий",
+    "slogan": "Mühelos konzentrieren",
     "title": "Concentrator™",
-    "outro": "Технология фокуса нового поколения",
+    "outro": "Fokustechnik der nächsten Generation",
     "button": {
-      "default": "Активировать фокус",
-      "active": "Фокус активирован!"
+      "default": "Fokus aktivieren",
+      "active": "Fokus ist aktiviert!"
     },
     "counter": {
-      "label": "Уже сконцентрировались"
+      "label": "Bereits konzentriert"
     },
-    "cognitive": "Когнитивная синхронизация завершена",
+    "cognitive": "Kognitive Synchronisation abgeschlossen",
     "image": {
-      "alt": "Устройство Concentrator"
+      "alt": "Concentrator-Gerät"
     }
   },
-
   "hiw": {
-    "title": "Как работает Concentrator™?",
+    "title": "Wie funktioniert Concentrator™?",
     "steps": {
       "laptop": {
-        "alt": "Ноутбук",
-        "text": "Разместите его рядом"
+        "alt": "Laptop",
+        "text": "Stellen Sie ihn daneben"
       },
       "off": {
-        "alt": "Ничего не делает",
-        "text": "Он ничего не делает"
+        "alt": "Tut nichts",
+        "text": "Er tut einfach nichts"
       },
       "flame": {
-        "alt": "Работаете как зверь",
-        "text": "Вы работаете как зверь"
+        "alt": "Arbeiten wie ein Tier",
+        "text": "Sie schuften wie ein Tier"
       }
     }
   },
-
   "story": {
-    "title": "Происхождение Concentrator™",
+    "title": "Die Herkunft von Concentrator™",
     "paragraphs": [
-      "В забытой лаборатории под Карпатами группа эксцентричных учёных обнаружила осциллирующее поле чистой концентрации.",
-      "После 7 лет неудачных экспериментов, споров и пролитого кофе им удалось направить энергию в одно устройство — Concentrator™.",
-      "То, что начиналось как побочный проект на кофеине, вскоре вызвало то, что теперь называют Событием Фокуса. Один лабораторный фикус вырос вдвое, а кот решил судоку.",
-      "Осознав, какую силу они открыли, команда — состоящая из теоретических нейрохимиков, одного неудавшегося фокусника и стажёра, который думал, что это кулинарный курс — бросилась стабилизировать явление.",
-      "Используйте с осторожностью. Побочные эффекты могут включать беспрецедентную продуктивность и странное чувство цели."
+      "In einem vergessenen Labor unter den Karpaten entdeckte eine Gruppe exzentrischer Forscher ein oszillierendes Feld reiner Konzentration.",
+      "Nach 7 Jahren gescheiterter Experimente, Debatten und verschüttetem Kaffee gelang es ihnen, die Energie in ein einziges Gerät zu lenken – Concentrator™.",
+      "Was als koffeingetriebenes Nebenprojekt begann, löste bald das sogenannte Fokusereignis aus. Ein Labor-Ficus verdoppelte seine Größe, und eine Katze löste ein Sudoku.",
+      "Als ihnen klar wurde, welche Macht sie entfesselt hatten, eilte das Team – bestehend aus theoretischen Neurochemikern, einem gescheiterten Zauberer und einem Praktikanten, der das Ganze für einen Kochkurs hielt – los, um das Phänomen zu stabilisieren.",
+      "Mit Vorsicht verwenden. Nebenwirkungen können beispiellose Produktivität und ein seltsames Gefühl von Sinnhaftigkeit umfassen."
     ],
     "quote": {
-      "text": "Мы не знали, как это работает. Но это работало.",
-      "author": "Проф. Костюк"
+      "text": "Wir wussten nicht, wie es geht. Doch es ging.",
+      "author": "Prof. Kostjuk"
     },
     "image": {
-      "alt": "История Concentrator"
+      "alt": "Geschichte von Concentrator"
     }
   },
-
   "benefits": {
-    "title": "Почему стоит выбрать Concentrator™?",
+    "title": "Warum Concentrator™ wählen?",
     "cards": [
       {
         "icon": "/src/assets/images/section-icons/benefits/no-charge.svg",
-        "alt": "без зарядки",
-        "title": "Работает без подзарядки",
-        "description": "Питается чистым намерением. Подзаряжается взглядами коллег."
+        "alt": "kein Aufladen nötig",
+        "title": "Funktioniert ohne Aufladen",
+        "description": "Läuft mit reinem Willen. Lädt durch Blicke der Kollegen."
       },
       {
         "icon": "/src/assets/images/section-icons/benefits/book-question-icon.svg",
-        "alt": "без инструкций",
-        "title": "Не требует инструкций",
-        "description": "Просто поставьте рядом. Он уже всё знает. Возможно, даже вас."
+        "alt": "ohne Anleitung",
+        "title": "Braucht keine Anleitung",
+        "description": "Einfach hinstellen. Er weiß alles. Vielleicht auch über Sie."
       },
       {
         "icon": "/src/assets/images/section-icons/benefits/coffee-cat.png",
-        "alt": "дружелюбен к кофе и котам",
-        "title": "Дружелюбен к кофе и котам",
-        "description": "Не мешает вашему утреннему ритуалу и идеально сочетается с мурлыканьем."
+        "alt": "kaffee- und katzenfreundlich",
+        "title": "Mag Kaffee und Katzen",
+        "description": "Stört Ihr Morgenritual nicht und passt perfekt zum Schnurren."
       }
     ]
   },
-
   "comparison": {
-    "title": "Concentrator™ против обычного таймера",
-    "headers": ["Параметр", "Concentrator™", "Обычный таймер"],
+    "title": "Concentrator™ gegen normale Timer",
+    "headers": ["Merkmal", "Concentrator™", "Normaler Timer"],
     "rows": [
       {
-        "parameter": "Усиление фокуса",
+        "parameter": "Fokussteigerung",
         "concentrator": "+300%",
         "regular": "0%"
       },
       {
-        "parameter": "Источник питания",
-        "concentrator": "Не требуется",
-        "regular": "Требуется"
+        "parameter": "Stromversorgung",
+        "concentrator": "Nicht nötig",
+        "regular": "Erforderlich"
       },
       {
-        "parameter": "Научная ценность",
-        "concentrator": "Псевдо",
-        "regular": "Отсутствует"
+        "parameter": "Wissenschaftlicher Wert",
+        "concentrator": "Pseudo",
+        "regular": "Keiner"
       },
       {
-        "parameter": "Влагозащита",
+        "parameter": "Wasserschutz",
         "concentrator": "IP68",
-        "regular": "Низкая"
+        "regular": "Gering"
       }
     ]
   },
-
   "concentratorOnline": {
     "title": "Concentrator™ Online",
-    "subline": "Будущее концентрации уже в вашем браузере.",
+    "subline": "Die Zukunft des Fokus ist schon im Browser.",
     "agreement": {
-      "button": "Лицензионное соглашение",
-      "note": "Прочтение обязательно. Даже если вы его пропустите."
+      "button": "Lizenzvereinbarung",
+      "note": "Lesen ist Pflicht. Auch wenn Sie es überspringen."
     },
     "timer": {
-      "progressAriaLabel": "Прогресс концентрации"
+      "progressAriaLabel": "Fortschritt der Konzentration"
     },
     "status": {
       "ready": {
-        "title": "Ожидание концентрации",
-        "description": "Нажмите кнопку на устройстве для активации."
+        "title": "Warten auf Konzentration",
+        "description": "Zur Aktivierung die Gerätetaste drücken."
       },
       "active": {
-        "title": "Полная концентрация активирована",
-        "description": "Пожалуйста, сохраняйте серьёзность происходящего."
+        "title": "Volle Konzentration aktiviert",
+        "description": "Bitte nehmen Sie die Lage weiterhin ernst."
       },
       "stopped": {
-        "title": "Неужели достаточно концентрации?",
-        "description": "Устройство выключено. Возможно, вы уже готовы работать."
+        "title": "Schon genug konzentriert?",
+        "description": "Gerät aus. Vielleicht können Sie jetzt arbeiten."
       },
       "completed": {
-        "title": "Поздравляем! Концентрация достигнута.",
-        "description": "Теперь можете приступить к работе. Желательно вне этого сайта."
+        "title": "Glückwunsch! Fokus erreicht.",
+        "description": "Jetzt können Sie arbeiten. Am besten nicht hier."
       }
     },
     "notifications": {
-      "15": "Вы уже чувствуете прилив концентрации?",
-      "45": "Уровень сосредоточенности повышается. Предположительно.",
-      "90": "Пожалуйста, не отвлекайтесь на это уведомление.",
-      "150": "Вы почти готовы приступить к работе.",
-      "closeAriaLabel": "Закрыть уведомление"
+      "15": "Spüren Sie schon den Konzentrationsschub?",
+      "45": "Der Fokus steigt. Vermutlich.",
+      "90": "Bitte nicht von dieser Meldung ablenken lassen.",
+      "150": "Sie können fast mit der Arbeit beginnen.",
+      "closeAriaLabel": "Benachrichtigung schließen"
     }
   },
-
   "agreementModal": {
-    "title": "Лицензионное соглашение",
-    "description": "Прочтение обязательно. Даже если вы решили его пропустить.",
-    "closeAriaLabel": "Закрыть соглашение",
+    "title": "Lizenzvereinbarung",
+    "description": "Lesen ist Pflicht. Auch wenn Sie es auslassen.",
+    "closeAriaLabel": "Lizenzvereinbarung schließen",
     "pageInfo": {
-      "loading": "Загрузка соглашения…",
-      "loadingFailed": "Не удалось загрузить страницу соглашения.",
-      "loadingProgress": "Перейти к странице по шкале прогресса",
-      "prefix": "Страница",
-      "separator": "из",
-      "retry": "Повторить",
-      "downloadTitle": "Скачать документ в HTML (можно сохранить в PDF)",
-      "goToClause": "Перейти к пункту",
-      "returnToClause": "Вернуться к пункту",
-      "pageNumber": "Номер страницы",
-      "enterPage": "Введите номер страницы от",
-      "goToPage": "Перейти"
+      "loading": "Vereinbarung wird geladen…",
+      "loadingFailed": "Vertragsseite konnte nicht geladen werden.",
+      "loadingProgress": "Seite über die Fortschrittsleiste aufrufen",
+      "prefix": "Seite",
+      "separator": "von",
+      "retry": "Erneut",
+      "downloadTitle": "Dokument als HTML laden (als PDF speicherbar)",
+      "goToClause": "Zur Klausel",
+      "returnToClause": "Zurück zur Klausel",
+      "pageNumber": "Seitenzahl",
+      "enterPage": "Seitenzahl eingeben ab",
+      "goToPage": "Los"
     },
     "navigation": {
-      "ariaLabel": "Навигация по соглашению",
-      "previous": "Назад",
-      "next": "Далее"
+      "ariaLabel": "Navigation durch die Vereinbarung",
+      "previous": "Zurück",
+      "next": "Weiter"
     },
     "actions": {
-      "accept": "Я всё прочитал",
-      "skip": "Не читал, но продолжить"
+      "accept": "Alles gelesen",
+      "skip": "Nicht gelesen, trotzdem weiter"
     },
-    "disclaimer": "Ваше решение будет принято независимо от степени вашей юридической подготовки.",
+    "disclaimer": "Ihre Wahl gilt unabhängig von Ihren Rechtskenntnissen.",
     "export": {
-      "title": "Лицензионное соглашение",
-      "publishedPages": "Опубликовано страниц",
-      "printHint":
-        "Для сохранения в PDF откройте файл в браузере и выберите Печать → Сохранить как PDF."
+      "title": "Lizenzvereinbarung",
+      "publishedPages": "Veröffentlichte Seiten",
+      "printHint": "Zum Speichern als PDF die Datei im Browser öffnen und Drucken → Als PDF speichern wählen."
     }
   },
-
   "availability": {
     "promotions": {
-      "up": "Станьте ранним тестировщиком CPhone — нового смартфона, работающего на поле концентрации. Закажите Concentrator™ сейчас, чтобы разблокировать доступ и зарезервировать прототип.",
-      "down": "Concentrator™ был лишь первой фазой. Теперь мы создаём многоуровневую когнитивную экосистему, и CPhone — ваш портал в это будущее. Бета-тестирование начинается скоро — вы готовы?"
+      "up": "Testen Sie CPhone frühzeitig – das neue Smartphone mit Konzentrationsfeld. Bestellen Sie jetzt Concentrator™, um Zugang zu erhalten und einen Prototyp zu reservieren.",
+      "down": "Concentrator™ war erst Phase eins. Jetzt schaffen wir ein mehrstufiges kognitives Ökosystem. CPhone öffnet Ihnen die Tür in diese Zukunft. Der Betatest startet bald – bereit?"
     },
     "title": {
-      "part1": "Осталось всего",
-      "part2": "устройств из"
+      "part1": "Nur noch",
+      "part2": "Geräte von"
     },
     "timer": {
-      "label": "Предложение закончится через"
+      "label": "Angebot endet in"
     },
     "image": {
-      "alt": "Оборудование Concentrator"
+      "alt": "Concentrator-Ausrüstung"
     },
     "messages": {
-      "normal": "Будьте на шаг впереди — закажите Concentrator™ уже сейчас!",
-      "unavailable": "Фокус недоступен. Пожалуйста, выполните сеанс самоконтроля."
+      "normal": "Seien Sie voraus – Concentrator™ jetzt bestellen!",
+      "unavailable": "Fokus nicht verfügbar. Bitte Selbstkontrolle üben."
     },
     "buttons": {
-      "try": "Попробовать купить",
-      "soldout": "Увы, опоздали!"
+      "try": "Kauf versuchen",
+      "soldout": "Leider zu spät!"
     }
   },
-
   "gallery": {
-    "title": "Галерея устройства",
+    "title": "Gerätegalerie",
     "alts": {
-      "front": "вид спереди",
-      "side": "вид сбоку",
-      "top": "вид сверху",
-      "press": "нажатие кнопки",
-      "interior": "в интерьере",
-      "meditation": "медитация",
-      "equipment": "оборудование",
-      "hands": "в руках",
-      "full": "полный вид в интерьере"
+      "front": "Vorderansicht",
+      "side": "Seitenansicht",
+      "top": "Draufsicht",
+      "press": "Tastendruck",
+      "interior": "im Innenraum",
+      "meditation": "Meditation",
+      "equipment": "Ausrüstung",
+      "hands": "in den Händen",
+      "full": "Gesamtansicht im Innenraum"
     }
   },
-
   "reviews": {
-    "title": "Отзывы пользователей",
-    "items": [
-      { "text": "«Защитил диплом за одну ночь. Понятия не имею как.»", "author": "Jakub", "date": "21.05.2025" },
-      { "text": "«Удалил TikTok. Сработало.»", "author": "James", "date": "15.04.2025" },
-      { "text": "«Concentrator™ просто стоял. А я — нет.»", "author": "Olena", "date": "12.03.2025" },
-      { "text": "«Раньше открывал YouTube. Теперь — глаза.»", "author": "Emily", "date": "06.04.2025" },
-      { "text": "«Сел на 10 минут — ушёл через 6 часов.»", "author": "Ivan", "date": "25.04.2025" },
-      { "text": "«Отправил отчёт и постирал бельё. Одновременно.»", "author": "Carlos", "date": "29.03.2025" },
-      { "text": "«Забыл о перерывах. И о еде.»", "author": "Dmytro", "date": "03.05.2025" },
-      { "text": "«Фокус не исчез. Даже с моим котом.»", "author": "Katya", "date": "14.04.2025" },
-      { "text": "«Просто включил. Остальное — история.»", "author": "Marta", "date": "18.03.2025" }
-    ]
-  },
-
-  "faq": {
-    "title": "Часто задаваемые вопросы",
+    "title": "Kundenbewertungen",
     "items": [
       {
-        "q": "Как работает Concentrator™?",
-        "a": "Он усиливает концентрацию на 300% с помощью псевдонаучных импульсов и воображения."
+        "text": "„Diplomarbeit in einer Nacht. Keine Ahnung, wie.“",
+        "author": "Jakub",
+        "date": "21.05.2025"
       },
       {
-        "q": "Почему Concentrator™ ничего не делает?",
-        "a": "Потому что он уже сделал всё необходимое."
+        "text": "„TikTok gelöscht. Hat geklappt.“",
+        "author": "James",
+        "date": "15.04.2025"
       },
       {
-        "q": "Можно ли использовать в транспорте?",
-        "a": "Да, особенно если хотите сосредоточиться на мелком шрифте в своём штрафе."
+        "text": "„Concentrator™ stand nur da. Ich nicht.“",
+        "author": "Olena",
+        "date": "12.03.2025"
       },
       {
-        "q": "Есть ли побочные эффекты?",
-        "a": "Только побочные успехи: повышенная продуктивность, харизма и чувство юмора."
+        "text": "„Früher öffnete ich YouTube. Jetzt die Augen.“",
+        "author": "Emily",
+        "date": "06.04.2025"
       },
       {
-        "q": "Это легально в моей стране?",
-        "a": "Технически — да."
+        "text": "„Für 10 Minuten hin. Nach 6 Stunden weg.“",
+        "author": "Ivan",
+        "date": "25.04.2025"
       },
       {
-        "q": "Можно ли использовать два одновременно?",
-        "a": "Только если у вас два мозга."
+        "text": "„Bericht gesendet und Wäsche gewaschen. Zugleich.“",
+        "author": "Carlos",
+        "date": "29.03.2025"
+      },
+      {
+        "text": "„Pausen vergessen. Und das Essen.“",
+        "author": "Dmytro",
+        "date": "03.05.2025"
+      },
+      {
+        "text": "„Der Fokus blieb. Trotz meiner Katze.“",
+        "author": "Katya",
+        "date": "14.04.2025"
+      },
+      {
+        "text": "„Einfach eingeschaltet. Der Rest ist Geschichte.“",
+        "author": "Marta",
+        "date": "18.03.2025"
       }
     ]
   },
-
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "q": "Wie funktioniert Concentrator™?",
+        "a": "Er steigert den Fokus um 300 % mit pseudowissenschaftlichen Impulsen und Fantasie."
+      },
+      {
+        "q": "Warum tut Concentrator™ nichts?",
+        "a": "Weil er schon alles Nötige getan hat."
+      },
+      {
+        "q": "Kann man ihn unterwegs nutzen?",
+        "a": "Ja, vor allem, um das Kleingedruckte auf Ihrem Strafzettel zu lesen."
+      },
+      {
+        "q": "Gibt es Nebenwirkungen?",
+        "a": "Nur Nebenerfolge: mehr Produktivität, Charisma und Humor."
+      },
+      {
+        "q": "Ist das in meinem Land legal?",
+        "a": "Technisch gesehen: ja."
+      },
+      {
+        "q": "Kann ich zwei zugleich nutzen?",
+        "a": "Nur wenn Sie zwei Gehirne haben."
+      }
+    ]
+  },
   "order": {
     "form": {
-      "title": "Заказать фокус",
+      "title": "Fokus bestellen",
       "placeholders": {
-        "name": "Ваше имя",
-        "comment": "Комментарий или вопрос"
+        "name": "Ihr Name",
+        "comment": "Kommentar oder Frage"
       },
       "labels": {
-        "submit": "Заказать фокус",
-        "sending": "Отправка..."
+        "submit": "Fokus bestellen",
+        "sending": "Wird gesendet..."
       },
       "messages": {
-        "nameRequired": "Пожалуйста, введите ваше имя 🥺",
-        "validEmail": "Введите корректный email",
-        "noNumbers": "Не используйте цифры в имени 😊",
-        "success": "Форма успешно отправлена!"
+        "nameRequired": "Bitte Namen eingeben 🥺",
+        "validEmail": "Gültige E-Mail eingeben",
+        "noNumbers": "Keine Zahlen im Namen 😊",
+        "success": "Formular erfolgreich gesendet!"
       }
     },
     "delivery": {
-      "title": "Доставка — прозрачна",
+      "title": "Lieferung – ganz transparent",
       "steps": [
         {
-          "title": "Вы оформили заказ",
-          "description": "Заказ оформлен на сайте"
+          "title": "Sie haben bestellt",
+          "description": "Bestellung auf der Website"
         },
         {
-          "title": "Мы готовим и отправляем",
-          "description": "Доставляет обученный голубь"
+          "title": "Wir packen und versenden",
+          "description": "Eine dressierte Taube liefert"
         },
         {
-          "title": "Вы получаете заказ",
-          "description": "и повышенную продуктивностью"
+          "title": "Sie erhalten Ihre Ware",
+          "description": "und mehr Produktivität"
         }
       ]
     }
   },
-
   "footer": {
     "nav": {
       "links": {
-        "hiw": "Как это работает",
-        "reviews": "Отзывы",
-        "order": "Заказ",
+        "hiw": "So geht's",
+        "reviews": "Bewertungen",
+        "order": "Bestellung",
         "faq": "FAQ"
       },
-      "team": "Отправить кофе и резюме"
+      "team": "Kaffee und Lebenslauf senden"
     },
     "links": {
-      "support": "Поддержка эксперимента кофе"
+      "support": "Kaffeeexperiment unterstützen"
     },
-    "copyright": "© 2026 Concentrator™ Создано с любовью и псевдонаукой. Все права защищены."
+    "copyright": "© 2026 Concentrator™ Mit Liebe und Pseudowissenschaft erstellt. Alle Rechte vorbehalten."
   }
 }

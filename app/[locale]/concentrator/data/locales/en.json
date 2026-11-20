@@ -132,6 +132,78 @@
     ]
   },
 
+  "concentratorOnline": {
+    "title": "Concentrator™ Online",
+    "subline": "The future of concentration is already in your browser.",
+    "agreement": {
+      "button": "License Agreement",
+      "note": "Reading is mandatory. Even if you skip it."
+    },
+    "timer": {
+      "progressAriaLabel": "Concentration progress"
+    },
+    "status": {
+      "ready": {
+        "title": "Awaiting concentration",
+        "description": "Press the button on the device to activate it."
+      },
+      "active": {
+        "title": "Full concentration activated",
+        "description": "Please maintain the seriousness of the situation."
+      },
+      "stopped": {
+        "title": "Had enough concentration already?",
+        "description": "The device is turned off. Perhaps you're ready to work."
+      },
+      "completed": {
+        "title": "Congratulations! Concentration achieved.",
+        "description": "You may now get to work. Preferably somewhere other than this website."
+      }
+    },
+    "notifications": {
+      "15": "Can you feel the surge of concentration yet?",
+      "45": "Your focus level is increasing. Presumably.",
+      "90": "Please do not let this notification distract you.",
+      "150": "You're almost ready to get to work.",
+      "closeAriaLabel": "Close notification"
+    }
+  },
+
+  "agreementModal": {
+    "title": "License Agreement",
+    "description": "Reading is mandatory. Even if you've decided to skip it.",
+    "closeAriaLabel": "Close agreement",
+    "pageInfo": {
+      "loading": "Loading agreement…",
+      "loadingFailed": "Failed to load the agreement page.",
+      "loadingProgress": "Navigate to a page using the progress bar",
+      "prefix": "Page",
+      "separator": "of",
+      "retry": "Try again",
+      "downloadTitle": "Download document as HTML (can be saved as PDF)",
+      "goToClause": "Go to clause",
+      "returnToClause": "Return to clause",
+      "pageNumber": "Page number",
+      "enterPage": "Enter a page number from",
+      "goToPage": "Go"
+    },
+    "navigation": {
+      "ariaLabel": "Agreement navigation",
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "actions": {
+      "accept": "I've read everything",
+      "skip": "Didn't read it, but continue anyway"
+    },
+    "disclaimer": "Your decision will be accepted regardless of your level of legal expertise.",
+    "export": {
+      "title": "License Agreement",
+      "publishedPages": "Published pages",
+      "printHint": "To save as PDF, open the file in your browser and select Print → Save as PDF."
+    }
+  },
+
   "availability": {
     "promotions": {
       "up": "Become an early tester of CPhone — the new concentration-based smartphone powered by focus field technology. Order Concentrator™ now to unlock access and reserve your prototype.",

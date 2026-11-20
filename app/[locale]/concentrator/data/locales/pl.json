@@ -132,6 +132,78 @@
     ]
   },
 
+  "concentratorOnline": {
+    "title": "Concentrator™ Online",
+    "subline": "Przyszłość koncentracji jest już w Twojej przeglądarce.",
+    "agreement": {
+      "button": "Umowa licencyjna",
+      "note": "Przeczytanie jest obowiązkowe. Nawet jeśli ją pominiesz."
+    },
+    "timer": {
+      "progressAriaLabel": "Postęp koncentracji"
+    },
+    "status": {
+      "ready": {
+        "title": "Oczekiwanie na koncentrację",
+        "description": "Naciśnij przycisk na urządzeniu, aby je aktywować."
+      },
+      "active": {
+        "title": "Pełna koncentracja została aktywowana",
+        "description": "Prosimy o zachowanie powagi całej sytuacji."
+      },
+      "stopped": {
+        "title": "Czyżby koncentracji było już wystarczająco?",
+        "description": "Urządzenie zostało wyłączone. Być może jesteś już gotowy do pracy."
+      },
+      "completed": {
+        "title": "Gratulacje! Koncentracja została osiągnięta.",
+        "description": "Teraz możesz przystąpić do pracy. Najlepiej poza tą stroną."
+      }
+    },
+    "notifications": {
+      "15": "Czy już czujesz przypływ koncentracji?",
+      "45": "Poziom skupienia wzrasta. Prawdopodobnie.",
+      "90": "Prosimy nie rozpraszać się tym powiadomieniem.",
+      "150": "Już prawie możesz przystąpić do pracy.",
+      "closeAriaLabel": "Zamknij powiadomienie"
+    }
+  },
+
+  "agreementModal": {
+    "title": "Umowa licencyjna",
+    "description": "Przeczytanie jest obowiązkowe. Nawet jeśli postanowisz ją pominąć.",
+    "closeAriaLabel": "Zamknij umowę",
+    "pageInfo": {
+      "loading": "Ładowanie umowy…",
+      "loadingFailed": "Nie udało się załadować strony umowy.",
+      "loadingProgress": "Przejdź do strony za pomocą paska postępu",
+      "prefix": "Strona",
+      "separator": "z",
+      "retry": "Spróbuj ponownie",
+      "downloadTitle": "Pobierz dokument w formacie HTML (można zapisać jako PDF)",
+      "goToClause": "Przejdź do punktu",
+      "returnToClause": "Wróć do punktu",
+      "pageNumber": "Numer strony",
+      "enterPage": "Wprowadź numer strony od",
+      "goToPage": "Przejdź"
+    },
+    "navigation": {
+      "ariaLabel": "Nawigacja po umowie",
+      "previous": "Wstecz",
+      "next": "Dalej"
+    },
+    "actions": {
+      "accept": "Wszystko przeczytałem",
+      "skip": "Nie czytałem, ale chcę kontynuować"
+    },
+    "disclaimer": "Twoja decyzja zostanie zaakceptowana niezależnie od poziomu Twojej wiedzy prawniczej.",
+    "export": {
+      "title": "Umowa licencyjna",
+      "publishedPages": "Liczba opublikowanych stron",
+      "printHint": "Aby zapisać dokument jako PDF, otwórz plik w przeglądarce i wybierz Drukuj → Zapisz jako PDF."
+    }
+  },
+
   "availability": {
     "promotions": {
       "up": "Zostań pierwszym testerem CPhone — nowego smartfona opartego na polu koncentracyjnym. Zamów Concentrator™ już teraz, aby uzyskać dostęp i zarezerwować prototyp.",
