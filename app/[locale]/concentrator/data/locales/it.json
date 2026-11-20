@@ -1,0 +1,366 @@
+
+{
+  "meta": {
+    "title": "Concentrator™ — Dispositivo per la concentrazione",
+    "description": "Concentrati senza sforzo con Concentrator™: il dispositivo interattivo di nuova generazione per allenare l'attenzione e migliorare la concentrazione.",
+    "keywords": "concentrator, concentrazione, attenzione, focus, produttività, kotarsis",
+    "siteName": "Concentrator™",
+    "imgAlt": "Immagine di anteprima di Concentrator™"
+  },
+  "preloader": {
+    "kotarsisAlt": "Logo di kotarsis",
+    "projectAlt": "Logo del progetto Concentrator™"
+  },
+  "header": {
+    "logo": {
+      "project": "Concentrator™",
+      "projectAlt": "Logo del progetto Concentrator™",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo di kotarsis"
+    },
+    "slogan": "Stabilizza la tua energia cognitiva.",
+    "focus": {
+      "label": "Focus:"
+    },
+    "langButton": {
+      "default": "Scegli la lingua"
+    }
+  },
+  "hero": {
+    "slogan": "Concentrati senza sforzo",
+    "title": "Concentrator™",
+    "outro": "Tecnologia del focus di nuova generazione",
+    "button": {
+      "default": "Attiva il focus",
+      "active": "Focus attivato!"
+    },
+    "counter": {
+      "label": "Già concentrati"
+    },
+    "cognitive": "Sincronizzazione cognitiva completata",
+    "image": {
+      "alt": "Dispositivo Concentrator"
+    }
+  },
+  "hiw": {
+    "title": "Come funziona Concentrator™?",
+    "steps": {
+      "laptop": {
+        "alt": "Computer portatile",
+        "text": "Mettilo qui accanto"
+      },
+      "off": {
+        "alt": "Non fa nulla",
+        "text": "Non fa proprio nulla"
+      },
+      "flame": {
+        "alt": "Lavori come una bestia",
+        "text": "Lavori come una bestia"
+      }
+    }
+  },
+  "story": {
+    "title": "Le origini di Concentrator™",
+    "paragraphs": [
+      "In un laboratorio dimenticato sotto i Carpazi, un gruppo di scienziati eccentrici scoprì un campo oscillante di pura concentrazione.",
+      "Dopo 7 anni di esperimenti falliti, discussioni e caffè rovesciato, riuscirono a incanalare l'energia in un unico dispositivo: Concentrator™.",
+      "Quello che era iniziato come un progetto secondario alimentato dalla caffeina provocò presto il cosiddetto Evento del Focus. Un ficus del laboratorio raddoppiò le sue dimensioni e un gatto risolse un sudoku.",
+      "Resosi conto del potere che aveva scoperto, il team — composto da neurochimici teorici, un illusionista fallito e uno stagista convinto di frequentare un corso di cucina — si affrettò a stabilizzare il fenomeno.",
+      "Usare con cautela. Gli effetti collaterali possono includere una produttività senza precedenti e una strana sensazione di avere uno scopo."
+    ],
+    "quote": {
+      "text": "Non sapevamo come funzionasse. Ma funzionava.",
+      "author": "Prof. Kostiuk"
+    },
+    "image": {
+      "alt": "Storia di Concentrator"
+    }
+  },
+  "benefits": {
+    "title": "Perché scegliere Concentrator™?",
+    "cards": [
+      {
+        "icon": "/src/assets/images/section-icons/benefits/no-charge.svg",
+        "alt": "senza ricarica",
+        "title": "Funziona senza ricarica",
+        "description": "Si nutre di pura volontà. Si ricarica con gli sguardi dei colleghi."
+      },
+      {
+        "icon": "/src/assets/images/section-icons/benefits/book-question-icon.svg",
+        "alt": "senza istruzioni",
+        "title": "Non richiede istruzioni",
+        "description": "Basta metterlo accanto. Sa già tutto. Forse anche di te."
+      },
+      {
+        "icon": "/src/assets/images/section-icons/benefits/coffee-cat.png",
+        "alt": "amico del caffè e dei gatti",
+        "title": "Ama il caffè e i gatti",
+        "description": "Non disturba il tuo rito mattutino e adora le fusa."
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Concentrator™ contro un normale timer",
+    "headers": ["Parametro", "Concentrator™", "Timer normale"],
+    "rows": [
+      {
+        "parameter": "Aumento del focus",
+        "concentrator": "+300%",
+        "regular": "0%"
+      },
+      {
+        "parameter": "Fonte di energia",
+        "concentrator": "Non serve",
+        "regular": "Necessaria"
+      },
+      {
+        "parameter": "Valore scientifico",
+        "concentrator": "Pseudo",
+        "regular": "Assente"
+      },
+      {
+        "parameter": "Resistenza all'acqua",
+        "concentrator": "IP68",
+        "regular": "Bassa"
+      }
+    ]
+  },
+  "concentratorOnline": {
+    "title": "Concentrator™ Online",
+    "subline": "Il futuro del focus è già nel tuo browser.",
+    "agreement": {
+      "button": "Accordo di licenza",
+      "note": "Leggerlo è obbligatorio. Anche se lo salti."
+    },
+    "timer": {
+      "progressAriaLabel": "Progresso della concentrazione"
+    },
+    "status": {
+      "ready": {
+        "title": "In attesa di concentrazione",
+        "description": "Premi il pulsante sul dispositivo per attivarlo."
+      },
+      "active": {
+        "title": "Concentrazione totale attivata",
+        "description": "Ti preghiamo di mantenere la massima serietà."
+      },
+      "stopped": {
+        "title": "Hai già abbastanza concentrazione?",
+        "description": "Dispositivo spento. Forse sei pronto a lavorare."
+      },
+      "completed": {
+        "title": "Complimenti! Concentrazione raggiunta.",
+        "description": "Ora puoi lavorare. Meglio lontano da questo sito."
+      }
+    },
+    "notifications": {
+      "15": "Senti già un'ondata di concentrazione?",
+      "45": "Il livello di attenzione sale. Forse.",
+      "90": "Ti preghiamo di non distrarti con questo avviso.",
+      "150": "Sei quasi pronto a metterti al lavoro.",
+      "closeAriaLabel": "Chiudi la notifica"
+    }
+  },
+  "agreementModal": {
+    "title": "Accordo di licenza",
+    "description": "Leggerlo è obbligatorio. Anche se decidi di saltarlo.",
+    "closeAriaLabel": "Chiudi l'accordo",
+    "pageInfo": {
+      "loading": "Caricamento dell'accordo…",
+      "loadingFailed": "Impossibile caricare la pagina dell'accordo.",
+      "loadingProgress": "Vai alla pagina tramite la barra di avanzamento",
+      "prefix": "Pagina",
+      "separator": "di",
+      "retry": "Riprova",
+      "downloadTitle": "Scarica il documento HTML (salvabile come PDF)",
+      "goToClause": "Vai alla clausola",
+      "returnToClause": "Torna alla clausola",
+      "pageNumber": "Numero di pagina",
+      "enterPage": "Inserisci il numero di pagina da",
+      "goToPage": "Vai"
+    },
+    "navigation": {
+      "ariaLabel": "Navigazione dell'accordo",
+      "previous": "Indietro",
+      "next": "Avanti"
+    },
+    "actions": {
+      "accept": "Ho letto tutto",
+      "skip": "Non l'ho letto, ma continuo"
+    },
+    "disclaimer": "La tua decisione sarà accettata a prescindere dalle tue conoscenze legali.",
+    "export": {
+      "title": "Accordo di licenza",
+      "publishedPages": "Pagine pubblicate",
+      "printHint": "Per salvare in PDF, apri il file nel browser e seleziona Stampa → Salva come PDF."
+    }
+  },
+  "availability": {
+    "promotions": {
+      "up": "Diventa uno dei primi tester di CPhone, il nuovo smartphone alimentato da un campo di concentrazione. Ordina ora Concentrator™ per ottenere l'accesso e prenotare un prototipo.",
+      "down": "Concentrator™ era solo la prima fase. Ora creiamo un ecosistema cognitivo multilivello e CPhone è il tuo portale verso quel futuro. Il beta test inizia presto. Sei pronto?"
+    },
+    "title": {
+      "part1": "Restano solo",
+      "part2": "dispositivi su"
+    },
+    "timer": {
+      "label": "L'offerta scade tra"
+    },
+    "image": {
+      "alt": "Attrezzatura Concentrator"
+    },
+    "messages": {
+      "normal": "Resta un passo avanti: ordina Concentrator™ ora!",
+      "unavailable": "Focus non disponibile. Esegui un test di autocontrollo."
+    },
+    "buttons": {
+      "try": "Prova ad acquistare",
+      "soldout": "Peccato, troppo tardi!"
+    }
+  },
+  "gallery": {
+    "title": "Galleria del dispositivo",
+    "alts": {
+      "front": "vista frontale",
+      "side": "vista laterale",
+      "top": "vista dall'alto",
+      "press": "pressione del pulsante",
+      "interior": "nell'ambiente",
+      "meditation": "meditazione",
+      "equipment": "attrezzatura",
+      "hands": "tra le mani",
+      "full": "vista completa nell'ambiente"
+    }
+  },
+  "reviews": {
+    "title": "Recensioni degli utenti",
+    "items": [
+      {
+        "text": "«Laureato in una notte. Non so nemmeno come.»",
+        "author": "Jakub",
+        "date": "21.05.2025"
+      },
+      {
+        "text": "«Ho eliminato TikTok. Ha funzionato.»",
+        "author": "James",
+        "date": "15.04.2025"
+      },
+      {
+        "text": "«Concentrator™ era fermo. Io no.»",
+        "author": "Olena",
+        "date": "12.03.2025"
+      },
+      {
+        "text": "«Prima aprivo YouTube. Ora gli occhi.»",
+        "author": "Emily",
+        "date": "06.04.2025"
+      },
+      {
+        "text": "«Mi siedo per 10 minuti. Esco dopo 6 ore.»",
+        "author": "Ivan",
+        "date": "25.04.2025"
+      },
+      {
+        "text": "«Rapporto inviato e bucato fatto. Insieme.»",
+        "author": "Carlos",
+        "date": "29.03.2025"
+      },
+      {
+        "text": "«Ho scordato le pause. E il cibo.»",
+        "author": "Dmytro",
+        "date": "03.05.2025"
+      },
+      {
+        "text": "«Focus intatto. Anche con il mio gatto.»",
+        "author": "Katya",
+        "date": "14.04.2025"
+      },
+      {
+        "text": "«L'ho solo acceso. Il resto è storia.»",
+        "author": "Marta",
+        "date": "18.03.2025"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "Come funziona Concentrator™?",
+        "a": "Aumenta il focus del 300% con impulsi pseudoscientifici e immaginazione."
+      },
+      {
+        "q": "Perché Concentrator™ non fa nulla?",
+        "a": "Perché ha già fatto tutto il necessario."
+      },
+      {
+        "q": "Si può usare sui mezzi pubblici?",
+        "a": "Sì, specie per leggere le scritte minuscole sulla tua multa."
+      },
+      {
+        "q": "Ci sono effetti collaterali?",
+        "a": "Solo successi collaterali: produttività, carisma e umorismo."
+      },
+      {
+        "q": "È legale nel mio Paese?",
+        "a": "Tecnicamente, sì."
+      },
+      {
+        "q": "Posso usarne due insieme?",
+        "a": "Solo se hai due cervelli."
+      }
+    ]
+  },
+  "order": {
+    "form": {
+      "title": "Ordina il focus",
+      "placeholders": {
+        "name": "Il tuo nome",
+        "comment": "Commento o domanda"
+      },
+      "labels": {
+        "submit": "Ordina il focus",
+        "sending": "Invio in corso..."
+      },
+      "messages": {
+        "nameRequired": "Inserisci il tuo nome 🥺",
+        "validEmail": "Inserisci un'email valida",
+        "noNumbers": "Non usare numeri nel nome 😊",
+        "success": "Modulo inviato con successo!"
+      }
+    },
+    "delivery": {
+      "title": "Consegna trasparente",
+      "steps": [
+        {
+          "title": "Hai fatto il tuo ordine",
+          "description": "Ordine effettuato sul sito"
+        },
+        {
+          "title": "Prepariamo e spediamo",
+          "description": "Consegna un piccione addestrato"
+        },
+        {
+          "title": "Ricevi il tuo ordine",
+          "description": "e più produttività"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "nav": {
+      "links": {
+        "hiw": "Come funziona",
+        "reviews": "Recensioni",
+        "order": "Ordine",
+        "faq": "FAQ"
+      },
+      "team": "Invia caffè e curriculum"
+    },
+    "links": {
+      "support": "Sostieni l'esperimento del caffè"
+    },
+    "copyright": "© 2026 Concentrator™ Creato con amore e pseudoscienza. Tutti i diritti riservati."
+  }
+}

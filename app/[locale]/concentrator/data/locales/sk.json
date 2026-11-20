@@ -132,6 +132,78 @@
     ]
   },
 
+  "concentratorOnline": {
+    "title": "Concentrator™ Online",
+    "subline": "Budúcnosť koncentrácie je už vo vašom prehliadači.",
+    "agreement": {
+      "button": "Licenčná zmluva",
+      "note": "Prečítanie je povinné. Aj keď ju preskočíte."
+    },
+    "timer": {
+      "progressAriaLabel": "Priebeh koncentrácie"
+    },
+    "status": {
+      "ready": {
+        "title": "Čakanie na koncentráciu",
+        "description": "Stlačením tlačidla na zariadení ho aktivujete."
+      },
+      "active": {
+        "title": "Úplná koncentrácia bola aktivovaná",
+        "description": "Prosíme, zachovajte vážnosť celej situácie."
+      },
+      "stopped": {
+        "title": "Naozaj už bolo koncentrácie dosť?",
+        "description": "Zariadenie je vypnuté. Možno ste už pripravení pracovať."
+      },
+      "completed": {
+        "title": "Blahoželáme! Koncentrácia bola dosiahnutá.",
+        "description": "Teraz sa môžete pustiť do práce. Najlepšie mimo tejto stránky."
+      }
+    },
+    "notifications": {
+      "15": "Už cítite príval koncentrácie?",
+      "45": "Úroveň sústredenia sa zvyšuje. Pravdepodobne.",
+      "90": "Prosíme, nenechajte sa rozptyľovať týmto upozornením.",
+      "150": "Už ste takmer pripravení pustiť sa do práce.",
+      "closeAriaLabel": "Zavrieť upozornenie"
+    }
+  },
+
+  "agreementModal": {
+    "title": "Licenčná zmluva",
+    "description": "Prečítanie je povinné. Aj keď ste sa rozhodli ju preskočiť.",
+    "closeAriaLabel": "Zavrieť zmluvu",
+    "pageInfo": {
+      "loading": "Načítava sa zmluva…",
+      "loadingFailed": "Nepodarilo sa načítať stránku zmluvy.",
+      "loadingProgress": "Prejsť na stránku pomocou ukazovateľa priebehu",
+      "prefix": "Strana",
+      "separator": "z",
+      "retry": "Skúsiť znova",
+      "downloadTitle": "Stiahnuť dokument vo formáte HTML (možno ho uložiť ako PDF)",
+      "goToClause": "Prejsť na ustanovenie",
+      "returnToClause": "Vrátiť sa k ustanoveniu",
+      "pageNumber": "Číslo strany",
+      "enterPage": "Zadajte číslo strany od",
+      "goToPage": "Prejsť"
+    },
+    "navigation": {
+      "ariaLabel": "Navigácia v zmluve",
+      "previous": "Späť",
+      "next": "Ďalej"
+    },
+    "actions": {
+      "accept": "Všetko som si prečítal",
+      "skip": "Nečítal som, ale chcem pokračovať"
+    },
+    "disclaimer": "Vaše rozhodnutie bude prijaté bez ohľadu na úroveň vašich právnych znalostí.",
+    "export": {
+      "title": "Licenčná zmluva",
+      "publishedPages": "Počet zverejnených strán",
+      "printHint": "Ak chcete dokument uložiť ako PDF, otvorte súbor v prehliadači a vyberte Tlačiť → Uložiť ako PDF."
+    }
+  },
+
   "availability": {
     "promotions": {
       "up": "Staňte sa prvým testerom CPhone — nového smartfónu založeného na poli sústredenia. Objednajte si Concentrator™ teraz, aby ste získali prístup a rezervovali si prototyp.",

@@ -132,6 +132,78 @@
     ]
   },
 
+  "concentratorOnline": {
+    "title": "Concentrator™ Online",
+    "subline": "Prihodnost koncentracije je že v vašem brskalniku.",
+    "agreement": {
+      "button": "Licenčna pogodba",
+      "note": "Branje je obvezno. Tudi če ga preskočite."
+    },
+    "timer": {
+      "progressAriaLabel": "Napredek koncentracije"
+    },
+    "status": {
+      "ready": {
+        "title": "Čakanje na koncentracijo",
+        "description": "Za aktivacijo pritisnite gumb na napravi."
+      },
+      "active": {
+        "title": "Popolna koncentracija je aktivirana",
+        "description": "Prosimo, ohranite vso resnost dogajanja."
+      },
+      "stopped": {
+        "title": "Ali je bilo koncentracije že dovolj?",
+        "description": "Naprava je izklopljena. Morda ste že pripravljeni na delo."
+      },
+      "completed": {
+        "title": "Čestitamo! Koncentracija je dosežena.",
+        "description": "Zdaj se lahko lotite dela. Po možnosti zunaj tega spletnega mesta."
+      }
+    },
+    "notifications": {
+      "15": "Ali že čutite naval koncentracije?",
+      "45": "Raven zbranosti narašča. Domnevno.",
+      "90": "Prosimo, ne dovolite, da vas to obvestilo zmoti.",
+      "150": "Skoraj ste pripravljeni, da se lotite dela.",
+      "closeAriaLabel": "Zapri obvestilo"
+    }
+  },
+
+  "agreementModal": {
+    "title": "Licenčna pogodba",
+    "description": "Branje je obvezno. Tudi če ste se odločili, da ga preskočite.",
+    "closeAriaLabel": "Zapri pogodbo",
+    "pageInfo": {
+      "loading": "Nalaganje pogodbe…",
+      "loadingFailed": "Stranice pogodbe ni bilo mogoče naložiti.",
+      "loadingProgress": "Pojdi na stran z drsnikom napredka",
+      "prefix": "Stran",
+      "separator": "od",
+      "retry": "Poskusi znova",
+      "downloadTitle": "Prenesi dokument v obliki HTML (mogoče ga je shraniti kot PDF)",
+      "goToClause": "Pojdi na določbo",
+      "returnToClause": "Vrni se na določbo",
+      "pageNumber": "Številka strani",
+      "enterPage": "Vnesite številko strani od",
+      "goToPage": "Pojdi"
+    },
+    "navigation": {
+      "ariaLabel": "Krmarjenje po pogodbi",
+      "previous": "Nazaj",
+      "next": "Naprej"
+    },
+    "actions": {
+      "accept": "Vse sem prebral",
+      "skip": "Nisem prebral, vendar želim nadaljevati"
+    },
+    "disclaimer": "Vaša odločitev bo sprejeta ne glede na raven vašega pravnega znanja.",
+    "export": {
+      "title": "Licenčna pogodba",
+      "publishedPages": "Število objavljenih strani",
+      "printHint": "Če želite dokument shraniti kot PDF, odprite datoteko v brskalniku in izberite Natisni → Shrani kot PDF."
+    }
+  },
+
   "availability": {
     "promotions": {
       "up": "Postani prvi tester CPhonea — novega pametnega telefona, ki deluje na polju koncentracije. Naroči Concentrator™ zdaj, da si zagotoviš dostop in rezerviraš prototip.",

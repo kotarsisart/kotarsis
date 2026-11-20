@@ -1,0 +1,366 @@
+
+{
+  "meta": {
+    "title": "Concentrator™ — Enhet för bättre koncentration",
+    "description": "Koncentrera dig utan ansträngning med Concentrator™ – en interaktiv enhet av nästa generation som tränar din uppmärksamhet och koncentration.",
+    "keywords": "concentrator, koncentration, uppmärksamhet, fokus, produktivitet, kotarsis",
+    "siteName": "Concentrator™",
+    "imgAlt": "Förhandsvisningsbild av Concentrator™"
+  },
+  "preloader": {
+    "kotarsisAlt": "kotarsis logotyp",
+    "projectAlt": "Logotyp för projektet Concentrator™"
+  },
+  "header": {
+    "logo": {
+      "project": "Concentrator™",
+      "projectAlt": "Logotyp för projektet Concentrator™",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logotyp för kotarsis"
+    },
+    "slogan": "Stabilisera din kognitiva energi.",
+    "focus": {
+      "label": "Fokus:"
+    },
+    "langButton": {
+      "default": "Välj språk"
+    }
+  },
+  "hero": {
+    "slogan": "Koncentrera dig utan besvär",
+    "title": "Concentrator™",
+    "outro": "Nästa generations fokusteknik",
+    "button": {
+      "default": "Aktivera fokus",
+      "active": "Fokus aktiverat!"
+    },
+    "counter": {
+      "label": "Redan koncentrerade"
+    },
+    "cognitive": "Kognitiv synkronisering slutförd",
+    "image": {
+      "alt": "Concentrator-enheten"
+    }
+  },
+  "hiw": {
+    "title": "Hur fungerar Concentrator™?",
+    "steps": {
+      "laptop": {
+        "alt": "Bärbar dator",
+        "text": "Placera den bredvid dig"
+      },
+      "off": {
+        "alt": "Gör ingenting",
+        "text": "Den gör absolut ingenting"
+      },
+      "flame": {
+        "alt": "Jobbar som ett djur",
+        "text": "Du jobbar som ett djur"
+      }
+    }
+  },
+  "story": {
+    "title": "Historien bakom Concentrator™",
+    "paragraphs": [
+      "I ett bortglömt laboratorium under Karpaterna upptäckte en grupp excentriska forskare ett oscillerande fält av ren koncentration.",
+      "Efter 7 år av misslyckade experiment, gräl och utspillt kaffe lyckades de kanalisera energin till en enda enhet – Concentrator™.",
+      "Det som började som ett koffeindrivet sidoprojekt utlöste snart det som nu kallas Fokushändelsen. En fikus i laboratoriet fördubblade sin storlek och en katt löste sudoku.",
+      "När de insåg vilken kraft de hade upptäckt skyndade sig teamet – bestående av teoretiska neurokemister, en misslyckad trollkarl och en praktikant som trodde att det var en matlagningskurs – att stabilisera fenomenet.",
+      "Använd med försiktighet. Biverkningar kan omfatta enastående produktivitet och en märklig känsla av mening."
+    ],
+    "quote": {
+      "text": "Vi visste inte hur det fungerade. Men det fungerade.",
+      "author": "Prof. Kostjuk"
+    },
+    "image": {
+      "alt": "Historien om Concentrator"
+    }
+  },
+  "benefits": {
+    "title": "Varför välja Concentrator™?",
+    "cards": [
+      {
+        "icon": "/src/assets/images/section-icons/benefits/no-charge.svg",
+        "alt": "behöver inte laddas",
+        "title": "Fungerar utan laddning",
+        "description": "Drivs av ren vilja. Laddas av kollegornas blickar."
+      },
+      {
+        "icon": "/src/assets/images/section-icons/benefits/book-question-icon.svg",
+        "alt": "utan instruktioner",
+        "title": "Kräver inga instruktioner",
+        "description": "Ställ den bredvid dig. Den vet allt. Kanske även om dig."
+      },
+      {
+        "icon": "/src/assets/images/section-icons/benefits/coffee-cat.png",
+        "alt": "vänlig mot kaffe och katter",
+        "title": "Älskar kaffe och katter",
+        "description": "Stör inte din morgonrutin och passar perfekt till spinnande."
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Concentrator™ mot en vanlig timer",
+    "headers": ["Egenskap", "Concentrator™", "Vanlig timer"],
+    "rows": [
+      {
+        "parameter": "Ökad koncentration",
+        "concentrator": "+300%",
+        "regular": "0%"
+      },
+      {
+        "parameter": "Strömkälla",
+        "concentrator": "Behövs inte",
+        "regular": "Krävs"
+      },
+      {
+        "parameter": "Vetenskapligt värde",
+        "concentrator": "Pseudo",
+        "regular": "Saknas"
+      },
+      {
+        "parameter": "Vattentålighet",
+        "concentrator": "IP68",
+        "regular": "Låg"
+      }
+    ]
+  },
+  "concentratorOnline": {
+    "title": "Concentrator™ Online",
+    "subline": "Framtidens fokus finns redan i din webbläsare.",
+    "agreement": {
+      "button": "Licensavtal",
+      "note": "Måste läsas. Även om du hoppar över det."
+    },
+    "timer": {
+      "progressAriaLabel": "Koncentrationens framsteg"
+    },
+    "status": {
+      "ready": {
+        "title": "Väntar på koncentration",
+        "description": "Tryck på enhetens knapp för att aktivera."
+      },
+      "active": {
+        "title": "Full koncentration aktiverad",
+        "description": "Var vänlig och ta situationen på allvar."
+      },
+      "stopped": {
+        "title": "Har du fått nog med fokus?",
+        "description": "Enheten är av. Kanske kan du börja jobba."
+      },
+      "completed": {
+        "title": "Grattis! Koncentration uppnådd.",
+        "description": "Nu kan du börja jobba. Helst utanför sajten."
+      }
+    },
+    "notifications": {
+      "15": "Känner du redan en våg av koncentration?",
+      "45": "Din koncentration ökar. Förmodligen.",
+      "90": "Låt dig inte distraheras av detta meddelande.",
+      "150": "Du är nästan redo att börja jobba.",
+      "closeAriaLabel": "Stäng meddelandet"
+    }
+  },
+  "agreementModal": {
+    "title": "Licensavtal",
+    "description": "Måste läsas. Även om du väljer att hoppa över det.",
+    "closeAriaLabel": "Stäng licensavtalet",
+    "pageInfo": {
+      "loading": "Laddar avtalet…",
+      "loadingFailed": "Kunde inte ladda sidan i avtalet.",
+      "loadingProgress": "Gå till en sida via förloppsindikatorn",
+      "prefix": "Sida",
+      "separator": "av",
+      "retry": "Försök igen",
+      "downloadTitle": "Ladda ner som HTML (kan sparas som PDF)",
+      "goToClause": "Gå till punkt",
+      "returnToClause": "Tillbaka till punkt",
+      "pageNumber": "Sidnummer",
+      "enterPage": "Ange sidnummer från",
+      "goToPage": "Gå"
+    },
+    "navigation": {
+      "ariaLabel": "Navigering i licensavtalet",
+      "previous": "Tillbaka",
+      "next": "Nästa"
+    },
+    "actions": {
+      "accept": "Jag har läst allt",
+      "skip": "Inte läst, men fortsätt"
+    },
+    "disclaimer": "Ditt beslut godtas oavsett dina juridiska kunskaper.",
+    "export": {
+      "title": "Licensavtal",
+      "publishedPages": "Publicerade sidor",
+      "printHint": "För att spara som PDF, öppna filen i webbläsaren och välj Skriv ut → Spara som PDF."
+    }
+  },
+  "availability": {
+    "promotions": {
+      "up": "Bli en av de första att testa CPhone – den nya mobilen som drivs av ett koncentrationsfält. Beställ Concentrator™ nu för att få tillgång och reservera en prototyp.",
+      "down": "Concentrator™ var bara första fasen. Nu skapar vi ett kognitivt ekosystem i flera nivåer, och CPhone är din portal till framtiden. Betatestningen börjar snart – är du redo?"
+    },
+    "title": {
+      "part1": "Bara",
+      "part2": "enheter av"
+    },
+    "timer": {
+      "label": "Erbjudandet slutar om"
+    },
+    "image": {
+      "alt": "Concentrator-utrustning"
+    },
+    "messages": {
+      "normal": "Ligg steget före – beställ Concentrator™ redan nu!",
+      "unavailable": "Fokus är otillgängligt. Öva på självkontroll."
+    },
+    "buttons": {
+      "try": "Försök köpa",
+      "soldout": "Tyvärr, för sent!"
+    }
+  },
+  "gallery": {
+    "title": "Galleri för enheten",
+    "alts": {
+      "front": "framifrån",
+      "side": "från sidan",
+      "top": "ovanifrån",
+      "press": "knapptryckning",
+      "interior": "i en interiör",
+      "meditation": "meditation",
+      "equipment": "utrustning",
+      "hands": "i händerna",
+      "full": "helhetsbild i en interiör"
+    }
+  },
+  "reviews": {
+    "title": "Användarrecensioner",
+    "items": [
+      {
+        "text": "”Tog examen på en natt. Ingen aning hur.”",
+        "author": "Jakub",
+        "date": "21.05.2025"
+      },
+      {
+        "text": "”Raderade TikTok. Det fungerade.”",
+        "author": "James",
+        "date": "15.04.2025"
+      },
+      {
+        "text": "”Concentrator™ stod stilla. Inte jag.”",
+        "author": "Olena",
+        "date": "12.03.2025"
+      },
+      {
+        "text": "”Förr öppnade jag YouTube. Nu ögonen.”",
+        "author": "Emily",
+        "date": "06.04.2025"
+      },
+      {
+        "text": "”Satte mig i 10 minuter. Gick efter 6 timmar.”",
+        "author": "Ivan",
+        "date": "25.04.2025"
+      },
+      {
+        "text": "”Skickade rapporten och tvättade. Samtidigt.”",
+        "author": "Carlos",
+        "date": "29.03.2025"
+      },
+      {
+        "text": "”Glömde pauserna. Och maten.”",
+        "author": "Dmytro",
+        "date": "03.05.2025"
+      },
+      {
+        "text": "”Fokuset höll. Till och med med min katt.”",
+        "author": "Katya",
+        "date": "14.04.2025"
+      },
+      {
+        "text": "”Slog bara på den. Resten är historia.”",
+        "author": "Marta",
+        "date": "18.03.2025"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Vanliga frågor",
+    "items": [
+      {
+        "q": "Hur fungerar Concentrator™?",
+        "a": "Den ökar koncentrationen med 300 % med pseudovetenskapliga impulser och fantasi."
+      },
+      {
+        "q": "Varför gör Concentrator™ ingenting?",
+        "a": "För att den redan gjort allt som behövs."
+      },
+      {
+        "q": "Kan jag använda den på resan?",
+        "a": "Ja, särskilt för att läsa det finstilta på din böter."
+      },
+      {
+        "q": "Finns det några biverkningar?",
+        "a": "Bara extra framgångar: produktivitet, karisma och humor."
+      },
+      {
+        "q": "Är det lagligt i mitt land?",
+        "a": "Tekniskt sett, ja."
+      },
+      {
+        "q": "Kan jag använda två samtidigt?",
+        "a": "Bara om du har två hjärnor."
+      }
+    ]
+  },
+  "order": {
+    "form": {
+      "title": "Beställ fokus",
+      "placeholders": {
+        "name": "Ditt namn",
+        "comment": "Kommentar eller fråga"
+      },
+      "labels": {
+        "submit": "Beställ fokus",
+        "sending": "Skickar..."
+      },
+      "messages": {
+        "nameRequired": "Ange ditt namn, tack 🥺",
+        "validEmail": "Ange en giltig e-postadress",
+        "noNumbers": "Använd inga siffror i namnet 😊",
+        "success": "Formuläret har skickats!"
+      }
+    },
+    "delivery": {
+      "title": "Leveransen är öppen",
+      "steps": [
+        {
+          "title": "Du har gjort din beställning",
+          "description": "Beställningen gjord på sajten"
+        },
+        {
+          "title": "Vi packar och skickar",
+          "description": "Levereras av en tränad duva"
+        },
+        {
+          "title": "Du får din beställning",
+          "description": "och ökad produktivitet"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "nav": {
+      "links": {
+        "hiw": "Så fungerar det",
+        "reviews": "Recensioner",
+        "order": "Beställning",
+        "faq": "FAQ"
+      },
+      "team": "Skicka kaffe och CV"
+    },
+    "links": {
+      "support": "Stöd kaffeexperimentet"
+    },
+    "copyright": "© 2026 Concentrator™ Skapad med kärlek och pseudovetenskap. Alla rättigheter förbehållna."
+  }
+}

@@ -13,6 +13,7 @@ const locales = [
   "sr",
   "hr",
   "sl",
+  "de",
 ] as const;
 
 type Locale = (typeof locales)[number];

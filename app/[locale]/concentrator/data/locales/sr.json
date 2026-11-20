@@ -132,6 +132,78 @@
     ]
   },
 
+  "concentratorOnline": {
+    "title": "Concentrator™ Online",
+    "subline": "Budućnost koncentracije već je u vašem pregledaču.",
+    "agreement": {
+      "button": "Ugovor o licenci",
+      "note": "Čitanje je obavezno. Čak i ako ga preskočite."
+    },
+    "timer": {
+      "progressAriaLabel": "Napredak koncentracije"
+    },
+    "status": {
+      "ready": {
+        "title": "Čekanje na koncentraciju",
+        "description": "Pritisnite dugme na uređaju da biste ga aktivirali."
+      },
+      "active": {
+        "title": "Potpuna koncentracija je aktivirana",
+        "description": "Molimo vas da zadržite ozbiljnost cele situacije."
+      },
+      "stopped": {
+        "title": "Zar vam je već dosta koncentracije?",
+        "description": "Uređaj je isključen. Možda ste već spremni za rad."
+      },
+      "completed": {
+        "title": "Čestitamo! Koncentracija je postignuta.",
+        "description": "Sada možete da počnete da radite. Po mogućstvu van ovog sajta."
+      }
+    },
+    "notifications": {
+      "15": "Da li već osećate nalet koncentracije?",
+      "45": "Nivo koncentracije raste. Pretpostavljamo.",
+      "90": "Molimo vas da ne dozvolite da vam ovo obaveštenje odvuče pažnju.",
+      "150": "Skoro ste spremni da počnete da radite.",
+      "closeAriaLabel": "Zatvori obaveštenje"
+    }
+  },
+
+  "agreementModal": {
+    "title": "Ugovor o licenci",
+    "description": "Čitanje je obavezno. Čak i ako ste odlučili da ga preskočite.",
+    "closeAriaLabel": "Zatvori ugovor",
+    "pageInfo": {
+      "loading": "Učitavanje ugovora…",
+      "loadingFailed": "Nije moguće učitati stranicu ugovora.",
+      "loadingProgress": "Pređi na stranicu pomoću trake napretka",
+      "prefix": "Stranica",
+      "separator": "od",
+      "retry": "Pokušaj ponovo",
+      "downloadTitle": "Preuzmi dokument u HTML formatu (može se sačuvati kao PDF)",
+      "goToClause": "Pređi na odredbu",
+      "returnToClause": "Vrati se na odredbu",
+      "pageNumber": "Broj stranice",
+      "enterPage": "Unesite broj stranice od",
+      "goToPage": "Pređi"
+    },
+    "navigation": {
+      "ariaLabel": "Navigacija kroz ugovor",
+      "previous": "Nazad",
+      "next": "Dalje"
+    },
+    "actions": {
+      "accept": "Sve sam pročitao",
+      "skip": "Nisam pročitao, ali želim da nastavim"
+    },
+    "disclaimer": "Vaša odluka biće prihvaćena bez obzira na nivo vašeg pravnog obrazovanja.",
+    "export": {
+      "title": "Ugovor o licenci",
+      "publishedPages": "Broj objavljenih stranica",
+      "printHint": "Da biste sačuvali dokument kao PDF, otvorite datoteku u pregledaču i izaberite Štampaj → Sačuvaj kao PDF."
+    }
+  },
+
   "availability": {
     "promotions": {
       "up": "Postanite prvi tester CPhone-a — novog telefona koji radi na polju koncentracije. Naručite Concentrator™ sada da biste obezbedili pristup i rezervisali prototip.",

@@ -9,7 +9,7 @@ import SeoSchema from "@/utils/SeoSchema/SeoSchema";
 
 import { useI18n } from "@/data/I18nProvider";
 
-import '../globals.css'
+import '../../globals.css'
 
 export default function HomePage() {
   const { t, locale } = useI18n();

@@ -1,0 +1,366 @@
+
+{
+  "meta": {
+    "title": "Concentrator™ — Apparaat voor concentratie",
+    "description": "Concentreer je moeiteloos met Concentrator™: een interactief apparaat van de nieuwe generatie om je aandacht en concentratie te trainen.",
+    "keywords": "concentrator, concentratie, aandacht, focus, productiviteit, kotarsis",
+    "siteName": "Concentrator™",
+    "imgAlt": "Voorbeeldafbeelding van Concentrator™"
+  },
+  "preloader": {
+    "kotarsisAlt": "Logo van kotarsis",
+    "projectAlt": "Logo van het project Concentrator™"
+  },
+  "header": {
+    "logo": {
+      "project": "Concentrator™",
+      "projectAlt": "Logo van het project Concentrator™",
+      "kotarsis": "kotarsis",
+      "kotarsisAlt": "Logo van kotarsis"
+    },
+    "slogan": "Stabiliseer je cognitieve energie.",
+    "focus": {
+      "label": "Focus:"
+    },
+    "langButton": {
+      "default": "Kies een taal"
+    }
+  },
+  "hero": {
+    "slogan": "Concentreer je moeiteloos",
+    "title": "Concentrator™",
+    "outro": "Focustechnologie van de nieuwe generatie",
+    "button": {
+      "default": "Activeer je focus",
+      "active": "Focus geactiveerd!"
+    },
+    "counter": {
+      "label": "Al geconcentreerd"
+    },
+    "cognitive": "Cognitieve synchronisatie voltooid",
+    "image": {
+      "alt": "Concentrator-apparaat"
+    }
+  },
+  "hiw": {
+    "title": "Hoe werkt Concentrator™?",
+    "steps": {
+      "laptop": {
+        "alt": "Laptop",
+        "text": "Zet hem ernaast"
+      },
+      "off": {
+        "alt": "Doet niets",
+        "text": "Hij doet helemaal niets"
+      },
+      "flame": {
+        "alt": "Werkt als een beest",
+        "text": "Je werkt als een beest"
+      }
+    }
+  },
+  "story": {
+    "title": "De oorsprong van Concentrator™",
+    "paragraphs": [
+      "In een vergeten laboratorium onder de Karpaten ontdekte een groep excentrieke wetenschappers een oscillerend veld van pure concentratie.",
+      "Na 7 jaar mislukte experimenten, ruzies en gemorste koffie slaagden ze erin de energie in één apparaat te bundelen: Concentrator™.",
+      "Wat begon als een bijproject op cafeïne, veroorzaakte al snel wat nu het Focusincident heet. Een ficus in het lab werd twee keer zo groot en een kat loste een sudoku op.",
+      "Toen ze beseften welke kracht ze hadden ontdekt, haastte het team — bestaande uit theoretische neurochemici, een mislukte goochelaar en een stagiair die dacht dat hij een kookcursus volgde — zich om het fenomeen te stabiliseren.",
+      "Voorzichtig gebruiken. Bijwerkingen kunnen ongekende productiviteit en een vreemd gevoel van zingeving omvatten."
+    ],
+    "quote": {
+      "text": "We wisten niet hoe het werkte. Maar het werkte.",
+      "author": "Prof. Kostjoek"
+    },
+    "image": {
+      "alt": "Geschiedenis van Concentrator"
+    }
+  },
+  "benefits": {
+    "title": "Waarom kiezen voor Concentrator™?",
+    "cards": [
+      {
+        "icon": "/src/assets/images/section-icons/benefits/no-charge.svg",
+        "alt": "opladen niet nodig",
+        "title": "Werkt zonder opladen",
+        "description": "Draait op pure wilskracht. Laadt op door blikken van collega's."
+      },
+      {
+        "icon": "/src/assets/images/section-icons/benefits/book-question-icon.svg",
+        "alt": "zonder handleiding",
+        "title": "Geen handleiding nodig",
+        "description": "Zet hem ernaast. Hij weet alles al. Misschien ook over jou."
+      },
+      {
+        "icon": "/src/assets/images/section-icons/benefits/coffee-cat.png",
+        "alt": "vriendelijk voor koffie en katten",
+        "title": "Dol op koffie en katten",
+        "description": "Stoort je ochtendritueel niet en past perfect bij gespin."
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Concentrator™ versus een gewone timer",
+    "headers": ["Kenmerk", "Concentrator™", "Gewone timer"],
+    "rows": [
+      {
+        "parameter": "Focusverbetering",
+        "concentrator": "+300%",
+        "regular": "0%"
+      },
+      {
+        "parameter": "Energiebron",
+        "concentrator": "Niet nodig",
+        "regular": "Wel nodig"
+      },
+      {
+        "parameter": "Wetenschappelijke waarde",
+        "concentrator": "Pseudo",
+        "regular": "Geen"
+      },
+      {
+        "parameter": "Waterbestendigheid",
+        "concentrator": "IP68",
+        "regular": "Laag"
+      }
+    ]
+  },
+  "concentratorOnline": {
+    "title": "Concentrator™ Online",
+    "subline": "De toekomst van focus zit al in je browser.",
+    "agreement": {
+      "button": "Licentieovereenkomst",
+      "note": "Lezen is verplicht. Ook als je het overslaat."
+    },
+    "timer": {
+      "progressAriaLabel": "Voortgang van de concentratie"
+    },
+    "status": {
+      "ready": {
+        "title": "Wachten op concentratie",
+        "description": "Druk op de knop van het apparaat om te starten."
+      },
+      "active": {
+        "title": "Volledige concentratie geactiveerd",
+        "description": "Neem de situatie alstublieft serieus."
+      },
+      "stopped": {
+        "title": "Nu al genoeg concentratie?",
+        "description": "Apparaat uit. Misschien kun je nu gaan werken."
+      },
+      "completed": {
+        "title": "Gefeliciteerd! Focus bereikt.",
+        "description": "Je kunt nu werken. Liefst buiten deze website."
+      }
+    },
+    "notifications": {
+      "15": "Voel je de concentratie al opkomen?",
+      "45": "Je focusniveau stijgt. Vermoedelijk.",
+      "90": "Laat je niet afleiden door deze melding.",
+      "150": "Je bent bijna klaar om te gaan werken.",
+      "closeAriaLabel": "Melding sluiten"
+    }
+  },
+  "agreementModal": {
+    "title": "Licentieovereenkomst",
+    "description": "Lezen is verplicht. Ook als je het wilt overslaan.",
+    "closeAriaLabel": "Overeenkomst sluiten",
+    "pageInfo": {
+      "loading": "Overeenkomst laden…",
+      "loadingFailed": "Kan de pagina van de overeenkomst niet laden.",
+      "loadingProgress": "Ga naar een pagina via de voortgangsbalk",
+      "prefix": "Pagina",
+      "separator": "van",
+      "retry": "Opnieuw",
+      "downloadTitle": "Download als HTML (ook op te slaan als PDF)",
+      "goToClause": "Ga naar artikel",
+      "returnToClause": "Terug naar artikel",
+      "pageNumber": "Paginanummer",
+      "enterPage": "Voer een paginanummer in vanaf",
+      "goToPage": "Ga"
+    },
+    "navigation": {
+      "ariaLabel": "Navigatie door de overeenkomst",
+      "previous": "Terug",
+      "next": "Verder"
+    },
+    "actions": {
+      "accept": "Alles gelezen",
+      "skip": "Niet gelezen, toch verder"
+    },
+    "disclaimer": "Je keuze telt, ongeacht hoeveel juridische kennis je hebt.",
+    "export": {
+      "title": "Licentieovereenkomst",
+      "publishedPages": "Gepubliceerde pagina's",
+      "printHint": "Om als PDF op te slaan, open het bestand in je browser en kies Afdrukken → Opslaan als PDF."
+    }
+  },
+  "availability": {
+    "promotions": {
+      "up": "Test als een van de eersten CPhone, de nieuwe smartphone die werkt op een concentratieveld. Bestel nu Concentrator™ voor toegang en om een prototype te reserveren.",
+      "down": "Concentrator™ was slechts fase één. Nu bouwen we een cognitief ecosysteem met meerdere lagen, en CPhone is je toegang tot die toekomst. De bètatest begint snel. Klaar?"
+    },
+    "title": {
+      "part1": "Nog maar",
+      "part2": "apparaten van"
+    },
+    "timer": {
+      "label": "Aanbieding eindigt over"
+    },
+    "image": {
+      "alt": "Concentrator-apparatuur"
+    },
+    "messages": {
+      "normal": "Blijf een stap voor: bestel Concentrator™ nu!",
+      "unavailable": "Focus niet beschikbaar. Oefen zelfbeheersing."
+    },
+    "buttons": {
+      "try": "Probeer te kopen",
+      "soldout": "Helaas, te laat!"
+    }
+  },
+  "gallery": {
+    "title": "Apparatengalerij",
+    "alts": {
+      "front": "vooraanzicht",
+      "side": "zijaanzicht",
+      "top": "bovenaanzicht",
+      "press": "knop indrukken",
+      "interior": "in het interieur",
+      "meditation": "meditatie",
+      "equipment": "apparatuur",
+      "hands": "in de handen",
+      "full": "volledig zicht in het interieur"
+    }
+  },
+  "reviews": {
+    "title": "Gebruikersbeoordelingen",
+    "items": [
+      {
+        "text": "‘Mijn scriptie in één nacht af. Geen idee hoe.’",
+        "author": "Jakub",
+        "date": "21.05.2025"
+      },
+      {
+        "text": "‘TikTok verwijderd. Het werkte.’",
+        "author": "James",
+        "date": "15.04.2025"
+      },
+      {
+        "text": "‘Concentrator™ stond stil. Ik niet.’",
+        "author": "Olena",
+        "date": "12.03.2025"
+      },
+      {
+        "text": "‘Eerst opende ik YouTube. Nu mijn ogen.’",
+        "author": "Emily",
+        "date": "06.04.2025"
+      },
+      {
+        "text": "‘Ging 10 minuten zitten. Bleef 6 uur.’",
+        "author": "Ivan",
+        "date": "25.04.2025"
+      },
+      {
+        "text": "‘Verslag verstuurd én de was gedaan. Tegelijk.’",
+        "author": "Carlos",
+        "date": "29.03.2025"
+      },
+      {
+        "text": "‘Pauzes vergeten. En het eten.’",
+        "author": "Dmytro",
+        "date": "03.05.2025"
+      },
+      {
+        "text": "‘Focus bleef. Zelfs met mijn kat.’",
+        "author": "Katya",
+        "date": "14.04.2025"
+      },
+      {
+        "text": "‘Gewoon aangezet. De rest is geschiedenis.’",
+        "author": "Marta",
+        "date": "18.03.2025"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "items": [
+      {
+        "q": "Hoe werkt Concentrator™?",
+        "a": "Het verhoogt je focus met 300% via pseudowetenschappelijke impulsen en verbeelding."
+      },
+      {
+        "q": "Waarom doet Concentrator™ niets?",
+        "a": "Omdat het alles al heeft gedaan wat nodig was."
+      },
+      {
+        "q": "Kan ik het onderweg gebruiken?",
+        "a": "Ja, vooral om de kleine lettertjes op je boete te lezen."
+      },
+      {
+        "q": "Zijn er bijwerkingen?",
+        "a": "Alleen extra successen: meer productiviteit, charisma en humor."
+      },
+      {
+        "q": "Is dit legaal in mijn land?",
+        "a": "Technisch gezien wel."
+      },
+      {
+        "q": "Kan ik er twee tegelijk gebruiken?",
+        "a": "Alleen als je twee hersenen hebt."
+      }
+    ]
+  },
+  "order": {
+    "form": {
+      "title": "Bestel je focus",
+      "placeholders": {
+        "name": "Je naam",
+        "comment": "Opmerking of vraag"
+      },
+      "labels": {
+        "submit": "Bestel je focus",
+        "sending": "Verzenden..."
+      },
+      "messages": {
+        "nameRequired": "Vul alsjeblieft je naam in 🥺",
+        "validEmail": "Vul een geldig e-mailadres in",
+        "noNumbers": "Gebruik geen cijfers in je naam 😊",
+        "success": "Formulier succesvol verzonden!"
+      }
+    },
+    "delivery": {
+      "title": "Levering is transparant",
+      "steps": [
+        {
+          "title": "Je hebt besteld",
+          "description": "Bestelling geplaatst op de site"
+        },
+        {
+          "title": "Wij pakken en verzenden",
+          "description": "Een getrainde duif bezorgt"
+        },
+        {
+          "title": "Je ontvangt je bestelling",
+          "description": "en meer productiviteit"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "nav": {
+      "links": {
+        "hiw": "Hoe het werkt",
+        "reviews": "Beoordelingen",
+        "order": "Bestellen",
+        "faq": "FAQ"
+      },
+      "team": "Stuur koffie en je cv"
+    },
+    "links": {
+      "support": "Steun het koffie-experiment"
+    },
+    "copyright": "© 2026 Concentrator™ Gemaakt met liefde en pseudowetenschap. Alle rechten voorbehouden."
+  }
+}
