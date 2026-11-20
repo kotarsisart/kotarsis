@@ -1,9 +1,7 @@
-
-"use client";
-
 import { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import { PCFShadowMap } from "three";
 
 import ConcentratorModel from "./ConcentratorModel";
 
@@ -142,7 +140,7 @@ export default function ConcentratorDevice3D({
         }}
 
         // Enable shadow rendering according to viewport quality.
-        shadows={quality.shadows}
+        shadows={quality.shadows ? { type: PCFShadowMap } : false}
 
         // Device pixel ratio range [minimum, maximum].
         // Higher DPR produces sharper edges but costs GPU resources.

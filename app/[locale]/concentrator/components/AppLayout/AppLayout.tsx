@@ -32,7 +32,7 @@ export default function AppLayout({ children }: AppLayoutProps) {
   return (
     <div className="app-layout">
 
-      {/* <Preloader /> */}
+      <Preloader />
 
       <Header onOpenLanguages={() => setLangOpen(true)} />
 

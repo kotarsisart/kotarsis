@@ -13,15 +13,20 @@
   flex-direction: column;
   padding-inline: s.$space-m;
   padding-block: s.$space-l;
-  background: linear-gradient(145deg, #4ee382, #4ee3cd, #95b0ff);
+  background: linear-gradient(
+    145deg,
+    #4ee382,
+    #4ee3cd,
+    #95b0ff
+  );
   color: #110063;
 
   @include mx.mq(break-390) {
     padding-block: s.$space-xl;
   }
-
-  @include mx.mq(break-768) { padding-inline: s.$space-xl; }
-
+  @include mx.mq(break-768) { 
+    padding-inline: s.$space-xl;
+  }
 
   &__reveal {
     display: grid;
@@ -252,4 +257,3 @@
   .concentrator-online__progress-fill,
   .concentrator-online__reveal { transition: none; }
 }
-

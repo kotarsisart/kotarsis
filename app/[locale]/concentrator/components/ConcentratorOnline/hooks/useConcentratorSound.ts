@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useCallback, useEffect, useRef } from "react";
@@ -80,15 +79,15 @@ export default function useConcentratorSound() {
         switch (type) {
           case "click":
             // Short, mechanical-sounding button click.
-            playTone(180, 0.055, 0, 0.045, "triangle");
-            playTone(90, 0.045, 0.015, 0.02, "square");
+            playTone(850, 0.035, 0, 0.028, "sine");
+            playTone(420, 0.045, 0.015, 0.02, "triangle");
             break;
 
           case "activate":
             // Ascending electronic startup sequence.
-            playTone(440, 0.16);
-            playTone(660, 0.16, 0.12);
-            playTone(880, 0.28, 0.24);
+            playTone(220, 0.12, 0, 0.035, "triangle");
+            playTone(440, 0.12, 0.09, 0.03, "sine");
+            playTone(660, 0.2, 0.18, 0.025, "sine");
             break;
 
           case "notification":

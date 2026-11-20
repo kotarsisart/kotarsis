@@ -31,12 +31,12 @@ export default function LocalePage() {
       />
 
       <AppLayout>
-        <ConcentratorOnline />
         <Hero />
         <HowItWorks />
         <Story />
         <Benefits />
         <Comparison />
+        <ConcentratorOnline />
         <Availability />
         <Gallery />
         <Reviews />
