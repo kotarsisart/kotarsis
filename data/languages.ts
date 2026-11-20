@@ -91,7 +91,7 @@ function getRouteCode(code: string): string {
     german: "de",
     dutch: "nl",
     swedish: "sv",
-    norwegian: "no",
+    norwegian: "nb",
     french: "fr",
     spanish: "es",
     portuguese: "pt",
