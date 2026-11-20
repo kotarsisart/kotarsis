@@ -1,5 +1,4 @@
-
-import type { AgreementSection } from "./types";
+import type { AgreementPage, AgreementSection } from "./types";
 
 export type AgreementLocale = string;
 
@@ -9,18 +8,10 @@ const sectionCache = new Map<string, Promise<AgreementSection>>();
 const documentCache = new Map<string, Promise<AgreementSection>>();
 
 const DEFAULT_LOCALE = "ru";
+const TOTAL_SECTIONS = 16;
 
 /**
  * Loads a section from the requested locale.
- *
- * Expected structure:
- * locales/
- *   ru/
- *     section-01.ts
- *     section-02.ts
- *   en/
- *     section-01.ts
- *     section-02.ts
  */
 async function importSection(
   locale: AgreementLocale,
@@ -28,18 +19,16 @@ async function importSection(
 ): Promise<AgreementSection> {
   const name = `section-${String(sectionNumber).padStart(2, "0")}`;
 
-  const module: AgreementModule = await import(
+  const loadedModule: AgreementModule = await import(
     `./locales/${locale}/${name}`
   );
 
-  const section = module[
+  const section = loadedModule[
     `section${String(sectionNumber).padStart(2, "0")}`
   ];
 
   if (!Array.isArray(section)) {
-    throw new Error(
-      `Invalid agreement section: ${locale}/${name}`,
-    );
+    throw new Error(`Invalid agreement section: ${locale}/${name}`);
   }
 
   return section;
@@ -47,7 +36,6 @@ async function importSection(
 
 /**
  * Returns the requested locale.
- * Falls back to Russian when a locale cannot be loaded.
  */
 export function resolveAgreementLocale(
   locale: string,
@@ -57,7 +45,7 @@ export function resolveAgreementLocale(
 
 /**
  * Loads one section and caches the result.
- * index is zero-based.
+ * Index is zero-based.
  */
 export function loadAgreementSection(
   locale: AgreementLocale,
@@ -87,10 +75,7 @@ export function loadAgreementSection(
 }
 
 /**
- * Loads all consecutively numbered sections.
- *
- * Stops when the next section is missing.
- * Sections must start at 01 without gaps.
+ * Loads all 16 agreement sections.
  */
 export function loadPublishedAgreement(
   locale: AgreementLocale,
@@ -99,16 +84,11 @@ export function loadPublishedAgreement(
   if (existing) return existing;
 
   const pending = (async () => {
-    const pages: AgreementSection = [];
+    const pages: AgreementPage[] = [];
 
-    for (let index = 0; ; index++) {
-      try {
-        const section = await loadAgreementSection(locale, index);
-        pages.push(...section);
-      } catch (error) {
-        if (index === 0) throw error;
-        break;
-      }
+    for (let index = 0; index < TOTAL_SECTIONS; index++) {
+      const section = await loadAgreementSection(locale, index);
+      pages.push(...section);
     }
 
     const ids = pages.map((page) => page.id);

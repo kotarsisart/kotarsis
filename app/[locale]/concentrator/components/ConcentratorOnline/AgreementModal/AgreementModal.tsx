@@ -1,5 +1,3 @@
-"use client";
-
 import { 
   useEffect, useMemo, useRef, useState 
 } from "react";
@@ -26,6 +24,15 @@ import type { AgreementSection } from "../agreement/types";
 
 import "./_agreement-modal.scss";
 
+type AgreementLoadState = {
+  locale: string;
+  retry: number;
+  pages: AgreementSection;
+  error: boolean;
+};
+
+const EMPTY_PAGES: AgreementSection = [];
+
 type AgreementModalProps = {
 onClose: () => void;
 onAccept: () => void;
@@ -47,10 +54,21 @@ export default function AgreementModal({
 
   const [referenceHistory, setReferenceHistory] = useState<number[]>([]);
   const [page, setPage] = useState(0);
-  const [pages, setPages] = useState<AgreementSection>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
+
+  const [loadState, setLoadState] = useState<AgreementLoadState | null>(null);
+
   const [retry, setRetry] = useState(0);
+
+  const loading =
+    loadState?.locale !== locale || loadState?.retry !== retry;
+
+  const error = !loading && Boolean(loadState?.error);
+
+  const pages: AgreementSection =
+    !loading && !error && loadState
+      ? loadState.pages
+      : EMPTY_PAGES;
+
   const [pageInput, setPageInput] = useState("1");
   const [pageInputError, setPageInputError] = useState(false);
   const [downloading, setDownloading] = useState(false);
@@ -78,28 +96,38 @@ export default function AgreementModal({
 
   useEffect(() => {
     let cancelled = false;
-    setLoading(true);
-    setError(false);
+
     loadPublishedAgreement(locale)
       .then((result) => {
         if (cancelled) return;
-        setPages(result);
-      setReferenceHistory([]);
-        setPage((old) => Math.min(old, Math.max(0, result.length - 1)));
-        setLoading(false);
+
+        setLoadState({
+          locale,
+          retry,
+          pages: result,
+          error: false,
+        });
+
+        setPage(0);
+        setPageInput("1");
+        setPageInputError(false);
+        setReferenceHistory([]);
       })
       .catch(() => {
         if (cancelled) return;
-        setError(true);
-        setLoading(false);
-      });
-    return () => { cancelled = true; };
-  }, [locale, retry]);
 
-  useEffect(() => {
-    setPageInput(String(page + 1));
-    setPageInputError(false);
-  }, [page]);
+        setLoadState({
+          locale,
+          retry,
+          pages: [],
+          error: true,
+        });
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [locale, retry]);
 
   const changePage = (next: number) => {
     if (
@@ -164,11 +192,13 @@ export default function AgreementModal({
   // Only editorially approved links from the current clause are clickable.
   const renderParagraph = (paragraph: string): ReactNode[] => {
     if (!currentPage) return [paragraph];
-    const allowedTargets = new Set(
+
+    const allowedTargets = new Set<string>(
       agreementReferences
         .filter((reference) => reference.from === currentPage.id)
         .map((reference) => reference.to),
     );
+
     const parts: ReactNode[] = [];
     const clauseIdPattern = /(^|[^\d.])(\d{1,2}\.\d+\.\d+)(?![\d.])/g;
     let cursor = 0;
