@@ -7,6 +7,7 @@ import BaseHeader from "@/components/Header/BaseHeader";
 import LanguageButton from "@/components/Header/LanguageButton";
 
 import { useI18n } from "@/data/I18nProvider";
+import Link from "next/link";
 
 interface HeaderProps {
   onOpenLanguages: () => void;
@@ -18,11 +19,14 @@ export default function Header({
   const { t } = useI18n();
 
   const logo = (
-    <a
-      href="https://kotarsis.com"
+    <Link
+      href="/"
+      onClick={(event) => {
+        event.preventDefault();
+        window.location.assign("/");
+      }}
       aria-label="Go to kotarsis homepage"
       className="header-logo__link"
-      rel="noopener noreferrer"
     >
       <LogoSwitcher
         className="header-logo"
@@ -37,7 +41,7 @@ export default function Header({
           alt: t("header.logo.kotarsisAlt"),
         }}
       />
-    </a>
+    </Link>
   );
 
   const actions = (
