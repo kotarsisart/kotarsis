@@ -2,9 +2,7 @@
 
 import "./_header-theme.scss";
 
-import LogoSwitcher from "@/elements/LogoSwitcher/LogoSwitcher";
-
-import KotarsisLogo from "@/icons/KotarsisLogo";
+import ProjectLogo from "@/components/Header/ProjectLogo";
 import ConcentratorLogo from "../../icons/ConcentratorLogo";
 
 import BaseHeader from "@/components/Header/BaseHeader";
@@ -26,28 +24,7 @@ export default function Header({
 }: HeaderProps) {
   const { t } = useI18n();
 
-  const logo = (
-    <a
-      href="https://kotarsis.com"
-      aria-label="Go to kotarsis homepage"
-      className="header-logo__link"
-      rel="noopener noreferrer"
-    >
-      <LogoSwitcher
-        className="header-logo"
-        versions={[
-          {
-            icon: <ConcentratorLogo />,
-            text: "Concentrator™",
-          },
-          {
-            icon: <KotarsisLogo />,
-            text: "kotarsis",
-          },
-        ]}
-      />
-    </a>
-  );
+  const logo = <ProjectLogo icon={<ConcentratorLogo />} name="Concentrator™" />;
 
   const [focusLevel, setFocusLevel] = useState(50);
 
